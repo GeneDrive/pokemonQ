@@ -6,12 +6,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_CHESPIN
     [SPECIES_CHESPIN] =
     {
-        .baseHP        = 56,
-        .baseAttack    = 61,
-        .baseDefense   = 65,
-        .baseSpeed     = 38,
-        .baseSpAttack  = 48,
-        .baseSpDefense = 45,
+        .baseHP        = 60,
+        .baseAttack    = 48,
+        .baseDefense   = 45,
+        .baseSpeed     = 41,
+        .baseSpAttack  = 61,
+        .baseSpDefense = 65,
         .types = { TYPE_GRASS, TYPE_NORMAL },
         .catchRate = 45,
         .expYield = 63,
@@ -54,12 +54,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_QUILLADIN] =
     {
-        .baseHP        = 61,
-        .baseAttack    = 78,
-        .baseDefense   = 95,
-        .baseSpeed     = 57,
-        .baseSpAttack  = 56,
-        .baseSpDefense = 58,
+        .baseHP        = 66,
+        .baseAttack    = 56,
+        .baseDefense   = 58,
+        .baseSpeed     = 53,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 97,
         .types = { TYPE_GRASS, TYPE_NORMAL },
         .catchRate = 45,
         .expYield = 142,
@@ -102,12 +102,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_CHESNAUGHT] =
     {
-        .baseHP        = 88,
-        .baseAttack    = 107,
-        .baseDefense   = 122,
-        .baseSpeed     = 64,
-        .baseSpAttack  = 74,
-        .baseSpDefense = 75,
+        .baseHP        = 100,
+        .baseAttack    = 74,
+        .baseDefense   = 70,
+        .baseSpeed     = 74,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 122,
         .types = { TYPE_GRASS, TYPE_ELECTRIC },
         .catchRate = 45,
         .expYield = 239,
@@ -2887,7 +2887,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_MONSTER },
-        .abilities = { ABILITY_REFRIGERATE, ABILITY_NONE, ABILITY_SNOW_WARNING },
+        .abilities = { ABILITY_SNOW_WARNING, ABILITY_NONE, ABILITY_SNOW_WARNING },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Amaura"),
         .cryId = CRY_AMAURA,
@@ -2915,7 +2915,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Amaura, 0),
         .footprint = gMonFootprint_Amaura,
         LEARNSETS(Amaura),
-        .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 39, SPECIES_AURORUS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_AURORUS}),
     },
 
     [SPECIES_AURORUS] =
@@ -2935,7 +2935,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_MONSTER },
-        .abilities = { ABILITY_REFRIGERATE, ABILITY_NONE, ABILITY_SNOW_WARNING },
+        .abilities = { ABILITY_SNOW_WARNING, ABILITY_NONE, ABILITY_SNOW_WARNING },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Aurorus"),
         .cryId = CRY_AURORUS,

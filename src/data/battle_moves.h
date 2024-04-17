@@ -495,17 +495,18 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_SAND_ATTACK] =
     {
-        .effect = EFFECT_ACCURACY_DOWN,
-        .power = 0,
+        .effect = EFFECT_HIT,
+        .power = 40,
         .type = TYPE_GROUND,
         .accuracy = 100,
         .pp = 15,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .split = SPLIT_STATUS,
+        .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_EVSN_UP_1,
         .magicCoatAffected = TRUE,
+        .ignoreTypeIfFlyingAndUngrounded = TRUE,
     },
 
     [MOVE_HEADBUTT] =
@@ -4245,7 +4246,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_HIDDEN_POWER] =
     {
-        .power = B_HIDDEN_POWER_DMG >= GEN_6 ? 60 : 1,
+        .power =  60,
         .effect = EFFECT_HIDDEN_POWER,
         .type = TYPE_NORMAL,
         .accuracy = 100,
@@ -14733,8 +14734,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .pp = 10,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .split = SPLIT_SPECIAL,
+        .priority = 1,
+        .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
     },
 
@@ -14750,7 +14751,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
-        .ballisticMove = TRUE,
+    },
+
+    [MOVE_KAIROS_SPIRAL] =
+    {
+        .effect = EFFECT_SPEED_DOWN_HIT,
+        .power = 55,
+        .type = TYPE_TIME,
+        .accuracy = 100,
+        .pp = 15,
+        .secondaryEffectChance = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_SPECIAL,
+        .zMoveEffect = Z_EFFECT_NONE,
     },
     
 

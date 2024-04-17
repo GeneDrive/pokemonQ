@@ -4636,6 +4636,10 @@ u32 GetBattlerTotalSpeedStatArgs(u32 battler, u32 ability, u32 holdEffect)
     // paralysis drop
     if (gBattleMons[battler].status1 & STATUS1_PARALYSIS && ability != ABILITY_QUICK_FEET)
         speed /= B_PARALYSIS_SPEED >= GEN_7 ? 2 : 4;
+    
+    // frostbite drop
+    if (gBattleMons[battler].status1 & STATUS1_FROSTBITE && ability != ABILITY_QUICK_FEET)
+        speed = speed / 4 * 3;
 
     if (gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_SWAMP)
         speed /= 4;

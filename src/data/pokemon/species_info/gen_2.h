@@ -345,13 +345,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_TOTODILE
     [SPECIES_TOTODILE] =
     {
-        .baseHP        = 2,
-        .baseAttack    = 65,
+        .baseHP        = 50,
+        .baseAttack    = 68,
         .baseDefense   = 64,
-        .baseSpeed     = 43,
+        .baseSpeed     = 46,
         .baseSpAttack  = 44,
         .baseSpDefense = 48,
-        .types = { TYPE_WATER, TYPE_TIME },
+        .types = { TYPE_WATER, TYPE_WATER },
         .catchRate = 45,
         .expYield = 63,
         .evYield_Attack = 1,
@@ -393,12 +393,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_CROCONAW] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 80,
+        .baseHP        = 70,
+        .baseAttack    = 90,
         .baseDefense   = 80,
-        .baseSpeed     = 58,
-        .baseSpAttack  = 59,
-        .baseSpDefense = 63,
+        .baseSpeed     = 66,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 59,
         .types = { TYPE_WATER, TYPE_TIME },
         .catchRate = 45,
         .expYield = 142,
@@ -443,12 +443,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_FERALIGATR] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 105,
-        .baseDefense   = 100,
-        .baseSpeed     = 78,
-        .baseSpAttack  = 79,
-        .baseSpDefense = 83,
+        .baseHP        = 90,
+        .baseAttack    = 115,
+        .baseDefense   = 105,
+        .baseSpeed     = 91,
+        .baseSpAttack  = 69,
+        .baseSpDefense = 80,
         .types = { TYPE_WATER, TYPE_TIME },
         .catchRate = 45,
         .expYield = 239,
@@ -597,7 +597,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 36,
         .baseSpDefense = 56,
-        .types = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_TIME, TYPE_FLYING },
         .catchRate = 255,
         .expYield = 52,
         .evYield_HP = 1,
@@ -645,7 +645,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 70,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_7 ? 86 : 76,
         .baseSpDefense = 96,
-        .types = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_TIME, TYPE_FLYING },
         .catchRate = 90,
         .expYield = 158,
         .evYield_HP = 2,
@@ -4093,12 +4093,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_SLUGMA
     [SPECIES_SLUGMA] =
     {
-        .baseHP        = 40,
+        .baseHP        = 50,
         .baseAttack    = 40,
-        .baseDefense   = 40,
+        .baseDefense   = 45,
         .baseSpeed     = 20,
         .baseSpAttack  = 70,
-        .baseSpDefense = 40,
+        .baseSpDefense = 45,
         .types = { TYPE_FIRE, TYPE_FIRE },
         .catchRate = 190,
         .expYield = 50,
@@ -4108,7 +4108,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS },
-        .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_FLAME_BODY, ABILITY_WEAK_ARMOR },
+        .abilities = { ABILITY_EARTH_EATER, ABILITY_FLAME_BODY, ABILITY_WEAK_ARMOR },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Slugma"),
         .cryId = CRY_SLUGMA,
@@ -4141,11 +4141,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_MAGCARGO] =
     {
-        .baseHP        = P_UPDATED_STATS >= GEN_7 ? 60 : 50,
+        .baseHP        = 75,
         .baseAttack    = 50,
         .baseDefense   = 120,
         .baseSpeed     = 30,
-        .baseSpAttack  = P_UPDATED_STATS >= GEN_7 ? 90 : 80,
+        .baseSpAttack  = 95,
         .baseSpDefense = 80,
         .types = { TYPE_FIRE, TYPE_ROCK },
         .catchRate = 75,
@@ -4156,7 +4156,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS },
-        .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_FLAME_BODY, ABILITY_WEAK_ARMOR },
+        .abilities = { ABILITY_EARTH_EATER, ABILITY_FLAME_BODY, ABILITY_WEAK_ARMOR },
         .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
         .speciesName = _("Magcargo"),

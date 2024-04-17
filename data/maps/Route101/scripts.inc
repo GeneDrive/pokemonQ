@@ -1,10 +1,16 @@
 .set LOCALID_BIRCH, 2
 .set LOCALID_ZIGZAGOON, 4
+.set LOCALID_BIRCH_CAVE, 7
 
 Route101_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, Route101_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, Route101_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route101_OnFrame
 	.byte 0
+
+Route101_OnResume:
+	setstepcallback STEP_CB_ASH
+	end
 
 Route101_OnTransition:
 	call ProfBirch_EventScript_UpdateLocation
@@ -81,6 +87,10 @@ Route101_Movement_PreventExitWest:
 
 Route101_Movement_PreventExitNorth:
 	walk_down
+	step_end
+
+Route101_Movement_PreventExitEast:
+	walk_left
 	step_end
 
 Route101_Movement_ZigzagoonChaseInCircles:
@@ -260,6 +270,51 @@ Route101_Movement_BirchApproachPlayer:
 	walk_right
 	step_end
 
+Route101_EventScript_Help_South::
+	msgbox Route101_Text_ComeOverEast MSGBOX_NPC
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_PreventExitWest
+	waitmovement 0
+	releaseall
+	end
+
+Route101_EventScript_Help_South2::
+	msgbox Route101_Text_ComeOverEast MSGBOX_NPC
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_PreventExitSouth
+	waitmovement 0
+	releaseall
+	end
+
+Route101_EventScript_See_May_First::
+	applymovement LOCALID_BIRCH_CAVE, Common_Movement_FacePlayer
+	waitmovement 0
+	applymovement LOCALID_BIRCH_CAVE, Common_Movement_ExclamationMark
+	waitmovement 0
+	msgbox Route101_Text_GoSeeMayFirst MSGBOX_NPC
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_PreventExitEast
+	waitmovement 0
+	releaseall
+	end
+
+Route101_EventScript_Help_Pokemon::
+	applymovement LOCALID_BIRCH_CAVE, Common_Movement_FacePlayer
+	waitmovement 0
+	setvar VAR_ROUTE103_TALK_EVENT_DONE, 2
+	msgbox Route101_Text_HelpProtector MSGBOX_NPC
+	closemessage
+	releaseall
+	end
+
+Route101_EventScript_Go::
+	applymovement LOCALID_BIRCH_CAVE, Common_Movement_FacePlayer
+	waitmovement 0
+	msgbox Route101_Text_GO MSGBOX_NPC
+	closemessage
+	releaseall
+	end
+
 Route101_Text_HelpMe:
 	.string "H-help me!$"
 
@@ -300,3 +355,21 @@ Route101_Text_RouteSign:
 	.string "ROUTE 101\n"
 	.string "{UP_ARROW} OLDALE TOWN$"
 
+Route101_Text_GoSeeMayFirst:
+	.string "Go see May first,\n"
+	.string "we'll talk later!$"
+
+Route101_Text_ComeOverEast:
+	.string "Birch: Hey, {PLAYER}{KUN}!\n"
+	.string "Come help me to the east.$"
+
+Route101_Text_HelpProtector:
+	.string "Hey, {PLAYER}{KUN}!\p"
+	.string "Some weird group is disturbing the hibitat\n"
+	.string "of this route's pokemon by trying to\n"
+	.string "steal its protector.\p"
+	.string "You are our only help, please rescue the protector.$"
+
+Route101_Text_GO:
+	.string "What are you talking to me for?!\n"
+	.string "GO!$"

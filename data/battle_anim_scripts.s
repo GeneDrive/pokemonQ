@@ -878,6 +878,7 @@ gBattleAnims_Moves::
 	.4byte Move_CAFFEINE_BOMB
 	.4byte Move_TIME_SHIFT
 	.4byte Move_WYVERN_SPEAR
+	.4byte Move_KAIROS_SPIRAL
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -17047,37 +17048,24 @@ Move_CAFFEINE_BOMB:
 
 Move_TIME_SHIFT:
 	loadspritegfx ANIM_TAG_IMPACT
-	monbg ANIM_ATTACKER
-	call SetPsychicBackground
-	delay 0
-	playsewithpan SE_M_FAINT_ATTACK, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 18, 6, 1, 3
-	createvisualtask AnimTask_AttackerFadeToInvisible, 2, 1
-	waitforvisualfinish
-	clearmonbg ANIM_ATTACKER
-	invisible ANIM_ATTACKER
-	delay 1
-	createvisualtask AnimTask_SetAttackerInvisibleWaitForSignal, 2
-	setalpha 12, 8
-	monbg ANIM_TARGET
-	delay 1
-	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 1
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 9, 1
-	waitforvisualfinish
-	clearmonbg ANIM_TARGET
-	blendoff
-	delay 1
-	setarg 7, 0x1000
-	delay 32
-	createvisualtask AnimTask_InitAttackerFadeFromInvisible, 2
-	monbg ANIM_ATTACKER
-	createvisualtask AnimTask_AttackerFadeFromInvisible, 2, 1
-	waitforvisualfinish
-	clearmonbg ANIM_ATTACKER
-	call UnsetPsychicBg
-	delay 1
-	end
+    loadspritegfx ANIM_TAG_HANDS_AND_FEET
+    monbg ANIM_DEF_PARTNER
+    createvisualtask AnimTask_InvertScreenColor, 2, 0x1 | 0x2 | 0x4
+    delay 2
+    setalpha 9, 8
+    createvisualtask AnimTask_AttackerPunchWithTrace, 2, RGB(8, 9, 28), 10
+    playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
+    delay 6
+    createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, 0, 0, ANIM_TARGET, 1
+    createsprite gFistFootSpriteTemplate, ANIM_TARGET, 4, 0, 0, 8, 1, 0
+    playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+    delay 2
+    createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 3, 0, 6, 1
+    waitforvisualfinish
+    clearmonbg ANIM_DEF_PARTNER
+    blendoff
+    createvisualtask AnimTask_InvertScreenColor, 2, 0x1 | 0x2 | 0x4
+    end
 
 Move_WYVERN_SPEAR:
 	loadspritegfx ANIM_TAG_HORN_HIT_2
@@ -17121,6 +17109,24 @@ WyvernShotInContest:
 	waitbgfadeout
 	createvisualtask AnimTask_StartSlidingBg, 5, 2304, 768, 0, -1
 	goto WyvernShotContinue
+
+Move_KAIROS_SPIRAL:
+	loadspritegfx ANIM_TAG_WATER_ORB
+	monbg ANIM_DEF_PARTNER
+	splitbgprio ANIM_TARGET
+	setalpha 12, 8
+	delay 0
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 0, F_PAL_TARGET, 2, 0, 7, RGB(0, 13, 23)
+	playsewithpan SE_M_WHIRLPOOL, SOUND_PAN_TARGET
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 2, 50, 1
+	call WhirlpoolEffect
+	call WhirlpoolEffect
+	call WhirlpoolEffect
+	delay 12
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 0, F_PAL_TARGET, 2, 7, 0, RGB(0, 13, 23)
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	end
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 Move_NONE:

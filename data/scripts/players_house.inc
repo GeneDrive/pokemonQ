@@ -166,6 +166,16 @@ PlayersHouse_1F_EventScript_PetalburgGymReportMale::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox PlayersHouse_1F_Text_ItsOverWeMissedHim, MSGBOX_DEFAULT
+	waitmovement 0
+	msgbox PlayersHouse_1F_Text_WearTheseRunningShoes, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
+	message PlayersHouse_1F_Text_SwitchShoesWithRunningShoes
+	waitfanfare
+	setflag FLAG_RECEIVED_RUNNING_SHOES
+	setflag FLAG_SYS_B_DASH
+	msgbox PlayersHouse_1F_Text_ExplainRunningShoes, MSGBOX_DEFAULT
+	closemessage
+	delay 3
 	msgbox PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_TEMP_1, 1
@@ -191,6 +201,16 @@ PlayersHouse_1F_EventScript_PetalburgGymReportFemale::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	msgbox PlayersHouse_1F_Text_ItsOverWeMissedHim, MSGBOX_DEFAULT
+	waitmovement 0
+	msgbox PlayersHouse_1F_Text_WearTheseRunningShoes, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
+	message PlayersHouse_1F_Text_SwitchShoesWithRunningShoes
+	waitfanfare
+	setflag FLAG_RECEIVED_RUNNING_SHOES
+	setflag FLAG_SYS_B_DASH
+	msgbox PlayersHouse_1F_Text_ExplainRunningShoes, MSGBOX_DEFAULT
+	closemessage
+	delay 3
 	msgbox PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_TEMP_1, 1

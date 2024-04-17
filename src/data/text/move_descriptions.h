@@ -3344,6 +3344,10 @@ static const u8 sWyvernSpearDescription[] = _(
     "Hurls a wyvern talon that does\n"
     "more damage to slower foes.");
 
+static const u8 sKairosSpiralDescription[] = _(
+    "A paradoxical spiral\n"
+    "that may lower the targets speed.");
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4205,4 +4209,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_CAFFEINE_BOMB - 1] = sCaffeineBombDescription,
     [MOVE_TIME_SHIFT - 1] = sTimeShiftDescription,
     [MOVE_WYVERN_SPEAR - 1] = sWyvernSpearDescription,
+    [MOVE_KAIROS_SPIRAL - 1] = sKairosSpiralDescription,
 };

@@ -815,7 +815,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(LinooneGalarian, 0),
         LEARNSETS(LinooneGalarian),
         .isGalarianForm = TRUE,
-        .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 35, SPECIES_OBSTAGOON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_OBSTAGOON}),
     },
 
     [SPECIES_OBSTAGOON] =

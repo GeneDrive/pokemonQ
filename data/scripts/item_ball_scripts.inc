@@ -1,5 +1,29 @@
+LittlerootTown_EventScript_ItemMegaRing::
+	finditem ITEM_MEGA_RING
+	end
+
+Route101_EventScript_ItemRevive::
+	finditem ITEM_REVIVE
+	end
+
+Route101_EventScript_ItemLuxuryBalls::
+	finditem ITEM_LUXURY_BALL, 5
+	end
+
+Route101_EventScript_ItemAbomasite::
+	finditem ITEM_ABOMASITE
+	end
+
 Route102_EventScript_ItemPotion::
 	finditem ITEM_POTION
+	end
+
+Route103_EventScript_ItemFocusSash::
+	finditem ITEM_FOCUS_SASH
+	end
+
+Route103_EventScript_Punching_Glove::
+	finditem ITEM_PUNCHING_GLOVE
 	end
 
 Route103_EventScript_ItemGuardSpec::

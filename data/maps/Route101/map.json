@@ -11,7 +11,7 @@
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
-  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "battle_scene": "MAP_BATTLE_SCENE_GLACIA",
   "connections": [
     {
       "map": "MAP_OLDALE_TOWN",
@@ -27,8 +27,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 16,
-      "y": 8,
+      "x": 22,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -40,7 +40,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
-      "x": 9,
+      "x": 4,
       "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_RIGHT",
@@ -53,8 +53,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BIRCHS_BAG",
-      "x": 7,
-      "y": 14,
+      "x": 9,
+      "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -66,7 +66,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ZIGZAGOON_2",
-      "x": 10,
+      "x": 5,
       "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_LEFT",
@@ -79,8 +79,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
-      "x": 5,
-      "y": 11,
+      "x": 2,
+      "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -93,7 +93,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
       "x": 2,
-      "y": 13,
+      "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
@@ -102,10 +102,75 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route101_EventScript_Boy",
       "flag": "FLAG_HIDE_ROUTE_101_BOY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
+      "x": 43,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route101_EventScript_Go",
+      "flag": "FLAG_ITEM_ROUTE_101_CAVE_DONE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 67,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route101_EventScript_ItemLuxuryBalls",
+      "flag": "FLAG_ITEM_ROUTE_101_LUXURY_BALLS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ROUND_CUSHION",
+      "x": 42,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route101_EventScript_ItemAbomasite",
+      "flag": "FLAG_ITEM_ROUTE_101_ABOMASITE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 2,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route101_EventScript_ItemRevive",
+      "flag": "FLAG_ITEM_ROUTE_101_REVIVE"
     }
   ],
   "warp_events": [
-
+    {
+      "x": 60,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_MAP1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 53,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_MAP1",
+      "dest_warp_id": "1"
+    }
   ],
   "coord_events": [
     {
@@ -146,35 +211,8 @@
     },
     {
       "type": "trigger",
-      "x": 6,
-      "y": 16,
-      "elevation": 3,
-      "var": "VAR_ROUTE101_STATE",
-      "var_value": "2",
-      "script": "Route101_EventScript_PreventExitWest"
-    },
-    {
-      "type": "trigger",
-      "x": 6,
-      "y": 15,
-      "elevation": 3,
-      "var": "VAR_ROUTE101_STATE",
-      "var_value": "2",
-      "script": "Route101_EventScript_PreventExitWest"
-    },
-    {
-      "type": "trigger",
-      "x": 6,
-      "y": 17,
-      "elevation": 3,
-      "var": "VAR_ROUTE101_STATE",
-      "var_value": "2",
-      "script": "Route101_EventScript_PreventExitWest"
-    },
-    {
-      "type": "trigger",
-      "x": 6,
-      "y": 18,
+      "x": 7,
+      "y": 13,
       "elevation": 3,
       "var": "VAR_ROUTE101_STATE",
       "var_value": "2",
@@ -183,18 +221,207 @@
     {
       "type": "trigger",
       "x": 7,
+      "y": 12,
+      "elevation": 3,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "2",
+      "script": "Route101_EventScript_PreventExitWest"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 14,
+      "elevation": 3,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "2",
+      "script": "Route101_EventScript_PreventExitWest"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 15,
+      "elevation": 3,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "2",
+      "script": "Route101_EventScript_PreventExitWest"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
       "y": 13,
       "elevation": 3,
       "var": "VAR_ROUTE101_STATE",
       "var_value": "2",
       "script": "Route101_EventScript_PreventExitNorth"
+    },
+    {
+      "type": "trigger",
+      "x": 45,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "3",
+      "script": "Route101_EventScript_See_May_First"
+    },
+    {
+      "type": "trigger",
+      "x": 45,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "3",
+      "script": "Route101_EventScript_See_May_First"
+    },
+    {
+      "type": "trigger",
+      "x": 45,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "3",
+      "script": "Route101_EventScript_See_May_First"
+    },
+    {
+      "type": "trigger",
+      "x": 45,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "3",
+      "script": "Route101_EventScript_See_May_First"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "5",
+      "script": "Route101_EventScript_Help_South2"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "5",
+      "script": "Route101_EventScript_Help_South2"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "2",
+      "script": "Route101_EventScript_PreventExitNorth"
+    },
+    {
+      "type": "trigger",
+      "x": 42,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_ROUTE103_TALK_EVENT_DONE",
+      "var_value": "1",
+      "script": "Route101_EventScript_Help_Pokemon"
+    },
+    {
+      "type": "trigger",
+      "x": 42,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_ROUTE103_TALK_EVENT_DONE",
+      "var_value": "1",
+      "script": "Route101_EventScript_Help_Pokemon"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_ROUTE103_TALK_EVENT_DONE",
+      "var_value": "1",
+      "script": "Route101_EventScript_Help_Pokemon"
+    },
+    {
+      "type": "trigger",
+      "x": 44,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_ROUTE103_TALK_EVENT_DONE",
+      "var_value": "2",
+      "script": "Route101_EventScript_Help_Pokemon"
+    },
+    {
+      "type": "trigger",
+      "x": 42,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_ROUTE103_TALK_EVENT_DONE",
+      "var_value": "1",
+      "script": "Route101_EventScript_Help_Pokemon"
+    },
+    {
+      "type": "trigger",
+      "x": 42,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ROUTE103_TALK_EVENT_DONE",
+      "var_value": "1",
+      "script": "Route101_EventScript_Help_Pokemon"
+    },
+    {
+      "type": "trigger",
+      "x": 42,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_ROUTE103_TALK_EVENT_DONE",
+      "var_value": "1",
+      "script": "Route101_EventScript_Help_Pokemon"
+    },
+    {
+      "type": "trigger",
+      "x": 44,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "4",
+      "script": "Route101_EventScript_See_May_First"
+    },
+    {
+      "type": "trigger",
+      "x": 44,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "4",
+      "script": "Route101_EventScript_See_May_First"
+    },
+    {
+      "type": "trigger",
+      "x": 44,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "4",
+      "script": "Route101_EventScript_See_May_First"
+    },
+    {
+      "type": "trigger",
+      "x": 44,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_STATE",
+      "var_value": "4",
+      "script": "Route101_EventScript_See_May_First"
     }
   ],
   "bg_events": [
     {
       "type": "sign",
-      "x": 5,
-      "y": 9,
+      "x": 7,
+      "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route101_EventScript_RouteSign"

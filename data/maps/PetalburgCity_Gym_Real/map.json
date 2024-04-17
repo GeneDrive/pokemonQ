@@ -1,0 +1,136 @@
+{
+  "id": "MAP_PETALBURG_CITY_GYM_REAL",
+  "name": "PetalburgCity_Gym_Real",
+  "layout": "LAYOUT_PETALBURG_CITY_GYM_REAL",
+  "music": "MUS_GYM",
+  "region_map_section": "MAPSEC_PETALBURG_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WINONA",
+      "x": 42,
+      "y": 44,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WINONA",
+      "x": 24,
+      "y": 27,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "x": 43,
+      "y": 44,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
+      "x": 39,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 42,
+      "y": 49,
+      "elevation": 0,
+      "dest_map": "MAP_PETALBURG_CITY",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 41,
+      "y": 49,
+      "elevation": 0,
+      "dest_map": "MAP_PETALBURG_CITY",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 41,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_REAL_GYM_STATE",
+      "var_value": "1",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 42,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_REAL_GYM_STATE",
+      "var_value": "1",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_REAL_GYM_STATE",
+      "var_value": "1",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 42,
+      "y": 48,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_REAL_GYM_STATE",
+      "var_value": "0",
+      "script": "PetalburgCity_Gym_Real_Walked_In_First_Time"
+    },
+    {
+      "type": "trigger",
+      "x": 41,
+      "y": 48,
+      "elevation": 0,
+      "var": "VAR_PETALBURG_REAL_GYM_STATE",
+      "var_value": "0",
+      "script": "NULL"
+    }
+  ],
+  "bg_events": [
+
+  ]
+}

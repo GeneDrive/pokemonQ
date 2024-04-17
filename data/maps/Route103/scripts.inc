@@ -92,11 +92,20 @@ Route103_EventScript_StartBrendanBattleMudkip::
 
 Route103_EventScript_AfterMayBattle::
 	msgbox Route103_Text_MayTimeToHeadBack, MSGBOX_DEFAULT
-	goto Route103_EventScript_RivalExit
+	goto Route103_EventScript_RivalGiveBalls
 	end
 
 Route103_EventScript_AfterBrendanBattle::
 	msgbox Route103_Text_BrendanTimeToHeadBack, MSGBOX_DEFAULT
+	goto Route103_EventScript_RivalGiveBalls
+	end
+
+Route103_EventScript_RivalGiveBalls::
+	msgbox Route103_Text_RivalGiveBallsStart, MSGBOX_DEFAULT
+	giveitem ITEM_POKE_BALL, 15
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	msgbox Route103_Text_RivalGiveBallsEnd, MSGBOX_DEFAULT
 	goto Route103_EventScript_RivalExit
 	end
 
@@ -140,6 +149,8 @@ Route103_EventScript_RivalExitFacingSouth::
 
 Route103_EventScript_RivalEnd::
 	removeobject LOCALID_RIVAL
+	setvar VAR_ROUTE101_STATE, 4
+	setvar VAR_ROUTE103_TALK_EVENT_DONE, 2
 	setvar VAR_BIRCH_LAB_STATE, 4
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
 	setflag FLAG_DEFEATED_RIVAL_ROUTE103
@@ -251,7 +262,7 @@ Route103_EventScript_Miguel::
 	trainerbattle_single TRAINER_MIGUEL_1, Route103_Text_MiguelIntro, Route103_Text_MiguelDefeated, Route102_EventScript_MiguelRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route103_EventScript_MiguelRematch
-	msgbox Route103_Text_MiguelPostBattle, MSGBOX_DEFAULT
+	msgbox +, MSGBOX_DEFAULT
 	release
 	end
 
@@ -353,3 +364,11 @@ Route103_Text_RouteSign:
 	.string "ROUTE 103\n"
 	.string "{DOWN_ARROW} OLDALE TOWN$"
 
+Route103_Text_RivalGiveBallsStart:
+	.string "Oh yeah before I forget,\n"
+	.string "Here are some pokeballs.$"
+
+Route103_Text_RivalGiveBallsEnd:
+	.string "Catching pokemon is what being a trainer is\n"
+	.string "all about.\p"
+	.string "Make sure to make some new friends!$"

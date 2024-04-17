@@ -10,15 +10,15 @@
             20,
             20,
             10,
-            10,
-            10,
-            10,
+            9,
+            9,
+            9,
             5,
             5,
             4,
             4,
-            1,
-            1
+            3,
+            2
           ]
         },
         {
@@ -44,8 +44,8 @@
         {
           "type": "fishing_mons",
           "encounter_rates": [
-            70,
-            30,
+            50,
+            50,
             60,
             20,
             20,
@@ -84,63 +84,63 @@
             "mons": [
               {
                 "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_SOLOSIS"
+                "max_level": 3,
+                "species": "SPECIES_SNOM"
               },
               {
                 "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_SOLOSIS"
-              },
-              {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_SOLOSIS"
-              },
-              {
-                "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_SOLOSIS"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_POOCHYENA"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_POOCHYENA"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_WURMPLE"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_POOCHYENA"
-              },
-              {
-                "min_level": 2,
-                "max_level": 2,
                 "species": "SPECIES_ZIGZAGOON_GALARIAN"
               },
               {
                 "min_level": 2,
-                "max_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_SNOM"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
                 "species": "SPECIES_ZIGZAGOON_GALARIAN"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_SNOM"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
                 "species": "SPECIES_ZIGZAGOON_GALARIAN"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_ZIGZAGOON"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_SNOM"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
                 "species": "SPECIES_ZIGZAGOON_GALARIAN"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_DARUMAKA_GALARIAN"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_FRIGIBAX"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_SNEASEL"
               }
             ]
           }
@@ -154,62 +154,62 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_ZIGZAGOON_GALARIAN"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_WURMPLE"
+                "species": "SPECIES_SNOM"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_ZIGZAGOON_GALARIAN"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_WURMPLE"
+                "species": "SPECIES_DARUMAKA_GALARIAN"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
+                "species": "SPECIES_CATERPIE"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_WEEDLE"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_DARUMAKA_GALARIAN"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_WOOPER_PALDEAN"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_WOOPER_PALDEAN"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
                 "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_LOTAD"
+                "species": "SPECIES_FRIGIBAX"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_ZIGZAGOON"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_ZIGZAGOON"
-              },
-              {
-                "min_level": 4,
-                "max_level": 4,
-                "species": "SPECIES_ZIGZAGOON"
-              },
-              {
-                "min_level": 4,
-                "max_level": 4,
-                "species": "SPECIES_RALTS"
-              },
-              {
-                "min_level": 4,
-                "max_level": 4,
-                "species": "SPECIES_ZIGZAGOON"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_SEEDOT"
+                "species": "SPECIES_NOIBAT"
               }
             ]
           },
@@ -249,12 +249,12 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_REMORAID"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_GOLDEEN"
+                "species": "SPECIES_BARBOACH"
               },
               {
                 "min_level": 10,
@@ -264,7 +264,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_GOLDEEN"
+                "species": "SPECIES_ARROKUDA"
               },
               {
                 "min_level": 10,
@@ -308,62 +308,62 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_SNOM"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_ZIGZAGOON_GALARIAN"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_SNOM"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_SNOM"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_DARUMAKA_GALARIAN"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_ZIGZAGOON_GALARIAN"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_ZIGZAGOON_GALARIAN"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_BALTOY"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_BALTOY"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_NOIBAT"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_RIOLU"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_RIOLU"
               }
             ]
           },
@@ -11491,6 +11491,10 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_NEW_MAP1",
+          "base_label": "gNewMap10"
         }
       ]
     },

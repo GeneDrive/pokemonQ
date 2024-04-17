@@ -162,7 +162,8 @@
     "PetalburgCity_House2",
     "PetalburgCity_PokemonCenter_1F",
     "PetalburgCity_PokemonCenter_2F",
-    "PetalburgCity_Mart"
+    "PetalburgCity_Mart",
+    "PetalburgCity_Gym_Real"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",
@@ -429,7 +430,8 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
-    "MeteorFalls_StevensCave"
+    "MeteorFalls_StevensCave",
+    "NewMap1"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

@@ -1,0 +1,194 @@
+{
+  "id": "MAP_NEW_MAP1",
+  "name": "NewMap1",
+  "layout": "LAYOUT_NEW_MAP1",
+  "music": "MUS_RG_POKE_MANSION",
+  "region_map_section": "MAPSEC_ROUTE_101",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 31,
+      "y": 35,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "NewMap1_EventScript_Grunt2_Battle",
+      "flag": "FLAG_ITEM_ROUTE_101_CAVE_DONE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 20,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "NewMap1_EventScript_Grunt1_Battle",
+      "flag": "FLAG_ITEM_ROUTE_101_CAVE_DONE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "x": 44,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "NewMap1_EventScript_Grunt3_BattleAfter",
+      "flag": "FLAG_ITEM_ROUTE_101_CAVE_DONE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ARCHIE",
+      "x": 30,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ITEM_ROUTE_101_CAVE_DONE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_STEVEN",
+      "x": 34,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ITEM_ROUTE_101_CAVE_DONE"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 20,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE101",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE101",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 45,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_CAVE_STATE",
+      "var_value": "0",
+      "script": "NewMap1_EventScript_Grunt3_Battle"
+    },
+    {
+      "type": "trigger",
+      "x": 44,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_CAVE_STATE",
+      "var_value": "0",
+      "script": "NewMap1_EventScript_Grunt3_Battle"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_CAVE_STATE",
+      "var_value": "0",
+      "script": "NewMap1_EventScript_Grunt3_Battle"
+    },
+    {
+      "type": "trigger",
+      "x": 42,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_CAVE_STATE",
+      "var_value": "0",
+      "script": "NewMap1_EventScript_Grunt3_Battle"
+    },
+    {
+      "type": "trigger",
+      "x": 46,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_CAVE_STATE",
+      "var_value": "0",
+      "script": "NewMap1_EventScript_Grunt3_Battle"
+    },
+    {
+      "type": "trigger",
+      "x": 47,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_CAVE_STATE",
+      "var_value": "0",
+      "script": "NewMap1_EventScript_Grunt3_Battle"
+    },
+    {
+      "type": "trigger",
+      "x": 41,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ROUTE101_CAVE_STATE",
+      "var_value": "0",
+      "script": "NewMap1_EventScript_Grunt3_Battle"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_ROUTE103_TALK_EVENT_DONE",
+      "var_value": "2",
+      "script": "NewMap1_EventScript_Archie_Start"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_ROUTE103_TALK_EVENT_DONE",
+      "var_value": "2",
+      "script": "NewMap1_EventScript_Archie_Start"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_ROUTE103_TALK_EVENT_DONE",
+      "var_value": "2",
+      "script": "NewMap1_EventScript_Archie_Start"
+    }
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -4,6 +4,7 @@
 .set LOCALID_BIRCH, 8
 
 LittlerootTown_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, LittlerootTown_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, LittlerootTown_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LittlerootTown_OnWarp
@@ -39,8 +40,13 @@ LittlerootTown_MapScripts::
 	@ 4: Received Pokedex
 
 
+LittlerootTown_OnResume:
+	setstepcallback STEP_CB_ASH
+	end
+
 LittlerootTown_OnTransition:
 	setflag FLAG_VISITED_LITTLEROOT_TOWN
+	setstepcallback STEP_CB_ASH
 	call Common_EventScript_SetupRivalGfxId
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_MoveMomToMaysDoor
 	call_if_unset FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_SetTwinPos
@@ -76,7 +82,7 @@ LittlerootTown_EventScript_SetExitedHouseAfterLatiSSTicketEvent::
 	return
 
 LittlerootTown_EventScript_MoveMomToMaysDoor::
-	setobjectxyperm LOCALID_MOM, 14, 8
+	setobjectxyperm LOCALID_MOM, 34, 30
 	return
 
 LittlerootTown_EventScript_SetTwinPos::
@@ -248,9 +254,6 @@ LittlerootTown_EventScript_SetRivalBirchPosForDexUpgradeFemale::
 
 LittlerootTown_EventScript_FatMan::
 	msgbox LittlerootTown_Text_CanUsePCToStoreItems, MSGBOX_NPC
-	giveitem ITEM_TERA_ORB, 1
-	delay 10
-	giveitem ITEM_POKE_BALL, 50
 	end
 
 LittlerootTown_EventScript_Boy::
