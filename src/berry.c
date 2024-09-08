@@ -1714,23 +1714,26 @@ static u8 CalcBerryYieldInternal(u16 max, u16 min, u8 water)
     u32 randMin;
     u32 randMax;
     u32 rand;
-    u32 extraYield;
+    u32 randTwo;
+    u32 yield;
 
-    if (water == 0)
-        return min;
-    else
-    {
-        randMin = (max - min) * (water - 1);
-        randMax = (max - min) * (water);
-        rand = randMin + Random() % (randMax - randMin + 1);
-
-        // Round upwards
-        if ((rand % NUM_WATER_STAGES) >= NUM_WATER_STAGES / 2)
-            extraYield = rand / NUM_WATER_STAGES + 1;
-        else
-            extraYield = rand / NUM_WATER_STAGES;
-        return extraYield + min;
+    randMin = 48;
+    randMax = 99;
+    rand = Random();
+    randTwo = Random();
+    
+    if (rand > randTwo) {
+        yield = rand * (randTwo / rand) * 100;
+    } else {
+        yield = randTwo * (rand / randTwo) * 100;
     }
+    
+    if (yield > randMax) {
+        yield = randMax;
+    } else if (yield < randMin) {
+        yield = randMin;
+    }
+    return yield;
 }
 
 static u8 CalcBerryYield(struct BerryTree *tree)

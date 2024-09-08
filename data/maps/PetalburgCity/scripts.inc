@@ -7,19 +7,19 @@
 PetalburgCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PetalburgCity_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, PetalburgCity_OnResume
 	.byte 0
 
 PetalburgCity_OnTransition:
 	setflag FLAG_VISITED_PETALBURG_CITY
-	call_if_eq VAR_PETALBURG_CITY_STATE, 0, PetalburgCity_EventScript_MoveGymBoyToWestEntrance
 	call_if_eq VAR_PETALBURG_CITY_STATE, 2, PetalburgCity_EventScript_DisableMapNameAndMusic
 	call_if_eq VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_EventScript_DisableMapNameAndMusic
 	call_if_eq VAR_PETALBURG_GYM_STATE, 8, PetalburgCity_EventScript_SetGymDoorsUnlocked
 	end
 
-PetalburgCity_EventScript_MoveGymBoyToWestEntrance::
-	setobjectxyperm LOCALID_GYM_BOY, 5, 11
-	return
+PetalburgCity_OnResume:
+	setstepcallback STEP_CB_ASH
+	end
 
 PetalburgCity_EventScript_DisableMapNameAndMusic::
 	setflag FLAG_HIDE_MAP_NAME_POPUP
@@ -705,9 +705,10 @@ PetalburgCity_EventScript_GymBoy::
 	end
 
 PetalburgCity_Text_WhereIsWally:
-	.string "Where has our WALLY gone?\p"
-	.string "We have to leave for VERDANTURF TOWN\n"
-	.string "very soon…$"
+	.string "Where has our WALLY gone?\n"
+	.string "Has he gone to see WINONA again!\p"
+	.string "That boy really listen to us, those\n"
+	.string "POKéMON battles are to dangerous... $"
 
 PetalburgCity_Text_AreYouRookieTrainer:
 	.string "Hiya! Are you maybe…\n"
@@ -725,11 +726,11 @@ PetalburgCity_Text_ThisIsGymSign:
 	.string "whenever you're looking for a GYM.$"
 
 PetalburgCity_Text_WaterReflection:
-	.string "My face is reflected in the water.\p"
-	.string "It's a shining grin full of hope…\p"
-	.string "Or it could be a look of somber silence\n"
-	.string "struggling with fear…\p"
-	.string "What do you see reflected in your face?$"
+	.string "Man training with WINONA was.\p"
+	.string "crazy difficult, but still fun!…\p"
+	.string "The mountains were so much\n"
+	.string "colder then this town…\p"
+	.string "Sadly, I was never able to beat her...$"
 
 PetalburgCity_Text_FullPartyExplanation:
 	.string "Let's say you have six POKéMON.\n"
@@ -739,8 +740,8 @@ PetalburgCity_Text_FullPartyExplanation:
 
 PetalburgCity_Text_GymSign:
 	.string "PETALBURG CITY POKéMON GYM\n"
-	.string "LEADER: NORMAN\l"
-	.string "“A man in pursuit of power!”$"
+	.string "LEADER: WINONA\l"
+	.string "“A cool trainer with amazing strategy!”$"
 
 PetalburgCity_Text_CitySign:
 	.string "PETALBURG CITY\n"

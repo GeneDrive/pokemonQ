@@ -7336,10 +7336,10 @@ const struct Item gItems[] =
 
     [ITEM_TM_PROTECT] =
     {
-        .name = _("TM17"),
+        .name = _("TR17"),
         .price = 3000,
         .description = sTM17Desc,
-        .importance = I_REUSABLE_TMS,
+        .importance = 0,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
@@ -8842,9 +8842,9 @@ const struct Item gItems[] =
 
     [ITEM_FAME_CHECKER] =
     {
-        .name = _("Fame Checker"),
+        .name = _("Memory Jogger"),
         .price = 0,
-        .description = sFameCheckerDesc,
+        .description = sTownMapDesc,
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

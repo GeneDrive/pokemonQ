@@ -160,7 +160,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .baseSpeed     = 65,
         .baseSpAttack  = 60,
         .baseSpDefense = 45,
-        .types = { TYPE_FIRE, TYPE_FIGHTING },
+        .types = { TYPE_FIRE, TYPE_FIRE },
         .catchRate = 45,
         .expYield = 62,
         .evYield_Speed = 1,
@@ -169,7 +169,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE },
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_IRON_FIST },
+        .abilities = { ABILITY_IRON_FIST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
         .speciesName = _("Chimchar"),
@@ -198,7 +198,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ICON(Chimchar, 1),
         .footprint = gMonFootprint_Chimchar,
         LEARNSETS(Chimchar),
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_MONFERNO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 19, SPECIES_MONFERNO}),
     },
 
     [SPECIES_MONFERNO] =
@@ -219,7 +219,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE },
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_IRON_FIST },
+        .abilities = { ABILITY_MARTIAL_ARTS, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
         .speciesName = _("Monferno"),
@@ -270,7 +270,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE },
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_IRON_FIST },
+        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Infernape"),
         .cryId = CRY_INFERNAPE,
@@ -1158,24 +1158,24 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
 #if P_FAMILY_BURMY
 #define BURMY_MISC_INFO                                                     \
-        .baseHP        = 40,                                                \
-        .baseAttack    = 29,                                                \
-        .baseDefense   = 45,                                                \
-        .baseSpeed     = 36,                                                \
-        .baseSpAttack  = 29,                                                \
-        .baseSpDefense = 45,                                                \
-        .types = { TYPE_BUG, TYPE_BUG },                                    \
+        .baseHP        = 62,                                                \
+        .baseAttack    = 58,                                                \
+        .baseDefense   = 55,                                                \
+        .baseSpeed     = 60,                                                \
+        .baseSpAttack  = 30,                                                \
+        .baseSpDefense = 50,                                                \
+        .types = { TYPE_POISON, TYPE_NORMAL },                                    \
         .catchRate = 120,                                                   \
         .expYield = 45,                                                     \
         .evYield_SpDefense = 1,                                             \
-        .genderRatio = PERCENT_FEMALE(50),                                  \
+        .genderRatio = PERCENT_FEMALE(100),                                  \
         .eggCycles = 15,                                                    \
         .friendship = STANDARD_FRIENDSHIP,                                  \
         .growthRate = GROWTH_MEDIUM_FAST,                                   \
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_BUG },                      \
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_OVERCOAT }, \
-        .speciesName = _("Burmy"),                                          \
-        .cryId = CRY_BURMY,                                                 \
+        .abilities = { ABILITY_FLUFFY, ABILITY_TANGLING_HAIR, ABILITY_STATIC }, \
+        .speciesName = _("Fuzzonat"),                                          \
+        .cryId = CRY_STUFFUL,                                                 \
         .natDexNum = NATIONAL_DEX_BURMY,                                    \
         .categoryName = _("Bagworm"),                                       \
         .height = 2,                                                        \
@@ -1184,8 +1184,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .pokemonOffset = 24,                                                \
         .trainerScale = 256,                                                \
         .trainerOffset = 0,                                                 \
-        .frontAnimFrames = sAnims_Burmy,                                    \
-        .frontAnimId = ANIM_V_STRETCH,                                      \
+        .frontAnimFrames = sAnims_ZigzagoonGalarian,                        \
         .enemyMonElevation = 10,                                            \
         .backAnimId = BACK_ANIM_H_SHAKE,                                    \
         .footprint = gMonFootprint_Burmy,                                   \
@@ -1203,13 +1202,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             "near at hand. The Pokémon within the cloak\n"
             "is scrawny and vulnerable to the cold."),
         FRONT_PIC(BurmyPlantCloak, 32, 56),
-        .frontPicYOffset = 13,
+        .frontPicYOffset = 21,
         BACK_PIC(BurmyPlantCloak, 40, 56),
-        .backPicYOffset = 6,
+        .backPicYOffset = 11,
         PALETTES(BurmyPlantCloak),
         ICON(BurmyPlantCloak, 1),
-        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 20, SPECIES_WORMADAM_PLANT_CLOAK},
-                                {EVO_LEVEL_MALE, 20, SPECIES_MOTHIM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_WORMADAM_PLANT_CLOAK}),
     },
 
     [SPECIES_BURMY_SANDY_CLOAK] =
@@ -1222,13 +1220,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             "is ruined by wind and rain, so the Pokémon\n"
             "hides away in caves and other such places."),
         FRONT_PIC(BurmySandyCloak, 32, 56),
-        .frontPicYOffset = 12,
+        .frontPicYOffset = 21,
         BACK_PIC(BurmySandyCloak, 32, 56),
-        .backPicYOffset = 7,
+        .backPicYOffset = 11,
         PALETTES(BurmySandyCloak),
-        ICON(BurmySandyCloak, 1),
-        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 20, SPECIES_WORMADAM_SANDY_CLOAK},
-                                {EVO_LEVEL_MALE, 20, SPECIES_MOTHIM}),
+        ICON(BurmySandyCloak, 4),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_WORMADAM_SANDY_CLOAK}),
     },
 
     [SPECIES_BURMY_TRASH_CLOAK] =
@@ -1241,13 +1238,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             "using dust and refuse. The cloak seems to\n"
             "be more comfortable than one would think."),
         FRONT_PIC(BurmyTrashCloak, 32, 56),
-        .frontPicYOffset = 8,
+        .frontPicYOffset = 21,
         BACK_PIC(BurmyTrashCloak, 40, 64),
-        .backPicYOffset = 0,
+        .backPicYOffset = 11,
         PALETTES(BurmyTrashCloak),
-        ICON(BurmyTrashCloak, 0),
-        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 20, SPECIES_WORMADAM_TRASH_CLOAK},
-                                {EVO_LEVEL_MALE, 20, SPECIES_MOTHIM}),
+        ICON(BurmyTrashCloak, 4),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_WORMADAM_TRASH_CLOAK}),
     },
 
 #define WORMADAM_MISC_INFO                                                      \

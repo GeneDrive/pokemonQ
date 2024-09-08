@@ -11,18 +11,18 @@ PetalburgCity_House1_EventScript_Woman::
 
 PetalburgCity_House1_Text_TravelingIsWonderful:
 	.string "Traveling is wonderful!\p"
-	.string "When I was young, I roamed the seas\n"
-	.string "and the mountains!$"
+	.string "But it's good to remember your\n"
+	.string "roots and go home some times!$"
 
 PetalburgCity_House1_Text_GoOnAdventure:
 	.string "Sigh…\p"
 	.string "I wish I could go on an adventure\n"
 	.string "with some POKéMON…\p"
-	.string "Crawl through some damp grass…\n"
-	.string "Climb rocky, rugged mountains…\p"
-	.string "Cross the raging seas…\n"
-	.string "Wander about in dark caves…\p"
-	.string "And, sometimes, even get a little\n"
-	.string "homesick…\p"
-	.string "It must be fabulous to travel!$"
+	.string "But traveling around in this cold\n"
+	.string "Weather really isn't for me.\p"
+	.string "Maybe I could leave for a place \n"
+	.string "With more tropical weather...\p"
+	.string "I'd never even get homesick \n"
+	.string "in that kind of weather!\p"
+	.string "Man I guess I really should travel!$"
 

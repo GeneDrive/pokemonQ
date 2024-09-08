@@ -2741,7 +2741,6 @@ BattleScript_EffectIonDeluge:
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectQuash:
-	attackcanceler
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 	attackstring
 	ppreduce
@@ -2750,7 +2749,7 @@ BattleScript_EffectQuash:
 	waitanimation
 	printstring STRINGID_QUASHSUCCESS
 	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_MoveEnd
+	goto BattleScript_EffectHit
 
 BattleScript_EffectHealPulse:
 	attackcanceler
@@ -4573,10 +4572,33 @@ BattleScript_EffectDoNothing::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 BattleScript_EffectHoldHands:
-	jumpifsideaffecting BS_TARGET, SIDE_STATUS_CRAFTY_SHIELD, BattleScript_ButItFailed
-	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_ButItFailed
+	attackcanceler
+	attackstring
+	ppreduce
+	jumpifnoally BS_ATTACKER, BattleScript_ButItFailed
+	copybyte gBattlerTarget, gBattlerAttacker
+	setallytonexttarget EffectHoldHands_CheckAllyStats
+	goto BattleScript_ButItFailed
+EffectHoldHands_CheckAllyStats:
+	jumpifstat BS_TARGET, CMP_NOT_EQUAL, STAT_SPATK, MAX_STAT_STAGE, BattleScript_HoldHandsWorks
+	jumpifstat BS_TARGET, CMP_NOT_EQUAL, STAT_SPDEF, MAX_STAT_STAGE, BattleScript_HoldHandsWorks
+	goto BattleScript_ButItFailed   @ ally at max atk, def
+BattleScript_HoldHandsWorks:
 	attackanimation
 	waitanimation
+	setbyte sSTAT_ANIM_PLAYED, FALSE
+	playstatchangeanimation BS_TARGET, BIT_ATK | BIT_DEF, 0x0
+	setstatchanger STAT_SPATK, 1, FALSE
+	statbuffchange STAT_CHANGE_ALLOW_PTR | STAT_CHANGE_NOT_PROTECT_AFFECTED, BattleScript_HoldHandsBoostSpDef
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x2, BattleScript_HoldHandsBoostSpDef
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_HoldHandsBoostSpDef:
+	setstatchanger STAT_SPDEF, 1, FALSE
+	statbuffchange STAT_CHANGE_ALLOW_PTR | STAT_CHANGE_NOT_PROTECT_AFFECTED, BattleScript_MoveEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x2, BattleScript_MoveEnd
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 BattleScript_EffectCelebrate:
 	printstring STRINGID_CELEBRATEMESSAGE
@@ -4680,7 +4702,7 @@ BattleScript_DoSnore::
 	attackstring
 	ppreduce
 	accuracycheck BattleScript_MoveMissedPause, ACC_CURR_MOVE
-	setmoveeffect MOVE_EFFECT_FLINCH
+setmoveeffect MOVE_EFFECT_FLINCH
 	goto BattleScript_HitFromCritCalc
 
 BattleScript_EffectConversion2::
@@ -5281,8 +5303,6 @@ BattleScript_EffectSpecialAttackUpHit::
 	goto BattleScript_EffectHit
 
 BattleScript_EffectAllStatsUpHit::
-	@ Handle clangorous soulblaze boosting itself twice in doubles
-	jumpifword CMP_NO_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING | HITMARKER_NO_PPDEDUCT, BattleScript_NoMoveEffect
 	setmoveeffect MOVE_EFFECT_ALL_STATS_UP | MOVE_EFFECT_AFFECTS_USER
 	goto BattleScript_EffectHit
 

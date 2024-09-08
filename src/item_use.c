@@ -79,6 +79,7 @@ static void CB2_OpenPokeblockFromBag(void);
 static void ItemUseOnFieldCB_Honey(u8 taskId);
 static bool32 IsValidLocationForVsSeeker(void);
 static bool32 CannotUseBagBattleItem(u16 itemId);
+extern const u8 FallarborTown_MoveRelearnersHouse_EventScript_ChooseMon[];
 
 // EWRAM variables
 EWRAM_DATA static void(*sItemUseOnFieldCB)(u8 taskId) = NULL;

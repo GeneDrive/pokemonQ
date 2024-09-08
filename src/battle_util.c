@@ -972,6 +972,7 @@ static const u8 sAbilitiesAffectedByMoldBreaker[] =
     [ABILITY_PURIFYING_SALT] = 1,
     [ABILITY_WELL_BAKED_BODY] = 1,
     [ABILITY_SEE_YOU_LATER] = 1,
+    [ABILITY_LIGHT_DEVOURER] = 1,
 };
 
 static const u8 sAbilitiesNotTraced[ABILITIES_COUNT] =
@@ -1156,7 +1157,7 @@ static const uq4_12_t sTypeEffectivenessTable[NUMBER_OF_MON_TYPES][NUMBER_OF_MON
     [TYPE_GRASS]    = {______, ______, X(0.5), X(0.5), X(2.0), X(2.0), X(0.5), ______, X(0.5), ______, X(0.5), X(2.0), X(0.5), ______, ______, ______, X(0.5), ______, ______, ______},
     [TYPE_ELECTRIC] = {______, ______, X(2.0), ______, X(0.0), ______, ______, ______, ______, ______, ______, X(2.0), X(0.5), X(0.5), ______, ______, X(0.5), ______, ______, X(2.0)},
     [TYPE_PSYCHIC]  = {______, X(2.0), ______, X(2.0), ______, ______, ______, ______, X(0.5), ______, ______, ______, ______, ______, X(0.5), ______, ______, X(0.0), X(2.0), X(0.5)},
-    [TYPE_ICE]      = {______, ______, X(2.0), ______, X(2.0), ______, ______, ______, X(0.5), ______, X(0.5), X(0.5), X(2.0), ______, ______, X(0.5), X(2.0), ______, ______, ______},
+    [TYPE_ICE]      = {______, ______, X(2.0), ______, X(2.0), ______, ______, ______, X(0.5), ______, X(0.5), X(0.5), X(2.0), ______, ______, X(0.5), X(2.0), ______, ______, X(0.5)},
     [TYPE_DRAGON]   = {______, ______, ______, ______, ______, ______, ______, ______, X(0.5), ______, ______, ______, ______, ______, ______, ______, X(2.0), ______, X(0.0), ______},
 #if B_STEEL_RESISTANCES >= GEN_6
     [TYPE_DARK]     = {______, X(0.5), ______, ______, ______, ______, ______, X(2.0), ______, ______, ______, ______, ______, ______, X(2.0), ______, ______, X(0.5), X(0.5), ______},
@@ -2626,7 +2627,7 @@ u8 DoBattlerEndTurnEffects(void)
              && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK)
              && gBattleMons[battler].hp != 0)
             {
-                gBattleMoveDamage = GetDrainedBigRootHp(battler, GetNonDynamaxMaxHP(battler) / 16);
+                gBattleMoveDamage = GetDrainedBigRootHp(battler, GetNonDynamaxMaxHP(battler) / 12);
                 BattleScriptExecute(BattleScript_IngrainTurnHeal);
                 effect++;
             }
@@ -2638,7 +2639,7 @@ u8 DoBattlerEndTurnEffects(void)
              && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK)
              && gBattleMons[battler].hp != 0)
             {
-                gBattleMoveDamage = GetDrainedBigRootHp(battler, GetNonDynamaxMaxHP(battler) / 16);
+                gBattleMoveDamage = GetDrainedBigRootHp(battler, GetNonDynamaxMaxHP(battler) / 14);
                 BattleScriptExecute(BattleScript_AquaRingHeal);
                 effect++;
             }
@@ -4816,6 +4817,20 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_SEE_YOU_LATER:
+            if (!gSpecialStatuses[battler].switchInAbilityDone
+             && IsDoubleBattle()
+             && IsBattlerAlive(BATTLE_PARTNER(battler))
+             && CountBattlerStatIncreases(BATTLE_PARTNER(battler), FALSE))
+            {
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                for (i = 0; i < NUM_BATTLE_STATS; i++)
+                    gBattleMons[battler].statStages[i] = gBattleMons[BATTLE_PARTNER(battler)].statStages[i];
+                gBattlerTarget = BATTLE_PARTNER(battler);
+                BattleScriptPushCursorAndCallback(BattleScript_CostarActivates);
+                effect++;
+            }
+            break;
         case ABILITY_ZERO_TO_HERO:
             side = GetBattlerSide(battler);
             mon = &GetSideParty(side)[gBattlerPartyIndexes[battler]];
@@ -5135,6 +5150,10 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 break;
             case ABILITY_EARTH_EATER:
                 if (moveType == TYPE_GROUND)
+                    effect = 1;
+                break;
+            case ABILITY_LIGHT_DEVOURER:
+                if (moveType == TYPE_FIRE || moveType == TYPE_ELECTRIC || moveType == TYPE_PSYCHIC || moveType == TYPE_FAIRY)
                     effect = 1;
                 break;
             }
@@ -9045,6 +9064,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         if (moveType == TYPE_ELECTRIC && gBattleStruct->ateBoost[battlerAtk])
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
+    case ABILITY_MARTIAL_ARTS:
+        if (moveType == TYPE_FIGHTING && gBattleStruct->ateBoost[battlerAtk])
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+        break;
     case ABILITY_REFRIGERATE:
         if (moveType == TYPE_ICE && gBattleStruct->ateBoost[battlerAtk])
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
@@ -9786,6 +9809,7 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(u32 move, u32 moveType, u32 
     switch (abilityDef)
     {
     case ABILITY_MULTISCALE:
+    case ABILITY_SAND_SPIT:
     case ABILITY_SHADOW_SHIELD:
         if (BATTLER_MAX_HP(battlerDef))
             return UQ_4_12(0.5);
@@ -10117,7 +10141,7 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(u32 move, u32 mov
     if (!IsBattlerGrounded(battlerDef) && (gBattleMoves[move].ignoreTypeIfFlyingAndUngrounded)
         && (gBattleMons[battlerDef].type1 == TYPE_FLYING || gBattleMons[battlerDef].type2 == TYPE_FLYING || gBattleMons[battlerDef].type3 == TYPE_FLYING))
     {
-        modifier = UQ_4_12(1.0);
+        modifier = UQ_4_12(1.2);
     }
 
     if (((defAbility == ABILITY_WONDER_GUARD && modifier <= UQ_4_12(1.0))

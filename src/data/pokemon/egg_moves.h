@@ -3478,7 +3478,7 @@ const u16 gEggMoves[] = {
     egg_moves(SNIVY,
         MOVE_CAPTIVATE,
         MOVE_NATURAL_GIFT,
-        MOVE_GLARE,
+        MOVE_THUNDER_WAVE,
         MOVE_IRON_TAIL,
         MOVE_MAGICAL_LEAF,
         MOVE_SWEET_SCENT,
@@ -4255,7 +4255,7 @@ const u16 gEggMoves[] = {
         MOVE_POISON_TAIL,
         MOVE_SNATCH,
         MOVE_METAL_CLAW,
-        MOVE_GLARE,
+        MOVE_THUNDER_WAVE,
         MOVE_SUCKER_PUNCH),
 #endif //P_FAMILY_DRUDDIGON
 
@@ -4517,7 +4517,7 @@ const u16 gEggMoves[] = {
 #if P_FAMILY_HELIOPTILE
     egg_moves(HELIOPTILE,
         MOVE_AGILITY,
-        MOVE_GLARE,
+        MOVE_THUNDER_WAVE,
         MOVE_CAMOUFLAGE,
         MOVE_ELECTRIC_TERRAIN),
 #endif //P_FAMILY_HELIOPTILE

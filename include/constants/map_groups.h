@@ -402,6 +402,16 @@
 #define MAP_ALTERING_CAVE                            (106 | (24 << 8))
 #define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (24 << 8))
 #define MAP_NEW_MAP1                                 (108 | (24 << 8))
+#define MAP_ROUTE102_SECRET                          (109 | (24 << 8))
+#define MAP_FRIGID_FALLS_1F                          (110 | (24 << 8))
+#define MAP_FRIGID_FALLS_2F                          (111 | (24 << 8))
+#define MAP_FRIGID_FALLS_3F                          (112 | (24 << 8))
+#define MAP_FRIGID_FALLS_4F                          (113 | (24 << 8))
+#define MAP_FRIGID_FALLS_5F                          (114 | (24 << 8))
+#define MAP_FRIGID_FALLS_6F                          (115 | (24 << 8))
+#define MAP_FRIGID_FALLS_6F_R2                       (116 | (24 << 8))
+#define MAP_BINDING_CAVERN_1F                        (117 | (24 << 8))
+#define MAP_BINDING_CAVERN_F2                        (118 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

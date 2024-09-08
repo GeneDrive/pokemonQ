@@ -17,46 +17,46 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_WINONA",
       "x": 42,
-      "y": 44,
+      "y": 22,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "PetalburgCity_Gym_Real_Winona_Talk",
+      "flag": "FLAG_ITEM_ROUTE_101_CAVE_DONE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WINONA",
       "x": 24,
-      "y": 27,
+      "y": 2,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "PetalburgCity_Gym_Real_EventScript_Winona",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WALLY",
       "x": 43,
-      "y": 44,
+      "y": 22,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "PetalburgCity_Gym_Real_Wally_Talk",
+      "flag": "FLAG_ITEM_ROUTE_101_CAVE_DONE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
-      "x": 39,
-      "y": 6,
+      "x": 4,
+      "y": 33,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -65,19 +65,58 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
+      "x": 32,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "PetalburgCity_Gym_Real_EventScript_George",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "x": 25,
+      "y": 22,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "PetalburgCity_Gym_Real_EventScript_Alexia",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "x": 26,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "PetalburgCity_Gym_Real_EventScript_Parker",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
       "x": 42,
-      "y": 49,
+      "y": 27,
       "elevation": 0,
       "dest_map": "MAP_PETALBURG_CITY",
       "dest_warp_id": "2"
     },
     {
       "x": 41,
-      "y": 49,
+      "y": 27,
       "elevation": 0,
       "dest_map": "MAP_PETALBURG_CITY",
       "dest_warp_id": "2"
@@ -87,34 +126,34 @@
     {
       "type": "trigger",
       "x": 41,
-      "y": 39,
+      "y": 16,
       "elevation": 0,
       "var": "VAR_PETALBURG_REAL_GYM_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "PetalburgCity_Gym_Real_Block_Exit"
     },
     {
       "type": "trigger",
       "x": 42,
-      "y": 39,
+      "y": 16,
       "elevation": 0,
       "var": "VAR_PETALBURG_REAL_GYM_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "PetalburgCity_Gym_Real_Block_Exit"
     },
     {
       "type": "trigger",
       "x": 43,
-      "y": 39,
+      "y": 16,
       "elevation": 0,
       "var": "VAR_PETALBURG_REAL_GYM_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "PetalburgCity_Gym_Real_Block_Exit"
     },
     {
       "type": "trigger",
       "x": 42,
-      "y": 48,
+      "y": 26,
       "elevation": 0,
       "var": "VAR_PETALBURG_REAL_GYM_STATE",
       "var_value": "0",
@@ -123,11 +162,11 @@
     {
       "type": "trigger",
       "x": 41,
-      "y": 48,
+      "y": 26,
       "elevation": 0,
       "var": "VAR_PETALBURG_REAL_GYM_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "PetalburgCity_Gym_Real_Walked_In_First_Time_Left"
     }
   ],
   "bg_events": [

@@ -26,27 +26,27 @@ OldaleTown_House2_Text_Wow:
 
 OldaleTown_House2_Text_Chespin:
 	.string "Cool you picked CHESPIN!\n"
-	.string "then you could use a FINNEON,\l"
+	.string "then you could use a finneon,\l"
 	.string "would you like one?$"
 
 OldaleTown_House2_Text_Chimchar:
 	.string "Cool you picked CHIMCHAR!\n"
-	.string "then you could use a SUNKERN,\l"
+	.string "then you could use a Petilil,\l"
 	.string "would you like one?$"
 
 OldaleTown_House2_Text_Totodile:
 	.string "Cool you picked TOTODILE!\n"
-	.string "then you could use a SLUGMA,\l"
+	.string "then you could use a Salandit,\l"
 	.string "would you like one?$"
 
 OldaleTown_House2_Text_ReceivedPokemon1:
-	.string "{PLAYER} received a Chespin!$"
+	.string "{PLAYER} received a Finneon!$"
 
 OldaleTown_House2_Text_ReceivedPokemon2:
-	.string "{PLAYER} received a Sunkern!$"
+	.string "{PLAYER} received a Petilil!$"
 
 OldaleTown_House2_Text_ReceivedPokemon3:
-	.string "{PLAYER} received a Slugma!$"
+	.string "{PLAYER} received a Salandit!$"
 
 OldaleTown_House2_Text_GoodLuck:
 	.string "Good luck!$"
@@ -91,7 +91,7 @@ OldaleTown_House2_GivePokemon1:
 
 
 OldaleTown_House2_GivePokemon2:
-	givemon SPECIES_SUNKERN, 5
+	givemon SPECIES_PETILIL, 5
 	playfanfare MUS_OBTAIN_ITEM
 	message OldaleTown_House2_Text_ReceivedPokemon2
 	waitfanfare
@@ -101,7 +101,7 @@ OldaleTown_House2_GivePokemon2:
 	end
 
 OldaleTown_House2_GivePokemon3:
-	givemon SPECIES_SLUGMA, 5 
+	givemon SPECIES_SALANDIT, 5 
 	playfanfare MUS_OBTAIN_ITEM
 	message OldaleTown_House2_Text_ReceivedPokemon3
 	waitfanfare
@@ -112,4 +112,5 @@ OldaleTown_House2_GivePokemon3:
 
 OldaleTown_House2_GoodLuck:
 	msgbox OldaleTown_House2_Text_GoodLuck, MSGBOX_DEFAULT
+	closemessage
 	end

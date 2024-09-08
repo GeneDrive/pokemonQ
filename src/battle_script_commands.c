@@ -611,6 +611,15 @@ static void Cmd_unused(void);
 static void Cmd_tryworryseed(void);
 static void Cmd_callnative(void);
 
+const u16 sLevelCapFlags[NUM_SOFT_CAPS] =
+{
+    FLAG_DEFEATED_RIVAL_ROUTE103, FLAG_GYM_1_WALLY_DEFEATED, FLAG_ITEM_ROUTE_101_CAVE_DONE, FLAG_BADGE01_GET,
+    FLAG_DEFEATED_RIVAL_ROUTE101_CAVE, FLAG_BADGE02_GET, FLAG_BADGE03_GET, FLAG_BADGE04_GET,
+    FLAG_BADGE05_GET, FLAG_BADGE06_GET, FLAG_BADGE07_GET, FLAG_BADGE08_GET,
+};
+
+const u16 sLevelCaps[NUM_SOFT_CAPS] = { 8, 12, 16, 18, 24, 26, 30, 40, 50, 60, 70, 80 };
+
 void (* const gBattleScriptingCommandsTable[])(void) =
 {
     Cmd_attackcanceler,                          //0x0
@@ -3316,7 +3325,6 @@ void SetMoveEffect(bool32 primary, u32 certain)
                 break;
             case MOVE_EFFECT_ATK_MINUS_2:
             case MOVE_EFFECT_DEF_MINUS_2:
-            case MOVE_EFFECT_SPD_MINUS_2:
             case MOVE_EFFECT_SP_ATK_MINUS_2:
             case MOVE_EFFECT_SP_DEF_MINUS_2:
             case MOVE_EFFECT_ACC_MINUS_2:
@@ -3325,6 +3333,25 @@ void SetMoveEffect(bool32 primary, u32 certain)
                 if (mirrorArmorReflected && !affectsUser)
                     flags |= STAT_CHANGE_ALLOW_PTR;
                 if (ChangeStatBuffs(SET_STAT_BUFF_VALUE(2) | STAT_BUFF_NEGATIVE,
+                                    gBattleScripting.moveEffect - MOVE_EFFECT_ATK_MINUS_2 + 1,
+                                    flags | STAT_CHANGE_UPDATE_MOVE_EFFECT, gBattlescriptCurrInstr + 1))
+                {
+                    if (!mirrorArmorReflected)
+                        gBattlescriptCurrInstr++;
+                }
+                else
+                {
+                    gBattleScripting.animArg1 = gBattleScripting.moveEffect & ~(MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN);
+                    gBattleScripting.animArg2 = 0;
+                    BattleScriptPush(gBattlescriptCurrInstr + 1);
+                    gBattlescriptCurrInstr = BattleScript_StatDown;
+                }
+                break;
+            case MOVE_EFFECT_SPD_MINUS_2:
+            flags = affectsUser;
+                if (mirrorArmorReflected && !affectsUser)
+                    flags |= STAT_CHANGE_ALLOW_PTR;
+                if (ChangeStatBuffs(SET_STAT_BUFF_VALUE(6) | STAT_BUFF_NEGATIVE,
                                     gBattleScripting.moveEffect - MOVE_EFFECT_ATK_MINUS_2 + 1,
                                     flags | STAT_CHANGE_UPDATE_MOVE_EFFECT, gBattlescriptCurrInstr + 1))
                 {
@@ -4066,6 +4093,22 @@ static u32 GetMonHoldEffect(struct Pokemon *mon)
         holdEffect = ItemId_GetHoldEffect(item);
 
     return holdEffect;
+}
+
+double GetPkmnExpMultiplier(u8 level)
+{
+    u8 i;
+    double lvlCapMultiplier = 1.0;
+
+    for (i = 0; i < NUM_SOFT_CAPS; i++)
+    {
+        if (!FlagGet(sLevelCapFlags[i]) && level >= sLevelCaps[i])
+        {
+            lvlCapMultiplier = 0;
+            break;
+        }
+    }
+    return lvlCapMultiplier;
 }
 
 static void Cmd_getexp(void)
@@ -11957,20 +12000,6 @@ static void Cmd_tryKO(void)
         gBattlescriptCurrInstr = BattleScript_SturdyPreventsOHKO;
         gBattlerAbility = gBattlerTarget;
     }
-    else if (targetAbility == ABILITY_SEE_YOU_LATER)
-    {
-        gMoveResultFlags |= MOVE_RESULT_MISSED;
-        gLastUsedAbility = ABILITY_STURDY;
-        gBattlescriptCurrInstr = BattleScript_SturdyPreventsOHKO;
-        gBattlerAbility = gBattlerTarget;
-
-        gBattlescriptCurrInstr = BattleScript_EmergencyExitNoPopUp;
-
-        // gBattleMoveDamage = GetNonDynamaxMaxHP(gBattlerAttacker) / 3;
-        // gBattleMoveDamage += gBattleMons[battler].hp;
-        // if (gBattleMoveDamage > gBattleMons[battler].maxHP)
-        //     gBattleMoveDamage = gBattleMons[battler].maxHP;
-    }
     else
     {
         if ((((gStatuses3[gBattlerTarget] & STATUS3_ALWAYS_HITS)
@@ -13147,39 +13176,14 @@ static void Cmd_magnitudedamagecalculation(void)
 
     u32 magnitude = Random() % 100;
 
-    if (magnitude < 5)
+    if (magnitude < 50)
     {
-        gBattleStruct->magnitudeBasePower = 10;
+        gBattleStruct->magnitudeBasePower = 40;
         magnitude = 4;
-    }
-    else if (magnitude < 15)
-    {
-        gBattleStruct->magnitudeBasePower = 30;
-        magnitude = 5;
-    }
-    else if (magnitude < 35)
-    {
-        gBattleStruct->magnitudeBasePower = 50;
-        magnitude = 6;
-    }
-    else if (magnitude < 65)
-    {
-        gBattleStruct->magnitudeBasePower = 70;
-        magnitude = 7;
-    }
-    else if (magnitude < 85)
-    {
-        gBattleStruct->magnitudeBasePower = 90;
-        magnitude = 8;
-    }
-    else if (magnitude < 95)
-    {
-        gBattleStruct->magnitudeBasePower = 110;
-        magnitude = 9;
     }
     else
     {
-        gBattleStruct->magnitudeBasePower = 150;
+        gBattleStruct->magnitudeBasePower = 80;
         magnitude = 10;
     }
 
@@ -14276,6 +14280,7 @@ static void Cmd_switchoutabilities(void)
             MarkBattlerForControllerExec(battler);
             break;
         case ABILITY_REGENERATOR:
+        case ABILITY_SEE_YOU_LATER:
             gBattleMoveDamage = GetNonDynamaxMaxHP(gBattlerAttacker) / 3;
             gBattleMoveDamage += gBattleMons[battler].hp;
             if (gBattleMoveDamage > gBattleMons[battler].maxHP)
@@ -15769,6 +15774,9 @@ u8 GetFirstFaintedPartyIndex(u8 battler)
 void ApplyExperienceMultipliers(s32 *expAmount, u8 expGetterMonId, u8 faintedBattler)
 {
     u32 holdEffect = GetMonHoldEffect(&gPlayerParty[expGetterMonId]);
+    u8 expGetterLevel = GetMonData(&gPlayerParty[expGetterMonId], MON_DATA_LEVEL);
+    double expMultiplier = GetPkmnExpMultiplier(expGetterLevel);
+
 
     if (IsTradedMon(&gPlayerParty[expGetterMonId]))
         *expAmount = (*expAmount * 150) / 100;
@@ -15787,12 +15795,13 @@ void ApplyExperienceMultipliers(s32 *expAmount, u8 expGetterMonId, u8 faintedBat
         //       because of multiplying by scaling factor(the value would simply be larger than an u32 can hold). Hence u64 is needed.
         u64 value = *expAmount;
         u8 faintedLevel = gBattleMons[faintedBattler].level;
-        u8 expGetterLevel = GetMonData(&gPlayerParty[expGetterMonId], MON_DATA_LEVEL);
 
         value *= sExperienceScalingFactors[(faintedLevel * 2) + 10];
         value /= sExperienceScalingFactors[faintedLevel + expGetterLevel + 10];
         *expAmount = value + 1;
     }
+    if (expMultiplier == 0)
+        *expAmount = 0;
 }
 
 void BS_ItemRestoreHP(void)

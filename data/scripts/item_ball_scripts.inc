@@ -14,8 +14,28 @@ Route101_EventScript_ItemAbomasite::
 	finditem ITEM_ABOMASITE
 	end
 
+FrigidFalls_1F_EventScript_ItemIcyRock::
+	finditem ITEM_ICY_ROCK
+	end
+
+FrigidFalls_5F_EventScript_ItemAbilityPatch::
+	finditem ITEM_ABILITY_PATCH
+	end
+
+FrigidFalls_1F_EventScript_ItemPotion::
+	finditem ITEM_SUPER_POTION, 3
+	end
+
 Route102_EventScript_ItemPotion::
-	finditem ITEM_POTION
+	finditem ITEM_SUPER_POTION, 3
+	end
+
+Route102_EventScript_ItemProtect::
+	finditem ITEM_TM_PROTECT
+	end
+
+Route102_EventScript_ItemGlalitite::
+	finditem ITEM_GLALITITE
 	end
 
 Route103_EventScript_ItemFocusSash::
@@ -326,8 +346,8 @@ Route134_EventScript_ItemStarPiece::
 	finditem ITEM_STAR_PIECE
 	end
 
-PetalburgCity_EventScript_ItemMaxRevive::
-	finditem ITEM_MAX_REVIVE
+PetalburgCity_EventScript_ItemSkyPlate::
+	finditem ITEM_SKY_PLATE
 	end
 
 PetalburgCity_EventScript_ItemEther::

@@ -368,6 +368,8 @@ u8 GetMaxMovePower(u16 move)
         case MOVE_GEAR_GRIND:    return 100;
         case MOVE_DUAL_WINGBEAT: return 100;
         case MOVE_TRIPLE_AXEL:   return 140;
+        case MOVE_SOLAR_FLARE:   return 80;
+        case MOVE_CAFFEINE_BOMB: return 80;
     }
 
     tier = GetMaxPowerTier(move);

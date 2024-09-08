@@ -16,8 +16,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
-      "x": 31,
-      "y": 35,
+      "x": 32,
+      "y": 26,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -29,14 +29,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
-      "x": 20,
-      "y": 23,
+      "x": 13,
+      "y": 19,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "6",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "NewMap1_EventScript_Grunt1_Battle",
       "flag": "FLAG_ITEM_ROUTE_101_CAVE_DONE"
     },
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_SEE_ALL_DIRECTIONS",
       "trainer_sight_or_berry_tree_id": "6",
-      "script": "NewMap1_EventScript_Grunt3_BattleAfter",
+      "script": "NewMap1_EventScript_Grunt3_BattleAfter2",
       "flag": "FLAG_ITEM_ROUTE_101_CAVE_DONE"
     },
     {
@@ -67,7 +67,7 @@
       "flag": "FLAG_ITEM_ROUTE_101_CAVE_DONE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_STEVEN",
+      "graphics_id": "OBJ_EVENT_GFX_LUCY",
       "x": 34,
       "y": 9,
       "elevation": 0,
@@ -82,15 +82,15 @@
   ],
   "warp_events": [
     {
-      "x": 20,
-      "y": 19,
+      "x": 13,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_ROUTE101",
       "dest_warp_id": "0"
     },
     {
-      "x": 14,
-      "y": 8,
+      "x": 22,
+      "y": 13,
       "elevation": 0,
       "dest_map": "MAP_ROUTE101",
       "dest_warp_id": "1"

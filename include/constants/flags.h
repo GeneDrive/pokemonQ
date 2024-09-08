@@ -168,7 +168,7 @@
 #define FLAG_MR_BRINEY_SAILING_INTRO         0x93
 #define FLAG_DOCK_REJECTED_DEVON_GOODS       0x94
 #define FLAG_DELIVERED_DEVON_GOODS           0x95
-#define FLAG_RECEIVED_CONTEST_PASS           0x96 // Unused, leftover from R/S
+#define FLAG_DEFEATED_RIVAL_ROUTE101_CAVE    0x96
 #define FLAG_RECEIVED_CASTFORM               0x97
 #define FLAG_RECEIVED_SUPER_ROD              0x98
 #define FLAG_RUSTBORO_NPC_TRADE_COMPLETED    0x99
@@ -254,7 +254,7 @@
 #define FLAG_RECEIVED_TM_ROAR                0xE7
 #define FLAG_RECEIVED_TM_GIGA_DRAIN          0xE8
 
-#define FLAG_UNUSED_0x0E9                    0xE9 // Unused Flag
+#define FLAG_ROUTE101_HIDE_OLD_MAN           0xE9
 
 #define FLAG_RECEIVED_TM_REST                0xEA
 #define FLAG_RECEIVED_TM_ATTRACT             0xEB
@@ -653,18 +653,18 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
 // custom item flags
-#define FLAG_ITEM_ROUTE_103_FOCUS_SASH                      0x264
+#define FLAG_ITEM_ROUTE_103_FOCUS_SASH                     0x264
 #define FLAG_ITEM_ROUTE_103_PUNCHING_GLOVE                 0x265
-#define FLAG_ITEM_ROUTE_101_REVIVE                          0x266
-#define FLAG_ITEM_ROUTE_101_LUXURY_BALLS                    0x267
-#define FLAG_ITEM_ROUTE_101_ABOMASITE                       0x268
-#define FLAG_ITEM_LITTLEROOT_TOWN_MEGA_RING                 0x269
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
+#define FLAG_ITEM_ROUTE_101_REVIVE                         0x266
+#define FLAG_ITEM_ROUTE_101_LUXURY_BALLS                   0x267
+#define FLAG_ITEM_ROUTE_101_ABOMASITE                      0x268
+#define FLAG_ITEM_LITTLEROOT_TOWN_MEGA_RING                0x269
+#define FLAG_ITEM_ROUTE_102_TM_PROTECT                     0x26A
+#define FLAG_ITEM_ROUTE_102_GLALITITE                      0x26B 
+#define FLAG_ITEM_FRIGGIDFALLS_F1_SUPER_POTION             0x26C
+#define FLAG_ITEM_FRIGGIDFALLS_F1_ICY_STONE                0x26D
+#define FLAG_ITEM_FRIGGIDFALLS_F5_ABB_PATCH                0x26E
+#define FLAG_ROUTE101_HIDE_OLD_MAN_2                       0x26F
 #define FLAG_UNUSED_0x270  0x270 // Unused Flag
 #define FLAG_UNUSED_0x271  0x271 // Unused Flag
 #define FLAG_UNUSED_0x272  0x272 // Unused Flag
@@ -1086,7 +1086,7 @@
 #define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
 #define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D
 #define FLAG_ITEM_ROUTE_133_STAR_PIECE                              0x40E
-#define FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE                         0x40F
+#define FLAG_ITEM_PETALBURG_CITY_SKY_PLATE                          0x40F
 #define FLAG_ITEM_PETALBURG_CITY_ETHER                              0x410
 #define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0x411
 #define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412
@@ -1192,7 +1192,7 @@
 #define FLAG_ITEM_ROUTE_111_ELIXIR                                  0x476
 #define FLAG_ITEM_ROUTE_113_HYPER_POTION                            0x477
 #define FLAG_ITEM_ROUTE_115_HEAL_POWDER                             0x478
-#define FLAG_UNUSED_0x479                                           0x479 // Unused Flag
+#define FLAG_ITEM_FRIGGIDFALLS_F6_HIDE_GRUNTS                       0x479
 #define FLAG_ITEM_ROUTE_116_POTION                                  0x47A
 #define FLAG_ITEM_ROUTE_119_ELIXIR_2                                0x47B
 #define FLAG_ITEM_ROUTE_120_REVIVE                                  0x47C
@@ -1221,8 +1221,8 @@
 
 #define FLAG_RECEIVED_STARTER_BASED_POKEMON                         0x493
 #define FLAG_ITEM_ROUTE_101_CAVE_DONE                               0x494
-#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
+#define FLAG_GYM_1_WALLY_DEFEATED                                   0x495
+#define FLAG_ITEM_ROUTE_101_HIDE_RIVAL                              0x496
 #define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
 #define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
 #define FLAG_UNUSED_0x499                                           0x499 // Unused Flag

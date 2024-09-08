@@ -3038,8 +3038,8 @@ static const u8 sBitterMaliceDescription[] = _(
     "May lower the foe's Attack.");
 
 static const u8 sShelterDescription[] = _(
-    "The user hardens their skin,\n"
-    "sharply raising its Defense.");
+    "Fast tornado of fairy energy,\n"
+    "that hits both targets.");
 
 static const u8 sTripleArrowsDescription[] = _(
     "High critical hit ratio.\n"
@@ -3347,6 +3347,26 @@ static const u8 sWyvernSpearDescription[] = _(
 static const u8 sKairosSpiralDescription[] = _(
     "A paradoxical spiral\n"
     "that may lower the targets speed.");
+
+static const u8 sSolarFlareDescription[] = _(
+    "A blinding sun flash\n"
+    "that creates harsh sunlight.");
+
+static const u8 sEchoOfAgesDescription[] = _(
+    "Powerful, but may leave the\n"
+    "user immobile the next turn.");
+
+static const u8 sCrystalizeDescription[] = _(
+    "Turns the target to stone,\n"
+    "and may freeze them.");
+
+static const u8 sCoinTossDescription[] = _(
+    "Throws a coin at target, Damage\n"
+    "depends on which side it lands.");
+
+static const u8 sTornadoCrashDescription[] = _(
+    "Spins like a tornado with all\n"
+    "it's energy causing a crash.");
 
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
@@ -4210,4 +4230,9 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_TIME_SHIFT - 1] = sTimeShiftDescription,
     [MOVE_WYVERN_SPEAR - 1] = sWyvernSpearDescription,
     [MOVE_KAIROS_SPIRAL - 1] = sKairosSpiralDescription,
+    [MOVE_SOLAR_FLARE - 1] = sSolarFlareDescription,
+    [MOVE_ECHO_OF_AGES - 1] = sEchoOfAgesDescription,
+    [MOVE_CRYSTALIZE - 1] = sCrystalizeDescription,
+    [MOVE_COIN_TOSS - 1] = sCoinTossDescription,
+    [MOVE_TORNADO_CRASH - 1] = sTornadoCrashDescription,
 };

@@ -189,14 +189,14 @@ struct RotatingGatePuzzle
 // Fortree
 static const struct RotatingGatePuzzle sRotatingGate_FortreePuzzleConfig[] =
 {
-    { 6,  7, GATE_SHAPE_T2, GATE_ORIENTATION_90},
-    { 9, 15, GATE_SHAPE_T2, GATE_ORIENTATION_180},
-    { 3, 19, GATE_SHAPE_T2, GATE_ORIENTATION_90},
-    { 2,  6, GATE_SHAPE_T1, GATE_ORIENTATION_90},
-    { 9, 12, GATE_SHAPE_T1, GATE_ORIENTATION_0},
-    { 6, 23, GATE_SHAPE_T1, GATE_ORIENTATION_0},
-    {12, 22, GATE_SHAPE_T1, GATE_ORIENTATION_0},
-    { 6,  3, GATE_SHAPE_L4, GATE_ORIENTATION_180},
+    {35, 15, GATE_SHAPE_T4, GATE_ORIENTATION_180}, //used
+    {22, 8, GATE_SHAPE_T1, GATE_ORIENTATION_270}, //used
+    {23, 11, GATE_SHAPE_T1, GATE_ORIENTATION_0}, //used
+    {35, 9, GATE_SHAPE_T1, GATE_ORIENTATION_180},//used
+    {35, 18, GATE_SHAPE_T1, GATE_ORIENTATION_0}, //used
+    {24, 20, GATE_SHAPE_T1, GATE_ORIENTATION_90}, //used
+    {27, 15, GATE_SHAPE_L4, GATE_ORIENTATION_180}, //used
+    {27, 19, GATE_SHAPE_L4, GATE_ORIENTATION_0}, //used
 };
 
 // Trickhouse
@@ -624,7 +624,13 @@ static EWRAM_DATA u8 sRotatingGate_PuzzleCount = 0;
 static s32 GetCurrentMapRotatingGatePuzzleType(void)
 {
     if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FORTREE_CITY_GYM) &&
-        gSaveBlock1Ptr->location.mapNum == MAP_NUM(FORTREE_CITY_GYM))
+        gSaveBlock1Ptr->location.mapNum == MAP_NUM(FORTREE_CITY_GYM)) 
+    {
+        return PUZZLE_FORTREE_CITY_GYM;
+    }
+
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PETALBURG_CITY_GYM_REAL) &&
+        gSaveBlock1Ptr->location.mapNum == MAP_NUM(PETALBURG_CITY_GYM_REAL))
     {
         return PUZZLE_FORTREE_CITY_GYM;
     }

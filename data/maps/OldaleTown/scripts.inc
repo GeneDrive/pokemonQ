@@ -25,7 +25,7 @@ OldaleTown_EventScript_BlockWestEntrance::
 	return
 
 OldaleTown_EventScript_MoveMartEmployee::
-	setobjectxyperm LOCALID_MART_EMPLOYEE, 13, 14
+	setobjectxyperm LOCALID_MART_EMPLOYEE, 8, 14
 	setobjectmovementtype LOCALID_MART_EMPLOYEE, MOVEMENT_TYPE_FACE_DOWN
 	return
 
@@ -94,10 +94,47 @@ OldaleTown_EventScript_BagIsFull::
 	release
 	end
 
+OldaleTown_EventScript_StepOnFlowers::
+	goto_if_eq VAR_OLDALE_OLD_MAN_ANGER, 0, OldaleTown_EventScript_StepOnFlowers0
+	goto_if_eq VAR_OLDALE_OLD_MAN_ANGER, 1, OldaleTown_EventScript_StepOnFlowers1
+	goto_if_eq VAR_OLDALE_OLD_MAN_ANGER, 2, OldaleTown_EventScript_StepOnFlowers2
+	goto_if_eq VAR_OLDALE_OLD_MAN_ANGER, 3, OldaleTown_EventScript_StepOnFlowers3
+	end
+	
+OldaleTown_EventScript_StepOnFlowers0::
+	msgbox OldaleTown_Text_FlowerMan0, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, OldaleTown_Movement_RivalApproachPlayer2
+	waitmovement 0
+	setvar VAR_OLDALE_OLD_MAN_ANGER, 1
+	end
+
+OldaleTown_EventScript_StepOnFlowers1::
+	msgbox OldaleTown_Text_FlowerMan1, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, OldaleTown_Movement_RivalApproachPlayer2
+	waitmovement 0
+	setvar VAR_OLDALE_OLD_MAN_ANGER, 2
+	end
+
+OldaleTown_EventScript_StepOnFlowers2::
+	msgbox OldaleTown_Text_FlowerMan2, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, OldaleTown_Movement_RivalApproachPlayer2
+	waitmovement 0
+	setvar VAR_OLDALE_OLD_MAN_ANGER, 3
+	end
+
+OldaleTown_EventScript_StepOnFlowers3::
+	msgbox OldaleTown_Text_FlowerMan3, MSGBOX_DEFAULT
+	closemessage
+	trainerbattle_no_intro TRAINER_RANDALL, OldaleTown_Text_FlowerMan4
+	msgbox OldaleTown_Text_FlowerMan5, MSGBOX_DEFAULT
+	closemessage
+	setvar VAR_OLDALE_OLD_MAN_ANGER, 4
+	end
+
 OldaleTown_Movement_EmployeeEast:
-	walk_up
-	walk_up
-	walk_up
 	walk_up
 	walk_up
 	walk_up
@@ -112,16 +149,10 @@ OldaleTown_Movement_EmployeeSouth:
 	walk_right
 	walk_up
 	walk_up
-	walk_up
-	walk_up
-	walk_up
 	walk_in_place_faster_down
 	step_end
 
 OldaleTown_Movement_EmployeeNorth:
-	walk_up
-	walk_up
-	walk_up
 	walk_up
 	walk_up
 	walk_up
@@ -150,9 +181,6 @@ OldaleTown_Movement_PlayerEast:
 	walk_up
 	walk_up
 	walk_up
-	walk_up
-	walk_up
-	walk_up
 	step_end
 
 OldaleTown_Movement_PlayerSouth:
@@ -162,15 +190,9 @@ OldaleTown_Movement_PlayerSouth:
 	delay_16
 	walk_up
 	walk_up
-	walk_up
-	walk_up
-	walk_up
 	step_end
 
 OldaleTown_Movement_PlayerNorth:
-	walk_up
-	walk_up
-	walk_up
 	walk_up
 	walk_up
 	walk_up
@@ -275,10 +297,7 @@ OldaleTown_EventScript_ShowBrendanMessage::
 
 OldaleTown_EventScript_RivalFinish::
 	closemessage
-	call_if_eq VAR_0x8009, 0, OldaleTown_EventScript_DoExitMovement1
-	call_if_eq VAR_0x8009, 1, OldaleTown_EventScript_DoExitMovement2
-	applymovement LOCALID_RIVAL, OldaleTown_Movement_RivalExit
-	waitmovement 0
+	warp MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB, 6, 12
 	removeobject LOCALID_RIVAL
 	setvar VAR_OLDALE_RIVAL_STATE, 2
 	setflag FLAG_HIDE_OLDALE_TOWN_RIVAL
@@ -399,3 +418,29 @@ OldaleTown_Text_TownSign:
 	.string "OLDALE TOWN\n"
 	.string "“Where things start off scarce.”$"
 
+OldaleTown_Text_FlowerMan0:
+	.string "Hey!!!\n"
+	.string "Don't step on my flowers!\l"
+	.string "I've been working on them a long time.$"
+
+OldaleTown_Text_FlowerMan1:
+	.string "Are you deaf, I told you\n"
+	.string "please don't step on the flowers$"
+
+OldaleTown_Text_FlowerMan2:
+	.string "I'm warning you! Stop it!\n"
+	.string "This is your last warning!$"
+
+OldaleTown_Text_FlowerMan3:
+	.string "Now you've done it!!!\n"
+	.string "FEEL MY WRATH!!!$"
+
+OldaleTown_Text_FlowerMan4:
+	.string "My poor flowers!!!$"
+
+OldaleTown_Text_FlowerMan5:
+	.string "Allright I get it you don't\n"
+	.string "like flowers. just leave me alone.\l"
+	.string "I'll go to my brothers garden in Rustboro.\n"
+	.string "No one would dore doi this to him!\l"
+	.string "I dare you top test your luck with him.$"

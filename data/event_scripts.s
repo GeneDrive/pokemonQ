@@ -1071,3 +1071,23 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NewMap1/scripts.inc"
 
 	.include "data/maps/PetalburgCity_Gym_Real/scripts.inc"
+
+	.include "data/maps/Route102_Secret/scripts.inc"
+
+	.include "data/maps/FrigidFalls_1F/scripts.inc"
+
+	.include "data/maps/FrigidFalls_2F/scripts.inc"
+
+	.include "data/maps/FrigidFalls_3F/scripts.inc"
+
+	.include "data/maps/FrigidFalls_4F/scripts.inc"
+
+	.include "data/maps/FrigidFalls_5F/scripts.inc"
+
+	.include "data/maps/FrigidFalls_6F/scripts.inc"
+
+	.include "data/maps/FrigidFalls_6F_R2/scripts.inc"
+
+	.include "data/maps/BindingCavern_1F/scripts.inc"
+
+	.include "data/maps/BindingCavern_F2/scripts.inc"

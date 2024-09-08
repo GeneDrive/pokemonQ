@@ -744,7 +744,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         PALETTES(Zigzagoon),
         ICON(Zigzagoon, 2),
         LEARNSETS(Zigzagoon),
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_LINOONE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_LINOONE}),
     },
 
     [SPECIES_LINOONE] =
@@ -792,7 +792,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(ZigzagoonGalarian, 0),
         LEARNSETS(ZigzagoonGalarian),
         .isGalarianForm = TRUE,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_LINOONE_GALARIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_LINOONE_GALARIAN}),
     },
 
     [SPECIES_LINOONE_GALARIAN] =
@@ -1540,7 +1540,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_WATER_1, EGG_GROUP_FLYING },
-        .abilities = { ABILITY_KEEN_EYE, ABILITY_HYDRATION, ABILITY_RAIN_DISH },
+        .abilities = { ABILITY_DRIZZLE, ABILITY_HYDRATION, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Wingull"),
         .cryId = CRY_WINGULL,

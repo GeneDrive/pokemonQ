@@ -1,8 +1,14 @@
 Route102_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, Route102_OnResume
 	.byte 0
+	.set LOCALID_PLAYER, 1
 
 Route102_EventScript_LittleBoy::
 	msgbox Route102_Text_ImNotVeryTall, MSGBOX_NPC
+	end
+
+Route102_OnResume:
+	setstepcallback STEP_CB_ASH
 	end
 
 Route102_EventScript_RouteSignOldale::
@@ -73,6 +79,31 @@ Route102_EventScript_Allen::
 	msgbox Route102_Text_AllenPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route102_EventScript_Warp_To_Secret_Confirm::
+	msgbox Route102_Text_WarpConfirm, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route102_EventScript_Warp_To_Secret
+	goto_if_eq VAR_RESULT, NO, Route102_EventScript_Warp_To_Secret_Cancel
+	end
+
+Route102_EventScript_Jody::
+	trainerbattle_double TRAINER_JODY, Route102_Text_JodyIntro, Route102_Text_JodyDefeat, Route102_Text_WatchMeCatchPokemon
+	msgbox Route102_Text_JodyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route102_EventScript_Warp_To_Secret::
+	closemessage
+	warp MAP_ROUTE102_SECRET, 11, 35
+	end
+
+Route102_EventScript_Warp_To_Secret_Cancel::
+	closemessage
+	applymovement LOCALID_PLAYER, Route102_EventScript_Warp_To_Secret_Cancel_Movement
+	end
+
+Route102_EventScript_Warp_To_Secret_Cancel_Movement::
+	walk_down
+	step_end
+
 Route102_Text_WatchMeCatchPokemon:
 	.string "WALLY: {PLAYER}…\n"
 	.string "POKéMON hide in tall grass like this,\l"
@@ -107,3 +138,32 @@ Route102_Text_RouteSignOldale:
 Route102_Text_RouteSignPetalburg:
 	.string "ROUTE 102\n"
 	.string "{LEFT_ARROW} PETALBURG CITY$"
+
+Route102_Text_WarpConfirm:
+	.string "You sense strong trainers ahead…\n"
+	.string "From level 22 - 24\p"
+	.string "Are you sure you want to enter?\n"
+	.string "You may be unable to exit!$"
+
+Route102_Text_JodyIntro:
+	.string "Our GYM LEADER told us to go all out\n"
+	.string "and beat you.\p"
+	.string "Even if you happen to be the\n"
+	.string "LEADER's kid!$"
+
+Route102_Text_JodyDefeat:
+	.string "But… I went all out!$"
+
+Route102_Text_JodyPostBattle:
+	.string "The way you use your POKéMON…\n"
+	.string "It's like your father's style.\p"
+	.string "Go on through! The GYM LEADER, your\n"
+	.string "father, is waiting!$"
+
+Route102_Text_JodyPostBadge:
+	.string "Sure, it's fine to make your POKéMON\n"
+	.string "stronger.\p"
+	.string "But what decides the winner?\p"
+	.string "Why, it's the feelings TRAINERS have\n"
+	.string "for their POKéMON.$"
+	

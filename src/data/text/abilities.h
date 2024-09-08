@@ -297,7 +297,9 @@ static const u8 sEmbodyAspectWellspringDescription[] = _("Raises Sp. Def.");
 static const u8 sEmbodyAspectCornerstoneDescription[] = _("Raises Defense.");
 static const u8 sToxicChainDescription[] = _("Moves can poison.");
 static const u8 sSupersweetSyrupDescription[] = _("Lowers the foe's Speed.");
-static const u8 sSeeYouLaterDescription[] = _("Negates 1-hit KOS and switches out..");
+static const u8 sSeeYouLaterDescription[] = _("Costar + Regenerator");
+static const u8 sMartialArtsDescription[] = _("Normal moves become fighting.");
+static const u8 sLightDevourerDescription[] = _("Drains elec/fire/fairy/psy.");
 
 #if B_EXPANDED_ABILITY_NAMES == TRUE
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -610,6 +612,8 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_TOXIC_CHAIN] = _("Toxic Chain"),
     [ABILITY_SUPERSWEET_SYRUP] = _("Supersweet Syrup"),
     [ABILITY_SEE_YOU_LATER] = _("See You Later"),
+    [ABILITY_MARTIAL_ARTS] = _("Martial Arts"),
+    [ABILITY_LIGHT_DEVOURER] = _("LightDevourer"),
 };
 #else   // 12 characters
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -922,6 +926,8 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_TOXIC_CHAIN] = _("Toxic Chain"),
     [ABILITY_SUPERSWEET_SYRUP] = _("SuprswtSyrup"),
     [ABILITY_SEE_YOU_LATER] = _("C-U-Later"),
+    [ABILITY_MARTIAL_ARTS] = _("Martial Arts"),
+    [ABILITY_LIGHT_DEVOURER] = _("LightDevourr"),
 };
 };
 #endif
@@ -1236,4 +1242,6 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_TOXIC_CHAIN] = sToxicChainDescription,
     [ABILITY_SUPERSWEET_SYRUP] = sSupersweetSyrupDescription,
     [ABILITY_SEE_YOU_LATER] = sSeeYouLaterDescription,
+    [ABILITY_MARTIAL_ARTS] = sMartialArtsDescription,
+    [ABILITY_LIGHT_DEVOURER] = sLightDevourerDescription,
 };

@@ -509,6 +509,31 @@ static bool32 CannotUsePartyBattleItem(u16 itemId, struct Pokemon* mon);
 // static const data
 #include "data/party_menu.h"
 
+const u16 sLevelCapFlags2[NUM_SOFT_CAPS] =
+{
+    FLAG_DEFEATED_RIVAL_ROUTE103, FLAG_GYM_1_WALLY_DEFEATED, FLAG_ITEM_ROUTE_101_CAVE_DONE, FLAG_BADGE01_GET,
+    FLAG_DEFEATED_RIVAL_ROUTE101_CAVE, FLAG_BADGE02_GET, FLAG_BADGE03_GET, FLAG_BADGE04_GET,
+    FLAG_BADGE05_GET, FLAG_BADGE06_GET, FLAG_BADGE07_GET, FLAG_BADGE08_GET,
+};
+
+const u16 sLevelCaps2[NUM_SOFT_CAPS] = { 8, 12, 16, 18, 24, 26, 30, 40, 50, 60, 70, 80 };
+
+bool8 GetPkmnLevelCapMet(u16 level)
+{
+    u16 i;
+    bool8 lvlCapMultiplier = FALSE;
+
+    for (i = 0; i < NUM_SOFT_CAPS; i++)
+    {
+        if (!FlagGet(sLevelCapFlags2[i]) && level >= sLevelCaps2[i])
+        {
+            lvlCapMultiplier = TRUE;
+            break;
+        }
+    }
+    return lvlCapMultiplier;
+}
+
 // code
 static void InitPartyMenu(u8 menuType, u8 layout, u8 partyAction, bool8 keepCursorPos, u8 messageId, TaskFunc task, MainCallback callback)
 {
@@ -5468,13 +5493,15 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
 {
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
     struct PartyMenuInternal *ptr = sPartyMenuInternal;
+    bool8 capMet = FALSE;
     s16 *arrayPtr = ptr->data;
     u16 *itemPtr = &gSpecialVar_ItemId;
     bool8 cannotUseEffect;
     u8 holdEffectParam = ItemId_GetHoldEffectParam(*itemPtr);
-
     sInitialLevel = GetMonData(mon, MON_DATA_LEVEL);
-    if (sInitialLevel != MAX_LEVEL)
+    capMet = GetPkmnLevelCapMet(sInitialLevel);
+
+    if (sInitialLevel != MAX_LEVEL && capMet == FALSE)
     {
         BufferMonStatsToTaskData(mon, arrayPtr);
         cannotUseEffect = ExecuteTableBasedItemEffect(mon, *itemPtr, gPartyMenu.slotId, 0);

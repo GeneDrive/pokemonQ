@@ -3,11 +3,16 @@
 Route103_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route103_OnTransition
 	map_script MAP_SCRIPT_ON_LOAD, Route103_OnLoad
+	map_script MAP_SCRIPT_ON_RESUME, Route103_OnResume
 	.byte 0
 
 Route103_OnTransition:
 	call Common_EventScript_SetupRivalGfxId
 	call ProfBirch_EventScript_UpdateLocation
+	end
+
+Route103_OnResume:
+	setstepcallback STEP_CB_ASH
 	end
 
 Route103_OnLoad:
@@ -76,17 +81,17 @@ Route103_EventScript_StartMayBattleMudkip::
 	end
 
 Route103_EventScript_StartBrendanBattleTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_TREECKO, Route103_Text_BrendanDefeated
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_TREECKO, Route103_Text_BrendanDefeated
 	goto Route103_EventScript_AfterBrendanBattle
 	end
 
 Route103_EventScript_StartBrendanBattleTorchic::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_TORCHIC, Route103_Text_BrendanDefeated
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_TORCHIC, Route103_Text_BrendanDefeated
 	goto Route103_EventScript_AfterBrendanBattle
 	end
 
 Route103_EventScript_StartBrendanBattleMudkip::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_MUDKIP, Route103_Text_BrendanDefeated
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_MUDKIP, Route103_Text_BrendanDefeated
 	goto Route103_EventScript_AfterBrendanBattle
 	end
 
@@ -102,9 +107,7 @@ Route103_EventScript_AfterBrendanBattle::
 
 Route103_EventScript_RivalGiveBalls::
 	msgbox Route103_Text_RivalGiveBallsStart, MSGBOX_DEFAULT
-	giveitem ITEM_POKE_BALL, 15
-	playfanfare MUS_OBTAIN_ITEM
-	waitfanfare
+	giveitem ITEM_POKE_BALL, 20
 	msgbox Route103_Text_RivalGiveBallsEnd, MSGBOX_DEFAULT
 	goto Route103_EventScript_RivalExit
 	end
@@ -300,56 +303,81 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "MAY: Let's see… The POKéMON found\n"
-	.string "on ROUTE 103 include…$"
+	.string "JADE: Let's see… The rare POKéMON \n"
+	.string "found on ROUTE 103 were RIOLU and…$"
 
 Route103_Text_MayLetsBattle:
-	.string "Oh, hi, {PLAYER}{KUN}!\p"
-	.string "…Oh, I see, my dad gave you\n"
-	.string "a POKéMON as a gift.\p"
-	.string "Since we're here, let's have a quick\n"
-	.string "battle!\p"
-	.string "I'll give you a taste of what being\n"
-	.string "a TRAINER is like.$"
+	.string "Oh, hey, it's you {PLAYER}!\p"
+	.string "What are you doing here, it's\n"
+	.string "dangerous to go out without a \l"
+	.string "POKéMON you know.\p"
+	.string "Wait… dad gave you a POKéMON!\p"
+	.string "That means we can finally\n"
+	.string "have a POKéMON battle!\p"
+	.string "I wanna see what you're made of!\p"
+	.string "Oh dad probably didn't explain\n"
+	.string "how POKéMON battles work around here.\p"
+	.string "Well unlike HOENN, we don't do single\n"
+	.string "battles around here!\p"
+	.string "so I hope you have a second POKéMON\n"
+	.string "or else this will be way to easy.\p"
+	.string "Don't worry I won't use all my \n"
+	.string "POKéMON because you only just got \l"
+	.string "started battling.\p"
+	.string "Now let's see how good you are!$"
 
 Route103_Text_MayDefeated:
-	.string "Wow! That's great!\n"
-	.string "{PLAYER}{KUN}, you're pretty good!$"
+	.string "Okay… it seems I went to easy!\n"
+	.string "You're just like what I'd hoped!$"
 
 Route103_Text_MayTimeToHeadBack:
-	.string "MAY: I think I know why my dad has\n"
+	.string "JADE: I think I know why my dad has\n"
 	.string "an eye out for you now.\p"
 	.string "I mean, you just got that POKéMON,\n"
-	.string "but it already likes you.\p"
-	.string "You might be able to befriend any\n"
-	.string "kind of POKéMON easily.\p"
+	.string "and you're this good already.\p"
+	.string "You might be able to contend\n"
+	.string "with me if you catch more POKéMON!\p"
 	.string "Well, it's time to head back to\n"
-	.string "the LAB.$"
+	.string "the LAB. Come on!$"
 
 Route103_Text_BrendanRoute103Pokemon:
-	.string "BRENDAN: Okay, so it's this one and\n"
-	.string "that one that live on ROUTE 103…$"
+	.string "JADE: Let's see… The rare POKéMON \n"
+	.string "found on ROUTE 103 were RIOLU and…$"
 
 Route103_Text_BrendanLetsBattle:
-	.string "Hey, it's {PLAYER}!\p"
-	.string "…Oh, yeah, Dad gave you a POKéMON.\p"
-	.string "Since we're here, how about a little\n"
-	.string "battle?\p"
-	.string "I'll teach you what being a TRAINER's\n"
-	.string "about!$"
+	.string "Who! Oh, it's just you.\p"
+	.string "What are you doing here, it's\n"
+	.string "dangerous to go out without a \l"
+	.string "POKéMON you know.\p"
+	.string "Wait… dad gave you a POKéMON!\p"
+	.string "SIGH… what was he thinking giving\n"
+	.string "someone like you a POKéMON.\p"
+	.string "Wait you want to battle me?\p"
+	.string "HAHA you're funny!\p"
+	.string "You probably don't know how much\n"
+	.string "differently POKéMON battles work \l"
+	.string "around here. Because unlike HOENN,\l"
+	.string "we don't do single battles!\p"
+	.string "so I hope you have a second POKéMON\n"
+	.string "or else I'll probably just steamroll.\p"
+	.string "You know what, I'll give you a chance \n"
+	.string "and use only 2 POKéMON. But there is\l"
+	.string "still no way I'd lose to a newby!\p"
+	.string "Now let's get this battle over with.$"
 
 Route103_Text_BrendanDefeated:
-	.string "Huh, {PLAYER}, you're not too shabby.$"
+	.string "WHAT!? Well… grr…\p"
+	.string "I held back a lot you know!\n"
+	.string "Don't think you can win that \l"
+	.string "easily next time!$"
 
 Route103_Text_BrendanTimeToHeadBack:
-	.string "BRENDAN: I think I get it.\n"
-	.string "I think I know why my dad has his eye\l"
-	.string "out for you now.\p"
-	.string "Look, your POKéMON already likes you,\n"
-	.string "even though you just got it.\p"
-	.string "{PLAYER}, I get the feeling that you\n"
-	.string "could befriend any POKéMON with ease.\p"
-	.string "We should head back to the LAB.$"
+	.string "JADE: I think I get it.\n"
+	.string "I think I know why my dad gave\l"
+	.string "you a POKéMON now.\p"
+	.string "Your pretty decent at battles,\n"
+	.string "even though you just started.\p"
+	.string "Well, we should head back to the LAB.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
 	.string "My POKéMON is staggeringly tired…\n"
@@ -365,10 +393,10 @@ Route103_Text_RouteSign:
 	.string "{DOWN_ARROW} OLDALE TOWN$"
 
 Route103_Text_RivalGiveBallsStart:
-	.string "Oh yeah before I forget,\n"
-	.string "Here are some pokeballs.$"
+	.string "Here have some pokeballs.$"
 
 Route103_Text_RivalGiveBallsEnd:
-	.string "Catching pokemon is what being a trainer is\n"
-	.string "all about.\p"
-	.string "Make sure to make some new friends!$"
+	.string "Make sure to catch some POKéMON\n"
+	.string "for next time.\p"
+	.string "Because I won't hold back next time!$"
+	

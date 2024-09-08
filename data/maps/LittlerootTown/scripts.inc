@@ -964,8 +964,8 @@ LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "Go on, go get them, honey!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
-	.string "If you use a PC, you can store items\n"
-	.string "and POKéMON.\p"
+	.string "If you use a PC, you can store \n"
+	.string "all sorts of things.\p"
 	.string "The power of science is staggering!$"
 
 LittlerootTown_Text_BirchSpendsDaysInLab:
@@ -981,32 +981,32 @@ LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
 	.string "wild POKéMON will jump out!$"
 
 LittlerootTown_Text_DangerousIfYouDontHavePokemon:
-	.string "It's dangerous if you don't have\n"
-	.string "your own POKéMON.$"
+	.string "It's too dangerous to go out\n"
+	.string "there without a POKéMON.$"
 
 LittlerootTown_Text_CanYouGoSeeWhatsHappening:
-	.string "Um, hi!\p"
-	.string "There are scary POKéMON outside!\n"
+	.string "Um, hello mister!\p"
+	.string "There is a scary POKéMON outside!\n"
 	.string "I can hear their cries!\p"
 	.string "I want to go see what's going on,\n"
-	.string "but I don't have any POKéMON…\p"
-	.string "Can you go see what's happening\n"
-	.string "for me?$"
+	.string "but I'm to scared to go…\p"
+	.string "Can you go see what's going\n"
+	.string "on for me?$"
 
 LittlerootTown_Text_YouSavedBirch:
-	.string "You saved PROF. BIRCH!\n"
-	.string "I'm so glad!$"
+	.string "You saved the Professor from that!\n"
+	.string "nasty Zigzagoon! I'm so glad!$"
 
 LittlerootTown_Text_GoodLuckCatchingPokemon:
 	.string "Are you going to catch POKéMON?\n"
-	.string "Good luck!$"
+	.string "Good luck, go make some friends!$"
 
 LittlerootTown_Text_TownSign:
 	.string "LITTLEROOT TOWN\n"
-	.string "“A town that can't be shaded any hue.”$"
+	.string "“A town that's frozen in time.”$"
 
 LittlerootTown_Text_ProfBirchsLab:
-	.string "PROF. BIRCH'S POKéMON LAB$"
+	.string "PROF'S. POKéMON LAB$"
 
 LittlerootTown_Text_PlayersHouse:
 	.string "{PLAYER}'s HOUSE$"

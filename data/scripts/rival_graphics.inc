@@ -5,11 +5,11 @@ Common_EventScript_SetupRivalGfxId::
 	end
 
 EventScript_SetupRivalGfxIdFemale::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_LUCY
 	return
 
 EventScript_SetupRivalGfxIdMale::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_LUCY
 	return
 
 Common_EventScript_SetupRivalOnBikeGfxId::
@@ -34,9 +34,9 @@ Common_EventScript_SetupRivalGfxIdSameGender::
 	end
 
 EventScript_SetupRivalGfxIdMale2::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_LUCY
 	return
 
 EventScript_SetupRivalGfxIdFemale2::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_LUCY
 	return

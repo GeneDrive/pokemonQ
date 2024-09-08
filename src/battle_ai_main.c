@@ -822,6 +822,10 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 if (moveType == TYPE_FIRE)
                     RETURN_SCORE_MINUS(20);
                 break;
+            case ABILITY_LIGHT_DEVOURER:
+                if (moveType == TYPE_FIRE || moveType == TYPE_FAIRY || moveType == TYPE_PSYCHIC || moveType == TYPE_ELECTRIC)
+                    RETURN_SCORE_MINUS(20);
+                break;
             case ABILITY_WONDER_GUARD:
                 if (effectiveness < AI_EFFECTIVENESS_x2)
                     return 0;
@@ -4662,7 +4666,8 @@ static s32 AI_CheckViability(u32 battlerAtk, u32 battlerDef, u32 move, s32 score
     case EFFECT_ION_DELUGE:
         if ((aiData->abilities[battlerAtk] == ABILITY_VOLT_ABSORB
           || aiData->abilities[battlerAtk] == ABILITY_MOTOR_DRIVE
-          || aiData->abilities[battlerAtk] == ABILITY_LIGHTNING_ROD)
+          || aiData->abilities[battlerAtk] == ABILITY_LIGHTNING_ROD
+          || aiData->abilities[battlerAtk] == ABILITY_LIGHT_DEVOURER)
           && gBattleMoves[predictedMove].type == TYPE_NORMAL)
             ADJUST_SCORE(2);
         break;
@@ -4731,7 +4736,8 @@ static s32 AI_CheckViability(u32 battlerAtk, u32 battlerDef, u32 move, s32 score
         if (predictedMove != MOVE_NONE
          && (aiData->abilities[battlerAtk] == ABILITY_VOLT_ABSORB
           || aiData->abilities[battlerAtk] == ABILITY_MOTOR_DRIVE
-          || aiData->abilities[battlerAtk] == ABILITY_LIGHTNING_ROD))
+          || aiData->abilities[battlerAtk] == ABILITY_LIGHTNING_ROD
+          || aiData->abilities[battlerAtk] == ABILITY_LIGHT_DEVOURER))
         {
             ADJUST_SCORE(3);
         }

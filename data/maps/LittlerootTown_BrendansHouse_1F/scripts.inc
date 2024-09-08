@@ -316,19 +316,19 @@ PlayersHouse_1F_Text_OhComeQuickly:
 
 PlayersHouse_1F_Text_MaybeDadWillBeOn:
 	.string "MOM: Look! It's PETALBURG GYM!\n"
-	.string "Maybe DAD will be on!$"
+	.string "you might learn something!$"
 
 PlayersHouse_1F_Text_ItsOverWeMissedHim:
 	.string "MOM: Oh… It's over.\p"
-	.string "I think DAD was on, but we missed him.\n"
-	.string "Too bad.$"
+	.string "I thought you might get some tips.\n"
+	.string "on how to get there safely. Too bad.$"
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:
 	.string "Oh, yes.\n"
 	.string "One of DAD's friends lives in town.\p"
 	.string "PROF. BIRCH is his name.\p"
-	.string "He lives right next door, so you should\n"
-	.string "go over and introduce yourself.$"
+	.string "He should live past the river, \n"
+	.string "go over there and introduce yourself.$"
 
 PlayersHouse_1F_Text_SeeYouHoney:
 	.string "MOM: See you, honey!$"
@@ -346,7 +346,7 @@ PlayersHouse_1F_Text_TakeCareHoney:
 	.string "MOM: Take care, honey!$"
 
 PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom:
-	.string "MOM: Oh? Did DAD give you that BADGE?\p"
+	.string "MOM: Oh? Did Route102_EventScript_Allen give you that BADGE?\p"
 	.string "Then here's something from your MOM!$"
 
 PlayersHouse_1F_Text_DontPushYourselfTooHard:
@@ -440,8 +440,8 @@ PlayersHouse_1F_Text_StillUnknownPokemon:
 	.string "There are still unknown POKéMON.$"
 
 PlayersHouse_1F_Text_WearTheseRunningShoes:
-	.string "Here, honey! If you're going out on an\n"
-	.string "adventure, wear these RUNNING SHOES.\p"
+	.string "Here, honey! If you're going out,\n"
+	.string "wear these RUNNING SHOES.\p"
 	.string "They'll put a zip in your step!$"
 
 PlayersHouse_1F_Text_SwitchShoesWithRunningShoes:
