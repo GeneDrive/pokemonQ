@@ -10048,7 +10048,9 @@ static inline void MulByTypeEffectiveness(uq4_12_t *modifier, u32 move, u32 move
 
     if (moveType == TYPE_PSYCHIC && defType == TYPE_DARK && gStatuses3[battlerDef] & STATUS3_MIRACLE_EYED && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
-    if (gBattleMoves[move].effect == EFFECT_FREEZE_DRY && defType == TYPE_WATER)
+    if (gBattleMoves[move].effect == EFFECT_FREEZE_DRY && defType == TYPE_WATER && moveType == TYPE_ICE)
+        mod = UQ_4_12(2.0);
+    if (gBattleMoves[move].effect == EFFECT_FREEZE_DRY && defType == TYPE_GHOST && moveType == TYPE_TIME)
         mod = UQ_4_12(2.0);
     if (moveType == TYPE_GROUND && defType == TYPE_FLYING && IsBattlerGrounded(battlerDef) && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);

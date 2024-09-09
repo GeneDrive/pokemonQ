@@ -3368,6 +3368,22 @@ static const u8 sTornadoCrashDescription[] = _(
     "Spins like a tornado with all\n"
     "it's energy causing a crash.");
 
+static const u8 sHauntingDescription[] = _(
+    "Haunt's foe's body.\n"
+    "Foe's last move has 3 PP cut.");
+
+static const u8 sParadoxWaveDescription[] = _(
+    "Super effective on ghost-\n"
+    "types. May cause freezing.");
+
+static const u8 sRiftRipperDescription[] = _(
+    "cuts a rift in time. high crit\n"
+    "ratio and can freeze foe.");
+
+static const u8 sRapidJabDescription[] = _(
+    "A rapid flurry that raises\n"
+    "the user's Accuracy.");
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4235,4 +4251,8 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_CRYSTALIZE - 1] = sCrystalizeDescription,
     [MOVE_COIN_TOSS - 1] = sCoinTossDescription,
     [MOVE_TORNADO_CRASH - 1] = sTornadoCrashDescription,
+    [MOVE_HAUNTING - 1] = sHauntingDescription,
+    [MOVE_PARADOX_WAVE - 1] = sParadoxWaveDescription,
+    [MOVE_RIFT_RIPPER - 1] = sRiftRipperDescription,
+    [MOVE_RAPID_JAB - 1] = sRapidJabDescription,
 };

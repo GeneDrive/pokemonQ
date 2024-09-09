@@ -8604,6 +8604,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .zMoveEffect = Z_EFFECT_NONE,
         .makesContact = TRUE,
         .sheerForceBoost = TRUE,
+        .bitingMove = TRUE
     },
 
     [MOVE_COIL] =
@@ -14733,7 +14734,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .priority = 1,
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
-        .makesContact = TRUE
+        .makesContact = TRUE,
+        .punchingMove = TRUE
     },
 
     [MOVE_WYVERN_SPEAR] =
@@ -14833,6 +14835,71 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
+    },
+    [MOVE_HAUNTING] =
+    {
+        .effect = EFFECT_EERIE_SPELL,
+        .power = 45,
+        .type = TYPE_GHOST,
+        .accuracy = 100,
+        .pp = 10,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_SPECIAL,
+        .makesContact = TRUE,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .sheerForceBoost = TRUE,
+    },
+    [MOVE_PARADOX_WAVE] =
+    {
+        .effect = EFFECT_FREEZE_DRY,
+        .power = 90,
+        .type = TYPE_TIME,
+        .accuracy = 90,
+        .pp = 10,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .split = SPLIT_SPECIAL,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .sheerForceBoost = TRUE,
+    },
+    [MOVE_RIFT_RIPPER] =
+    {
+        #if B_USE_FROSTBITE == TRUE
+            .effect = EFFECT_FROSTBITE_HIT,
+        #else
+            .effect = EFFECT_FREEZE_HIT,
+        #endif
+        .power = 70,
+        .type = TYPE_TIME,
+        .accuracy = 100,
+        .pp = 15,
+        .secondaryEffectChance = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_PHYSICAL,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .makesContact = TRUE,
+        .highCritRatio = TRUE,
+        .slicingMove = TRUE,
+    },
+    [MOVE_RAPID_JAB] =
+    {
+        .effect = EFFECT_ACCURACY_UP,
+        .power = 45,
+        .type = TYPE_TIME,
+        .accuracy = 100,
+        .pp = 20,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_PHYSICAL,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .makesContact = TRUE,
+        .punchingMove = TRUE,
+        .sheerForceBoost = TRUE,
     },
 
     // Z-Moves

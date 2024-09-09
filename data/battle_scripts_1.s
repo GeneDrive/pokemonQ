@@ -3679,8 +3679,8 @@ BattleScript_EffectSpecialDefenseUp:
 	goto BattleScript_EffectStatUp
 
 BattleScript_EffectAccuracyUp:
-	setstatchanger STAT_ACC, 1, FALSE
-	goto BattleScript_EffectStatUp
+	setmoveeffect MOVE_EFFECT_ACC_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
+	goto BattleScript_EffectHit
 
 BattleScript_EffectEvasionUp::
 	setstatchanger STAT_EVASION, 1, FALSE
