@@ -118,8 +118,8 @@
     },
     {
       "type": "trigger",
-      "x": 8,
-      "y": 23,
+      "x": 9,
+      "y": 22,
       "elevation": 0,
       "var": "VAR_FRIGID_FALLS_STATE",
       "var_value": "1",
