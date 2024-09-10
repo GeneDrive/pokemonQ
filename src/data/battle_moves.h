@@ -14901,6 +14901,27 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .punchingMove = TRUE,
         .sheerForceBoost = TRUE,
     },
+    [MOVE_FLASHBACK] =
+    {
+        #if B_USE_FROSTBITE == TRUE
+            .effect = EFFECT_FROSTBITE_HIT,
+        #else
+            .effect = EFFECT_FREEZE_HIT,
+        #endif
+        .power = 15,
+        .type = TYPE_TIME,
+        #if B_UPDATED_MOVE_DATA >= GEN_6
+            .accuracy = 85,
+        #else
+            .accuracy = 75,
+        #endif
+        .pp = 5,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_SPECIAL,
+        .zMoveEffect = Z_EFFECT_NONE,
+    },
 
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =

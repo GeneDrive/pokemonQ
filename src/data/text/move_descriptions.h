@@ -3384,6 +3384,10 @@ static const u8 sRapidJabDescription[] = _(
     "A rapid flurry that raises\n"
     "the user's Accuracy.");
 
+static const u8 sFlashbackDescription[] = _(
+    "Show the past chilling foe\n"
+    "causing them to freeze.");
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4255,4 +4259,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_PARADOX_WAVE - 1] = sParadoxWaveDescription,
     [MOVE_RIFT_RIPPER - 1] = sRiftRipperDescription,
     [MOVE_RAPID_JAB - 1] = sRapidJabDescription,
+    [MOVE_FLASHBACK - 1] = sFlashbackDescription,
 };

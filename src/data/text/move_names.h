@@ -863,6 +863,7 @@ const u8 gMoveNames[MOVES_COUNT_DYNAMAX][MOVE_NAME_LENGTH + 1] =
     [MOVE_PARADOX_WAVE] = _("Paradox Wave"),
     [MOVE_RIFT_RIPPER] = _("Rift Ripper"),
     [MOVE_RAPID_JAB] = _("Rapid Jab"),
+    [MOVE_FLASHBACK] = _("Flashback"),
     // Max Moves
     [MOVE_MAX_GUARD] = _("Max Guard"),
     [MOVE_MAX_STRIKE] = _("Max Strike"),
@@ -1783,6 +1784,7 @@ const u8 gMoveNames[MOVES_COUNT_DYNAMAX][MOVE_NAME_LENGTH + 1] =
     [MOVE_PARADOX_WAVE] = _("Paradox Wave"),
     [MOVE_RIFT_RIPPER] = _("Rift Ripper"),
     [MOVE_RAPID_JAB] = _("Rapid Jab"),
+    [MOVE_FLASHBACK] = _("Flashback"),
     // Max Moves
     [MOVE_MAX_GUARD] = _("M-Guard"),
     [MOVE_MAX_STRIKE] = _("M-Strike"),

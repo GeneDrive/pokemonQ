@@ -888,6 +888,7 @@ gBattleAnims_Moves::
 	.4byte Move_PARADOX_WAVE
 	.4byte Move_RIFT_RIPPER
 	.4byte Move_RAPID_JAB
+	.4byte Move_FLASHBACK
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -18938,6 +18939,12 @@ Move_RAPID_JAB:
 	createvisualtask AnimTask_InvertScreenColor, 2, 0x1 | 0x2 | 0x4
 	end
 
+Move_FLASHBACK:
+	playsewithpan SE_M_LEER, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_Flash, 2
+	waitforvisualfinish
+	end
+	
 Move_OUTRAGE:
 	loadspritegfx ANIM_TAG_SMALL_EMBER
 	loopsewithpan SE_M_DRAGON_RAGE, SOUND_PAN_ATTACKER, 8, 3
