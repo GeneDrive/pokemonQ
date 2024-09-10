@@ -413,6 +413,7 @@
 #define MAP_BINDING_CAVERN_1F                        (117 | (24 << 8))
 #define MAP_BINDING_CAVERN_F2                        (118 | (24 << 8))
 #define MAP_MOLTEN_CAVERN_1F_R1                      (119 | (24 << 8))
+#define MAP_BINDING_CAVERN_3F                        (120 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

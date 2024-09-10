@@ -4540,6 +4540,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/MoltenCavern_1F_R1/border.bin",
       "blockdata_filepath": "data/layouts/MoltenCavern_1F_R1/map.bin"
+    },
+    {
+      "id": "LAYOUT_BINDING_CAVERN_3F",
+      "name": "BindingCavern_3F_Layout",
+      "width": 85,
+      "height": 55,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_VolcanoAsh",
+      "border_filepath": "data/layouts/BindingCavern_3F/border.bin",
+      "blockdata_filepath": "data/layouts/BindingCavern_3F/map.bin"
     }
   ]
 }

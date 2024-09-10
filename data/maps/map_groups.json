@@ -442,7 +442,8 @@
     "FrigidFalls_6F_R2",
     "BindingCavern_1F",
     "BindingCavern_F2",
-    "MoltenCavern_1F_R1"
+    "MoltenCavern_1F_R1",
+    "BindingCavern_3F"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

@@ -1634,3 +1634,22 @@ const u16 gTilesetPalettes_UnionRoom[][16] =
 };
 
 const u32 gTilesetTiles_UnionRoom[] = INCBIN_U32("data/tilesets/secondary/union_room/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_VolcanoAsh[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/volcano_ash/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/volcano_ash/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/volcano_ash/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/volcano_ash/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/volcano_ash/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/volcano_ash/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/volcano_ash/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/volcano_ash/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/volcano_ash/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/volcano_ash/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/volcano_ash/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/volcano_ash/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/volcano_ash/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_VolcanoAsh[] = INCBIN_U32("data/tilesets/secondary/volcano_ash/tiles.4bpp.lz");
