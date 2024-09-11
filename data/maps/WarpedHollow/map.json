@@ -74,6 +74,13 @@
       "elevation": 0,
       "dest_map": "MAP_BINDING_CAVERN_F2",
       "dest_warp_id": "5"
+    },
+    {
+      "x": 4,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_WARPED_HOLLOW_EXIT_PATCH",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

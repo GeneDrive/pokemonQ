@@ -1097,3 +1097,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/BindingCavern_3F/scripts.inc"
 
 	.include "data/maps/WarpedHollow/scripts.inc"
+
+	.include "data/maps/WarpedHollow_ExitPatch/scripts.inc"
+
+	.include "data/maps/WarpedHollow_Entry/scripts.inc"
