@@ -16,6 +16,19 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 63,
+      "y": 32,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BindingCavern_EventScript_ItemCharcoal",
+      "flag": "FLAG_ITEM_BINDING_CAVERN_CHARCOAL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 78,
       "y": 33,
       "elevation": 0,
@@ -24,21 +37,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 63,
-      "y": 31,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "BindingCavern_EventScript_ItemQuickBalls",
+      "flag": "FLAG_ITEM_BINDING_CAVERN_QUICK_BALLS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
@@ -128,8 +128,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "BindingCavern_EventScript_ItemElectricSeed",
+      "flag": "FLAG_ITEM_BINDING_CAVERN_ELECTRIC_SEED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
@@ -150,29 +150,29 @@
       "x": 76,
       "y": 21,
       "elevation": 0,
-      "dest_map": "MAP_BINDING_CAVERN_3F",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_BINDING_CAVERN_1F",
+      "dest_warp_id": "6"
     },
     {
       "x": 76,
       "y": 22,
       "elevation": 0,
-      "dest_map": "MAP_BINDING_CAVERN_3F",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_BINDING_CAVERN_1F",
+      "dest_warp_id": "7"
     },
     {
       "x": 76,
       "y": 23,
       "elevation": 0,
-      "dest_map": "MAP_BINDING_CAVERN_3F",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_BINDING_CAVERN_1F",
+      "dest_warp_id": "8"
     },
     {
       "x": 76,
       "y": 24,
       "elevation": 0,
-      "dest_map": "MAP_BINDING_CAVERN_3F",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_BINDING_CAVERN_1F",
+      "dest_warp_id": "9"
     },
     {
       "x": 11,

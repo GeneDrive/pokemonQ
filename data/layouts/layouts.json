@@ -4550,6 +4550,16 @@
       "secondary_tileset": "gTileset_VolcanoAsh",
       "border_filepath": "data/layouts/BindingCavern_3F/border.bin",
       "blockdata_filepath": "data/layouts/BindingCavern_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_WARPED_HOLLOW",
+      "name": "WarpedHollow_Layout",
+      "width": 17,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/WarpedHollow/border.bin",
+      "blockdata_filepath": "data/layouts/WarpedHollow/map.bin"
     }
   ]
 }

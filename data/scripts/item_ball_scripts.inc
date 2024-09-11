@@ -54,6 +54,34 @@ Route103_EventScript_ItemPPUp::
 	finditem ITEM_PP_UP
 	end
 
+BindingCavern_EventScript_ItemGrassySeed::
+	finditem ITEM_GRASSY_SEED
+	end
+
+BindingCavern_EventScript_ItemPsychicSeed::
+	finditem ITEM_PSYCHIC_SEED
+	end
+
+BindingCavern_EventScript_ItemMistySeed::
+	finditem ITEM_MISTY_SEED
+	end
+
+BindingCavern_EventScript_ItemElectricSeed::
+	finditem ITEM_ELECTRIC_SEED
+	end
+
+BindingCavern_EventScript_ItemHeartScale::
+	finditem ITEM_HEART_SCALE
+	end
+
+BindingCavern_EventScript_ItemCharcoal::
+	finditem ITEM_CHARCOAL
+	end
+
+BindingCavern_EventScript_ItemQuickBalls::
+	finditem ITEM_QUICK_BALL, 3
+	end
+
 Route104_EventScript_ItemPPUp::
 	finditem ITEM_PP_UP
 	end

@@ -665,13 +665,13 @@
 #define FLAG_ITEM_FRIGGIDFALLS_F1_ICY_STONE                0x26D
 #define FLAG_ITEM_FRIGGIDFALLS_F5_ABB_PATCH                0x26E
 #define FLAG_ROUTE101_HIDE_OLD_MAN_2                       0x26F
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
+#define FLAG_ITEM_BINDING_CAVERN_GRASSY_SEED   	           0x270
+#define FLAG_ITEM_BINDING_CAVERN_ELECTRIC_SEED             0x271
+#define FLAG_ITEM_BINDING_CAVERN_MISTY_SEED                0x272
+#define FLAG_ITEM_BINDING_CAVERN_PSYCHIC_SEED              0x273
+#define FLAG_ITEM_BINDING_CAVERN_QUICK_BALLS               0x274
+#define FLAG_ITEM_BINDING_CAVERN_CHARCOAL                  0x275
+#define FLAG_ITEM_BINDING_CAVERN_HEART_SCALE               0x276
 #define FLAG_UNUSED_0x277  0x277 // Unused Flag
 #define FLAG_UNUSED_0x278  0x278 // Unused Flag
 #define FLAG_UNUSED_0x279  0x279 // Unused Flag

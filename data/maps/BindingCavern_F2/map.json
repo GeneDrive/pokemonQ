@@ -16,19 +16,6 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 41,
-      "y": 18,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 71,
       "y": 8,
       "elevation": 0,
@@ -37,8 +24,21 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "BindingCavern_EventScript_ItemHeartScale",
+      "flag": "FLAG_ITEM_BINDING_CAVERN_HEART_SCALE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 41,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BindingCavern_EventScript_ItemGrassySeed",
+      "flag": "FLAG_ITEM_BINDING_CAVERN_GRASSY_SEED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -102,6 +102,13 @@
       "elevation": 0,
       "dest_map": "MAP_BINDING_CAVERN_1F",
       "dest_warp_id": "5"
+    },
+    {
+      "x": 60,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_WARPED_HOLLOW",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

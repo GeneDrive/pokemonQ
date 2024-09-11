@@ -1095,3 +1095,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MoltenCavern_1F_R1/scripts.inc"
 
 	.include "data/maps/BindingCavern_3F/scripts.inc"
+
+	.include "data/maps/WarpedHollow/scripts.inc"
