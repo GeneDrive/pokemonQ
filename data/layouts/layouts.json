@@ -4545,7 +4545,7 @@
       "id": "LAYOUT_BINDING_CAVERN_3F",
       "name": "BindingCavern_3F_Layout",
       "width": 85,
-      "height": 55,
+      "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_VolcanoAsh",
       "border_filepath": "data/layouts/BindingCavern_3F/border.bin",
