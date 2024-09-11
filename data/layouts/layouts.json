@@ -4437,7 +4437,7 @@
       "width": 23,
       "height": 50,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fallarbor",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route102_Secret/border.bin",
       "blockdata_filepath": "data/layouts/Route102_Secret/map.bin"
     },
@@ -4535,7 +4535,7 @@
       "id": "LAYOUT_MOLTEN_CAVERN_1F_R1",
       "name": "MoltenCavern_1F_R1_Layout",
       "width": 20,
-      "height": 20,
+      "height": 25,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/MoltenCavern_1F_R1/border.bin",
