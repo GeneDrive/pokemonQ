@@ -446,7 +446,8 @@
     "BindingCavern_3F",
     "WarpedHollow",
     "WarpedHollow_ExitPatch",
-    "WarpedHollow_Entry"
+    "WarpedHollow_Entry",
+    "City3_Secret"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

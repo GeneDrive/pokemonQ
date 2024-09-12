@@ -1101,3 +1101,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/WarpedHollow_ExitPatch/scripts.inc"
 
 	.include "data/maps/WarpedHollow_Entry/scripts.inc"
+
+	.include "data/maps/City3_Secret/scripts.inc"

@@ -417,6 +417,7 @@
 #define MAP_WARPED_HOLLOW                            (121 | (24 << 8))
 #define MAP_WARPED_HOLLOW_EXIT_PATCH                 (122 | (24 << 8))
 #define MAP_WARPED_HOLLOW_ENTRY                      (123 | (24 << 8))
+#define MAP_CITY3_SECRET                             (124 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))
