@@ -568,6 +568,22 @@ PetalburgCity_EventScript_Scott::
 	releaseall
 	end
 
+PetalburgCity_EventScript_SecretStart::
+	msgbox PetalburgCity_Text_AreYouATrainer, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, PetalburgCity_EventScript_SecretEndYes
+	goto_if_eq VAR_RESULT, NO, PetalburgCity_EventScript_SecretEndNo
+	end
+
+PetalburgCity_EventScript_SecretEndYes::
+	warp MAP_CITY3_SECRET, 10, 26
+	releaseall
+	end
+
+PetalburgCity_EventScript_SecretEndNo::
+	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_WalkDown
+	releaseall
+	end
+
 PetalburgCity_EventScript_ScottExit0::
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_PlayerWatchScottExit0
 	applymovement LOCALID_SCOTT, PetalburgCity_Movement_ScottExit0
@@ -591,6 +607,10 @@ PetalburgCity_EventScript_ScottExit3::
 	applymovement LOCALID_SCOTT, PetalburgCity_Movement_ScottExit3
 	waitmovement 0
 	return
+
+PetalburgCity_Movement_WalkDown:
+	walk_down
+	step_end
 
 PetalburgCity_Movement_ScottStartWalkLeft:
 	walk_left
@@ -766,3 +786,8 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land in search of\n"
 	.string "talented TRAINERS.\p"
 	.string "I'm sorry to have taken your time.$"
+
+PetalburgCity_Text_Secret:
+	.string "You sense a strong trainer ahead...\n"
+	.string "Level around 17-18.\p"
+	.string "Do you want to enter?.$"

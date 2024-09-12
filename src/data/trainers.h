@@ -5678,7 +5678,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_MARTHA] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
+        .trainerClass = TRAINER_CLASS_FACTORY_HEAD,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_RED,
         .trainerName = _("Martijn"),

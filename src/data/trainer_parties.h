@@ -6010,13 +6010,50 @@ static const struct TrainerMon sParty_Nancy[] = {
 
 static const struct TrainerMon sParty_Martha[] = {
     {
-    .lvl = 23,
-    .species = SPECIES_SKITTY,
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 16,
+    .ability = ABILITY_STORM_DRAIN,
+    .species = SPECIES_TATSUGIRI_CURLY,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_WATER_GUN, MOVE_ICY_WIND, MOVE_PROTECT, MOVE_TAUNT}
     },
     {
-    .lvl = 23,
-    .species = SPECIES_SWABLU,
-    }
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 17,
+    .ability = ABILITY_HUSTLE,
+    .species = SPECIES_DARUMAKA,
+    .heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_LICK, MOVE_FLAME_WHEEL, MOVE_ROCK_SMASH, MOVE_NONE}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 17,
+    .ability = ABILITY_REGENERATOR,
+    .species = SPECIES_DUOSION,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_LICK, MOVE_FLAME_WHEEL, MOVE_ROCK_SMASH, MOVE_NONE}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 18,
+    .species = SPECIES_SPRIGATITO,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_SEED_BOMB, MOVE_QUICK_ATTACK, MOVE_U_TURN, MOVE_HONE_CLAWS}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 17,
+    .ability = ABILITY_SAND_RUSH,
+    .species = SPECIES_ARCHEN,
+    .moves = {MOVE_ROCK_SMASH, MOVE_ACROBATICS, MOVE_ROCK_THROW, MOVE_NONE}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 15,
+    .ability = ABILITY_INTIMIDATE,
+    .species = SPECIES_LUXRAY,
+    .moves = {MOVE_SPARK, MOVE_BITE, MOVE_SAND_ATTACK, MOVE_NONE}
+    },
 };
 
 static const struct TrainerMon sParty_Diana1[] = {
