@@ -447,7 +447,8 @@
     "WarpedHollow",
     "WarpedHollow_ExitPatch",
     "WarpedHollow_Entry",
-    "City3_Secret"
+    "City3_Secret",
+    "CrawleafForrest"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

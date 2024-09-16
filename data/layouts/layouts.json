@@ -4590,6 +4590,16 @@
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/City3_Secret/border.bin",
       "blockdata_filepath": "data/layouts/City3_Secret/map.bin"
+    },
+    {
+      "id": "LAYOUT_CRAWLEAF_FORREST",
+      "name": "CrawleafForrest_Layout",
+      "width": 60,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/CrawleafForrest/border.bin",
+      "blockdata_filepath": "data/layouts/CrawleafForrest/map.bin"
     }
   ]
 }
