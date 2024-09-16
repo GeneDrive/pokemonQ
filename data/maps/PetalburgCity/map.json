@@ -190,75 +190,21 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 2,
-      "y": 6,
-      "elevation": 3,
-      "var": "VAR_PETALBURG_CITY_STATE",
+      "x": 14,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "PetalburgCity_EventScript_ShowGymToPlayer0"
+      "script": "PetalburgCity_EventScript_SecretStart"
     },
     {
       "type": "trigger",
-      "x": 3,
-      "y": 5,
-      "elevation": 3,
-      "var": "VAR_PETALBURG_CITY_STATE",
+      "x": 15,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "PetalburgCity_EventScript_ShowGymToPlayer1"
-    },
-    {
-      "type": "trigger",
-      "x": 3,
-      "y": 4,
-      "elevation": 3,
-      "var": "VAR_PETALBURG_CITY_STATE",
-      "var_value": "0",
-      "script": "PetalburgCity_EventScript_ShowGymToPlayer2"
-    },
-    {
-      "type": "trigger",
-      "x": 2,
-      "y": 4,
-      "elevation": 3,
-      "var": "VAR_PETALBURG_CITY_STATE",
-      "var_value": "0",
-      "script": "PetalburgCity_EventScript_ShowGymToPlayer3"
-    },
-    {
-      "type": "trigger",
-      "x": 3,
-      "y": 6,
-      "elevation": 3,
-      "var": "VAR_SCOTT_PETALBURG_ENCOUNTER",
-      "var_value": "0",
-      "script": "PetalburgCity_EventScript_Scott0"
-    },
-    {
-      "type": "trigger",
-      "x": 2,
-      "y": 7,
-      "elevation": 3,
-      "var": "VAR_SCOTT_PETALBURG_ENCOUNTER",
-      "var_value": "0",
-      "script": "PetalburgCity_EventScript_Scott1"
-    },
-    {
-      "type": "trigger",
-      "x": 3,
-      "y": 3,
-      "elevation": 3,
-      "var": "VAR_SCOTT_PETALBURG_ENCOUNTER",
-      "var_value": "0",
-      "script": "PetalburgCity_EventScript_Scott2"
-    },
-    {
-      "type": "trigger",
-      "x": 2,
-      "y": 5,
-      "elevation": 3,
-      "var": "VAR_SCOTT_PETALBURG_ENCOUNTER",
-      "var_value": "0",
-      "script": "PetalburgCity_EventScript_Scott3"
+      "script": "PetalburgCity_EventScript_SecretStart"
     }
   ],
   "bg_events": [

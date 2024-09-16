@@ -170,3 +170,12 @@ FrigidFalls_6F_R2_Text_Archie_5:
 
 FrigidFalls_6F_R2_Text_Archie_Defeat:
 	.string "I lost… With this power…$"
+
+FrigidFalls_6F_R2_Text_Archie_6:
+	.string "ARCHIE: How did I lose to this kid!\n"
+	.string "GRRRRRRRRRRR!\p"
+	.string "I must admit you're pretty good kid.\n"
+	.string "I'll let you two go this time,\l"
+	.string "But next time I recommend staying\l"
+	.string "Out of our way!\p"
+	.string "Because there will be consequences!$"

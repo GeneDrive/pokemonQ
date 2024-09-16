@@ -569,7 +569,8 @@ PetalburgCity_EventScript_Scott::
 	end
 
 PetalburgCity_EventScript_SecretStart::
-	msgbox PetalburgCity_Text_AreYouATrainer, MSGBOX_YESNO
+	goto_if_set FLAG_PETALBURG_SECRET_DONE, PetalburgCity_EventScript_SecretEndNo
+	msgbox PetalburgCity_Text_Secret, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, PetalburgCity_EventScript_SecretEndYes
 	goto_if_eq VAR_RESULT, NO, PetalburgCity_EventScript_SecretEndNo
 	end
@@ -580,7 +581,10 @@ PetalburgCity_EventScript_SecretEndYes::
 	end
 
 PetalburgCity_EventScript_SecretEndNo::
+	msgbox PetalburgCity_Text_SecretNo, MSGBOX_DEFAULT
+	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_WalkDown
+	waitmovement 0
 	releaseall
 	end
 
@@ -791,3 +795,6 @@ PetalburgCity_Text_Secret:
 	.string "You sense a strong trainer ahead...\n"
 	.string "Level around 17-18.\p"
 	.string "Do you want to enter?.$"
+
+PetalburgCity_Text_SecretNo:
+	.string "Nothing to see here.$"

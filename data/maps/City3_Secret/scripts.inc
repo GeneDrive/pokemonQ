@@ -1,4 +1,4 @@
-.set LOCALID_RED, 0
+.set LOCALID_RED, 1
 
 City3_Secret_MapScripts::
 	.byte 0
