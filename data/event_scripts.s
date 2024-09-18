@@ -1105,3 +1105,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/City3_Secret/scripts.inc"
 
 	.include "data/maps/CrawleafForrest/scripts.inc"
+
+	.include "data/maps/CrawleafForrest_Secret/scripts.inc"

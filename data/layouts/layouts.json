@@ -4600,6 +4600,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/CrawleafForrest/border.bin",
       "blockdata_filepath": "data/layouts/CrawleafForrest/map.bin"
+    },
+    {
+      "id": "LAYOUT_CRAWLEAF_FORREST_SECRET",
+      "name": "CrawleafForrest_Secret_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/CrawleafForrest_Secret/border.bin",
+      "blockdata_filepath": "data/layouts/CrawleafForrest_Secret/map.bin"
     }
   ]
 }

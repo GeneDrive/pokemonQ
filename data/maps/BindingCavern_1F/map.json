@@ -104,6 +104,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 23,
+      "y": 18,
+      "elevation": 3,
+      "item": "ITEM_ANTIDOTE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_ANTIDOTE"
+    }
   ]
 }

@@ -448,7 +448,8 @@
     "WarpedHollow_ExitPatch",
     "WarpedHollow_Entry",
     "City3_Secret",
-    "CrawleafForrest"
+    "CrawleafForrest",
+    "CrawleafForrest_Secret"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
