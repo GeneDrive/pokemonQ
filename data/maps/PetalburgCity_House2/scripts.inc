@@ -10,7 +10,7 @@ PetalburgCity_House2_EventScript_SchoolKid::
 	end
 
 PetalburgCity_House2_Text_NormanBecameGymLeader:
-	.string "WINONA has been this town's GYM LEADER\n"
+	.string "WINONA has been this city's GYM LEADER\n"
 	.string "for a good while now.\p"
 	.string "She's been very popular with\n"
 	.string "The kids around here.\p"

@@ -346,9 +346,9 @@ PetalburgCity_Gym_Real_Text_Dont_Go:
 
 PetalburgCity_Gym_Real_Text_Professor:
 	.string "HELP, a group is disturbing our \n"
-	.string "gaurdian Pokemon on ROUTE 101!\p"
+	.string "gaurdian Pokemon on ROUTE 141!\p"
 	.string "Quickly come help me and \n"
-	.string "May over on ROUTE 101!$"
+	.string "Jade over on ROUTE 141!$"
 
 PetalburgCity_Gym_Real_Text_ParkerIntro:
 	.string "You will never defeat me!\n"
@@ -428,7 +428,7 @@ PetalburgCity_Gym_Real_Text_WinonaIntro:
 	.string "Oh wait, sorry this should be your \n"
 	.string "moment, let me get more serious.\p"
 	.string "I am WINONA. I am the LEADER of\n"
-	.string "the PETALBURG POKéMON GYM.\p"
+	.string "the AUROPEAK POKéMON GYM.\p"
 	.string "I have become strong with my POKéMON \n"
 	.string "and we have soared the skies…\p"
 	.string "However grueling the battle, we have\n"

@@ -756,7 +756,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
 	.string "is helping up and coming trainers,\l"
 	.string "which may be good experience for you.\p"
 	.string "You should be able to reach the city \n"
-	.string "by going through ROUTE 102.\p"
+	.string "by going through ROUTE 142.\p"
 	.string "You should go see her, we'll talk after!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:

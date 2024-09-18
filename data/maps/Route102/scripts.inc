@@ -132,12 +132,12 @@ Route102_Text_CatchWholeBunchOfPokemon:
 	.string "POKéMON!$"
 
 Route102_Text_RouteSignOldale:
-	.string "ROUTE 102\n"
-	.string "{RIGHT_ARROW} OLDALE TOWN$"
+	.string "ROUTE 142\n"
+	.string "{RIGHT_ARROW} KEVANO TOWN$"
 
 Route102_Text_RouteSignPetalburg:
-	.string "ROUTE 102\n"
-	.string "{LEFT_ARROW} PETALBURG CITY$"
+	.string "ROUTE 142\n"
+	.string "{LEFT_ARROW} AUROPEAK CITY$"
 
 Route102_Text_WarpConfirm:
 	.string "You sense strong trainers ahead…\n"

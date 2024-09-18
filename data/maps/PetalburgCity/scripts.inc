@@ -743,7 +743,7 @@ PetalburgCity_Text_AreYouRookieTrainer:
 	.string "is in the town.$"
 
 PetalburgCity_Text_ThisIsPetalburgGym:
-	.string "See? This is PETALBURG CITY's GYM.$"
+	.string "See? This is AUROPEAK CITY's GYM.$"
 
 PetalburgCity_Text_ThisIsGymSign:
 	.string "This is the GYM's sign. Look for it\n"
@@ -763,12 +763,12 @@ PetalburgCity_Text_FullPartyExplanation:
 	.string "BOX over a PC connection.$"
 
 PetalburgCity_Text_GymSign:
-	.string "PETALBURG CITY POKéMON GYM\n"
+	.string "AUROPEAK CITY POKéMON GYM\n"
 	.string "LEADER: WINONA\l"
 	.string "“A cool trainer with amazing strategy!”$"
 
 PetalburgCity_Text_CitySign:
-	.string "PETALBURG CITY\n"
+	.string "AUROPEAK CITY\n"
 	.string "“Where people mingle with nature.”$"
 
 PetalburgCity_Text_WallyHouseSign:

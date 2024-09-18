@@ -304,7 +304,7 @@ Route103_EventScript_Isabelle::
 
 Route103_Text_MayRoute103Pokemon:
 	.string "JADE: Let's see… The rare POKéMON \n"
-	.string "found on ROUTE 103 were RIOLU and…$"
+	.string "found on ROUTE 143 were RIOLU and…$"
 
 Route103_Text_MayLetsBattle:
 	.string "Oh, hey, it's you {PLAYER}!\p"
@@ -342,7 +342,7 @@ Route103_Text_MayTimeToHeadBack:
 
 Route103_Text_BrendanRoute103Pokemon:
 	.string "JADE: Let's see… The rare POKéMON \n"
-	.string "found on ROUTE 103 were RIOLU and…$"
+	.string "found on ROUTE 143 were RIOLU and…$"
 
 Route103_Text_BrendanLetsBattle:
 	.string "Who! Oh, it's just you.\p"
@@ -385,12 +385,12 @@ Route103_Text_ShouldHaveBroughtPotion:
 
 Route103_Text_ShortcutToOldale:
 	.string "If you cross the sea from here,\n"
-	.string "it'll be a shortcut to OLDALE TOWN.\p"
+	.string "it'll be a shortcut to KEVANO TOWN.\p"
 	.string "Fufufu, that's useful, isn't it?$"
 
 Route103_Text_RouteSign:
-	.string "ROUTE 103\n"
-	.string "{DOWN_ARROW} OLDALE TOWN$"
+	.string "ROUTE 143\n"
+	.string "{DOWN_ARROW} KEVANO TOWN$"
 
 Route103_Text_RivalGiveBallsStart:
 	.string "Here have some pokeballs.$"

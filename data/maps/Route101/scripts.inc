@@ -483,7 +483,7 @@ Route101_Text_YouSavedMe:
 Route101_Text_TakeTiredPokemonToPokeCenter:
 	.string "If POKéMON get tired, take them to\n"
 	.string "a POKéMON CENTER.\p"
-	.string "There's a POKéMON CENTER in OLDALE\n"
+	.string "There's a POKéMON CENTER in KEVANO\n"
 	.string "TOWN right close by.$"
 
 Route101_Text_WildPokemonInTallGrass:
@@ -494,11 +494,11 @@ Route101_Text_WildPokemonInTallGrass:
 
 Route101_Text_RouteSign:
 	.string "ROUTE 101\n"
-	.string "{UP_ARROW} OLDALE TOWN$"
+	.string "{UP_ARROW} KEVANO TOWN$"
 
 Route101_Text_GoSeeMayFirst:
 	.string "You should go see JADE first,\n"
-	.string "she likes to explore ROUTE 103.\l"
+	.string "she likes to explore ROUTE 143.\l"
 	.string "we'll talk after!$"
 
 Route101_Text_GoCity:
@@ -506,7 +506,7 @@ Route101_Text_GoCity:
 	.string "is helping up and coming trainers,\l"
 	.string "which may be good experience for you.\p"
 	.string "You should be able to reach the city \n"
-	.string "by going through ROUTE 102.\p"
+	.string "by going through ROUTE 142.\p"
 	.string "You should go see her, we'll talk after!$"
 
 Route101_Text_ComeOverEast:
