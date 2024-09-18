@@ -63,6 +63,9 @@
 #define MAP_UNDERWATER_ROUTE129 (54 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE105 (55 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
+#define MAP_IZALA_CITY          (57 | (0 << 8))
+#define MAP_ROUTE104_NEW        (58 | (0 << 8))
+#define MAP_FUCK_OFF_CITY       (59 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

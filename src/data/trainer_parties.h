@@ -8327,14 +8327,14 @@ static const struct TrainerMon sParty_James1[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 25,
-    .ability = ABILITY_HUSTLE,
-    .species = SPECIES_DARUMAKA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_NONE, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    .ability = ABILITY_GLUTTONY,
+    .species = SPECIES_LINOONE_GALARIAN,
+    .heldItem = ITEM_FIGY_BERRY,
+    .moves = {MOVE_NIGHT_SLASH, MOVE_HONE_CLAWS, MOVE_BODY_SLAM, MOVE_SAND_ATTACK}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 30,
+    .lvl = 28,
     .ability = ABILITY_WONDER_GUARD,
     .species = SPECIES_SHEDINJA,
     .heldItem = ITEM_FOCUS_BAND,

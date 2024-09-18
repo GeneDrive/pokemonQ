@@ -1107,3 +1107,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/CrawleafForrest/scripts.inc"
 
 	.include "data/maps/CrawleafForrest_Secret/scripts.inc"
+
+	.include "data/maps/IzalaCity/scripts.inc"
+
+	.include "data/maps/Route104_new/scripts.inc"
+
+	.include "data/maps/FuckOffCity/scripts.inc"

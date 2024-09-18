@@ -4610,6 +4610,36 @@
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/CrawleafForrest_Secret/border.bin",
       "blockdata_filepath": "data/layouts/CrawleafForrest_Secret/map.bin"
+    },
+    {
+      "id": "LAYOUT_IZALA_CITY",
+      "name": "IzalaCity_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/IzalaCity/border.bin",
+      "blockdata_filepath": "data/layouts/IzalaCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE104_NEW",
+      "name": "Route104_new_Layout",
+      "width": 35,
+      "height": 42,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/Route104_new/border.bin",
+      "blockdata_filepath": "data/layouts/Route104_new/map.bin"
+    },
+    {
+      "id": "LAYOUT_FUCK_OFF_CITY",
+      "name": "FuckOffCity_Layout",
+      "width": 70,
+      "height": 106,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/FuckOffCity/border.bin",
+      "blockdata_filepath": "data/layouts/FuckOffCity/map.bin"
     }
   ]
 }

@@ -335,6 +335,20 @@
       "elevation": 0,
       "dest_map": "MAP_CRAWLEAF_FORREST_SECRET",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE104_NEW",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE104_NEW",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
