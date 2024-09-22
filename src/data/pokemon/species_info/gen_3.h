@@ -5366,13 +5366,13 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_BALTOY
     [SPECIES_BALTOY] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 40,
+        .baseHP        = 44,
+        .baseAttack    = 44,
         .baseDefense   = 55,
         .baseSpeed     = 55,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 70,
-        .types = { TYPE_GROUND, TYPE_PSYCHIC },
+        .baseSpAttack  = 44,
+        .baseSpDefense = 77,
+        .types = { TYPE_GROUND, TYPE_TIME },
         .catchRate = 255,
         .expYield = 60,
         .evYield_SpDefense = 1,

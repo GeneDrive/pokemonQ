@@ -128,6 +128,7 @@ FrigidFalls_6F_EventScript_Jade_End::
 	releaseall
 	savebgm MUS_DUMMY
 	fadedefaultbgm
+	setflag FLAG_DEFEATED_RIVAL_ROUTE101_CAVE
 	setvar VAR_FRIGID_FALLS_STATE, 1
 	end
 
