@@ -4624,7 +4624,7 @@
     {
       "id": "LAYOUT_ROUTE104_NEW",
       "name": "Route104_new_Layout",
-      "width": 35,
+      "width": 38,
       "height": 42,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
