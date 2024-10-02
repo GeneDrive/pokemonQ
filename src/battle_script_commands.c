@@ -6144,6 +6144,24 @@ static void Cmd_moveend(void)
             break;
         }
 
+        if(IsMoveMakingContact(gCurrentMove, gBattlerAttacker) 
+            && IsBattlerAlive(gBattlerTarget)
+            && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+            ) {
+                u8 battler = gBattlerTarget;
+                if ((((gBattleMons[gBattlerTarget].status1 & STATUS1_SLEEP) > 0 &&(gBattleMons[gBattlerTarget].status1 & STATUS1_SLEEP) < 4) && GetBattlerAbility(gBattlerTarget) != ABILITY_COMATOSE)
+                && !((gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP) > 0)
+                && BATTLER_TURN_DAMAGED(battler)
+                ) {
+                    gBattleMons[gBattlerTarget].status1 &= ~STATUS1_SLEEP;
+
+                    BtlController_EmitSetMonData(gBattlerTarget, BUFFER_A, REQUEST_STATUS_BATTLE, 0, sizeof(gBattleMons[gBattlerTarget].status1), &gBattleMons[gBattlerTarget].status1);
+                    MarkBattlerForControllerExec(gBattlerTarget);
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_TargetWokeUp;
+                }
+            }
+
         if (endMode == 1 && effect == FALSE)
             gBattleScripting.moveendState = MOVEEND_COUNT;
         if (endMode == 2 && endState == gBattleScripting.moveendState)
@@ -11007,7 +11025,7 @@ static void Cmd_trysetrest(void)
         else
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_REST;
 
-        gBattleMons[gBattlerTarget].status1 = STATUS1_SLEEP_TURN(3);
+        gBattleMons[gBattlerTarget].status1 = STATUS1_SLEEP_TURN(6);
         BtlController_EmitSetMonData(gBattlerTarget, BUFFER_A, REQUEST_STATUS_BATTLE, 0, sizeof(gBattleMons[gBattlerTarget].status1), &gBattleMons[gBattlerTarget].status1);
         MarkBattlerForControllerExec(gBattlerTarget);
         gBattlescriptCurrInstr = cmd->nextInstr;
@@ -12152,6 +12170,17 @@ static void Cmd_weatherdamage(void)
     }
 
     gBattlescriptCurrInstr = cmd->nextInstr;
+
+    // almost works only need to check every pokemon for playing message
+    if (((gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP) > 0 &&(gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP) < 4) && GetBattlerAbility(gBattlerAttacker) != ABILITY_COMATOSE) {
+        gBattleMons[gBattlerAttacker].status1 &= ~STATUS1_SLEEP;
+
+        BtlController_EmitSetMonData(gBattlerAttacker, BUFFER_A, REQUEST_STATUS_BATTLE, 0, sizeof(gBattleMons[gBattlerAttacker].status1), &gBattleMons[gBattlerAttacker].status1);
+        MarkBattlerForControllerExec(gBattlerAttacker);
+
+        BattleScriptPushCursor();
+        gBattlescriptCurrInstr = BattleScript_TargetWokeUp;
+    }
 }
 
 static void Cmd_tryinfatuating(void)

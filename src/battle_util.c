@@ -3446,6 +3446,8 @@ u8 AtkCanceller_UnableToUseMove(u32 moveType)
                 else
                 {
                     u8 toSub;
+                    if ((gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP) == 4)
+                        gBattleMons[gBattlerAttacker].status1 &= ~STATUS1_SLEEP;
                     if (GetBattlerAbility(gBattlerAttacker) == ABILITY_EARLY_BIRD)
                         toSub = 2;
                     else
