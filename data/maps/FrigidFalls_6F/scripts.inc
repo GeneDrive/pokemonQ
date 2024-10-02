@@ -308,7 +308,7 @@ FrigidFalls_6F_Movement_Jade_Go::
 	step_end
 
 FrigidFalls_6F_Text_Jade1:
-	.string "Oh, hey {PLAYER}!\n"
+	.string "JADE: Oh, hey {PLAYER}!\n"
 	.string "What are you doing here?!$"
 
 FrigidFalls_6F_Text_Jade2:
@@ -349,13 +349,13 @@ FrigidFalls_6F_Text_Jade4:
 	.string "No way! I lost again…$"
 
 FrigidFalls_6F_Text_Jade5:
-	.string "Wait were those guys with team aqua?\p"
+	.string "JADE: Wait were those guys with team aqua?\p"
 	.string "They must be up to something bad,\n"
 	.string "we've got to go after them!\p"
 	.string "Come on, follow me!$"
 
 FrigidFalls_6F_Text_Grunt_Late:
-	.string "Hurry up! the boss is gonna \n"
+	.string "GRUNT: Hurry up! the boss is gonna \n"
 	.string "be angry if we're late!$"
 
 FrigidFalls_6F_Text_No_leave:
@@ -370,7 +370,7 @@ FrigidFalls_6F_Text_Collapsed:
 	.string "I shouldn't go in here…$"
 
 FrigidFalls_6F_Text_Prepared:
-	.string "We're probably gonna have to battle\n"
+	.string "JADE: We're probably gonna have to battle\n"
 	.string "them. Are you prepared to go in?$"
 
 FrigidFalls_6F_Text_Prepared_2:

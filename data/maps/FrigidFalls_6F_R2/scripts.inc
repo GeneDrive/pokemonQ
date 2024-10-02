@@ -179,3 +179,62 @@ FrigidFalls_6F_R2_Text_Archie_6:
 	.string "But next time I recommend staying\l"
 	.string "Out of our way!\p"
 	.string "Because there will be consequences!$"
+
+FrigidFalls_6F_R2_Text_Jade_8:
+	.string "JADE: Good job {PLAYER}!\n"
+	.string "I just finished here to!$"
+
+FrigidFalls_6F_R2_Text_Jade_9:
+	.string "JADE: What did you just say?\n"
+	.string "Next time? There won't be a next time!\p"
+	.string "I already called the authorities before\n"
+	.string "we went in here, so we won't let\p"
+	.string "you get away like last time!$"
+
+FrigidFalls_6F_R2_Text_Archie_7:
+	.string "ARCHIE: HAHAHA\n"
+	.string "I don't think so kid!\p"
+	.string "Unlike the last time, we made preperations\n"
+	.string "To cover our tracks!\p"
+	.string "So I don't think you'll have a choice!$"
+
+FrigidFalls_6F_R2_Text_Archie_8:
+	.string "GRUNT: But boss, what about the POKéMON!?$"
+
+FrigidFalls_6F_R2_Text_Archie_9:
+	.string "ARCHIE: Leave it! \n"
+	.string "There are other fish in the sea!\p"
+	.string "We had another lead anyway, so\n"
+	.string "we'll just follow that one!\p"
+	.string "If this POKéMON can be defeated by a\n"
+	.string "child, It won't be useful anyway!\p"
+	.string "So I don't think you'll have a choice!$"
+
+FrigidFalls_6F_R2_Text_Archie_10:
+	.string "ARCHIE: You heared me!\n"
+	.string "We're LEAVING!!!\p"
+	.string "'CLICK'$"
+
+FrigidFalls_6F_R2_Text_Boom:
+	.string "'BOOM!!!'$"
+
+FrigidFalls_6F_R2_Text_Jade_10:
+	.string "JADE: Wh- what was that!?$"
+
+FrigidFalls_6F_R2_Text_Archie_11:
+	.string "ARCHIE: You better leave kids, or else\n"
+	.string "this place will become your tomb!$"
+
+FrigidFalls_6F_R2_Text_Archie_12:
+	.string "ARCHIE: HAHAHA!!! \n"
+	.string "Now you'll understand what you're\l"
+	.string "dealing with!\p"
+	.string "This is just a fraction of what\n"
+	.string "team aqua is capable of!\l"
+	.string "So you'd better stay out of our way!\p"
+	.string "HAHAHA!!!$"
+
+FrigidFalls_6F_R2_Text_Jade_11:
+	.string "JADE: Come on we've gotta get out of here!\n"
+	.string "I'll help the Pokémon get out, just \l"
+	.string "run quickly! I'll be right behind you!$"
