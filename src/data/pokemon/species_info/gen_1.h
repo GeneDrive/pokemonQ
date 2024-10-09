@@ -1201,7 +1201,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #define PIDGEOT_SPEED (P_UPDATED_STATS >= GEN_6 ? 101 : 91)
 
 #define PIDGEOT_MISC_INFO                                   \
-        .types = { TYPE_NORMAL, TYPE_FLYING },              \
         .catchRate = 45,                                    \
         .evYield_Speed = 3,                                 \
         .genderRatio = PERCENT_FEMALE(50),                  \
@@ -1221,6 +1220,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_PIDGEOT] =
     {
         PIDGEOT_MISC_INFO,
+        .types = { TYPE_NORMAL, TYPE_FLYING },
         .baseHP        = 83,
         .baseAttack    = 80,
         .baseDefense   = 75,
@@ -1257,6 +1257,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_PIDGEOT_MEGA] =
     {
         PIDGEOT_MISC_INFO,
+        .types = { TYPE_ELECTRIC, TYPE_FLYING },
         .baseHP        = 83,
         .baseAttack    = 80,
         .baseDefense   = 80,
