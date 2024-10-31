@@ -12169,8 +12169,6 @@ static void Cmd_weatherdamage(void)
         }
     }
 
-    gBattlescriptCurrInstr = cmd->nextInstr;
-
     // almost works only need to check every pokemon for playing message
     if (((gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP) > 0 &&(gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP) < 4) && GetBattlerAbility(gBattlerAttacker) != ABILITY_COMATOSE) {
         gBattleMons[gBattlerAttacker].status1 &= ~STATUS1_SLEEP;
@@ -12181,6 +12179,8 @@ static void Cmd_weatherdamage(void)
         BattleScriptPushCursor();
         gBattlescriptCurrInstr = BattleScript_TargetWokeUp;
     }
+
+    gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
 static void Cmd_tryinfatuating(void)
