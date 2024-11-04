@@ -1113,3 +1113,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route104_new/scripts.inc"
 
 	.include "data/maps/FuckOffCity/scripts.inc"
+
+	.include "data/maps/Route105_new_cave1_F1/scripts.inc"
+
+	.include "data/maps/Route105_new_cave1_F2/scripts.inc"
