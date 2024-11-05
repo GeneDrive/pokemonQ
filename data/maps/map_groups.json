@@ -455,7 +455,10 @@
     "CrawleafForrest",
     "CrawleafForrest_Secret",
     "Route105_new_cave1_F1",
-    "Route105_new_cave1_F2"
+    "Route105_new_cave1_F2",
+    "Route105_new_cave2_F1",
+    "Route105_new_cave2_F2",
+    "Route105_new_cave2_F3"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
