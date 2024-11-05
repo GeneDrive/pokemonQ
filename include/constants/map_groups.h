@@ -424,6 +424,8 @@
 #define MAP_CITY3_SECRET                             (124 | (24 << 8))
 #define MAP_CRAWLEAF_FORREST                         (125 | (24 << 8))
 #define MAP_CRAWLEAF_FORREST_SECRET                  (126 | (24 << 8))
+#define MAP_ROUTE105_NEW_CAVE1_F1                    (127 | (24 << 8))
+#define MAP_ROUTE105_NEW_CAVE1_F2                    (128 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

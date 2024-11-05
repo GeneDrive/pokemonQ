@@ -4650,6 +4650,26 @@
       "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/Route105_New/border.bin",
       "blockdata_filepath": "data/layouts/Route105_New/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE105_NEW_CAVE1_F1",
+      "name": "Route105_new_cave1_F1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Route105_new_cave1_F1/border.bin",
+      "blockdata_filepath": "data/layouts/Route105_new_cave1_F1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE105_NEW_CAVE1_F2",
+      "name": "Route105_new_cave1_F2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Route105_new_cave1_F2/border.bin",
+      "blockdata_filepath": "data/layouts/Route105_new_cave1_F2/map.bin"
     }
   ]
 }
