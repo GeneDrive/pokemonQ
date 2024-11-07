@@ -105,7 +105,7 @@
               {
                 "min_level": 3,
                 "max_level": 4,
-                "species": "SPECIES_BOUNSWEET"
+                "species": "SPECIES_DEERLING_WINTER"
               },
               {
                 "min_level": 3,
@@ -120,7 +120,7 @@
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_BOUNSWEET"
+                "species": "SPECIES_DEERLING_WINTER"
               },
               {
                 "min_level": 2,
@@ -358,7 +358,7 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_TAROUNTULA"
+                "species": "SPECIES_RIOLU"
               },
               {
                 "min_level": 4,
@@ -9065,7 +9065,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BOUNSWEET"
+                "species": "SPECIES_DEERLING_WINTER"
               },
               {
                 "min_level": 5,
@@ -9085,7 +9085,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BOUNSWEET"
+                "species": "SPECIES_DEERLING_WINTER"
               },
               {
                 "min_level": 5,
@@ -12237,7 +12237,7 @@
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_SNORUNT"
+                "species": "SPECIES_DEERLING_WINTER"
               },
               {
                 "min_level": 20,
@@ -12262,7 +12262,7 @@
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_ROCKRUFF"
+                "species": "SPECIES_DEERLING_WINTER"
               },
               {
                 "min_level": 20,
@@ -12386,7 +12386,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BOUNSWEET"
+                "species": "SPECIES_DEERLING_SUMMER"
               },
               {
                 "min_level": 5,
@@ -12396,7 +12396,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SKIDDO"
+                "species": "SPECIES_DEERLING_SUMMER"
               },
               {
                 "min_level": 5,
@@ -12406,7 +12406,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SKIDDO"
+                "species": "SPECIES_DEERLING_SUMMER"
               },
               {
                 "min_level": 5,
@@ -12416,7 +12416,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SKIDDO"
+                "species": "SPECIES_DEERLING_SUMMER"
               },
               {
                 "min_level": 5,

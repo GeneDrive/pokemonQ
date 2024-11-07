@@ -5084,10 +5084,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_DEERLING
 #define DEERLING_MISC_INFO                                                              \
         .baseHP        = 60,                                                            \
-        .baseAttack    = 60,                                                            \
+        .baseAttack    = 65,                                                            \
         .baseDefense   = 50,                                                            \
         .baseSpeed     = 75,                                                            \
-        .baseSpAttack  = 40,                                                            \
+        .baseSpAttack  = 45,                                                            \
         .baseSpDefense = 50,                                                            \
         .types = { TYPE_NORMAL, TYPE_GRASS },                                           \
         .catchRate = 190,                                                               \
@@ -5175,12 +5175,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
 #define SAWSBUCK_MISC_INFO                                                              \
         .baseHP        = 80,                                                            \
-        .baseAttack    = 100,                                                           \
+        .baseAttack    = 110,                                                           \
         .baseDefense   = 70,                                                            \
         .baseSpeed     = 95,                                                            \
-        .baseSpAttack  = 60,                                                            \
+        .baseSpAttack  = 70,                                                            \
         .baseSpDefense = 70,                                                            \
-        .types = { TYPE_NORMAL, TYPE_GRASS },                                           \
         .catchRate = 75,                                                                \
         .expYield = 166,                                                                \
         .evYield_Attack = 2,                                                            \
@@ -5189,7 +5188,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,                                              \
         .growthRate = GROWTH_MEDIUM_FAST,                                               \
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD },                              \
-        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SAP_SIPPER, ABILITY_SERENE_GRACE }, \
         .bodyColor = BODY_COLOR_BROWN,                                                  \
         .speciesName = _("Sawsbuck"),                                                   \
         .cryId = CRY_SAWSBUCK,                                                          \
@@ -5213,6 +5211,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_SAWSBUCK_SPRING] =
     {
         SAWSBUCK_MISC_INFO,
+        .types = { TYPE_FAIRY, TYPE_GRASS },                                           
+        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_PIXILATE, ABILITY_SERENE_GRACE }, 
         .description = COMPOUND_STRING(
             "Some people call Sawsbuck the harbingers\n"
             "of spring because the plants growing on\n"
@@ -5227,6 +5227,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_SAWSBUCK_SUMMER] =
     {
         SAWSBUCK_MISC_INFO,
+        .types = { TYPE_NORMAL, TYPE_GRASS },                                           
+        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SAP_SIPPER, ABILITY_SERENE_GRACE }, 
         .description = COMPOUND_STRING(
             "The thicker and larger the\n"
             "branches and leaves on its antlers, the\n"
@@ -5241,6 +5243,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_SAWSBUCK_AUTUMN] =
     {
         SAWSBUCK_MISC_INFO,
+        .types = { TYPE_GROUND, TYPE_GRASS },                                           
+        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_EARTH_EATER, ABILITY_SERENE_GRACE }, 
         .description = COMPOUND_STRING(
             "Sawsbuck in their Autumn Form are\n"
             "known for having very short\n"
@@ -5255,6 +5259,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_SAWSBUCK_WINTER] =
     {
         SAWSBUCK_MISC_INFO,
+        .types = { TYPE_ICE, TYPE_GRASS },                                           
+        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_REFRIGERATE, ABILITY_SERENE_GRACE }, 
         .description = COMPOUND_STRING(
             "Though there are many enthusiasts\n"
             "for Sawsbuck as a species, this\n"

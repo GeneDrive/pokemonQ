@@ -4685,9 +4685,9 @@
       "id": "LAYOUT_ROUTE105_NEW_CAVE2_F2",
       "name": "Route105_new_cave2_F2_Layout",
       "width": 60,
-      "height": 20,
+      "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Route105_new_cave2_F2/border.bin",
       "blockdata_filepath": "data/layouts/Route105_new_cave2_F2/map.bin"
     },
@@ -4697,7 +4697,7 @@
       "width": 60,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Route105_new_cave2_F3/border.bin",
       "blockdata_filepath": "data/layouts/Route105_new_cave2_F3/map.bin"
     }

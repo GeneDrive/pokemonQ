@@ -139,7 +139,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
-      "x": 112,
+      "x": 111,
       "y": 18,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -165,7 +165,20 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 13,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE105_NEW_CAVE1_F2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE105_NEW_CAVE1_F1",
+      "dest_warp_id": "1"
+    }
   ],
   "coord_events": [
 
