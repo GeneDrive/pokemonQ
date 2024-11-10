@@ -12976,6 +12976,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ROUTE105_NEW",
+          "base_label": "gRoute105_New0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_DEERLING_SPRING"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_BOUNSWEET"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_DEERLING_SPRING"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_SPRITZEE"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_DEERLING_SPRING"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_DEERLING_SPRING"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_DEERLING_SPRING"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_DEERLING_SPRING"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_DEERLING_SPRING"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_DEERLING_SPRING"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_DEERLING_SPRING"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_DEERLING_SPRING"
+              }
+            ]
+          }
         }
       ]
     },

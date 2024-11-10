@@ -4700,6 +4700,46 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Route105_new_cave2_F3/border.bin",
       "blockdata_filepath": "data/layouts/Route105_new_cave2_F3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE105_NEW_CAVE3",
+      "name": "Route105_new_cave3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Route105_new_cave3/border.bin",
+      "blockdata_filepath": "data/layouts/Route105_new_cave3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE105_NEW_CAVE4",
+      "name": "Route105_new_cave4_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Route105_new_cave4/border.bin",
+      "blockdata_filepath": "data/layouts/Route105_new_cave4/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE105_NEW_CAVE5_F1",
+      "name": "Route105_new_cave5_F1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Route105_new_cave5_F1/border.bin",
+      "blockdata_filepath": "data/layouts/Route105_new_cave5_F1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE105_NEW_CAVE5_F2",
+      "name": "Route105_new_cave5_F2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Route105_new_cave5_F2/border.bin",
+      "blockdata_filepath": "data/layouts/Route105_new_cave5_F2/map.bin"
     }
   ]
 }

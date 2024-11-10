@@ -429,6 +429,10 @@
 #define MAP_ROUTE105_NEW_CAVE2_F1                    (129 | (24 << 8))
 #define MAP_ROUTE105_NEW_CAVE2_F2                    (130 | (24 << 8))
 #define MAP_ROUTE105_NEW_CAVE2_F3                    (131 | (24 << 8))
+#define MAP_ROUTE105_NEW_CAVE3                       (132 | (24 << 8))
+#define MAP_ROUTE105_NEW_CAVE4                       (133 | (24 << 8))
+#define MAP_ROUTE105_NEW_CAVE5_F1                    (134 | (24 << 8))
+#define MAP_ROUTE105_NEW_CAVE5_F2                    (135 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))
