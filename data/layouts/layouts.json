@@ -4695,7 +4695,7 @@
       "id": "LAYOUT_ROUTE105_NEW_CAVE2_F3",
       "name": "Route105_new_cave2_F3_Layout",
       "width": 60,
-      "height": 20,
+      "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Route105_new_cave2_F3/border.bin",
