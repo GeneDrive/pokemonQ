@@ -7,7 +7,7 @@ Route105_new_cave1_F1_EventScript_TalkToFatGuy::
 	lockall
 	applymovement LOCALID_FATGUY, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox Route105_new_cave1_F1_Text_FatGuy, MSGBOX_DEFAULT
+	msgbox Route105_new_cave1_F1_Text_RarePokemon, MSGBOX_DEFAULT
 	closemessage
 	releaseall
 	end
