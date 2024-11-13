@@ -1,3 +1,5 @@
+.set LOCALID_ALICE, 1
+.set LOCALID_WALLY, 2
 .set LOCALID_STARTGIRL, 3
 
 Route105_New_MapScripts::

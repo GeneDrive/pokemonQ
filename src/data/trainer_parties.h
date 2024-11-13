@@ -1923,8 +1923,19 @@ static const struct TrainerMon sParty_Steve5[] = {
 
 static const struct TrainerMon sParty_Luis[] = {
     {
+    .lvl = 24,
+    .species = SPECIES_ZOROARK,
+    .heldItem = ITEM_AIR_BALLOON,
+    },
+    {
     .lvl = 26,
-    .species = SPECIES_CARVANHA,
+    .species = SPECIES_PERSIAN,
+    },
+    {
+    .lvl = 24,
+    .species = SPECIES_MUK,
+    .heldItem = ITEM_BLACK_SLUDGE,
+    .ability = ABILITY_POISON_TOUCH,
     }
 };
 
@@ -5780,12 +5791,17 @@ static const struct TrainerMon sParty_Madeline5[] = {
 
 static const struct TrainerMon sParty_Beverly[] = {
     {
-    .lvl = 25,
-    .species = SPECIES_WINGULL,
+    .lvl = 24,
+    .species = SPECIES_ZOROARK_HISUIAN,
     },
     {
     .lvl = 25,
-    .species = SPECIES_WAILMER,
+    .species = SPECIES_MUK_ALOLAN,
+    .ability = ABILITY_POISON_TOUCH,
+    },
+    {
+    .lvl = 25,
+    .species = SPECIES_PERRSERKER,
     }
 };
 

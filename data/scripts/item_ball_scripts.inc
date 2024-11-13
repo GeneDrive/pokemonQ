@@ -99,7 +99,15 @@ Route104_EventScript_ItemPotion::
 	end
 
 Route105_EventScript_ItemIron::
-	finditem ITEM_IRON
+	finditem ITEM_MYSTIC_WATER
+	end
+
+Route105_EventScript_Item1::
+	finditem ITEM_BOLD_MINT
+	end
+
+Route105_EventScript_Item2::
+	finditem ITEM_BLACK_BELT
 	end
 
 Route106_EventScript_ItemProtein::
@@ -427,7 +435,7 @@ GraniteCave_1F_EventScript_ItemEscapeRope::
 	end
 
 GraniteCave_B1F_EventScript_ItemPokeBall::
-	finditem ITEM_POKE_BALL
+	finditem ITEM_ULTRA_BALL, 3
 	end
 
 GraniteCave_B2F_EventScript_ItemRepel::
