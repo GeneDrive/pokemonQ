@@ -18,15 +18,15 @@
   ],
   "warp_events": [
     {
-      "x": 11,
-      "y": 8,
+      "x": 4,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_ROUTE105_NEW_CAVE5_F1",
       "dest_warp_id": "1"
     },
     {
-      "x": 9,
-      "y": 10,
+      "x": 2,
+      "y": 4,
       "elevation": 0,
       "dest_map": "MAP_ROUTE105_NEW",
       "dest_warp_id": "8"
@@ -38,8 +38,8 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 8,
-      "y": 9,
+      "x": 1,
+      "y": 3,
       "elevation": 3,
       "item": "ITEM_EVERSTONE",
       "flag": "FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_2"
