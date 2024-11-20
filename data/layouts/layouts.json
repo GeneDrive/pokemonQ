@@ -4740,6 +4740,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Route105_new_cave5_F2/border.bin",
       "blockdata_filepath": "data/layouts/Route105_new_cave5_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_IZALA_CITY_GYM_ETRANCE",
+      "name": "IzalaCity_Gym_Etrance_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/IzalaCity_Gym_Etrance/border.bin",
+      "blockdata_filepath": "data/layouts/IzalaCity_Gym_Etrance/map.bin"
     }
   ]
 }

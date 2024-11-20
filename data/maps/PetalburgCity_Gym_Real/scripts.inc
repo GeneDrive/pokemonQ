@@ -285,6 +285,25 @@ PetalburgCity_Gym_Real_EventScript_WinonaDefeatedAfter::
 	releaseall
 	end
 
+PetalburgCity_Gym_Real_EventScript_GymGuide::
+	lockall
+	faceplayer
+	goto_if_set FLAG_GYM_ONE_ASSIST_DONE, PetalburgCity_Gym_Real_EventScript_GymGuide2
+	msgbox PetalburgCity_Gym_Real_Text_GymGuideAdvice1, MSGBOX_DEFAULT
+	closemessage
+	giveitem ITEM_FRESH_WATER
+	msgbox PetalburgCity_Gym_Real_Text_GymGuideAdvice2, MSGBOX_DEFAULT
+	closemessage
+	setflag FLAG_GYM_ONE_ASSIST_DONE
+	releaseall
+	end
+
+PetalburgCity_Gym_Real_EventScript_GymGuide2::
+	msgbox PetalburgCity_Gym_Real_Text_GymGuideAdvice2, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
 PetalburgCity_Gym_Real_Text_Hello_Winona:
 	.string "Hey, speak of the devil. If it isn't\n"
 	.string "{PLAYER} who i've heard so much about.\l"
@@ -478,3 +497,29 @@ PetalburgCity_Gym_Real_Text_ExplainBadge:
 PetalburgCity_Gym_Real_Text_RegisteredWinona:
 	.string "Registered GYM LEADER WINONA\n"
 	.string "in the POKéNAV.$"
+
+PetalburgCity_Gym_Real_Text_GymGuideAdvice1:
+	.string "Yo, how's it going?\p"
+	.string "Listen, my friend!\n"
+	.string "Would you like to become the CHAMPION?\p"
+	.string "I'm no TRAINER, not me, but I can\n"
+	.string "sure give you winning advice.\p"
+	.string "That's settled, then! We'll aim for the\n"
+	.string "POKéMON CHAMPIONSHIP together!\p"
+	.string "It's your job as a TRAINER to collect\n"
+	.string "GYM BADGES, am I right?\p"
+	.string "But GYM LEADERS aren't pushovers!\p"
+	.string "And that's where I come in!\n"
+	.string "I'm here to provide expert advice!\p"
+	.string "WINONA, the GYM LEADER, is a user\n"
+	.string "of FLYING-type POKéMON.\p"
+	.string "The FLYING type is very tough, but\n"
+	.string "it can't stand ELECTRIC-type, \l"
+	.string "ICE-type and ROCK-type moves.\p"
+	.string "But don't think those types\n"
+	.string "will be enough, because the trainers\l"
+	.string "here use some tough type combo's.\p"
+	.string "Here's something to keep you refreshed.$"
+
+	PetalburgCity_Gym_Real_Text_GymGuideAdvice2:
+		.string "Well, go for it and good luck!$"

@@ -1133,3 +1133,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route105_new_cave5_F1/scripts.inc"
 
 	.include "data/maps/Route105_new_cave5_F2/scripts.inc"
+
+	.include "data/maps/IzalaCity_Gym_Etrance/scripts.inc"
