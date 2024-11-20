@@ -17,5 +17,5 @@ Route105_new_cave1_F1_Text_RarePokemon:
 	.string "these cave exits has a legendary\l"
 	.string "pokemon!\p"
 	.string "I gotta keep looking. I will find\n"
-	.string "it before anyone else and finnaly\l"
+	.string "it before anyone else and finally\l"
 	.string "defeat the gym leader!$"

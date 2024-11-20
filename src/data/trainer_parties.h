@@ -1926,10 +1926,15 @@ static const struct TrainerMon sParty_Luis[] = {
     .lvl = 24,
     .species = SPECIES_ZOROARK,
     .heldItem = ITEM_AIR_BALLOON,
+    .ability = ABILITY_ILLUSION,
+    .moves = {MOVE_NONE, MOVE_SUCKER_PUNCH, MOVE_NONE, MOVE_NONE}
     },
     {
-    .lvl = 26,
+    .lvl = 25,
     .species = SPECIES_PERSIAN,
+    .ability = ABILITY_TECHNICIAN,
+    .item = ITEM_RAZOR_CLAW,
+    .moves = {MOVE_PROTECT, MOVE_SLASH, MOVE_NONE, MOVE_NONE}
     },
     {
     .lvl = 24,
