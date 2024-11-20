@@ -1923,24 +1923,27 @@ static const struct TrainerMon sParty_Steve5[] = {
 
 static const struct TrainerMon sParty_Luis[] = {
     {
-    .lvl = 24,
-    .species = SPECIES_ZOROARK,
+    .lvl = 26,
+    .species = SPECIES_ZORUA,
     .heldItem = ITEM_AIR_BALLOON,
     .ability = ABILITY_ILLUSION,
-    .moves = {MOVE_NONE, MOVE_SUCKER_PUNCH, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_GRASS_KNOT, MOVE_SUCKER_PUNCH, MOVE_SNARL, MOVE_BURNING_JEALOUSY},
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30)
     },
     {
     .lvl = 25,
-    .species = SPECIES_PERSIAN,
-    .ability = ABILITY_TECHNICIAN,
-    .item = ITEM_RAZOR_CLAW,
-    .moves = {MOVE_PROTECT, MOVE_SLASH, MOVE_NONE, MOVE_NONE}
+    .species = SPECIES_TAUROS_PALDEAN_AQUA_BREED,
+    .ability = ABILITY_INTIMIDATE,
+    .item = ITEM_KINGS_ROCK,
+    .moves = {MOVE_AQUA_JET, MOVE_TRAILBLAZE, MOVE_FACADE, MOVE_ROCK_SMASH}
     },
     {
-    .lvl = 24,
-    .species = SPECIES_MUK,
-    .heldItem = ITEM_BLACK_SLUDGE,
-    .ability = ABILITY_POISON_TOUCH,
+    .lvl = 25,
+    .species = SPECIES_GRIMER,
+    .heldItem = ITEM_EVIOLITE,
+    .ability = ABILITY_STENCH,
+    .moves = {MOVE_SHADOW_SNEAK, MOVE_KNOCK_OFF, MOVE_POISON_FANG, MOVE_NONE},
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30)
     }
 };
 
@@ -5868,17 +5871,27 @@ static const struct TrainerMon sParty_Madeline5[] = {
 
 static const struct TrainerMon sParty_Beverly[] = {
     {
-    .lvl = 24,
-    .species = SPECIES_ZOROARK_HISUIAN,
+    .lvl = 26,
+    .species = SPECIES_ZORUA_HISUIAN,
+    .ability = ABILITY_ILLUSION,
+    .heldItem = ITEM_AIR_BALLOON,
+    .moves = {MOVE_PURSUIT, MOVE_HEX, MOVE_SWIFT, MOVE_ICY_WIND},
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     },
     {
     .lvl = 25,
-    .species = SPECIES_MUK_ALOLAN,
+    .species = SPECIES_GRIMER_ALOLAN,
     .ability = ABILITY_POISON_TOUCH,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_BITE, MOVE_POISON_FANG, MOVE_SHADOW_SNEAK, MOVE_ICE_FANG},
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     },
     {
     .lvl = 25,
-    .species = SPECIES_PERRSERKER,
+    .species = SPECIES_TAURUS,
+    .ability = ABILITY_INTIMIDATE,
+    .heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_FACADE, MOVE_TRAILBLAZE, MOVE_ROCK_TOMB, MOVE_NONE},
     }
 };
 
