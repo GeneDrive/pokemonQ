@@ -457,7 +457,7 @@
 #define FLAG_REMATCH_WALLACE                 0x1A9
 
 #define FLAG_GYM_ONE_ASSIST_DONE             0x1AA
-#define FLAG_UNUSED_0x1AB                    0x1AB // Unused Flag
+#define FLAG_GYM_TWO_ASSIST_DONE             0x1AB
 
 #define FLAG_DEFEATED_DEOXYS                 0x1AC
 #define FLAG_BATTLED_DEOXYS                  0x1AD
