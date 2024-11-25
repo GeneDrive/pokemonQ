@@ -120,6 +120,9 @@ Route105_New_EventScript_WallyEvent::
 	waitmovement 0
 	delay 5
 	setflag FLAG_ROUTE_105_HIDE_RIVALS
+	pokenavcall Route105_New_Text_LevelCapIncrease
+	waitmessage
+	delay 5
 	releaseall
 	end
 
@@ -261,3 +264,6 @@ Route105_New_Text_Receive_Wrappadan:
 
 Route105_New_Text_Wally_Defeat:
 	.string "I'm sorry Alica...$"
+
+Route105_New_Text_LevelCapIncrease:
+	.string "Level cap increased to Level 28!$"

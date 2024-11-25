@@ -375,3 +375,7 @@ FrigidFalls_6F_Text_Prepared:
 
 FrigidFalls_6F_Text_Prepared_2:
 	.string "Okay, Let's go!$"
+
+FrigidFalls_6F_Text_LevelCapIncrease:
+	.string "Level cap increased to Level 26!$"
+

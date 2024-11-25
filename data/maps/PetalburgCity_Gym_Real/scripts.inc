@@ -183,6 +183,9 @@ PetalburgCity_Gym_Real_Wally_Start_Battle::
 	setflag FLAG_GYM_1_WALLY_DEFEATED
 	applymovement LOCALID_WINONAEVENT, PetalburgCity_Gym_Real_Block_Player_Face_Right
 	waitmovement 0
+	pokenavcall PetalburgCity_Gym_Real_Text_LevelCapIncrease1
+	waitmessage
+	delay 5
 	end
 
 PetalburgCity_Gym_Real_Block_Exit::
@@ -281,6 +284,9 @@ PetalburgCity_Gym_Real_EventScript_GiveAerialAce::
 PetalburgCity_Gym_Real_EventScript_WinonaDefeatedAfter::
 	msgbox PetalburgCity_Gym_Real_Text_WinonaPostBattle, MSGBOX_DEFAULT
 	closemessage
+	delay 5
+	pokenavcall PetalburgCity_Gym_Real_Text_LevelCapIncrease2
+	waitmessage
 	delay 5
 	releaseall
 	end
@@ -521,5 +527,11 @@ PetalburgCity_Gym_Real_Text_GymGuideAdvice1:
 	.string "here use some tough type combo's.\p"
 	.string "Here's something to keep you refreshed.$"
 
-	PetalburgCity_Gym_Real_Text_GymGuideAdvice2:
+PetalburgCity_Gym_Real_Text_GymGuideAdvice2:
 		.string "Well, go for it and good luck!$"
+
+PetalburgCity_Gym_Real_Text_LevelCapIncrease1:
+	.string "Level cap increased to Level 16!$"
+
+PetalburgCity_Gym_Real_Text_LevelCapIncrease2:
+	.string "Level cap increased to Level 24!$"

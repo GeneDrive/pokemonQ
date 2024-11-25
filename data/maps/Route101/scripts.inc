@@ -419,6 +419,9 @@ Route101_EventScript_Jade_After_Cave_End::
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	setvar VAR_ROUTE101_STATE, 7
+	pokenavcall Route101_Text_LevelCapIncrease
+	waitmessage
+	delay 5
 	end
 
 Route101_EventScript_Old_Man1::
@@ -599,3 +602,6 @@ Route101_Text_Old_Man_Sleep:
 	.string "ZZZzzz... ZZZzzz...\n"
 	.string "He's in a deep sleep...\l"
 	.string "I'd better leave him alone...$"
+
+Route101_Text_LevelCapIncrease:
+	.string "Level cap increased to Level 18!$"

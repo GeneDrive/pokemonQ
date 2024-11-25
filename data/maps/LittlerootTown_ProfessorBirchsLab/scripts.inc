@@ -139,6 +139,9 @@ LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GetRivalToTeachYou, MSGBOX_DEFAULT
 	clearflag FLAG_HIDE_ROUTE_101_BOY
 	setvar VAR_BIRCH_LAB_STATE, 3
+	pokenavcall LittlerootTown_ProfessorBirchsLab_Text_LevelCapIncrease
+	waitmessage
+	delay 5
 	releaseall
 	end
 
@@ -998,3 +1001,6 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "we meet. I'll be waiting!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
+
+LittlerootTown_ProfessorBirchsLab_Text_LevelCapIncrease:
+	.string "Level cap increased to Level 8!$"

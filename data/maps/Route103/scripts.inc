@@ -159,6 +159,9 @@ Route103_EventScript_RivalEnd::
 	setflag FLAG_DEFEATED_RIVAL_ROUTE103
 	setvar VAR_OLDALE_RIVAL_STATE, 1
 	clearflag FLAG_HIDE_OLDALE_TOWN_RIVAL
+	pokenavcall Route103_Text_LevelCapIncrease
+	waitmessage
+	delay 5
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	releaseall
@@ -400,3 +403,5 @@ Route103_Text_RivalGiveBallsEnd:
 	.string "for next time.\p"
 	.string "Because I won't hold back next time!$"
 	
+Route103_Text_LevelCapIncrease:
+	.string "Level cap increased to Level 12!$"
