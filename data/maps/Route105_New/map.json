@@ -31,7 +31,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ROUTE_105_HIDE_RIVALS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WALLY",
@@ -44,7 +44,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ROUTE_105_HIDE_RIVALS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
@@ -232,21 +232,21 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 123,
+      "x": 122,
       "y": 5,
       "elevation": 0,
       "var": "VAR_ROUTE105_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Route105_New_EventScript_Trigger1"
     },
     {
       "type": "trigger",
-      "x": 123,
+      "x": 122,
       "y": 6,
       "elevation": 0,
       "var": "VAR_ROUTE105_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Route105_New_EventScript_Trigger2"
     }
   ],
   "bg_events": [
