@@ -116,6 +116,9 @@ FuckOffCity_EventScript_TalkToBrawly3::
 	applymovement LOCALID_BRAWLY, FuckOffCity_Movement_WalkUpOut
 	waitmovement 0
 	setflag FLAG_IZALA_CITY_HIDE_BRAWLY
+	setflag FLAG_HIDE_UXIE
+	setflag FLAG_HIDE_AZELF
+	setflag FLAG_HIDE_MESPRIT
 	setvar VAR_IZALA_CITY_STATE, 1
 	releaseall
 	end

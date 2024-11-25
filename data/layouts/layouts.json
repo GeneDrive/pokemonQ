@@ -4746,10 +4746,40 @@
       "name": "IzalaCity_Gym_Etrance_Layout",
       "width": 16,
       "height": 13,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BattleArena",
       "border_filepath": "data/layouts/IzalaCity_Gym_Etrance/border.bin",
       "blockdata_filepath": "data/layouts/IzalaCity_Gym_Etrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_IZALA_CITY_GYM_WAITING_ROOM",
+      "name": "IzalaCity_Gym_WaitingRoom_Layout",
+      "width": 18,
+      "height": 24,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleArena",
+      "border_filepath": "data/layouts/IzalaCity_Gym_WaitingRoom/border.bin",
+      "blockdata_filepath": "data/layouts/IzalaCity_Gym_WaitingRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_IZALA_CITY_GYM_ARENA1",
+      "name": "IzalaCity_Gym_Arena1_Layout",
+      "width": 20,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleArena",
+      "border_filepath": "data/layouts/IzalaCity_Gym_Arena1/border.bin",
+      "blockdata_filepath": "data/layouts/IzalaCity_Gym_Arena1/map.bin"
+    },
+    {
+      "id": "LAYOUT_IZALA_CITY_GYM_ARENA2",
+      "name": "IzalaCity_Gym_Arena2_Layout",
+      "width": 20,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleArena",
+      "border_filepath": "data/layouts/IzalaCity_Gym_Arena2/border.bin",
+      "blockdata_filepath": "data/layouts/IzalaCity_Gym_Arena2/map.bin"
     }
   ]
 }

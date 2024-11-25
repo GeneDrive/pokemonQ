@@ -1934,7 +1934,7 @@ static const struct TrainerMon sParty_Luis[] = {
     .lvl = 25,
     .species = SPECIES_TAUROS_PALDEAN_AQUA_BREED,
     .ability = ABILITY_INTIMIDATE,
-    .item = ITEM_KINGS_ROCK,
+    .heldItem = ITEM_KINGS_ROCK,
     .moves = {MOVE_AQUA_JET, MOVE_TRAILBLAZE, MOVE_FACADE, MOVE_ROCK_SMASH}
     },
     {
@@ -5888,7 +5888,7 @@ static const struct TrainerMon sParty_Beverly[] = {
     },
     {
     .lvl = 25,
-    .species = SPECIES_TAURUS,
+    .species = SPECIES_TAUROS,
     .ability = ABILITY_INTIMIDATE,
     .heldItem = ITEM_KINGS_ROCK,
     .moves = {MOVE_FACADE, MOVE_TRAILBLAZE, MOVE_ROCK_TOMB, MOVE_NONE},

@@ -213,7 +213,10 @@
     "RustboroCity_Flat2_2F",
     "RustboroCity_Flat2_3F",
     "RustboroCity_House3",
-    "IzalaCity_Gym_Etrance"
+    "IzalaCity_Gym_Etrance",
+    "IzalaCity_Gym_WaitingRoom",
+    "IzalaCity_Gym_Arena1",
+    "IzalaCity_Gym_Arena2"
   ],
   "gMapGroup_IndoorFortree": [
     "FortreeCity_House1",

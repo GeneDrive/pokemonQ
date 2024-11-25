@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE105_NEW_CAVE5_F1",
   "name": "Route105_new_cave5_F1",
   "layout": "LAYOUT_ROUTE105_NEW_CAVE5_F1",
-  "music": "MUS_DUMMY",
+  "music": "MUS_RG_ROUTE24",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

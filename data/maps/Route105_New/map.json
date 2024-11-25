@@ -235,7 +235,7 @@
       "x": 123,
       "y": 5,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_ROUTE105_STATE",
       "var_value": "0",
       "script": "NULL"
     },
@@ -244,7 +244,7 @@
       "x": 123,
       "y": 6,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_ROUTE105_STATE",
       "var_value": "0",
       "script": "NULL"
     }
