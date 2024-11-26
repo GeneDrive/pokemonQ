@@ -3,46 +3,26 @@
   "name": "Route105_new_cave5_F2",
   "layout": "LAYOUT_ROUTE105_NEW_CAVE5_F2",
   "music": "MUS_RG_ROUTE24",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_ROUTE_105",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
-  "allow_cycling": false,
+  "allow_cycling": true,
   "allow_escaping": true,
-  "allow_running": false,
-  "show_map_name": true,
+  "allow_running": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
 
   ],
   "warp_events": [
-    {
-      "x": 4,
-      "y": 2,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE105_NEW_CAVE5_F1",
-      "dest_warp_id": "1"
-    },
-    {
-      "x": 2,
-      "y": 4,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE105_NEW",
-      "dest_warp_id": "8"
-    }
+
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-    {
-      "type": "hidden_item",
-      "x": 1,
-      "y": 3,
-      "elevation": 3,
-      "item": "ITEM_HARD_STONE",
-      "flag": "FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_2"
-    }
+
   ]
 }

@@ -1826,12 +1826,12 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_DOMINIK] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("DOMINIK"),
         .items = {},
-        .doubleBattle = FALSE,
+        .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Dominik),
     },
@@ -4082,12 +4082,12 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_NED] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = TRAINER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("NED"),
         .items = {},
-        .doubleBattle = FALSE,
+        .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
         .party = TRAINER_PARTY(sParty_Ned),
     },
@@ -5306,9 +5306,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_IMANI] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .trainerName = _("IMANI"),
         .items = {},
         .doubleBattle = TRUE,

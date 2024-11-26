@@ -114,14 +114,14 @@
   ],
   "warp_events": [
     {
-      "x": 13,
+      "x": 16,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_CRAWLEAF_FORREST",
       "dest_warp_id": "3"
     },
     {
-      "x": 14,
+      "x": 17,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_CRAWLEAF_FORREST",

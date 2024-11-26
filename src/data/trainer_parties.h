@@ -1773,7 +1773,7 @@ static const struct TrainerMon sParty_Winston1[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 26,
+    .lvl = 25,
     .ability = ABILITY_SPEED_BOOST,
     .species = SPECIES_CASTFORM,
     .heldItem = ITEM_ASSAULT_VEST,
@@ -1781,9 +1781,9 @@ static const struct TrainerMon sParty_Winston1[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 26,
+    .lvl = 25,
     .ability = ABILITY_SNOW_WARNING,
-    .species = SPECIES_VULPIX,
+    .species = SPECIES_VULPIX_ALOLAN,
     .heldItem = ITEM_FOCUS_SASH,
     .moves = {MOVE_PROTECT, MOVE_AURORA_VEIL, MOVE_FREEZE_DRY, MOVE_SHELTER}
     },
@@ -5906,14 +5906,15 @@ static const struct TrainerMon sParty_Imani[] = {
     .species = SPECIES_CHERRIM,
     .ability = ABILITY_FLOWER_GIFT,
     .heldItem = ITEM_OCCA_BERRY,
-    .moves = {MOVE_SUNNY_DAY, MOVE_MAGICAL_LEAF, MOVE_HELPING_HAND, MOVE_DRAINING_KISS},
+    .moves = {MOVE_SUNNY_DAY, MOVE_MAGICAL_LEAF, MOVE_HELPING_HAND, MOVE_HEAL_PULSE
+    },
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     },
     {
-    .lvl = 24,
-    .species = SPECIES_NINETALES,
+    .lvl = 25,
+    .species = SPECIES_VULPIX,
     .ability = ABILITY_DROUGHT,
-    .moves = {MOVE_SNARL, MOVE_ENCORE, MOVE_INCINERATE, MOVE_WILL_O_WISP},
+    .moves = {MOVE_SNARL, MOVE_ENCORE, MOVE_FLAME_BURST, MOVE_WILL_O_WISP},
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .heldItem = ITEM_CHARTI_BERRY,
     },
@@ -8213,7 +8214,6 @@ static const struct TrainerMon sParty_Tiana[] = {
 
 static const struct TrainerMon sParty_Haley1[] = {
     {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 25,
     .ability = ABILITY_STORM_DRAIN,
     .species = SPECIES_GASTRODON,
@@ -8222,7 +8222,7 @@ static const struct TrainerMon sParty_Haley1[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 26,
+    .lvl = 25,
     .ability = ABILITY_COMPETITIVE,
     .species = SPECIES_WATTREL,
     .heldItem = ITEM_LIFE_ORB,
@@ -8230,15 +8230,14 @@ static const struct TrainerMon sParty_Haley1[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 26,
+    .lvl = 25,
     .ability = ABILITY_FLOWER_VEIL,
     .species = SPECIES_FLOETTE_BLUE_FLOWER,
     .heldItem = ITEM_EVIOLITE,
     .moves = {MOVE_GRASSY_TERRAIN, MOVE_CHARM, MOVE_DRAINING_KISS, MOVE_PSYCHIC}
     },
     {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 26,
+    .lvl = 25,
     .ability = ABILITY_OVERCOAT,
     .species = SPECIES_LEAVANNY,
     .heldItem = ITEM_GRASSY_SEED,
@@ -8521,12 +8520,12 @@ static const struct TrainerMon sParty_Kent[] = {
 
 static const struct TrainerMon sParty_James1[] = {
     {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 26,
+    .iv = TRAINER_PARTY_IVS(30, 2, 30, 30, 30, 30),
+    .lvl = 25,
     .ability = ABILITY_SPEED_BOOST,
     .species = SPECIES_NINJASK,
     .heldItem = ITEM_FOCUS_SASH,
-    .moves = {MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_X_SCISSOR, MOVE_BATON_PASS}
+    .moves = {MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_POUNCE, MOVE_BATON_PASS}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),

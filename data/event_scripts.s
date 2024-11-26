@@ -1141,3 +1141,25 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/IzalaCity_Gym_Arena1/scripts.inc"
 
 	.include "data/maps/IzalaCity_Gym_Arena2/scripts.inc"
+
+	.include "data/maps/Route105_Real_Cave1_F1/scripts.inc"
+
+	.include "data/maps/Route105_Real_Cave2_F1/scripts.inc"
+
+	.include "data/maps/Route_105_Real_Cave1_F2/scripts.inc"
+
+	.include "data/maps/Route_105_Real_Cave2_F1/scripts.inc"
+
+	.include "data/maps/Route_105_Real_Cave2_F2/scripts.inc"
+
+	.include "data/maps/Route_105_Real_Cave2_F3/scripts.inc"
+
+	.include "data/maps/Route_105_Real_Cave3/scripts.inc"
+
+	.include "data/maps/Route_105_Real_Cave4/scripts.inc"
+
+	.include "data/maps/Route_105_Real_Cave5_F1/scripts.inc"
+
+	.include "data/maps/Route_105_Real_Cave5_F2/scripts.inc"
+
+	.include "data/maps/Route_105_Real_Cave1_F1/scripts.inc"

@@ -277,6 +277,15 @@
 // gMapGroup_IndoorRoute104
 #define MAP_ROUTE104_MR_BRINEYS_HOUSE         (0 | (17 << 8))
 #define MAP_ROUTE104_PRETTY_PETAL_FLOWER_SHOP (1 | (17 << 8))
+#define MAP_ROUTE_105_REAL_CAVE1_F2           (2 | (17 << 8))
+#define MAP_ROUTE_105_REAL_CAVE2_F1           (3 | (17 << 8))
+#define MAP_ROUTE_105_REAL_CAVE2_F2           (4 | (17 << 8))
+#define MAP_ROUTE_105_REAL_CAVE2_F3           (5 | (17 << 8))
+#define MAP_ROUTE_105_REAL_CAVE3              (6 | (17 << 8))
+#define MAP_ROUTE_105_REAL_CAVE4              (7 | (17 << 8))
+#define MAP_ROUTE_105_REAL_CAVE5_F1           (8 | (17 << 8))
+#define MAP_ROUTE_105_REAL_CAVE5_F2           (9 | (17 << 8))
+#define MAP_ROUTE_105_REAL_CAVE1_F1           (10 | (17 << 8))
 
 // gMapGroup_IndoorRoute111
 #define MAP_ROUTE111_WINSTRATE_FAMILYS_HOUSE (0 | (18 << 8))
@@ -437,6 +446,8 @@
 #define MAP_ROUTE105_NEW_CAVE4                       (133 | (24 << 8))
 #define MAP_ROUTE105_NEW_CAVE5_F1                    (134 | (24 << 8))
 #define MAP_ROUTE105_NEW_CAVE5_F2                    (135 | (24 << 8))
+#define MAP_ROUTE105_REAL_CAVE1_F1                   (136 | (24 << 8))
+#define MAP_ROUTE105_REAL_CAVE2_F1                   (137 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

@@ -306,7 +306,16 @@
   ],
   "gMapGroup_IndoorRoute104": [
     "Route104_MrBrineysHouse",
-    "Route104_PrettyPetalFlowerShop"
+    "Route104_PrettyPetalFlowerShop",
+    "Route_105_Real_Cave1_F2",
+    "Route_105_Real_Cave2_F1",
+    "Route_105_Real_Cave2_F2",
+    "Route_105_Real_Cave2_F3",
+    "Route_105_Real_Cave3",
+    "Route_105_Real_Cave4",
+    "Route_105_Real_Cave5_F1",
+    "Route_105_Real_Cave5_F2",
+    "Route_105_Real_Cave1_F1"
   ],
   "gMapGroup_IndoorRoute111": [
     "Route111_WinstrateFamilysHouse",
@@ -466,7 +475,9 @@
     "Route105_new_cave3",
     "Route105_new_cave4",
     "Route105_new_cave5_F1",
-    "Route105_new_cave5_F2"
+    "Route105_new_cave5_F2",
+    "Route105_Real_Cave1_F1",
+    "Route105_Real_Cave2_F1"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

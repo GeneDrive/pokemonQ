@@ -3,13 +3,13 @@
   "name": "Route105_new_cave3",
   "layout": "LAYOUT_ROUTE105_NEW_CAVE3",
   "music": "MUS_RG_ROUTE24",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_ROUTE_105",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
-  "allow_cycling": false,
+  "allow_cycling": true,
   "allow_escaping": true,
-  "allow_running": false,
+  "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
@@ -17,13 +17,7 @@
 
   ],
   "warp_events": [
-    {
-      "x": 5,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE105_NEW",
-      "dest_warp_id": "5"
-    }
+
   ],
   "coord_events": [
 
