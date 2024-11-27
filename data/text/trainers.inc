@@ -443,7 +443,7 @@ Route105_Text_FosterPostBattle:
 
 Route105_Text_LuisIntro:
 	.string "Whew! I was worried that a kid was\n"
-	.string "drowning when I saw you.\p"
+	.string "lost when I saw you.\p"
 	.string "You seem to be okay, so what do you\n"
 	.string "say to a battle?$"
 
@@ -451,12 +451,12 @@ Route105_Text_LuisDefeated:
 	.string "Glub… Glub…$"
 
 Route105_Text_LuisPostBattle:
-	.string "If you are drowning, the signal is to\n"
-	.string "wave one arm toward the beach.$"
+	.string "If you are lost, just open\n"
+	.string "the map when the dev is done.$"
 
 Route105_Text_DominikIntro:
-	.string "Swimming the deep blue sea…\n"
-	.string "It feels the greatest!$"
+	.string "I want to leave to see the\n"
+	.string "pretty sea again!$"
 
 Route105_Text_DominikDefeated:
 	.string "I lost…\n"
@@ -464,8 +464,8 @@ Route105_Text_DominikDefeated:
 
 Route105_Text_DominikPostBattle:
 	.string "Why is the sea blue?\p"
-	.string "I learned about that at the MUSEUM in\n"
-	.string "SLATEPORT, but I forgot.$"
+	.string "I learned about that at the MUSEUM,\n"
+	.string "but I forgot.$"
 
 Route105_Text_BeverlyIntro:
 	.string "My body feels lighter in the water.\n"
@@ -482,7 +482,8 @@ Route105_Text_PostBattle:
 
 Route105_Text_ImaniIntro:
 	.string "The blue, blue sky…\n"
-	.string "The vast sea…\l"
+	.string "The vast sea…\p"
+	.string "The pink leaves…\n"
 	.string "It's so peaceful…$"
 
 Route105_Text_ImaniDefeated:
@@ -493,8 +494,8 @@ Route105_Text_ImaniPostBattle:
 	.string "with. Giggle.$"
 
 Route105_Text_AndresIntro:
-	.string "I'm convinced that the sea keeps\n"
-	.string "secrets from us.$"
+	.string "I'm convinced that the leaf patterns\n"
+	.string "keep secrets from us.$"
 
 Route105_Text_AndresDefeated:
 	.string "Yes…\n"
@@ -502,7 +503,7 @@ Route105_Text_AndresDefeated:
 
 Route105_Text_AndresPostBattle:
 	.string "I'm sure there are many secrets to be\n"
-	.string "discovered in the world's seas.\p"
+	.string "discovered in these leaves.\p"
 	.string "I mean to find them all!$"
 
 Route105_Text_AndresRegister:
@@ -524,16 +525,16 @@ Route105_Text_AndresRematchPostBattle:
 	.string "the world!$"
 
 Route105_Text_JosueIntro:
-	.string "I'm exhausted from swimming.\n"
+	.string "I'm exhausted from exploring.\n"
 	.string "I'm just not used to it.\p"
 	.string "I need a battle for a change of pace!$"
 
 Route105_Text_JosueDefeated:
-	.string "I lost because I battled at sea.$"
+	.string "I lost because I battled while tired.$"
 
 Route105_Text_JosuePostBattle:
-	.string "Yeah, for me, the sky is a much better\n"
-	.string "match than the sea.$"
+	.string "Yeah, for me, exploring is much \n"
+	.string "easier than battling.$"
 
 Route106_Text_ElliotIntro:
 	.string "Which do you prefer, fishing in the\n"
@@ -566,7 +567,7 @@ Route106_Text_ElliotRematchPostBattle:
 Route106_Text_NedIntro:
 	.string "What do people do if they need to go\n"
 	.string "to a washroom?\p"
-	.string "What if my ROD hooks a big one while\n"
+	.string "What if someone walks by while\n"
 	.string "I'm in the washroom? I just can't go…$"
 
 Route106_Text_NedDefeated:
@@ -574,8 +575,7 @@ Route106_Text_NedDefeated:
 	.string "to the washroom…$"
 
 Route106_Text_NedPostBattle:
-	.string "Oh, no! I've got this feeling I'll hook\n"
-	.string "a big one!$"
+	.string "Oh, no! I've gotta go really bad!$"
 
 Route106_Text_DouglasIntro:
 	.string "Hahahah! I'm a lousy runner, but in\n"
@@ -588,15 +588,15 @@ Route106_Text_DouglasPostBattle:
 	.string "I wouldn't lose in a swim race…$"
 
 Route106_Text_KylaIntro:
-	.string "The sea is my backyard. I'm not going\n"
-	.string "to take it easy because you're a kid!$"
+	.string "This cave is my relaxation spot,\n"
+	.string "so I will win and return the peace$"
 
 Route106_Text_KylaDefeated:
-	.string "Did you take it easy on me by any\n"
-	.string "chance?$"
+	.string "Guess I'll have to find a new\n"
+	.string "spot now...$"
 
 Route106_Text_KylaPostBattle:
-	.string "Drifting along with the waves…\n"
+	.string "Sitting here in silence…\n"
 	.string "I love it! Why don't you give it a try?$"
 
 Route107_Text_DarrinIntro:

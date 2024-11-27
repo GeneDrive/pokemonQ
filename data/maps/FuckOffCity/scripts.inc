@@ -113,13 +113,14 @@ FuckOffCity_EventScript_TalkToBrawly3::
 	giveitem ITEM_PROTEIN, 2
 	msgbox FuckOffCity_Text_Brawly6, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_BRAWLY, FuckOffCity_Movement_WalkUpOut
-	waitmovement 0
+	fadescreen FADE_TO_BLACK
 	setflag FLAG_IZALA_CITY_HIDE_BRAWLY
 	setflag FLAG_HIDE_UXIE
 	setflag FLAG_HIDE_AZELF
 	setflag FLAG_HIDE_MESPRIT
 	setvar VAR_IZALA_CITY_STATE, 1
+	removeobject LOCALID_BRAWLY
+	fadescreen FADE_FROM_BLACK
 	releaseall
 	end
 

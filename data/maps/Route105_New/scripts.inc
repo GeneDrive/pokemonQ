@@ -123,6 +123,8 @@ Route105_New_EventScript_WallyEvent::
 	pokenavcall Route105_New_Text_LevelCapIncrease
 	waitmessage
 	delay 5
+	removeobject LOCALID_ALICA
+	removeobject LOCALID_WALLY
 	releaseall
 	end
 

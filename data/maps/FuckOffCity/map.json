@@ -205,7 +205,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "FuckOffCity_EventScript_TalkToAttendent",
-      "flag": "FLAG_IZALA_CITY_GYM_QUEST_DONE"
+      "flag": "FLAG_ROUTE_105_HIDE_RIVALS"
     }
   ],
   "warp_events": [

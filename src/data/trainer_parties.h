@@ -1162,10 +1162,10 @@ static const struct TrainerMon sParty_Alexia[] = {
     },
     {
     .lvl = 17,
-    .species = SPECIES_QUAXWELL,
+    .species = SPECIES_VULLABY,
     .heldItem = ITEM_SITRUS_BERRY,
-    .ability = ABILITY_MOXIE,
-    .moves = {MOVE_AERIAL_ACE, MOVE_POWER_UP_PUNCH, MOVE_AQUA_JET, MOVE_AQUA_CUTTER}
+    .ability = ABILITY_WEAK_ARMOR,
+    .moves = {MOVE_AERIAL_ACE, MOVE_SNARL, MOVE_FLATTER, MOVE_TOXIC}
     },
     {
     .lvl = 18,
@@ -4668,12 +4668,11 @@ static const struct TrainerMon sParty_Elliot1[] = {
     .moves = {MOVE_COIL, MOVE_BREAKING_SWIPE, MOVE_SUCKER_PUNCH, MOVE_POISON_TAIL}
     },
     {
-    .lvl = 25,
+    .lvl = 24,
     .species = SPECIES_KINGLER,
     .ability = ABILITY_SHELL_ARMOR,
     .heldItem = ITEM_ASSAULT_VEST,
     .moves = {MOVE_CRABHAMMER, MOVE_SLAM, MOVE_BRICK_BREAK, MOVE_NONE},
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30)
     }
 };
 
