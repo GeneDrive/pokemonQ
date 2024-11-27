@@ -5675,6 +5675,7 @@ void SetTypeBeforeUsingMove(u32 move, u32 battlerAtk)
                  || (attackerAbility == ABILITY_AERILATE && (ateType = TYPE_FLYING))
                  || ((attackerAbility == ABILITY_MARTIAL_ARTS) && (ateType = TYPE_FIGHTING))
                  || ((attackerAbility == ABILITY_GALVANIZE) && (ateType = TYPE_ELECTRIC))
+                 || ((attackerAbility == ABILITY_CLAY_COVER) && (ateType = TYPE_GROUND))
                 )
              )
     {

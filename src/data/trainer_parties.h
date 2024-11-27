@@ -10043,9 +10043,9 @@ static const struct TrainerMon sParty_Isabelle[] = {
 
 static const struct TrainerMon sParty_Andres1[] = {
     {
-    .lvl = 23,
+    .lvl = 24,
     .species = SPECIES_SAWSBUCK_AUTUMN,
-    .ability = ABILITY_EARTH_EATER,
+    .ability = ABILITY_CLAY_COVER,
     .heldItem = ITEM_LUMINOUS_MOSS,
     .moves = {MOVE_BULLDOZE, MOVE_TRAILBLAZE, MOVE_THUNDER_WAVE, MOVE_HEADBUTT},
     },
@@ -10069,7 +10069,7 @@ static const struct TrainerMon sParty_Josue[] = {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30)
     },
     {
-    .lvl = 25,
+    .lvl = 24,
     .species = SPECIES_GOLBAT,
     .ability = ABILITY_HUSTLE,
     .heldItem = ITEM_BIG_ROOT,

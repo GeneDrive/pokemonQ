@@ -12915,63 +12915,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SEEDOT"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ELDEGOSS"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 15,
+                "max_level": 19,
                 "species": "SPECIES_HOPPIP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SEEDOT"
+                "min_level": 15,
+                "max_level": 19,
+                "species": "SPECIES_GOSSIFLEUR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 15,
+                "max_level": 19,
+                "species": "SPECIES_DEERLING_SUMMER"
+              },
+              {
+                "min_level": 15,
+                "max_level": 19,
+                "species": "SPECIES_BOUNSWEET"
+              },
+              {
+                "min_level": 15,
+                "max_level": 19,
                 "species": "SPECIES_ELDEGOSS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 15,
+                "max_level": 19,
                 "species": "SPECIES_SKIPLOOM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NUZLEAF"
+                "min_level": 15,
+                "max_level": 19,
+                "species": "SPECIES_BOUNSWEET"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 15,
+                "max_level": 19,
                 "species": "SPECIES_WINGULL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 15,
+                "max_level": 19,
                 "species": "SPECIES_WINGULL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_WINGULL"
+                "min_level": 15,
+                "max_level": 19,
+                "species": "SPECIES_DEERLING_SPRING"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 15,
+                "max_level": 19,
                 "species": "SPECIES_WATTREL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 15,
+                "max_level": 19,
                 "species": "SPECIES_WATTREL"
               }
             ]
@@ -12985,63 +12985,63 @@
             "mons": [
               {
                 "min_level": 16,
-                "max_level": 18,
+                "max_level": 19,
+                "species": "SPECIES_HOPPIP"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
                 "species": "SPECIES_DEERLING_SPRING"
               },
               {
                 "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_BOUNSWEET"
-              },
-              {
-                "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_DEERLING_SPRING"
-              },
-              {
-                "min_level": 16,
-                "max_level": 18,
+                "max_level": 19,
                 "species": "SPECIES_SPRITZEE"
               },
               {
                 "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_DEERLING_SPRING"
+                "max_level": 19,
+                "species": "SPECIES_WATTREL"
               },
               {
                 "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_DEERLING_SPRING"
+                "max_level": 19,
+                "species": "SPECIES_SKIPLOOM"
               },
               {
                 "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_DEERLING_SPRING"
+                "max_level": 19,
+                "species": "SPECIES_ELDEGOSS"
               },
               {
                 "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_DEERLING_SPRING"
+                "max_level": 19,
+                "species": "SPECIES_WINGULL"
               },
               {
                 "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_DEERLING_SPRING"
+                "max_level": 19,
+                "species": "SPECIES_JIGGLYPUFF"
               },
               {
                 "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_DEERLING_SPRING"
+                "max_level": 19,
+                "species": "SPECIES_STEENEE"
               },
               {
                 "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_DEERLING_SPRING"
+                "max_level": 19,
+                "species": "SPECIES_WINGULL"
               },
               {
                 "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_DEERLING_SPRING"
+                "max_level": 19,
+                "species": "SPECIES_DEERLING_SUMMER"
+              },
+              {
+                "min_level": 16,
+                "max_level": 19,
+                "species": "SPECIES_WATTREL"
               }
             ]
           }

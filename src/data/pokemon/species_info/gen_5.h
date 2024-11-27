@@ -1294,7 +1294,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .trainerScale = 256,
         .trainerOffset = 0,
         FRONT_PIC(Pidove, 40, 40),
-        .frontPicYOffset = 12,
+        .frontPicYOffset = 20,
         .frontAnimFrames = sAnims_Pidove,
         .frontAnimId = ANIM_V_JUMPS_SMALL,
         BACK_PIC(Pidove, 48, 40),
@@ -5244,7 +5244,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     {
         SAWSBUCK_MISC_INFO,
         .types = { TYPE_GROUND, TYPE_GRASS },                                           
-        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_EARTH_EATER, ABILITY_SERENE_GRACE }, 
+        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_CLAY_COVER, ABILITY_SERENE_GRACE }, 
         .description = COMPOUND_STRING(
             "Sawsbuck in their Autumn Form are\n"
             "known for having very short\n"
