@@ -3037,12 +3037,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_JIGGLYPUFF] =
     {
-        .baseHP        = 115,
-        .baseAttack    = 45,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 25,
+        .baseHP        = 120,
+        .baseAttack    = 65,
+        .baseDefense   = 45,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 35,
         .types = JIGGLYPUFF_FAMILY_TYPES,
         .catchRate = 170,
         .expYield = 95,
@@ -3053,7 +3053,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = { EGG_GROUP_FAIRY, EGG_GROUP_FAIRY },
-        .abilities = { ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE, ABILITY_FRIEND_GUARD },
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE, ABILITY_WIND_RIDER },
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
         .speciesName = _("Jigglypuff"),
@@ -3087,11 +3087,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_WIGGLYTUFF] =
     {
-        .baseHP        = 140,
-        .baseAttack    = 70,
-        .baseDefense   = 45,
-        .baseSpeed     = 45,
-        .baseSpAttack  = P_UPDATED_STATS >= GEN_6 ? 85 : 75,
+        .baseHP        = 150,
+        .baseAttack    = 90,
+        .baseDefense   = 65,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 90,
         .baseSpDefense = 50,
         .types = JIGGLYPUFF_FAMILY_TYPES,
         .catchRate = 50,
@@ -3103,7 +3103,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = { EGG_GROUP_FAIRY, EGG_GROUP_FAIRY },
-        .abilities = { ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE, ABILITY_FRISK },
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE, ABILITY_WIND_RIDER },
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
         .speciesName = _("Wigglytuff"),
@@ -7413,7 +7413,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 25,
         .baseSpDefense = 25,
-        .types = { TYPE_WATER, TYPE_WATER },
+        .types = { TYPE_WATER, TYPE_STEEL },
         .catchRate = 225,
         .expYield = 65,
         .evYield_Attack = 1,
@@ -7450,7 +7450,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Krabby, 0),
         .footprint = gMonFootprint_Krabby,
         LEARNSETS(Krabby),
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_KINGLER}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_KINGLER}),
     },
 
 #define KINGLER_MISC_INFO                                                               \
@@ -7460,7 +7460,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 75,                                                            \
         .baseSpAttack  = 50,                                                            \
         .baseSpDefense = 50,                                                            \
-        .types = { TYPE_WATER, TYPE_WATER },                                            \
+        .types = { TYPE_WATER, TYPE_STEEL },                                            \
         .catchRate = 60,                                                                \
         .expYield = 166,                                                                \
         .evYield_Attack = 2,                                                            \

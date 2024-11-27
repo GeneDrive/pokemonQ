@@ -2463,7 +2463,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_POISON_GAS] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .accuracy = 90,
+            .accuracy = 85,
             .target = MOVE_TARGET_BOTH,
         #elif B_UPDATED_MOVE_DATA == GEN_5
             .accuracy = 80,

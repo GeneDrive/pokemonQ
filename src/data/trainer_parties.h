@@ -2348,19 +2348,27 @@ static const struct TrainerMon sParty_Nob5[] = {
 
 static const struct TrainerMon sParty_Yuji[] = {
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 25,
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 27,
     .species = SPECIES_IRON_VALIANT,
+    .heldItem = ITEM_PAYAPA_BERRY,
+    .moves = {MOVE_LOW_KICK, MOVE_VACUUM_WAVE, MOVE_AERIAL_ACE, MOVE_DRAINING_KISS},
     },
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 26,
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 28,
     .species = SPECIES_HELIOPTILE,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .heldItem = ITEM_ELECTRIC_SEED,
+    .moves = {MOVE_BULLDOZE, MOVE_THUNDERBOLT, MOVE_ELECTRIC_TERRAIN, MOVE_FLAME_BURST},
     },
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 26,
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 27,
     .species = SPECIES_PIDOVE,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_BRUTAL_SWING, MOVE_SHELTER, MOVE_ACCELEROCK, MOVE_WONDER_ROOM},
+    .ability = ABILITY_MOXIE,
     },
 };
 
@@ -4668,11 +4676,12 @@ static const struct TrainerMon sParty_Elliot1[] = {
     .moves = {MOVE_COIL, MOVE_BREAKING_SWIPE, MOVE_SUCKER_PUNCH, MOVE_POISON_TAIL}
     },
     {
-    .lvl = 24,
-    .species = SPECIES_KINGLER,
+    .lvl = 26,
+    .species = SPECIES_KRABBY,
     .ability = ABILITY_SHELL_ARMOR,
     .heldItem = ITEM_ASSAULT_VEST,
-    .moves = {MOVE_CRABHAMMER, MOVE_SLAM, MOVE_BRICK_BREAK, MOVE_NONE},
+    .moves = {MOVE_CRABHAMMER, MOVE_SLAM, MOVE_BRICK_BREAK, MOVE_PROTECT},
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30)
     }
 };
 

@@ -1294,7 +1294,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .trainerScale = 256,
         .trainerOffset = 0,
         FRONT_PIC(Pidove, 40, 40),
-        .frontPicYOffset = 20,
+        .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Pidove,
         .frontAnimId = ANIM_V_JUMPS_SMALL,
         BACK_PIC(Pidove, 48, 40),
