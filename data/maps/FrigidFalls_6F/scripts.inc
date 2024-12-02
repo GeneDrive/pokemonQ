@@ -1,6 +1,7 @@
 .set LOCALID_JADE, 1
 .set LOCALID_GRUNT_1, 2
 .set LOCALID_GRUNT_2, 3
+.set LOCALID_JADE2, 4
 
 FrigidFalls_6F_MapScripts::
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, FrigidFalls_6F_EventScript_OnWarp
@@ -13,11 +14,27 @@ FrigidFalls_6F_EventScript_OnWarp::
 FrigidFalls_6F_EventScript_Jade_AfterArchieEnd::
 	applymovement OBJ_EVENT_ID_PLAYER, FrigidFalls_6F_Movement_Face_Left
 	waitmovement 0
-	applymovement LOCALID_JADE, FrigidFalls_6F_Movement_Face_Right
+	applymovement LOCALID_JADE2, FrigidFalls_6F_Movement_Face_Up
 	waitmovement 0
+	msgbox FrigidFalls_6F_Text_Jade6, MSGBOX_AUTOCLOSE
+	waitmessage
+	delay 5
+	applymovement LOCALID_JADE2, FrigidFalls_6F_Movement_Face_Right
+	waitmovement 0
+	msgbox FrigidFalls_6F_Text_Jade7, MSGBOX_AUTOCLOSE
+	waitmessage
+	delay 5
+	msgbox FrigidFalls_6F_Text_Jade8, MSGBOX_AUTOCLOSE
+	waitmessage
+	delay 5
+	applymovement LOCALID_JADE2, FrigidFalls_6F_Movement_Jade_Leave
+	waitmovement 0
+	removeobject LOCALID_JADE2
 	pokenavcall FrigidFalls_6F_Text_LevelCapIncrease
 	waitmessage
 	delay 5
+	setflag FLAG_ROUTE101_CAVE_HIDE_RIVAL2
+	setvar VAR_FRIGID_FALLS_STATE, 3
 	releaseall
 	end
 
@@ -323,6 +340,21 @@ FrigidFalls_6F_Movement_Jade_Go::
 	walk_fast_down
 	step_end
 
+FrigidFalls_6F_Movement_Jade_Leave::
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
 FrigidFalls_6F_Text_Jade1:
 	.string "JADE: Oh, hey {PLAYER}!\n"
 	.string "What are you doing here?!$"
@@ -369,6 +401,51 @@ FrigidFalls_6F_Text_Jade5:
 	.string "They must be up to something bad,\n"
 	.string "we've got to go after them!\p"
 	.string "Come on, follow me!$"
+
+FrigidFalls_6F_Text_Jade6:
+	.string "JADE: Phew, that was a close one!\p"
+	.string "We're lucky we got out of there\n"
+	.string "before the cave collapsed!\p"
+	.string "I can't believe they would do\n"
+	.string "that just to get away!\p"
+	.string "These guys are far more dangerous\n"
+	.string "than I thought!$"
+
+FrigidFalls_6F_Text_Jade7:
+	.string "JADE: thanks for having my back\n"
+	.string "in there! You're a real lifesaver!\p"
+	.string "I know I haven't been the nicest\n"
+	.string "to you, but I hope you can forgive me!\p"
+	.string "I was harsh on you because I\n"
+	.string "thought you weren't taking the\l"
+	.string "GYM CHALLENGE seriously!\p"
+	.string "But then you defeated me and\n"
+	.string "that made me even more mad!\p"
+	.string "I hope we can be friends from now\n"
+	.string "on!$"
+
+FrigidFalls_6F_Text_Jade8:
+	.string "JADE: so what are you going to do now?\p"
+	.string "I'm going to go to the next city\n"
+	.string "to take on the next GYM LEADER!\p"
+	.string "if you're going to do the same,\n"
+	.string "then you should leave this cave\l"
+	.string "to the west\p"
+	.string "That should lead you to the\n"
+	.string "Binding Caverns.\p"
+	.string "From there you can go to south\n"
+	.string "which should lead you to a grassy\l"
+	.string "area.\p"
+	.string "There should be a cave there that\n"
+	.string "leads to the next city!\p"
+	.string "But you can also explore the\n"
+	.string "Caverns first and cah some pokemon!\p"
+	.string "I'll see you in the next city!\p"
+	.string "Good luck and prepare yourself for\n"
+	.string "our next battle, because I really \l"
+	.string "won't be holding back next time!\p"
+	.string "See ya!$"
+
 
 FrigidFalls_6F_Text_Grunt_Late:
 	.string "GRUNT: Hurry up! the boss is gonna \n"

@@ -103,8 +103,22 @@ FrigidFalls_6F_R2_StartEvent::
 	msgbox FrigidFalls_6F_R2_Text_Archie_12, MSGBOX_DEFAULT
 	closemessage
 	delay 5
+	fadescreen FADE_TO_BLACK
+	delay 20
+	removeobject LOCALID_ARCHIE
+	removeobject LOCALID_GRUNT_1
+	removeobject LOCALID_GRUNT_2
+	fadescreen FADE_FROM_BLACK
+	delay 20
+	applymovement LOCALID_JADE, FrigidFalls_6F_R2_Movement_FaceRight
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, FrigidFalls_6F_R2_Movement_FaceLeft
+	waitmovement 0
+	msgbox FrigidFalls_6F_R2_Text_Jade_11, MSGBOX_DEFAULT
+	closemessage
+	delay 5
 	setvar VAR_FRIGID_FALLS_STATE, 2
-	releaseall
+	warp MAP_FRIGID_FALLS_6F, 7, 12
 	end
 
 FrigidFalls_6F_R2_Movement_WalkRival:
