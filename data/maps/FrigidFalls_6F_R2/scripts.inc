@@ -64,6 +64,46 @@ FrigidFalls_6F_R2_StartEvent::
 	closemessage
 	delay 5
 	trainerbattle_no_intro TRAINER_ALAN, FrigidFalls_6F_R2_Text_Archie_Defeat
+	msgbox FrigidFalls_6F_R2_Text_Archie_6, MSGBOX_DEFAULT
+	closemessage
+	delay 5
+	applymovement LOCALID_JADE, FrigidFalls_6F_R2_Movement_FaceUp
+	waitmovement 0
+	msgbox FrigidFalls_6F_R2_Text_Jade_8, MSGBOX_DEFAULT
+	closemessage
+	delay 5
+	msgbox FrigidFalls_6F_R2_Text_Jade_9, MSGBOX_DEFAULT
+	closemessage
+	delay 5
+	msgbox FrigidFalls_6F_R2_Text_Archie_7, MSGBOX_DEFAULT
+	closemessage
+	delay 5
+	msgbox FrigidFalls_6F_R2_Text_Archie_8, MSGBOX_DEFAULT
+	closemessage
+	delay 5
+	msgbox FrigidFalls_6F_R2_Text_Archie_9, MSGBOX_DEFAULT
+	closemessage
+	delay 5
+	msgbox FrigidFalls_6F_R2_Text_Archie_10, MSGBOX_DEFAULT
+	closemessage
+	delay 5
+	msgbox FrigidFalls_6F_R2_Text_Boom, MSGBOX_DEFAULT
+	closemessage
+	delay 5
+	applymovement LOCALID_JADE, FrigidFalls_6F_R2_Movement_FaceDown
+	waitmovement 0
+	msgbox FrigidFalls_6F_R2_Text_Jade_10, MSGBOX_DEFAULT
+	closemessage
+	delay 5
+	applymovement LOCALID_JADE, FrigidFalls_6F_R2_Movement_FaceUp
+	waitmovement 0
+	msgbox FrigidFalls_6F_R2_Text_Archie_11, MSGBOX_DEFAULT
+	closemessage
+	delay 5
+	msgbox FrigidFalls_6F_R2_Text_Archie_12, MSGBOX_DEFAULT
+	closemessage
+	delay 5
+	setvar VAR_FRIGID_FALLS_STATE, 2
 	releaseall
 	end
 
@@ -175,8 +215,8 @@ FrigidFalls_6F_R2_Text_Archie_6:
 	.string "ARCHIE: How did I lose to this kid!\n"
 	.string "GRRRRRRRRRRR!\p"
 	.string "I must admit you're pretty good kid.\n"
-	.string "I'll let you two go this time,\l"
-	.string "But next time I recommend staying\l"
+	.string "I'll let you two go this time,\p"
+	.string "But next time I recommend staying\n"
 	.string "Out of our way!\p"
 	.string "Because there will be consequences!$"
 

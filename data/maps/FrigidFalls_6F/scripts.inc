@@ -3,7 +3,23 @@
 .set LOCALID_GRUNT_2, 3
 
 FrigidFalls_6F_MapScripts::
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, FrigidFalls_6F_EventScript_OnWarp
 	.byte 0
+
+FrigidFalls_6F_EventScript_OnWarp::
+	goto_if_eq VAR_FRIGID_FALLS_STATE, 2, FrigidFalls_6F_EventScript_Jade_AfterArchieEnd
+	end
+
+FrigidFalls_6F_EventScript_Jade_AfterArchieEnd::
+	applymovement OBJ_EVENT_ID_PLAYER, FrigidFalls_6F_Movement_Face_Left
+	waitmovement 0
+	applymovement LOCALID_JADE, FrigidFalls_6F_Movement_Face_Right
+	waitmovement 0
+	pokenavcall FrigidFalls_6F_Text_LevelCapIncrease
+	waitmessage
+	delay 5
+	releaseall
+	end
 
 FrigidFalls_6F_EventScript_Jade_Start_Movement1::
 	applymovement OBJ_EVENT_ID_PLAYER, FrigidFalls_6F_Movement_WalkToRival1
