@@ -114,6 +114,7 @@ FuckOffCity_EventScript_TalkToBrawly3::
 	msgbox FuckOffCity_Text_Brawly6, MSGBOX_DEFAULT
 	closemessage
 	fadescreen FADE_TO_BLACK
+	delay 10
 	setflag FLAG_IZALA_CITY_HIDE_BRAWLY
 	setflag FLAG_HIDE_UXIE
 	setflag FLAG_HIDE_AZELF

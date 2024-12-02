@@ -12,6 +12,7 @@ FrigidFalls_6F_EventScript_OnWarp::
 	end
 
 FrigidFalls_6F_EventScript_Jade_AfterArchieEnd::
+	lockall
 	applymovement OBJ_EVENT_ID_PLAYER, FrigidFalls_6F_Movement_Face_Left
 	waitmovement 0
 	applymovement LOCALID_JADE2, FrigidFalls_6F_Movement_Face_Up
