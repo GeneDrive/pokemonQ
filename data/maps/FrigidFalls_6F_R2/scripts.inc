@@ -118,7 +118,8 @@ FrigidFalls_6F_R2_StartEvent::
 	closemessage
 	delay 5
 	setvar VAR_FRIGID_FALLS_STATE, 2
-	warp MAP_FRIGID_FALLS_6F, 7, 12
+	delay 5
+	warp MAP_FRIGID_FALLS_6F, 12, 10
 	end
 
 FrigidFalls_6F_R2_Movement_WalkRival:

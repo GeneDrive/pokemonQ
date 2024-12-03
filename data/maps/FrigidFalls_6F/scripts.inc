@@ -12,10 +12,11 @@ FrigidFalls_6F_EventScript_OnWarp::
 	end
 
 FrigidFalls_6F_EventScript_Jade_AfterArchieEnd::
+	applymovement LOCALID_JADE2, FrigidFalls_6F_Movement_Face_Up
+	waitmovement 0
+	delay 5
 	lockall
 	applymovement OBJ_EVENT_ID_PLAYER, FrigidFalls_6F_Movement_Face_Left
-	waitmovement 0
-	applymovement LOCALID_JADE2, FrigidFalls_6F_Movement_Face_Up
 	waitmovement 0
 	msgbox FrigidFalls_6F_Text_Jade6, MSGBOX_AUTOCLOSE
 	waitmessage
@@ -191,7 +192,7 @@ FrigidFalls_6F_EventScript_Prevent_Exit_North::
 	end
 
 FrigidFalls_6F_EventScript_Ready::
-	applymovement LOCALID_JADE, FrigidFalls_6F_Movement_Face_Right
+	applymovement LOCALID_JADE2, FrigidFalls_6F_Movement_Face_Right
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, FrigidFalls_6F_Movement_Face_Left
 	waitmovement 0
@@ -201,7 +202,7 @@ FrigidFalls_6F_EventScript_Ready::
 	end
 
 FrigidFalls_6F_EventScript_Ready_2::
-	applymovement LOCALID_JADE, Common_Movement_FacePlayer
+	applymovement LOCALID_JADE2, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox FrigidFalls_6F_Text_Prepared, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, FrigidFalls_6F_EventScript_Ready_Mid_2
@@ -291,6 +292,10 @@ FrigidFalls_6F_Movement_Face_Left::
 
 FrigidFalls_6F_Movement_Face_Right::
 	face_right
+	step_end
+
+FrigidFalls_6F_Movement_Face_Up::
+	face_Up
 	step_end
 
 FrigidFalls_6F_Movement_Grunt_Run::

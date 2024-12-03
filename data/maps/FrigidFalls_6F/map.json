@@ -236,6 +236,15 @@
       "var": "VAR_FRIGID_FALLS_STATE",
       "var_value": "1",
       "script": "FrigidFalls_6F_EventScript_Ready"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_FRIGID_FALLS_STATE",
+      "var_value": "2",
+      "script": "FrigidFalls_6F_EventScript_Jade_AfterArchieEnd"
     }
   ],
   "bg_events": [
