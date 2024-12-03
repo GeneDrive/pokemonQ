@@ -7,9 +7,9 @@ FrigidFalls_6F_MapScripts::
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, FrigidFalls_6F_EventScript_OnWarp
 	.byte 0
 
-FrigidFalls_6F_EventScript_OnWarp::
-	goto_if_eq VAR_FRIGID_FALLS_STATE, 2, FrigidFalls_6F_EventScript_Jade_AfterArchieEnd
-	end
+FrigidFalls_6F_EventScript_OnWarp:
+	map_script_2 VAR_FRIGID_FALLS_STATE, 3, FrigidFalls_6F_EventScript_Jade_AfterArchieEnd
+	.2byte 0
 
 FrigidFalls_6F_EventScript_Jade_AfterArchieEnd::
 	applymovement LOCALID_JADE2, FrigidFalls_6F_Movement_Face_Up
@@ -36,7 +36,7 @@ FrigidFalls_6F_EventScript_Jade_AfterArchieEnd::
 	waitmessage
 	delay 5
 	setflag FLAG_ROUTE101_CAVE_HIDE_RIVAL2
-	setvar VAR_FRIGID_FALLS_STATE, 3
+	setvar VAR_FRIGID_FALLS_STATE, 4
 	releaseall
 	end
 

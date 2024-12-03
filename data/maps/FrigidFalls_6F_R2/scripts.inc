@@ -117,7 +117,7 @@ FrigidFalls_6F_R2_StartEvent::
 	msgbox FrigidFalls_6F_R2_Text_Jade_11, MSGBOX_DEFAULT
 	closemessage
 	delay 5
-	setvar VAR_FRIGID_FALLS_STATE, 2
+	setvar VAR_FRIGID_FALLS_STATE, 3
 	delay 5
 	warp MAP_FRIGID_FALLS_6F, 12, 10
 	end
