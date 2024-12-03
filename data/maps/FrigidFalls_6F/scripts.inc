@@ -4,10 +4,10 @@
 .set LOCALID_JADE2, 4
 
 FrigidFalls_6F_MapScripts::
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, FrigidFalls_6F_EventScript_OnWarp
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, FrigidFalls_6F_EventScript_OnFrame
 	.byte 0
 
-FrigidFalls_6F_EventScript_OnWarp:
+FrigidFalls_6F_EventScript_OnFrame:
 	map_script_2 VAR_FRIGID_FALLS_STATE, 3, FrigidFalls_6F_EventScript_Jade_AfterArchieEnd
 	.2byte 0
 
@@ -215,13 +215,13 @@ FrigidFalls_6F_EventScript_Ready_Mid::
 	waitmessage
 	applymovement OBJ_EVENT_ID_PLAYER, FrigidFalls_6F_Movement_Prevent_Exit_South
 	waitmovement 0
-	warp MAP_FRIGID_FALLS_6F_R2, 7, 12 
+	warp MAP_FRIGID_FALLS_6F_R2, 7, 11
 	end
 
 FrigidFalls_6F_EventScript_Ready_Mid_2::
 	msgbox FrigidFalls_6F_Text_Prepared_2, MSGBOX_AUTOCLOSE
 	waitmessage
-	warp MAP_FRIGID_FALLS_6F_R2, 7, 12
+	warp MAP_FRIGID_FALLS_6F_R2, 7, 11
 	end
 
 FrigidFalls_6F_EventScript_Ready_End::

@@ -4,7 +4,12 @@
 .set LOCALID_ARCHIE, 4
 
 FrigidFalls_6F_R2_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, FrigidFalls_6F_R2_EventScript_OnFrame
 	.byte 0
+
+FrigidFalls_6F_R2_EventScript_OnFrame:
+	map_script_2 VAR_TEMP_0, 0, FrigidFalls_6F_R2_StartEvent
+	.2byte 0
 
 FrigidFalls_6F_R2_StartEvent::
 	applymovement LOCALID_JADE, FrigidFalls_6F_R2_Movement_WalkRival
@@ -118,6 +123,7 @@ FrigidFalls_6F_R2_StartEvent::
 	closemessage
 	delay 5
 	setvar VAR_FRIGID_FALLS_STATE, 3
+	setvar VAR_TEMP_0, 1
 	delay 5
 	warp MAP_FRIGID_FALLS_6F, 12, 10
 	end
