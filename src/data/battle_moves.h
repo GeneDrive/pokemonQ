@@ -11059,7 +11059,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .split = SPLIT_PHYSICAL,
+        .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
     },
 
@@ -14822,6 +14822,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
+    },
+    [MOVE_POISONOUS_ODER] =
+    {
+        .accuracy = 50,
+        .target = MOVE_TARGET_FOES_AND_ALLY,
+        .effect = EFFECT_POISON,
+        .power = 0,
+        .type = TYPE_POISON,
+        .pp = 40,
+        .secondaryEffectChance = 0,
+        .priority = 0,
+        .split = SPLIT_STATUS,
+        .zMoveEffect = Z_EFFECT_DEF_UP_1,
+        .magicCoatAffected = TRUE,
     },
     [MOVE_TORNADO_CRASH] =
     {

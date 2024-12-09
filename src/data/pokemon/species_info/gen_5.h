@@ -2162,7 +2162,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_WATER_1, EGG_GROUP_WATER_1 },
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_HYDRATION, ABILITY_WATER_ABSORB },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_POISON_POINT, ABILITY_WATER_ABSORB },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Palpitoad"),
         .cryId = CRY_PALPITOAD,
@@ -2909,7 +2909,6 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpeed     = 98,                                    \
         .baseSpAttack  = 80,                                    \
         .baseSpDefense = 55,                                    \
-        .types = { TYPE_WATER, TYPE_WATER },                    \
         .catchRate = 190,                                       \
         .expYield = 161,                                        \
         .evYield_Speed = 2,                                     \
@@ -2935,6 +2934,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_BASCULIN_RED_STRIPED] =
     {
         BASCULIN_MISC_INFO,
+        .types = { TYPE_WATER, TYPE_WATER },   
         .itemRare = ITEM_DEEP_SEA_TOOTH,
         .abilities = { ABILITY_RECKLESS, ABILITY_ADAPTABILITY, ABILITY_MOLD_BREAKER },
         .categoryName = _("Hostile"),
@@ -2958,6 +2958,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_BASCULIN_BLUE_STRIPED] =
     {
         BASCULIN_MISC_INFO,
+        .types = { TYPE_WATER, TYPE_WATER },   
         .itemRare = ITEM_DEEP_SEA_SCALE,
         .abilities = { ABILITY_ROCK_HEAD, ABILITY_ADAPTABILITY, ABILITY_MOLD_BREAKER },
         .categoryName = _("Hostile"),
@@ -2982,6 +2983,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_BASCULIN_WHITE_STRIPED] =
     {
         BASCULIN_MISC_INFO,
+        .types = { TYPE_WATER, TYPE_GHOST },   
         .itemRare = ITEM_DEEP_SEA_SCALE,
         .abilities = { ABILITY_RATTLED, ABILITY_ADAPTABILITY, ABILITY_MOLD_BREAKER },
         .categoryName = _("Mellow"),

@@ -4364,7 +4364,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         ICON(Frigibax, 3),
         //.footprint = gMonFootprint_Frigibax,
         LEARNSETS(Frigibax),
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_ARCTIBAX}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_ARCTIBAX}),
     },
 
     [SPECIES_ARCTIBAX] =
@@ -4412,7 +4412,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         ICON(Arctibax, 0),
         //.footprint = gMonFootprint_Arctibax,
         LEARNSETS(Arctibax),
-        .evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_BAXCALIBUR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 44, SPECIES_BAXCALIBUR}),
     },
 
     [SPECIES_BAXCALIBUR] =

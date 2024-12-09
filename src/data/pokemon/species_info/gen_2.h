@@ -722,7 +722,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         FRONT_PIC(Ledyba, 48, 48),
         FRONT_PIC_FEMALE(Ledyba, 48, 48),
-        .frontPicYOffset = 10,
+        .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Ledyba,
         .frontAnimId = ANIM_V_JUMPS_SMALL,
         BACK_PIC(Ledyba, 56, 48),

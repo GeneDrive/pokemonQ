@@ -849,7 +849,7 @@ static const struct TrainerMon sParty_Berke[] = {
     .species = SPECIES_SEEL,
     .ability = ABILITY_THICK_FAT,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_ICY_WIND, MOVE_FAKE_OUT, MOVE_GROWL, MOVE_ENCORE}
+    .moves = {MOVE_ICY_WIND, MOVE_FAKE_OUT, MOVE_GRASS_KNOT, MOVE_ENCORE}
     },
     {
     .lvl = 17,
@@ -3597,11 +3597,12 @@ static const struct TrainerMon sParty_Winona1[] = {
     .moves = {MOVE_PLUCK, MOVE_WATER_PULSE, MOVE_HIDDEN_POWER, MOVE_AERIAL_ACE}
     },
     {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 30),
     .lvl = 18,
-    .species = SPECIES_ARCHEN,
-    .ability = ABILITY_SAND_RUSH,
+    .species = SPECIES_SWIRLIX,
+    .ability = ABILITY_DECOMP_ODER,
     .heldItem = ITEM_YACHE_BERRY,
-    .moves = {MOVE_ROCK_THROW, MOVE_AERIAL_ACE, MOVE_SCARY_FACE, MOVE_QUICK_ATTACK}
+    .moves = {MOVE_AIR_CUTTER, MOVE_VENOM_DRENCH, MOVE_SLUDGE, MOVE_PROTECT}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 30),
@@ -12642,11 +12643,12 @@ static const struct TrainerMon sParty_Grunt101Cave2[] = {
 static const struct TrainerMon sParty_Grunt101Cave3[] = {
     {
     .lvl = 16,
-    .species = SPECIES_BUIZEL,
+    .iv = TRAINER_PARTY_IVS(12, 11, 12, 12, 12, 30),
+    .species = SPECIES_PALPITOAD,
     .ball = ITEM_MASTER_BALL,
-    .moves = {MOVE_LOW_KICK,MOVE_AQUA_JET,MOVE_SOAK,MOVE_DETECT},
-    .ability = ABILITY_SWIFT_SWIM,
-    .heldItem = ITEM_MYSTIC_WATER
+    .moves = {MOVE_ROCK_SMASH,MOVE_AQUA_JET,MOVE_GRASS_KNOT,MOVE_PROTECT},
+    .ability = ABILITY_POISON_POINT,
+    .heldItem = ITEM_RINDO_BERRY
     },
     {
     .lvl = 16,

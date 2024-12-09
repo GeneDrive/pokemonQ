@@ -5575,6 +5575,31 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_DECOMP_ODER:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && IsBattlerAlive(gBattlerTarget)
+             && gBattlerAttacker != gBattlerTarget
+             && gBattleMoves[gCurrentMove].power != 0)
+            {
+                // Set bit and save Dancer mon's original target
+                gSpecialStatuses[gBattlerTarget].dancerUsedMove = TRUE;
+                gSpecialStatuses[gBattlerTarget].dancerOriginalTarget = *(gBattleStruct->moveTarget + gBattlerTarget) | 0x4;
+                gBattleStruct->atkCancellerTracker = 0;
+
+                // Set the target to the original target of the mon that first used a Dance move
+                gBattlerTarget = gBattlerAttacker;
+                //VVV this probably needs to be removed
+                gBattlerAttacker = gBattlerAbility;
+                gCalledMove = 862;
+                
+                // Make sure that the target isn't an ally - if it is, target the original user
+                if (GetBattlerSide(gBattlerTarget) == GetBattlerSide(gBattlerTarget))
+                    gBattlerTarget = (gBattleScripting.savedBattler & 0xF0) >> 4;
+                gHitMarker &= ~HITMARKER_ATTACKSTRING_PRINTED;
+                BattleScriptExecute(BattleScript_DancerActivates);
+                effect++;
+            }
+            break;
         case ABILITY_FLAME_BODY:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && gBattleMons[gBattlerAttacker].hp != 0

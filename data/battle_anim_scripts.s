@@ -889,6 +889,7 @@ gBattleAnims_Moves::
 	.4byte Move_RIFT_RIPPER
 	.4byte Move_RAPID_JAB
 	.4byte Move_FLASHBACK
+	.4byte Move_POISONOUS_ODER
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -18816,6 +18817,16 @@ Move_COIN_TOSS:
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
 	blendoff
+	end
+
+Move_POISONOUS_ODER:
+	waitforvisualfinish
+	playsewithpan SE_M_HAZE, 0
+	createvisualtask AnimTask_HazeScrollingFog, 5
+	delay 30
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS_2, 2, 0, 16, RGB_PURPLE
+	delay 90
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS_2, 1, 16, 0, RGB_PURPLE
 	end
 
 Move_TORNADO_CRASH:

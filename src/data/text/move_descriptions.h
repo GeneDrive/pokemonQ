@@ -3388,6 +3388,10 @@ static const u8 sFlashbackDescription[] = _(
     "Show the past chilling foe\n"
     "causing them to freeze.");
 
+static const u8 sPoisonousOderDescription[] = _(
+    "Release a foul oder\n"
+    "high chance to poison all.");
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4260,4 +4264,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_RIFT_RIPPER - 1] = sRiftRipperDescription,
     [MOVE_RAPID_JAB - 1] = sRapidJabDescription,
     [MOVE_FLASHBACK - 1] = sFlashbackDescription,
+    [MOVE_POISONOUS_ODER - 1] = sPoisonousOderDescription,
 };
