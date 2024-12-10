@@ -509,19 +509,24 @@ OldaleTown_Text_Wow:
 
 OldaleTown_Text_Chespin:
 	.string "Cool you picked CHESPIN!\n"
-	.string "That means you'r weak to fire!\l"
-	.string "Then you could use a finneon,\l"
-	.string "would you like to have mine?$"
+	.string "That means you'll have trouble with\l"
+	.string "fire type pokemon!\p"
+	.string "Then you could use my finneon,\n"
+	.string "would you like to have it?$"
 
 OldaleTown_Text_Chimchar:
 	.string "Cool you picked CHIMCHAR!\n"
-	.string "then you could use a Petilil,\l"
-	.string "would you like to have mine?$"
+	.string "That means you'll have trouble with\l"
+	.string "fire type pokemon!\p"
+	.string "Then you could use my Petilil,\n"
+	.string "would you like to have it?$"
 
 OldaleTown_Text_Totodile:
 	.string "Cool you picked TOTODILE!\n"
-	.string "then you could use a Salandit,\l"
-	.string "would you like to have mine?$"
+	.string "That means you'll have trouble with\l"
+	.string "fire type pokemon!\p"
+	.string "Then you could use my Salandit,\n"
+	.string "would you like to have it?$"
 
 OldaleTown_Text_ReceivedPokemon1:
 	.string "{PLAYER} received a Finneon!$"
@@ -533,7 +538,9 @@ OldaleTown_Text_ReceivedPokemon3:
 	.string "{PLAYER} received a Salandit!$"
 
 OldaleTown_Text_GoodLuck:
-	.string "Good luck!$"
+	.string "Good luck with your adventure!\n"
+	.string "Please come back and visit me sometime!\l"
+	.string "I want to see how my friend is doing!$"
 
 OldaleTown_StartGivePokemon:
 	applymovement LOCALID_PokeGuy, Common_Movement_FacePlayer
