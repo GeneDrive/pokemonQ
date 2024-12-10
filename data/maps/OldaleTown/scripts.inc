@@ -1,6 +1,7 @@
 .set LOCALID_MART_EMPLOYEE, 2
 .set LOCALID_FOOTPRINTS_MAN, 3
 .set LOCALID_RIVAL, 4
+.set LOCALID_PokeGuy, 6
 
 OldaleTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, OldaleTown_OnTransition
@@ -362,6 +363,26 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	walk_left
 	step_end
 
+OldaleTown_Movement_Guy1:
+	walk_left
+	walk_down
+	step_end
+
+OldaleTown_Movement_Guy2:
+	walk_down
+	step_end
+	
+OldaleTown_Movement_Guy3:
+	walk_right
+	walk_down
+	step_end
+
+OldaleTown_Movement_Guy4:
+	walk_right
+	walk_right
+	walk_down
+	step_end
+
 OldaleTown_Text_SavingMyProgress:
 	.string "I want to take a rest, so I'm saving my\n"
 	.string "progress.$"
@@ -444,3 +465,137 @@ OldaleTown_Text_FlowerMan5:
 	.string "I'll go to my brothers garden in Rustboro.\n"
 	.string "No one would dore doi this to him!\l"
 	.string "I dare you top test your luck with him.$"
+
+OldaleTown_EventScript_Man::
+	goto OldaleTown_StartGivePokemon
+	end
+
+OldaleTown_EventScript_Man_Move1::
+	applymovement LOCALID_PokeGuy, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_PokeGuy, OldaleTown_Movement_Guy1
+	waitmovement 0
+	goto OldaleTown_StartGivePokemon
+	end
+
+OldaleTown_EventScript_Man_Move2::
+	applymovement LOCALID_PokeGuy, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_PokeGuy, OldaleTown_Movement_Guy2
+	waitmovement 0
+	goto OldaleTown_StartGivePokemon
+	end
+
+OldaleTown_EventScript_Man_Move3::
+	applymovement LOCALID_PokeGuy, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_PokeGuy, OldaleTown_Movement_Guy3
+	waitmovement 0
+	goto OldaleTown_StartGivePokemon
+	end
+
+OldaleTown_EventScript_Man_Move4::
+	applymovement LOCALID_PokeGuy, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_PokeGuy, OldaleTown_Movement_Guy4
+	waitmovement 0
+	goto OldaleTown_StartGivePokemon
+	end
+
+
+OldaleTown_Text_Wow:
+	.string "Oh wow you got a starter pokemon from the professor!\n"
+	.string "Which one did you pick?$"
+
+OldaleTown_Text_Chespin:
+	.string "Cool you picked CHESPIN!\n"
+	.string "That means you'r weak to fire!\l"
+	.string "Then you could use a finneon,\l"
+	.string "would you like to have mine?$"
+
+OldaleTown_Text_Chimchar:
+	.string "Cool you picked CHIMCHAR!\n"
+	.string "then you could use a Petilil,\l"
+	.string "would you like to have mine?$"
+
+OldaleTown_Text_Totodile:
+	.string "Cool you picked TOTODILE!\n"
+	.string "then you could use a Salandit,\l"
+	.string "would you like to have mine?$"
+
+OldaleTown_Text_ReceivedPokemon1:
+	.string "{PLAYER} received a Finneon!$"
+
+OldaleTown_Text_ReceivedPokemon2:
+	.string "{PLAYER} received a Petilil!$"
+
+OldaleTown_Text_ReceivedPokemon3:
+	.string "{PLAYER} received a Salandit!$"
+
+OldaleTown_Text_GoodLuck:
+	.string "Good luck!$"
+
+OldaleTown_StartGivePokemon:
+	applymovement LOCALID_PokeGuy, Common_Movement_FacePlayer
+	waitmovement 0
+	goto_if_set FLAG_RECEIVED_STARTER_BASED_POKEMON, OldaleTown_GoodLuck
+	switch VAR_STARTER_MON
+	case 0, OldaleTown_StartGivePokemonDialog1
+	case 1, OldaleTown_StartGivePokemonDialog2
+	case 2, OldaleTown_StartGivePokemonDialog3
+	end
+	
+OldaleTown_StartGivePokemonDialog1:
+	msgbox OldaleTown_Text_Chespin, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, OldaleTown_GivePokemon1
+	goto_if_eq VAR_RESULT, NO, OldaleTown_GoodLuck
+	end
+
+OldaleTown_StartGivePokemonDialog2:
+	msgbox OldaleTown_Text_Chimchar, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, OldaleTown_GivePokemon2
+	goto_if_eq VAR_RESULT, NO, OldaleTown_GoodLuck
+	end
+
+OldaleTown_StartGivePokemonDialog3:
+	msgbox OldaleTown_Text_Totodile, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, OldaleTown_GivePokemon3
+	goto_if_eq VAR_RESULT, NO, OldaleTown_GoodLuck
+	end
+
+OldaleTown_GivePokemon1:
+	givemon SPECIES_FINNEON, 5
+	playfanfare MUS_OBTAIN_ITEM
+	message OldaleTown_Text_ReceivedPokemon1
+	waitfanfare
+	msgbox OldaleTown_Text_GoodLuck, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_STARTER_BASED_POKEMON
+	closemessage
+	end
+
+
+OldaleTown_GivePokemon2:
+	givemon SPECIES_PETILIL, 5
+	playfanfare MUS_OBTAIN_ITEM
+	message OldaleTown_Text_ReceivedPokemon2
+	waitfanfare
+	msgbox OldaleTown_Text_GoodLuck, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_STARTER_BASED_POKEMON
+	closemessage
+	end
+
+OldaleTown_GivePokemon3:
+	givemon SPECIES_SALANDIT, 5 
+	playfanfare MUS_OBTAIN_ITEM
+	message OldaleTown_Text_ReceivedPokemon3
+	waitfanfare
+	msgbox OldaleTown_Text_GoodLuck, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_STARTER_BASED_POKEMON
+	setvar VAR_RECEIVED_SPECIAL_MON_BASED_STARTER, 1
+	closemessage
+	end
+
+OldaleTown_GoodLuck:
+	msgbox OldaleTown_Text_GoodLuck, MSGBOX_DEFAULT
+	closemessage
+	end
