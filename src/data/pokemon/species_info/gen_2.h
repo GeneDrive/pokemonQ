@@ -3825,7 +3825,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     {
         SNEASEL_MISC_INFO,
         .types = { TYPE_FIGHTING, TYPE_POISON },
-        .abilities = { ABILITY_INNER_FOCUS, ABILITY_KEEN_EYE, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_INNER_FOCUS, ABILITY_UNBURDEN, ABILITY_PICKPOCKET },
         .bodyColor = BODY_COLOR_GRAY,
         .weight = 270,
         .description = COMPOUND_STRING(
