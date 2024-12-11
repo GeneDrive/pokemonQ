@@ -45,7 +45,15 @@
 
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "IzalaCity_Gym_Arena2_EventScript_Battle_Event_Start"
+    }
   ],
   "bg_events": [
 
