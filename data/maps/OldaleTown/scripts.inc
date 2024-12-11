@@ -542,6 +542,11 @@ OldaleTown_Text_GoodLuck:
 	.string "Please come back and visit me sometime!\l"
 	.string "I want to see how my friend is doing!$"
 
+OldaleTown_Text_ComeOn:
+	.string "Come on just take it!\n"
+	.string "I want it to see the world!$"
+
+
 OldaleTown_StartGivePokemon:
 	applymovement LOCALID_PokeGuy, Common_Movement_FacePlayer
 	waitmovement 0
@@ -552,22 +557,42 @@ OldaleTown_StartGivePokemon:
 	case 2, OldaleTown_StartGivePokemonDialog3
 	end
 	
+OldaleTown_GivePokemonComeOn1:
+	msgbox OldaleTown_Text_ComeOn, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, OldaleTown_GivePokemon1
+	goto_if_eq VAR_RESULT, NO, OldaleTown_GivePokemonComeOn1
+	end
+
+OldaleTown_GivePokemonComeOn2:
+	msgbox OldaleTown_Text_ComeOn, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, OldaleTown_GivePokemon2
+	goto_if_eq VAR_RESULT, NO, OldaleTown_GivePokemonComeOn2
+	end
+
+
+OldaleTown_GivePokemonComeOn3:
+	msgbox OldaleTown_Text_ComeOn, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, OldaleTown_GivePokemon3
+	goto_if_eq VAR_RESULT, NO, OldaleTown_GivePokemonComeOn3
+	end
+
+
 OldaleTown_StartGivePokemonDialog1:
 	msgbox OldaleTown_Text_Chespin, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, OldaleTown_GivePokemon1
-	goto_if_eq VAR_RESULT, NO, OldaleTown_GoodLuck
+	goto_if_eq VAR_RESULT, NO, OldaleTown_GivePokemonComeOn1
 	end
 
 OldaleTown_StartGivePokemonDialog2:
 	msgbox OldaleTown_Text_Chimchar, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, OldaleTown_GivePokemon2
-	goto_if_eq VAR_RESULT, NO, OldaleTown_GoodLuck
+	goto_if_eq VAR_RESULT, NO, OldaleTown_GivePokemonComeOn2
 	end
 
 OldaleTown_StartGivePokemonDialog3:
 	msgbox OldaleTown_Text_Totodile, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, OldaleTown_GivePokemon3
-	goto_if_eq VAR_RESULT, NO, OldaleTown_GoodLuck
+	goto_if_eq VAR_RESULT, NO, OldaleTown_GivePokemonComeOn3
 	end
 
 OldaleTown_GivePokemon1:
@@ -577,6 +602,7 @@ OldaleTown_GivePokemon1:
 	waitfanfare
 	msgbox OldaleTown_Text_GoodLuck, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_STARTER_BASED_POKEMON
+	setvar VAR_RECEIVED_SPECIAL_MON_BASED_STARTER, 1
 	closemessage
 	end
 
@@ -588,6 +614,7 @@ OldaleTown_GivePokemon2:
 	waitfanfare
 	msgbox OldaleTown_Text_GoodLuck, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_STARTER_BASED_POKEMON
+	setvar VAR_RECEIVED_SPECIAL_MON_BASED_STARTER, 1
 	closemessage
 	end
 
@@ -603,6 +630,7 @@ OldaleTown_GivePokemon3:
 	end
 
 OldaleTown_GoodLuck:
+	setvar VAR_RECEIVED_SPECIAL_MON_BASED_STARTER, 1
 	msgbox OldaleTown_Text_GoodLuck, MSGBOX_DEFAULT
 	closemessage
 	end
