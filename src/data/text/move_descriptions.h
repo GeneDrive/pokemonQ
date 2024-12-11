@@ -3396,7 +3396,10 @@ static const u8 sSpaceTimeSpinDescription[] = _(
     "Spin so quickly, space can't keep\n"
     "up, Raises both Pokemon's speed.");
 
-
+static const u8 sWaveCarveDescription[] = _(
+    "Slices quicker than a sound\n"
+    "to attack your opponent.");
+    
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4271,4 +4274,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_FLASHBACK - 1] = sFlashbackDescription,
     [MOVE_POISONOUS_ODER - 1] = sPoisonousOderDescription,
     [MOVE_SPACE_TIME_SPIN - 1] = sSpaceTimeSpinDescription,
+    [MOVE_WAVE_CARVE - 1] = sWaveCarveDescription,
 };

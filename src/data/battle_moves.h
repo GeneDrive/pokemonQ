@@ -14951,6 +14951,21 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .makesContact = TRUE,
         .sheerForceBoost = TRUE,
     },
+    [MOVE_WAVE_CARVE] =
+    {
+        .effect = EFFECT_HIT,
+        .power = 60,
+        .type = TYPE_BUG,
+        .accuracy = 100,
+        .pp = 10,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_SELECTED,
+        .split = SPLIT_PHYSICAL,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .priority = 3,
+        .makesContact = TRUE,
+        .slicingMove = TRUE,
+    },
 
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
