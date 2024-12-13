@@ -1740,10 +1740,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #define PIKACHU_MISC_INFO                                                       \
         .baseHP        = 35,                                                    \
         .baseAttack    = 55,                                                    \
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 40 : 30,                    \
+        .baseDefense   = 40,                    \
         .baseSpeed     = 90,                                                    \
         .baseSpAttack  = 50,                                                    \
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 50 : 40,                    \                           \
+        .baseSpDefense = 50,                    \
         .catchRate = 190,                                                       \
         .expYield = 112,                                                        \
         .evYield_Speed = 2,                                                     \
@@ -1903,14 +1903,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #define PIKACHU_CAP_MISC_INFO                                       \
     PIKACHU_MISC_INFO,                                              \
-    PIKACHU_REGULAR_SIZE_INFO,       
-    .types = { TYPE_ELECTRIC, TYPE_ELECTRIC },                      \
+    PIKACHU_REGULAR_SIZE_INFO,                                      \
     .genderRatio = MON_MALE,                                        \
     .eggGroups = { EGG_GROUP_NO_EGGS_DISCOVERED, EGG_GROUP_NO_EGGS_DISCOVERED }
 
     [SPECIES_PIKACHU_ORIGINAL_CAP] =
     {
         PIKACHU_CAP_MISC_INFO,
+        .types = { TYPE_ELECTRIC, TYPE_ELECTRIC },
         .noFlip = TRUE,
         .description = COMPOUND_STRING(
             "This Pikachu wears its partner's cap, which\n"
@@ -1931,6 +1931,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_PIKACHU_HOENN_CAP] =
     {
         PIKACHU_CAP_MISC_INFO,
+        .types = { TYPE_ELECTRIC, TYPE_ELECTRIC },
         .description = COMPOUND_STRING(
             "This Pikachu wears its partner's cap, which\n"
             "is proof of the strong bond Pikachu and\n"
@@ -1950,6 +1951,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_PIKACHU_SINNOH_CAP] =
     {
         PIKACHU_CAP_MISC_INFO,
+        .types = { TYPE_ELECTRIC, TYPE_ELECTRIC },
         .description = COMPOUND_STRING(
             "This Pikachu wears its partner's cap, which\n"
             "is proof of the strong bond Pikachu and\n"
@@ -1969,6 +1971,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_PIKACHU_UNOVA_CAP] =
     {
         PIKACHU_CAP_MISC_INFO,
+        .types = { TYPE_ELECTRIC, TYPE_ELECTRIC },
         .description = COMPOUND_STRING(
             "This Pikachu wears its partner's cap, which\n"
             "is proof of the strong bond Pikachu and\n"
@@ -1988,6 +1991,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_PIKACHU_KALOS_CAP] =
     {
         PIKACHU_CAP_MISC_INFO,
+        .types = { TYPE_ELECTRIC, TYPE_ELECTRIC },
         .description = COMPOUND_STRING(
             "This Pikachu wears its partner's cap, which\n"
             "is proof of the strong bond Pikachu and\n"
@@ -2007,6 +2011,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_PIKACHU_ALOLA_CAP] =
     {
         PIKACHU_CAP_MISC_INFO,
+        .types = { TYPE_ELECTRIC, TYPE_ELECTRIC },
         .description = COMPOUND_STRING(
             "This Pikachu wears its partner's cap, which\n"
             "is proof of the strong bond Pikachu and\n"
@@ -2026,6 +2031,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_PIKACHU_PARTNER_CAP] =
     {
         PIKACHU_CAP_MISC_INFO,
+        .types = { TYPE_ELECTRIC, TYPE_ELECTRIC },
         .noFlip = TRUE,
         .description = COMPOUND_STRING(
             "This Pikachu wears its partner's cap, which\n"
@@ -2046,6 +2052,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_PIKACHU_WORLD_CAP] =
     {
         PIKACHU_CAP_MISC_INFO,
+        .types = { TYPE_ELECTRIC, TYPE_ELECTRIC },
         .description = COMPOUND_STRING(
             "This Pikachu wears its partner's cap, which\n"
             "is proof of the strong bond Pikachu and\n"
