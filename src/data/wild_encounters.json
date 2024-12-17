@@ -11886,7 +11886,7 @@
               {
                 "min_level": 18,
                 "max_level": 21,
-                "species": "SPECIES_GIBLE"
+                "species": "SPECIES_CRYOGONAL"
               },
               {
                 "min_level": 18,
@@ -11920,7 +11920,7 @@
               {
                 "min_level": 18,
                 "max_level": 21,
-                "species": "SPECIES_SANDSHREW_ALOLAN"
+                "species": "SPECIES_WOOLOO"
               },
               {
                 "min_level": 18,
@@ -12019,7 +12019,7 @@
               {
                 "min_level": 18,
                 "max_level": 21,
-                "species": "SPECIES_ONIX"
+                "species": "SPECIES_CRYOGONAL"
               },
               {
                 "min_level": 18,
@@ -12996,7 +12996,7 @@
               {
                 "min_level": 16,
                 "max_level": 19,
-                "species": "SPECIES_SPRITZEE"
+                "species": "SPECIES_JIGGLYPUFF"
               },
               {
                 "min_level": 16,
@@ -13116,6 +13116,160 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_ARROKUDA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_IZALA_CITY_GARDEN",
+          "base_label": "gIzalaCity_Garden0",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_DEERLING_SPRING"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_PANCHAM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 22,
+                "species": "SPECIES_RIOLU"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_STEENEE"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_ELDEGOSS"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SPRITZEE"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_STEENEE"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_RIOLU"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_PANCHAM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_DEERLING_SUMMER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_JIGGLYPUFF"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_JIGGLYPUFF"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_LEDYBA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PUMPKABOO_AVERAGE"
               },
               {
                 "min_level": 5,

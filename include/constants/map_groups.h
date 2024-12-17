@@ -187,6 +187,7 @@
 #define MAP_IZALA_CITY_GYM_WAITING_ROOM     (18 | (11 << 8))
 #define MAP_IZALA_CITY_GYM_ARENA1           (19 | (11 << 8))
 #define MAP_IZALA_CITY_GYM_ARENA2           (20 | (11 << 8))
+#define MAP_IZALA_CITY_GARDEN               (21 | (11 << 8))
 
 // gMapGroup_IndoorFortree
 #define MAP_FORTREE_CITY_HOUSE1            (0 | (12 << 8))

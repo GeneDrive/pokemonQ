@@ -3393,12 +3393,16 @@ static const u8 sPoisonousOderDescription[] = _(
     "high chance to poison all.");
 
 static const u8 sSpaceTimeSpinDescription[] = _(
-    "Spin so quickly, space can't keep\n"
-    "up, Raises both Pokemon's speed.");
+    "Spin quickly, space can't keep\n"
+    "up, Raises Pokemon's speed.");
 
 static const u8 sWaveCarveDescription[] = _(
     "Slices quicker than a sound\n"
     "to attack your opponent.");
+
+static const u8 sMoodSwingDescription[] = _(
+    "Boosts Attack when burned,\n"
+    "paralyzed, or poisoned.");
     
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
@@ -4275,4 +4279,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_POISONOUS_ODER - 1] = sPoisonousOderDescription,
     [MOVE_SPACE_TIME_SPIN - 1] = sSpaceTimeSpinDescription,
     [MOVE_WAVE_CARVE - 1] = sWaveCarveDescription,
+    [MOVE_MOOD_SWING - 1] = sMoodSwingDescription,
 };

@@ -1560,7 +1560,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FRONT_PIC(Fearow, 64, 64),
         .frontPicYOffset = 12,
         .frontAnimFrames = sAnims_Watchog,
-        //.frontAnimId = ANIM_H_JUMPS,
+        .frontAnimId = ANIM_H_SLIDE_SLOW,
         .frontAnimDelay = 2,
         .enemyMonElevation = 6,
         BACK_PIC(Fearow, 64, 56),
@@ -5457,9 +5457,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #if P_FAMILY_GEODUDE
 #define KANTONIAN_GEODUDE_FAMILY_INFO                                       \
-        .types = { TYPE_ROCK, TYPE_GROUND },                                \
+        .types = { TYPE_ROCK, TYPE_FIRE },                                \
         .itemRare = ITEM_EVERSTONE,                                         \
-        .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_SAND_VEIL }
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_STURDY, ABILITY_SAND_VEIL }
 
 #define GEODUDE_FAMILY_MISC_INFO                                \
         .genderRatio = PERCENT_FEMALE(50),                      \
@@ -5541,22 +5541,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         GEODUDE_MISC_INFO,
         .weight = 200,
         .description = COMPOUND_STRING(
-            "It climbs mountain paths using only the\n"
-            "power of its arms. Because they look just\n"
-            "like boulders lining paths, hikers may step\n"
-            "on them without noticing."),
+            "It melts mountain paths using only the\n"
+            "power of rage. Because they look just\n"
+            "like boulders lining paths, hikers may get\n"
+            "torched by them along the road."),
         FRONT_PIC(Geodude, 64, 32),
         .frontPicYOffset = 19,
         .frontAnimFrames = sAnims_Geodude,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL,
         .enemyMonElevation = 10,
         BACK_PIC(Geodude, 64, 48),
-        .backPicYOffset = 11,
+        .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         PALETTES(Geodude),
         ICON(Geodude, 1),
         LEARNSETS(Geodude),
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_GRAVELER}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_GRAVELER}),
     },
 
     [SPECIES_GRAVELER] =

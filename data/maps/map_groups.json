@@ -216,7 +216,8 @@
     "IzalaCity_Gym_Etrance",
     "IzalaCity_Gym_WaitingRoom",
     "IzalaCity_Gym_Arena1",
-    "IzalaCity_Gym_Arena2"
+    "IzalaCity_Gym_Arena2",
+    "IzalaCity_Garden"
   ],
   "gMapGroup_IndoorFortree": [
     "FortreeCity_House1",

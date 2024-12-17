@@ -3277,7 +3277,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Meditite, 0),
         .footprint = gMonFootprint_Meditite,
         LEARNSETS(Meditite),
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_MEDICHAM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_MEDICHAM}),
     },
 
 #define MEDICHAM_MISC_INFO                                          \
@@ -5366,7 +5366,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_BALTOY
     [SPECIES_BALTOY] =
     {
-        .baseHP        = 44,
+        .baseHP        = 55,
         .baseAttack    = 44,
         .baseDefense   = 55,
         .baseSpeed     = 55,
@@ -7032,7 +7032,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 97,
         .baseSpAttack  = 40,
         .baseSpDefense = 65,
-        .types = { TYPE_WATER, TYPE_WATER },
+        .types = { TYPE_WATER, TYPE_FAIRY },
         .catchRate = 225,
         .expYield = 116,
         .evYield_Speed = 1,
@@ -7042,7 +7042,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = { EGG_GROUP_WATER_2, EGG_GROUP_WATER_2 },
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_HYDRATION },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_HEALER, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Luvdisc"),
         .cryId = CRY_LUVDISC,
@@ -7070,6 +7070,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Luvdisc, 0),
         .footprint = gMonFootprint_Luvdisc,
         LEARNSETS(Luvdisc),
+        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_ALOMOMOLA}),
     },
 #endif //P_FAMILY_LUVDISC
 

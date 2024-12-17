@@ -1188,12 +1188,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_WOOLOO
     [SPECIES_WOOLOO] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 80,
-        .baseDefense   = 38,
-        .baseSpeed     = 66,
-        .baseSpAttack  = 33,
-        .baseSpDefense = 66,
+        .baseHP        = 95,
+        .baseAttack    = 30,
+        .baseDefense   = 43,
+        .baseSpeed     = 77,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 35,
         .types = { TYPE_ICE, TYPE_FLYING },
         .catchRate = 255,
         .expYield = 122,
@@ -3504,7 +3504,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         ICON(Snom, 0),
         .footprint = gMonFootprint_Snom,
         LEARNSETS(Snom),
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_FROSMOTH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_FROSMOTH}),
     },
 
     [SPECIES_FROSMOTH] =

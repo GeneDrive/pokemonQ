@@ -1781,7 +1781,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         ICON(Skiploom, 1),
         .footprint = gMonFootprint_Skiploom,
         LEARNSETS(Skiploom),
-        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_JUMPLUFF}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_JUMPLUFF}),
     },
 
     [SPECIES_JUMPLUFF] =
@@ -3018,10 +3018,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseHP        = 50,
         .baseAttack    = 65,
         .baseDefense   = 90,
-        .baseSpeed     = 15,
+        .baseSpeed     = 35,
         .baseSpAttack  = 35,
         .baseSpDefense = 35,
-        .types = { TYPE_BUG, TYPE_BUG },
+        .types = { TYPE_BUG, TYPE_STEEL },
         .catchRate = 190,
         .expYield = 58,
         .evYield_Defense = 1,
@@ -3066,7 +3066,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseHP        = 75,
         .baseAttack    = 90,
         .baseDefense   = 140,
-        .baseSpeed     = 40,
+        .baseSpeed     = 45,
         .baseSpAttack  = 60,
         .baseSpDefense = 60,
         .types = { TYPE_BUG, TYPE_STEEL },
@@ -4136,7 +4136,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         ICON(Slugma, 0),
         .footprint = gMonFootprint_Slugma,
         LEARNSETS(Slugma),
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MAGCARGO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_MAGCARGO}),
     },
 
     [SPECIES_MAGCARGO] =

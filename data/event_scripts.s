@@ -1163,3 +1163,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route_105_Real_Cave5_F2/scripts.inc"
 
 	.include "data/maps/Route_105_Real_Cave1_F1/scripts.inc"
+
+	.include "data/maps/IzalaCity_Garden/scripts.inc"
