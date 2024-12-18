@@ -14,6 +14,7 @@ IzalaCity_Garden_EventScript_Pokemon::
 	waitstate
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, IzalaCity_Garden_EventScript_Pokemon_Return
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, IzalaCity_Garden_EventScript_Pokemon_Return
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, IzalaCity_Garden_EventScript_Pokemon_Return2
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, IzalaCity_Garden_EventScript_Pokemon_Return2
 	releaseall
