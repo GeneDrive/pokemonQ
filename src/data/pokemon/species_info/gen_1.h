@@ -8965,7 +8965,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ICON(Horsea, 0),
         .footprint = gMonFootprint_Horsea,
         LEARNSETS(Horsea),
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SEADRA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_SEADRA}),
     },
 
     [SPECIES_SEADRA] =

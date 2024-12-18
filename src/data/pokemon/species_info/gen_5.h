@@ -1704,7 +1704,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Woobat, 0),
         .footprint = gMonFootprint_Woobat,
         LEARNSETS(Woobat),
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_SWOOBAT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_SWOOBAT}),
     },
 
     [SPECIES_SWOOBAT] =

@@ -87,7 +87,7 @@ Route104_EventScript_ItemPPUp::
 	end
 
 Route104_EventScript_ItemPokeBall::
-	finditem ITEM_ABILITY_CAPSULE
+	finditem ITEM_SUN_STONE
 	end
 
 Route104_EventScript_ItemXAccuracy::
@@ -103,11 +103,11 @@ Route105_EventScript_ItemIron::
 	end
 
 Route105_EventScript_Item1::
-	finditem ITEM_BOLD_MINT
+	finditem ITEM_BLACK_BELT
 	end
 
 Route105_EventScript_Item2::
-	finditem ITEM_BLACK_BELT
+	finditem ITEM_FIRE_STONE
 	end
 
 Route106_EventScript_ItemProtein::
@@ -407,7 +407,7 @@ MossdeepCity_EventScript_ItemNetBall::
 	end
 
 PetalburgWoods_EventScript_ItemXAttack::
-	finditem ITEM_X_ATTACK
+	finditem ITEM_LEFTOVERS
 	end
 
 PetalburgWoods_EventScript_ItemGreatBall::

@@ -6152,6 +6152,8 @@ static void Cmd_moveend(void)
                 if ((((gBattleMons[gBattlerTarget].status1 & STATUS1_SLEEP) > 0 &&(gBattleMons[gBattlerTarget].status1 & STATUS1_SLEEP) < 4) && GetBattlerAbility(gBattlerTarget) != ABILITY_COMATOSE)
                 && !((gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP) > 0)
                 && BATTLER_TURN_DAMAGED(battler)
+                && gBattleMoves[gCurrentMove].effect == EFFECT_SLEEP
+                
                 ) {
                     gBattleMons[gBattlerTarget].status1 &= ~STATUS1_SLEEP;
 
@@ -12169,16 +12171,16 @@ static void Cmd_weatherdamage(void)
         }
     }
 
-    // almost works only need to check every pokemon for playing message
-    if (((gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP) > 0 &&(gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP) < 4) && GetBattlerAbility(gBattlerAttacker) != ABILITY_COMATOSE) {
-        gBattleMons[gBattlerAttacker].status1 &= ~STATUS1_SLEEP;
+    // // almost works only need to check every pokemon for playing message
+    // if (((gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP) > 0 &&(gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP) < 4) && GetBattlerAbility(gBattlerAttacker) != ABILITY_COMATOSE) {
+    //     gBattleMons[gBattlerAttacker].status1 &= ~STATUS1_SLEEP;
 
-        BtlController_EmitSetMonData(gBattlerAttacker, BUFFER_A, REQUEST_STATUS_BATTLE, 0, sizeof(gBattleMons[gBattlerAttacker].status1), &gBattleMons[gBattlerAttacker].status1);
-        MarkBattlerForControllerExec(gBattlerAttacker);
+    //     BtlController_EmitSetMonData(gBattlerAttacker, BUFFER_A, REQUEST_STATUS_BATTLE, 0, sizeof(gBattleMons[gBattlerAttacker].status1), &gBattleMons[gBattlerAttacker].status1);
+    //     MarkBattlerForControllerExec(gBattlerAttacker);
 
-        BattleScriptPushCursor();
-        gBattlescriptCurrInstr = BattleScript_TargetWokeUp;
-    }
+    //     BattleScriptPushCursor();
+    //     gBattlescriptCurrInstr = BattleScript_TargetWokeUp;
+    // }
 
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
