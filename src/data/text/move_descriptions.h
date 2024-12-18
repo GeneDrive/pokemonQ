@@ -3403,6 +3403,10 @@ static const u8 sWaveCarveDescription[] = _(
 static const u8 sMoodSwingDescription[] = _(
     "Boosts Attack when burned,\n"
     "paralyzed, or poisoned.");
+
+static const u8 sBogPunchDescription[] = _(
+    "A Muddy punch that may lower\n"
+    "the foe's evasion.");
     
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
@@ -4280,4 +4284,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_SPACE_TIME_SPIN - 1] = sSpaceTimeSpinDescription,
     [MOVE_WAVE_CARVE - 1] = sWaveCarveDescription,
     [MOVE_MOOD_SWING - 1] = sMoodSwingDescription,
+    [MOVE_BOG_PUNCH - 1] = sBogPunchDescription,
 };

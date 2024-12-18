@@ -868,6 +868,7 @@ const u8 gMoveNames[MOVES_COUNT_DYNAMAX][MOVE_NAME_LENGTH + 1] =
     [MOVE_SPACE_TIME_SPIN] = _("Space Time Spin"),
     [MOVE_WAVE_CARVE] = _("Wave Carve"),
     [MOVE_MOOD_SWING] = _("Mood Swing"),
+    [MOVE_BOG_PUNCH] = _("Bog Punch"),
     // Max Moves
     [MOVE_MAX_GUARD] = _("Max Guard"),
     [MOVE_MAX_STRIKE] = _("Max Strike"),
@@ -1793,6 +1794,7 @@ const u8 gMoveNames[MOVES_COUNT_DYNAMAX][MOVE_NAME_LENGTH + 1] =
     [MOVE_SPACE_TIME_SPIN] = _("SpaceTimeSpn"),
     [MOVE_WAVE_CARVE] = _("Wave Carve"),
     [MOVE_MOOD_SWING] = _("Mood Swing"),
+    [MOVE_BOG_PUNCH] = _("Bog Punch"),
     // Max Moves
     [MOVE_MAX_GUARD] = _("M-Guard"),
     [MOVE_MAX_STRIKE] = _("M-Strike"),
