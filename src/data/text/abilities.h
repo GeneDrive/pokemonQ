@@ -303,6 +303,7 @@ static const u8 sLightDevourerDescription[] = _("Drains Elec/Fire/Fairy/Psy.");
 static const u8 sClayCoverDescription[] = _("Normal moves become Ground.");
 static const u8 sWingClipperDescription[] = _("Makes you strong against Flying.");
 static const u8 sDecompOderDescription[] = _("Chance to poison others when hit.");
+static const u8 sStellarCoatDescription[] = _("Change second type to move.");
 
 #if B_EXPANDED_ABILITY_NAMES == TRUE
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -620,6 +621,7 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_CLAY_COVER] = _("Clay Cover"),
     [ABILITY_WING_CLIPPER] = _("Wing Clipper"),
     [ABILITY_DECOMP_ODER] = _("Decomposing Oder"),
+    [ABILITY_STELLAR_COAT] = _("Stellar Coat"),
 };
 #else   // 12 characters
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -937,6 +939,7 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_CLAY_COVER] = _("Clay Cover"),
     [ABILITY_WING_CLIPPER] = _("Wing Clipper"),
     [ABILITY_DECOMP_ODER] = _("Decomp Oder"),
+    [ABILITY_STELLAR_COAT] = _("Stellar Coat"),
 };
 };
 #endif
@@ -1256,4 +1259,5 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_CLAY_COVER] = sClayCoverDescription,
     [ABILITY_WING_CLIPPER] = sWingClipperDescription,
     [ABILITY_DECOMP_ODER] = sDecompOderDescription,
+    [ABILITY_STELLAR_COAT] = sStellarCoatDescription,
 };

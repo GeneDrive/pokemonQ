@@ -1259,7 +1259,17 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
              || (gBattleMons[battler].type3 != moveType && gBattleMons[battler].type3 != TYPE_MYSTERY))
          && move != MOVE_STRUGGLE)
     {
-        SET_BATTLER_TYPE(battler, moveType);
+        SET_BATTLER_TYPE(battler, moveType, FALSE);
+        return TRUE;
+    }
+
+    if ((ability == ABILITY_STELLAR_COAT)
+         && !gDisableStructs[gBattlerAttacker].usedProteanLibero
+         && (gBattleMons[battler].type2 != moveType
+             || (gBattleMons[battler].type3 != moveType && gBattleMons[battler].type3 != TYPE_MYSTERY))
+         && move != MOVE_STRUGGLE)
+    {
+        SET_BATTLER_TYPE(battler, moveType, TRUE);
         return TRUE;
     }
     return FALSE;
@@ -6149,12 +6159,12 @@ static void Cmd_moveend(void)
             && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
             ) {
                 u8 battler = gBattlerTarget;
-                if ((((gBattleMons[gBattlerTarget].status1 & STATUS1_SLEEP) > 0 &&(gBattleMons[gBattlerTarget].status1 & STATUS1_SLEEP) < 4) && GetBattlerAbility(gBattlerTarget) != ABILITY_COMATOSE)
+                if ((((gBattleMons[gBattlerTarget].status1 & STATUS1_SLEEP) > 0 && (gBattleMons[gBattlerTarget].status1 & STATUS1_SLEEP) < 4) && GetBattlerAbility(gBattlerTarget) != ABILITY_COMATOSE)
                 && !((gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP) > 0)
                 && BATTLER_TURN_DAMAGED(battler)
-                && gBattleMoves[gCurrentMove].effect == EFFECT_SLEEP
-                
+                && (gBattleScripting.moveEffect != EFFECT_SLEEP && gBattleScripting.moveEffect != EFFECT_SLEEP_HIT)
                 ) {
+
                     gBattleMons[gBattlerTarget].status1 &= ~STATUS1_SLEEP;
 
                     BtlController_EmitSetMonData(gBattlerTarget, BUFFER_A, REQUEST_STATUS_BATTLE, 0, sizeof(gBattleMons[gBattlerTarget].status1), &gBattleMons[gBattlerTarget].status1);
@@ -9443,7 +9453,7 @@ static void Cmd_various(void)
         }
         else
         {
-            SET_BATTLER_TYPE(gBattlerTarget, gBattleMoves[gCurrentMove].type);
+            SET_BATTLER_TYPE(gBattlerTarget, gBattleMoves[gCurrentMove].type, FALSE);
             PREPARE_TYPE_BUFFER(gBattleTextBuff1, gBattleMoves[gCurrentMove].type);
             gBattlescriptCurrInstr = cmd->nextInstr;
         }
@@ -11871,7 +11881,7 @@ static void Cmd_tryconversiontypechange(void)
         }
         else
         {
-            SET_BATTLER_TYPE(gBattlerAttacker, moveType);
+            SET_BATTLER_TYPE(gBattlerAttacker, moveType, FALSE);
             PREPARE_TYPE_BUFFER(gBattleTextBuff1, moveType);
             gBattlescriptCurrInstr = cmd->nextInstr;
         }
@@ -11928,7 +11938,7 @@ static void Cmd_tryconversiontypechange(void)
             }
             while (moveType == gBattleMons[gBattlerAttacker].type1 || moveType == gBattleMons[gBattlerAttacker].type2 || moveType == gBattleMons[gBattlerAttacker].type3);
 
-            SET_BATTLER_TYPE(gBattlerAttacker, moveType);
+            SET_BATTLER_TYPE(gBattlerAttacker, moveType, FALSE);
             PREPARE_TYPE_BUFFER(gBattleTextBuff1, moveType);
 
             gBattlescriptCurrInstr = cmd->nextInstr;
@@ -12660,7 +12670,7 @@ static void Cmd_settypetorandomresistance(void)
                 }
                 else
                 {
-                    SET_BATTLER_TYPE(gBattlerAttacker, i);
+                    SET_BATTLER_TYPE(gBattlerAttacker, i, FALSE);
                     PREPARE_TYPE_BUFFER(gBattleTextBuff1, i);
                     gBattlescriptCurrInstr = cmd->nextInstr;
                     return;
@@ -14666,7 +14676,7 @@ static void Cmd_settypetoterrain(void)
 
     if (!IS_BATTLER_OF_TYPE(gBattlerAttacker, terrainType))
     {
-        SET_BATTLER_TYPE(gBattlerAttacker, terrainType);
+        SET_BATTLER_TYPE(gBattlerAttacker, terrainType, FALSE);
         PREPARE_TYPE_BUFFER(gBattleTextBuff1, terrainType);
 
         gBattlescriptCurrInstr = cmd->nextInstr;

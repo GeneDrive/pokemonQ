@@ -4183,7 +4183,7 @@ bool32 ChangeTypeBasedOnTerrain(u32 battler)
     else // failsafe
         return FALSE;
 
-    SET_BATTLER_TYPE(battler, battlerType);
+    SET_BATTLER_TYPE(battler, battlerType, FALSE);
     PREPARE_TYPE_BUFFER(gBattleTextBuff1, battlerType);
     return TRUE;
 }
@@ -5435,7 +5435,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
              && !IS_BATTLER_OF_TYPE(battler, moveType)
              && gBattleMons[battler].hp != 0)
             {
-                SET_BATTLER_TYPE(battler, moveType);
+                SET_BATTLER_TYPE(battler, moveType, FALSE);
                 PREPARE_TYPE_BUFFER(gBattleTextBuff1, moveType);
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_ColorChangeActivates;
