@@ -3070,8 +3070,8 @@ static const u8 sLunarBlessingDescription[] = _(
     "itself and its ally.");
 
 static const u8 sTakeHeartDescription[] = _(
-    "The user lifts its spirits to\n"
-    "heal and strengthen itself.");
+    "The user redoes their bandage\n"
+    "heal status, strengthen self.");
 
 static const u8 sTeraBlastDescription[] = _(
     "If the user's Terastallized,\n"
@@ -3407,6 +3407,26 @@ static const u8 sMoodSwingDescription[] = _(
 static const u8 sBogPunchDescription[] = _(
     "A Muddy punch that may lower\n"
     "the foe's evasion.");
+
+static const u8 sDeathStareDescription[] = _(
+    "Intimidates and frightens\n"
+    "the foe into paralysis.");
+
+static const u8 sCompressionBulletsDescription[] = _(
+    "Shoots compressed air at foe,\n"
+    "2 to 5 times.");
+
+static const u8 sIncarnateEnergyDescription[] = _(
+    "Attack with power from the...\n"
+    "original, high frostbite chance.");
+
+static const u8 sFlamesOfOriginDescription[] = _(
+    "Use the fire from the firsts.\n"
+    "Chance to lower targets defence.");
+
+static const u8 sRewrapDescription[] = _(
+    "Use the fire from the firsts.\n"
+    "Chance to lower targets defence.");
     
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
@@ -4285,4 +4305,9 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WAVE_CARVE - 1] = sWaveCarveDescription,
     [MOVE_MOOD_SWING - 1] = sMoodSwingDescription,
     [MOVE_BOG_PUNCH - 1] = sBogPunchDescription,
+    [MOVE_DEATH_STARE - 1] = sDeathStareDescription,
+    [MOVE_COMPRESSION_BULLETS - 1] = sCompressionBulletsDescription,
+    [MOVE_INCARNATE_ENERGY - 1] = sIncarnateEnergyDescription,
+    [MOVE_FLAMES_OF_ORIGIN - 1] = sFlamesOfOriginDescription,
+    [MOVE_REWRAP - 1] = sRewrapDescription,
 };

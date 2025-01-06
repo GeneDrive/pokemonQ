@@ -869,6 +869,11 @@ const u8 gMoveNames[MOVES_COUNT_DYNAMAX][MOVE_NAME_LENGTH + 1] =
     [MOVE_WAVE_CARVE] = _("Wave Carve"),
     [MOVE_MOOD_SWING] = _("Mood Swing"),
     [MOVE_BOG_PUNCH] = _("Bog Punch"),
+    [MOVE_DEATH_STARE] = _("Death Stare"),
+    [MOVE_COMPRESSION_BULLETS] = _("Compression Bullets"),
+    [MOVE_INCARNATE_ENERGY] = _("Incarnate Energy"),
+    [MOVE_FLAMES_OF_ORIGIN] = _("Flames Of Origin"),
+    [MOVE_REWRAP] = _("Rewrap"),
     // Max Moves
     [MOVE_MAX_GUARD] = _("Max Guard"),
     [MOVE_MAX_STRIKE] = _("Max Strike"),
@@ -1795,6 +1800,11 @@ const u8 gMoveNames[MOVES_COUNT_DYNAMAX][MOVE_NAME_LENGTH + 1] =
     [MOVE_WAVE_CARVE] = _("Wave Carve"),
     [MOVE_MOOD_SWING] = _("Mood Swing"),
     [MOVE_BOG_PUNCH] = _("Bog Punch"),
+    [MOVE_DEATH_STARE] = _("Death Stare"),
+    [MOVE_COMPRESSION_BULLETS] = _("Comp Bullets"),
+    [MOVE_INCARNATE_ENERGY] = _("IncrntEnergy"),
+    [MOVE_FLAMES_OF_ORIGIN] = _("Origin Flame"),
+    [MOVE_REWRAP] = _("Rewrap"),
     // Max Moves
     [MOVE_MAX_GUARD] = _("M-Guard"),
     [MOVE_MAX_STRIKE] = _("M-Strike"),

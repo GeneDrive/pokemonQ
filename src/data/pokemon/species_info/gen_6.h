@@ -3576,21 +3576,13 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         BACK_PIC(PumpkabooAverage, 56, 48),
         .backPicYOffset = 13,
         .evolutions = EVOLUTION(
-            {EVO_ITEM, ITEM_RAZOR_CLAW, SPECIES_PUMPKABOO_SMALL},// steel
             {EVO_ITEM, ITEM_WATER_STONE, SPECIES_PUMPKABOO_SMALL},// steel
-            {EVO_ITEM, ITEM_ICE_STONE, SPECIES_PUMPKABOO_SMALL},// steel
             {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_PUMPKABOO_LARGE},// fire
-            {EVO_ITEM, ITEM_SUN_STONE, SPECIES_PUMPKABOO_LARGE},// fire
             {EVO_ITEM, ITEM_MOON_STONE, SPECIES_PUMPKABOO_SUPER},// rock
-            {EVO_ITEM, ITEM_PEAT_BLOCK, SPECIES_PUMPKABOO_SUPER},// rock
             {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_GOURGEIST_SMALL},// electric
-            {EVO_ITEM, ITEM_SHINY_STONE, SPECIES_GOURGEIST_SMALL},// electric
-            {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_GOURGEIST_AVERAGE},// grass
-            {EVO_ITEM, ITEM_GALARICA_CUFF, SPECIES_GOURGEIST_AVERAGE},// grass
-            {EVO_ITEM, ITEM_GALARICA_WREATH, SPECIES_GOURGEIST_AVERAGE},// grass
-            {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_GOURGEIST_AVERAGE},// grass
+            {EVO_ITEM, ITEM_SUN_STONE, SPECIES_GOURGEIST_AVERAGE},// flying
             {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_GOURGEIST_LARGE},// dark
-            {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_GOURGEIST_SUPER}// time
+            {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_GOURGEIST_SUPER}// psychic
         ),
     },
 
@@ -3606,7 +3598,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,                                  
         .growthRate = GROWTH_MEDIUM_FAST,                                   
         .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS },          
-        .abilities = { ABILITY_SHARPNESS, ABILITY_TECHNICIAN, ABILITY_STALWART },   
+        .abilities = { ABILITY_STALWART, ABILITY_TECHNICIAN, ABILITY_SHARPNESS },   
         .bodyColor = BODY_COLOR_BROWN,                                      
         .speciesName = _("finedge"),                                      
         .natDexNum = NATIONAL_DEX_PUMPKABOO,                                
@@ -3654,7 +3646,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,                                  
         .growthRate = GROWTH_MEDIUM_FAST,                                   
         .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS },          
-        .abilities = { ABILITY_SHARPNESS, ABILITY_THERMAL_EXCHANGE, ABILITY_SOLAR_POWER },   
+        .abilities = { ABILITY_STALWART, ABILITY_THERMAL_EXCHANGE, ABILITY_SHARPNESS },   
         .bodyColor = BODY_COLOR_BROWN,                                      
         .speciesName = _("finedge"),                                      
         .natDexNum = NATIONAL_DEX_PUMPKABOO,                                
@@ -3679,10 +3671,13 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
+        LEARNSETS(PumpkabooLarge),
         FRONT_PIC(PumpkabooLarge, 48, 48),
-        .frontPicYOffset = 12,
+        PALETTES(PumpkabooLarge),
+        .frontPicYOffset = 16,
         BACK_PIC(PumpkabooLarge, 56, 48),
         .backPicYOffset = 13,
+        ICON(PumpkabooLarge, 2), 
     },
 
     // rock evo
@@ -3697,7 +3692,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,                                  
         .growthRate = GROWTH_MEDIUM_FAST,                                   
         .eggGroups = { EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS },          
-        .abilities = { ABILITY_SHARPNESS, ABILITY_SOLID_ROCK, ABILITY_SAND_RUSH },   
+        .abilities = { ABILITY_WATER_ABSORB, ABILITY_SOLID_ROCK, ABILITY_SHARPNESS },   
         .bodyColor = BODY_COLOR_BROWN,                                      
         .speciesName = _("finedge"),                                      
         .natDexNum = NATIONAL_DEX_PUMPKABOO,                                

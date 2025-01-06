@@ -9864,6 +9864,16 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(u32 move, u32 moveType, u32 
         if (typeEffectivenessModifier >= UQ_4_12(2.0))
             return UQ_4_12(0.75);
         break;
+    case ABILITY_THERMAL_EXCHANGE:
+        if (typeEffectivenessModifier <= UQ_4_12(0.5) && moveType == TYPE_FIRE)
+            return UQ_4_12(0.33);
+        if (typeEffectivenessModifier == UQ_4_12(1.0) && moveType == TYPE_FIRE)
+            return UQ_4_12(0.75);
+        if (typeEffectivenessModifier == UQ_4_12(2.0) && moveType == TYPE_FIRE)
+            return UQ_4_12(1.5);
+        if (typeEffectivenessModifier == UQ_4_12(4.0) && moveType == TYPE_FIRE)
+            return UQ_4_12(3.0);
+        break;
     case ABILITY_FLUFFY:
         if (!IsMoveMakingContact(move, battlerAtk) && moveType == TYPE_FIRE)
             return UQ_4_12(2.0);

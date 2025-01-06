@@ -7895,8 +7895,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_PumpkabooSmall[] = INCBIN_U32("graphics/pokemon/pumpkaboo/small/anim_front.4bpp.lz");
     const u32 gMonBackPic_PumpkabooSmall[] = INCBIN_U32("graphics/pokemon/pumpkaboo/small/back.4bpp.lz");
 
+    const u32 gMonPalette_PumpkabooLarge[] = INCBIN_U32("graphics/pokemon/pumpkaboo/large/normal.gbapal.lz");
+    const u32 gMonShinyPalette_PumpkabooLarge[] = INCBIN_U32("graphics/pokemon/pumpkaboo/large/shiny.gbapal.lz");
     const u32 gMonFrontPic_PumpkabooLarge[] = INCBIN_U32("graphics/pokemon/pumpkaboo/large/anim_front.4bpp.lz");
     const u32 gMonBackPic_PumpkabooLarge[] = INCBIN_U32("graphics/pokemon/pumpkaboo/large/back.4bpp.lz");
+    const u8 gMonIcon_PumpkabooLarge[] = INCBIN_U8("graphics/pokemon/pumpkaboo/large/icon.4bpp");
 
     const u32 gMonFrontPic_PumpkabooSuper[] = INCBIN_U32("graphics/pokemon/pumpkaboo/super/anim_front.4bpp.lz");
     const u32 gMonBackPic_PumpkabooSuper[] = INCBIN_U32("graphics/pokemon/pumpkaboo/super/back.4bpp.lz");

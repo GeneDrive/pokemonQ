@@ -3613,7 +3613,7 @@ static const struct TrainerMon sParty_Winona1[] = {
     .species = SPECIES_SKARMORY,
     .heldItem = ITEM_LEFTOVERS,
     .ability = ABILITY_MIRROR_ARMOR,
-    .moves = {MOVE_STEEL_WING, MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK}
+    .moves = {MOVE_STEEL_WING, MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK, MOVE_PAYBACK}
     },
 };
 
