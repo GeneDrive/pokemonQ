@@ -511,7 +511,7 @@ OldaleTown_Text_Chespin:
 	.string "Cool you picked CHESPIN!\n"
 	.string "That means you'll have trouble with\l"
 	.string "fire type pokemon!\p"
-	.string "Then you could use my finneon,\n"
+	.string "Then you could use my Chewtle,\n"
 	.string "would you like to have it?$"
 
 OldaleTown_Text_Chimchar:
@@ -596,7 +596,7 @@ OldaleTown_StartGivePokemonDialog3:
 	end
 
 OldaleTown_GivePokemon1:
-	givemon SPECIES_FINNEON, 5
+	givemon SPECIES_CHEWTLE, 5
 	playfanfare MUS_OBTAIN_ITEM
 	message OldaleTown_Text_ReceivedPokemon1
 	waitfanfare

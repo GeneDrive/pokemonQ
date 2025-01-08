@@ -3458,6 +3458,14 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     },
     {
     .lvl = 28,
+    .species = SPECIES_TOGETIC,
+    .ability = ABILITY_SERENE_GRACE,
+    .moves = {MOVE_DRAINING_KISS, MOVE_WISH, MOVE_AIR_CUTTER, MOVE_ANCIENT_POWER},
+    .heldItem = ITEM_LEFTOVERS,
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    },
+    {
+    .lvl = 28,
     .species = SPECIES_TRANQUILL,
     .ability = ABILITY_PRANKSTER,
     .moves = {MOVE_ACCELEROCK, MOVE_BRUTAL_SWING, MOVE_WONDER_ROOM, MOVE_MOOD_SWING},

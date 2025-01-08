@@ -2,7 +2,12 @@
 .set LOCALID_ALICA, 2
 
 IzalaCity_Gym_Arena2_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, IzalaCity_Gym_Arena2_EventScript_OnFrame
 	.byte 0
+
+IzalaCity_Gym_Arena2_EventScript_OnFrame:
+	map_script_2 VAR_TEMP_0, 0, IzalaCity_Gym_Arena2_EventScript_Battle_Event_Start
+	.2byte 0
 
 IzalaCity_Gym_Arena2_EventScript_Battle_Event_Start::
 	applymovement OBJ_EVENT_ID_PLAYER, IzalaCity_Gym_Arena2_Movement_PlayerWalkUp
@@ -60,6 +65,15 @@ IzalaCity_Gym_Arena2_EventScript_Battle_Event::
 	applymovement LOCALID_ALICA, IzalaCity_Gym_Arena2_Movement_Face_Left
 	applymovement LOCALID_BRAWLY, IzalaCity_Gym_Arena2_Movement_BrawlyStepForward
 	waitmovement 0
+	msgbox IzalaCity_Gym_Arena2_Text_9, MSGBOX_AUTOCLOSE
+	waitmessage
+	delay 5
+	msgbox IzalaCity_Gym_Arena2_Text_10, MSGBOX_AUTOCLOSE
+	waitmessage
+	delay 5
+	msgbox IzalaCity_Gym_Arena2_Text_11, MSGBOX_AUTOCLOSE
+	waitmessage
+	delay 5
 	msgbox IzalaCity_Gym_Arena2_Text_BrawlyIntro, MSGBOX_AUTOCLOSE
 	waitmessage
 	delay 5
@@ -108,19 +122,34 @@ IzalaCity_Gym_Arena2_Movement_BrawlyStepForward:
 	step_end
 
 IzalaCity_Gym_Arena2_Text_1:
-	.string "BRAWLY: needs dialogue\n"
-	.string "needs dialogue$"
+	.string "BRAWLY: Hey {PLAYER}! Good to\n"
+	.string "see you again!\p"
+	.string "Thanks for helping with my sister\n"
+	.string "earlier! We were worried we couldn't\l"
+	.string "open the gym today because of her.\p"
+	.string "She helps a bit around the gym,\n"
+	.string "so we can't open without her.\p"
+	.string "I also wanted to congratulate you\n"
+	.string "on getting through our trainers!\p"
+	.string "This gym is known as a roadblock\n"
+	.string "for many trainers.\p"
+	.string "Most of them give up on being a\n"
+	.string "trainer after losing to the\l"
+	.string "second or third trainer.\p"
+	.string "But I'm happy to see you made it\n"
+	.string "all the way to me!\p"
+	.string "So let's get started!$"
 
 IzalaCity_Gym_Arena2_Text_2:
-	.string "???: WAIT!!!$"
+	.string "???: STOP RIGHT THERE!!!$"
 
 IzalaCity_Gym_Arena2_Text_3:
-	.string "ALICA: not so fast, I still\n"
+	.string "ALICA: Not so fast, I still\n"
 	.string "have a bone to pick with you for\l"
 	.string "interupting my time with Wally!$"
 
 IzalaCity_Gym_Arena2_Text_4:
-	.string "ALICA: sorry bro, but I'm going\n"
+	.string "ALICA: Sorry bro, but I'm going\n"
 	.string "destroy {PLAYER} before you can!$"
 
 IzalaCity_Gym_Arena2_Text_5:
@@ -128,9 +157,8 @@ IzalaCity_Gym_Arena2_Text_5:
 	.string "Sorry {PLAYER}, but you'll have\l"
 	.string "deal with my sister first.\p"
 	.string "She won't back down from a fight\n"
-	.string "ones she get's her sights set on\l"
-	.string "someone\p"
-	.string "hihihi... she got that from me$"
+	.string "ones she get's her sights set on someone.\p"
+	.string "Hihihi... she got that from me$"
 
 IzalaCity_Gym_Arena2_Text_6:
 	.string "ALICA: Shut up!\n"
@@ -142,12 +170,33 @@ IzalaCity_Gym_Arena2_Text_7:
 	.string "and lose!$"
 
 IzalaCity_Gym_Arena2_Text_8:
-	.string "ALICA: needs dialogue\n"
-	.string "needs dialogue$"
+	.string "ALICA: Alright bro, I softened\n"
+	.string "{PLAYER} up for you!\p"
+	.string "Now you can send them packing!$"
 
 IzalaCity_Gym_Arena2_Text_9:
-	.string "BRAWLY: needs dialogue\n"
-	.string "needs dialogue$"
+	.string "BRAWLY: Um doesn't this seem a bit\n"
+	.string "unfair to you? I mean their pokemon\l"
+	.string "are already tired from fighting you.$"
+
+IzalaCity_Gym_Arena2_Text_10:
+	.string "ALICA: Isn't that the whole theme of\n"
+	.string "of your gym?\p"
+	.string "Having multiple battles in a row\n"
+	.string "to test the endurance of the trainer.\p"
+	.string "I'm just helping you out by\n"
+	.string "updating your gym to the new standard.$"
+
+IzalaCity_Gym_Arena2_Text_11:
+	.string "BRAWLY: ...\p"
+	.string "It feels like I'm being used here...\n"
+	.string "But I actually like the idea.\p"
+	.string "So you better step up from now on\n"
+	.string "sis and help out with the challenge.\p"
+	.string "...\n"
+	.string "...\p"
+	.string "Alright... let's get into\n"
+	.string "Gymleader mode...$"
 
 IzalaCity_Gym_Arena2_Text_Alica_Defeated:
 	.string "Just like I thought! But now\n"

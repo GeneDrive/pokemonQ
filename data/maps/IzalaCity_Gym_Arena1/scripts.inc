@@ -3,7 +3,12 @@
 .set LOCALID_TRAINER_3, 3
 
 IzalaCity_Gym_Arena1_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, IzalaCity_Gym_Arena1_EventScript_OnFrame
 	.byte 0
+
+IzalaCity_Gym_Arena1_EventScript_OnFrame:
+	map_script_2 VAR_TEMP_0, 0, IzalaCity_Gym_Arena1_EventScript_Battle_Event_Start
+	.2byte 0
 
 IzalaCity_Gym_Arena1_EventScript_Battle_Event_Start::
 	applymovement OBJ_EVENT_ID_PLAYER, IzalaCity_Gym_Arena1_Movement_PlayerWalkUp

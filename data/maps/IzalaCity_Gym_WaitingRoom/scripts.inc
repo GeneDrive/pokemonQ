@@ -30,7 +30,7 @@ IzalaCity_Gym_WaitingRoom_EventScript_Attendant1_Declined::
 IzalaCity_Gym_WaitingRoom_EventScript_Attendant1_Yes::
 	msgbox IzalaCity_Gym_WaitingRoom_Text_Attendant1_Go, MSGBOX_AUTOCLOSE
 	waitmessage
-	warp MAP_IZALA_CITY_GYM_ARENA1, 0, 6
+	warp MAP_IZALA_CITY_GYM_ARENA1, 1, 6
 	end
 
 IzalaCity_Gym_WaitingRoom_EventScript_Attendant1_No::
@@ -63,7 +63,7 @@ IzalaCity_Gym_WaitingRoom_EventScript_Attendant2_Declined::
 IzalaCity_Gym_WaitingRoom_EventScript_Attendant2_Yes::
 	msgbox IzalaCity_Gym_WaitingRoom_Text_Attendant2_Go, MSGBOX_AUTOCLOSE
 	waitmessage
-	warp MAP_IZALA_CITY_GYM_ARENA2, 0, 6
+	warp MAP_IZALA_CITY_GYM_ARENA2, 1, 6
 	end
 
 IzalaCity_Gym_WaitingRoom_EventScript_Attendant2_No::

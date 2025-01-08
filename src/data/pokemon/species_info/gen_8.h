@@ -1285,12 +1285,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_CHEWTLE
     [SPECIES_CHEWTLE] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 64,
-        .baseDefense   = 50,
-        .baseSpeed     = 44,
-        .baseSpAttack  = 38,
-        .baseSpDefense = 38,
+        .baseHP        = 55,
+        .baseAttack    = 66,
+        .baseDefense   = 55,
+        .baseSpeed     = 74,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 45,
         .types = { TYPE_WATER, TYPE_WATER },
         .catchRate = 255,
         .expYield = 57,
@@ -1331,12 +1331,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #define DREDNAW_MISC_INFO                                                               \
-        .baseHP        = 90,                                                            \
+        .baseHP        = 95,                                                            \
         .baseAttack    = 115,                                                           \
         .baseDefense   = 90,                                                            \
-        .baseSpeed     = 74,                                                            \
-        .baseSpAttack  = 48,                                                            \
-        .baseSpDefense = 68,                                                            \
+        .baseSpeed     = 80,                                                            \
+        .baseSpAttack  = 50,                                                            \
+        .baseSpDefense = 70,                                                            \
         .types = { TYPE_WATER, TYPE_ROCK },                                             \
         .catchRate = 75,                                                                \
         .expYield = 170,                                                                \
