@@ -1342,7 +1342,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .trainerScale = 256,
         .trainerOffset = 0,
         FRONT_PIC(Tranquill, 40, 56),
-        .frontPicYOffset = 13,
+        .frontPicYOffset = 5,
         .frontAnimFrames = sAnims_Tranquill,
         .frontAnimId = ANIM_V_STRETCH,
         BACK_PIC(Tranquill, 56, 48),

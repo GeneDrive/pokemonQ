@@ -56,28 +56,48 @@ IzalaCity_Gym_Arena1_Movement_TrainerWalkUp:
 	step_end
 
 IzalaCity_Gym_Arena1_Text_Trainer1:
-	.string "needs dialogue\n"
-	.string "needs dialogue$"
+	.string "With my strong Pokemon, no one\n"
+	.string "can tell me when I can or\l"
+	.string "can't ride my bike!$"
+
 
 IzalaCity_Gym_Arena1_Text_Trainer1After:
-	.string "needs dialogue\n"
-	.string "needs dialogue$"
+	.string "I guess I'll put my bike\n"
+	.string "And try another sport...\l"
+	.string "Maybe swimming... 'Sniff'$"
 
 IzalaCity_Gym_Arena1_Text_Trainer2:
-	.string "needs dialogue\n"
-	.string "needs dialogue$"
+	.string "HOW DARE YOU DO THAT TO\n"
+	.string "MY HUBBY!\p"
+	.string "I'll make you regret doing\n"
+	.string "to him!$"
 
 IzalaCity_Gym_Arena1_Text_Trainer2After:
-	.string "needs dialogue\n"
-	.string "needs dialogue$"
+	.string "No way!?\n"
+	.string "...\l"
+	.string "...\p"
+	.string "...\n"
+	.string "...\l"
+	.string "...\p"
+	.string "...\n"
+	.string "...\l"
+	.string "...\p"
+	.string "I'll just go swimming along\n"
+	.string "with him then...$"
 
 IzalaCity_Gym_Arena1_Text_Trainer3:
-	.string "needs dialogue\n"
-	.string "needs dialogue$"
+	.string "I don't know what their deal\n"
+	.string "is...\l"
+	.string "Doesn't matter...\p"
+	.string "I hope you still have enough\n"
+	.string "juice left in you to defeat\p"
+	.string "a Sensei!$"
 
 IzalaCity_Gym_Arena1_Text_Trainer3After:
-	.string "needs dialogue\n"
-	.string "needs dialogue$"
+	.string "What an amazing battle!\n"
+	.string "You definitely have a chance\l"
+	.string "to win!$"
+
 
 IzalaCity_Gym_Arena1_Text_Trainer3After2:
 	.string "Good job, Trainer!\n"

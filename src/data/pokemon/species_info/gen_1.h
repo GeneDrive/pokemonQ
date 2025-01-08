@@ -1735,14 +1735,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         PALETTES(PichuSpikyEared),
         ICON(PichuSpikyEared, 1),
     },
-#endif //P_GEN_2_CROSS_EVOS
-
+#endif //P_GEN_2_CROSS_EVOS   
 #define PIKACHU_MISC_INFO                                                       \
-        .baseHP        = 35,                                                    \
-        .baseAttack    = 55,                                                    \
-        .baseDefense   = 40,                    \
-        .baseSpeed     = 90,                                                    \
-        .baseSpAttack  = 50,                                                    \
+        .baseHP        = 45,                                                    \
+        .baseAttack    = 77,                                                    \
+        .baseDefense   = 60,                    \
+        .baseSpeed     = 111,                                                   \
+        .baseSpAttack  = 77,                                                    \
         .baseSpDefense = 50,                    \
         .catchRate = 190,                                                       \
         .expYield = 112,                                                        \
