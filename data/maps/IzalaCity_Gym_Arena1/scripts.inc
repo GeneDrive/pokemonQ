@@ -61,21 +61,18 @@ IzalaCity_Gym_Arena1_Movement_TrainerWalkUp:
 	step_end
 
 IzalaCity_Gym_Arena1_Text_Trainer1:
-	.string "With my strong Pokemon, no one\n"
-	.string "can tell me when I can or\l"
-	.string "can't ride my bike!$"
-
+	.string "With my strong Pokemon, no one can\n"
+	.string "tell me when I can or can't ride my bike!$"
 
 IzalaCity_Gym_Arena1_Text_Trainer1After:
-	.string "I guess I'll put my bike\n"
-	.string "And try another sport...\l"
+	.string "Sorry... I'll put my bike away\n"
+	.string "and try another sport...\l"
 	.string "Maybe swimming... 'Sniff'$"
 
 IzalaCity_Gym_Arena1_Text_Trainer2:
-	.string "HOW DARE YOU DO THAT TO\n"
-	.string "MY HUBBY!\p"
-	.string "I'll make you regret doing\n"
-	.string "to him!$"
+	.string "HOW DARE YOU DO THAT TO MY HUBBY!\n"
+	.string "RIDING HIS BIKE WAS HIS PASSION!\l"
+	.string "I'LL MAKE YOU PAY FOR THIS!\p"
 
 IzalaCity_Gym_Arena1_Text_Trainer2After:
 	.string "No way!?\n"
@@ -91,24 +88,20 @@ IzalaCity_Gym_Arena1_Text_Trainer2After:
 	.string "with him then...$"
 
 IzalaCity_Gym_Arena1_Text_Trainer3:
-	.string "I don't know what their deal\n"
-	.string "is...\l"
+	.string "I don't know what their deal is...\n"
 	.string "Doesn't matter...\p"
-	.string "I hope you still have enough\n"
-	.string "juice left in you to defeat\p"
-	.string "a Sensei!$"
+	.string "I hope you still have enough juice left\n"
+	.string "in you to defeat a Sensei!$"
 
 IzalaCity_Gym_Arena1_Text_Trainer3After:
 	.string "What an amazing battle!\n"
-	.string "You definitely have a chance\l"
-	.string "to win!$"
-
+	.string "You definitely have a chance to win!$"
 
 IzalaCity_Gym_Arena1_Text_Trainer3After2:
 	.string "Good job, Trainer!\n"
 	.string "You've defeated the gauntlet!\p"
 	.string "That means you're ready to\n"
-	.string "challange the Gym Leader!\p"
+	.string "challenge the Gym Leader!\p"
 	.string "Head back to the waiting room and\n"
 	.string "rest up for a bit before you take\l"
 	.string "on the Gym Leader!$"

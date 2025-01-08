@@ -122,8 +122,8 @@ IzalaCity_Gym_Arena2_Movement_BrawlyStepForward:
 	step_end
 
 IzalaCity_Gym_Arena2_Text_1:
-	.string "BRAWLY: Hey {PLAYER}! Good to\n"
-	.string "see you again!\p"
+	.string "BRAWLY: Hey {PLAYER}!\n"
+	.string "Good to see you again!\p"
 	.string "Thanks for helping with my sister\n"
 	.string "earlier! We were worried we couldn't\l"
 	.string "open the gym today because of her.\p"
@@ -133,9 +133,8 @@ IzalaCity_Gym_Arena2_Text_1:
 	.string "on getting through our trainers!\p"
 	.string "This gym is known as a roadblock\n"
 	.string "for many trainers.\p"
-	.string "Most of them give up on being a\n"
-	.string "trainer after losing to the\l"
-	.string "second or third trainer.\p"
+	.string "Most of them give up on being a trainer\n"
+	.string "after losing to the 2nd or 3rd trainer.\p"
 	.string "But I'm happy to see you made it\n"
 	.string "all the way to me!\p"
 	.string "So let's get started!$"
@@ -144,9 +143,9 @@ IzalaCity_Gym_Arena2_Text_2:
 	.string "???: STOP RIGHT THERE!!!$"
 
 IzalaCity_Gym_Arena2_Text_3:
-	.string "ALICA: Not so fast, I still\n"
-	.string "have a bone to pick with you for\l"
-	.string "interupting my time with Wally!$"
+	.string "ALICA: Not so fast!\n"
+	.string "I still have a bone to pick with you\l"
+	.string "for interrupting my time with Wally!$"
 
 IzalaCity_Gym_Arena2_Text_4:
 	.string "ALICA: Sorry bro, but I'm going\n"
@@ -156,9 +155,9 @@ IzalaCity_Gym_Arena2_Text_5:
 	.string "BRAWLY: OK OK...\n"
 	.string "Sorry {PLAYER}, but you'll have\l"
 	.string "deal with my sister first.\p"
-	.string "She won't back down from a fight\n"
-	.string "ones she get's her sights set on someone.\p"
-	.string "Hihihi... she got that from me$"
+	.string "She won't back down from a fight once\n"
+	.string "she's got her sights set on it.\p"
+	.string "Hihihi... she got that from me.$"
 
 IzalaCity_Gym_Arena2_Text_6:
 	.string "ALICA: Shut up!\n"
@@ -166,8 +165,7 @@ IzalaCity_Gym_Arena2_Text_6:
 
 IzalaCity_Gym_Arena2_Text_7:
 	.string "ALICA: Let's go {PLAYER}!\n"
-	.string "Time to take responsibility\l"
-	.string "and lose!$"
+	.string "Time to take responsibility and lose!$"
 
 IzalaCity_Gym_Arena2_Text_8:
 	.string "ALICA: Alright bro, I softened\n"

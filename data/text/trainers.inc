@@ -439,19 +439,23 @@ Route105_Text_FosterDefeated:
 
 Route105_Text_FosterPostBattle:
 	.string "I can spend hours and hours staring\n"
-	.string "at a nice rock without growing bored.$"
+	.string "at a these petals without growing bored.$"
 
 Route105_Text_LuisIntro:
 	.string "Whew! I was worried that a kid was\n"
 	.string "lost when I saw you.\p"
 	.string "You seem to be okay, so what do you\n"
-	.string "say to a battle?$"
+	.string "say to a battle?\p"
+	.string "I'm tired of fighting with my wife\n"
+	.string "and losing arguments all the time.\l"
+	.string "so let's have a pokemon battle instead.$"
 
 Route105_Text_LuisDefeated:
-	.string "Glub… Glub…$"
+	.string "Sigh… $"
 
 Route105_Text_LuisPostBattle:
-	.string "If you are lost, just open\n"
+	.string "If you are lost, don't come and complain\n"
+	.string "to me like my wife! Just open\l"
 	.string "the map when the dev is done.$"
 
 Route105_Text_DominikIntro:
@@ -469,16 +473,17 @@ Route105_Text_DominikPostBattle:
 
 Route105_Text_BeverlyIntro:
 	.string "My body feels lighter in the water.\n"
-	.string "It's as if I've gotten slimmer!$"
+	.string "It's as if I get slimmer!$"
 
 Route105_Text_BeverlyDefeated:
-	.string "I'm floating…$"
+	.string "I'm floating away…$"
 
-Route105_Text_PostBattle:
+Route105_Text_BeverlyPostBattle:
 	.string "Your body weight is reduced to just\n"
 	.string "one tenth in the water.\p"
 	.string "That would make me…\n"
-	.string "Whoops! I'm not telling you my weight!$"
+	.string "Whoops! I'm not telling you my weight!\p"
+	.string "You'll get angry like my husband...$"
 
 Route105_Text_ImaniIntro:
 	.string "The blue, blue sky…\n"
@@ -533,24 +538,23 @@ Route105_Text_JosueDefeated:
 	.string "I lost because I battled while tired.$"
 
 Route105_Text_JosuePostBattle:
-	.string "Yeah, for me, exploring is much \n"
+	.string "Yeah, for me, exploring is much\n"
 	.string "easier than battling.$"
 
 Route106_Text_ElliotIntro:
-	.string "Which do you prefer, fishing in the\n"
-	.string "sea or a stream?$"
+	.string "Which do you prefer,\n"
+	.string "minerals or a crystals?$"
 
 Route106_Text_ElliotDefeated:
-	.string "Like in deep-sea fishing, I lost\n"
-	.string "spectacularly!$"
+	.string "Like a fine gem, I clearly lost!$"
 
 Route106_Text_ElliotPostBattle:
-	.string "Fishing is the greatest whether it's\n"
-	.string "in the sea or a stream.\l"
+	.string "Stones are the greatest whether it's\n"
+	.string "minerals or crystals.\l"
 	.string "You agree with me, right?$"
 
 Route106_Text_ElliotRegister:
-	.string "Fishing's great, but so is battling.\n"
+	.string "mining's great, but so is battling.\n"
 	.string "If you don't mind, can we meet again?$"
 
 Route106_Text_ElliotRematchIntro:

@@ -198,19 +198,19 @@ Route105_New_Text_Wally1:
 	.string "I was just... um...$"
 
 Route105_New_Text_Alica2:
-	.string "Who is this guy supposed to be? \p"
+	.string "Who is that supposed to be? \p"
 	.string "My brother sent you here didn't he?\n"
 	.string "You go tell him he should be the one\l"
 	.string "to manage the GYM and leave me alone!$"
 
 Route105_New_Text_Alica3:
 	.string "Hey Wally, you're not going to let\n"
-	.string "this guy interupt our quality time\l"
+	.string "them interupt our quality time\l"
 	.string "together are you?$"
 
 Route105_New_Text_Wally2:
 	.string "Umm... I'm sorry, No I'm not gonna\n"
-	.string "let him!\p"
+	.string "let them!\p"
 	.string "If I defeat you she will stay\n"
 	.string "here with me!$"
 
@@ -227,7 +227,7 @@ Route105_New_Text_Wally4:
 Route105_New_Text_Alica5:
 	.string "Oh wow, you're something else!\n"
 	.string "Don't beat yourself up Wally, I would\l"
-	.string "have had a hard time with him too...$"
+	.string "have had a hard time with them too...$"
 
 Route105_New_Text_Alica6:
 	.string "I'm sorry, I didn't mean to snap at you.\n"
