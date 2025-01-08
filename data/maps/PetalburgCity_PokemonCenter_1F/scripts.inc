@@ -214,8 +214,10 @@ PetalburgCity_PokemonCenter_1F_Text_ImTheMoveTutor:
 	.string "teach POKéMON those moves.\p"
 	.string "I can teach a move to a POKéMON\n"
 	.string "of yours if you'd like.\p"
-	.string "I'll do it for a HEART SCALE.\n"
-	.string "I'm collecting those now.$"
+	.string "And I have good news for you...\n"
+	.string "I'll do it for a FREE!\p"
+	.string "Okay... not totally free...\n"
+	.string "Just give me a handshake and I'm happy!$"
 
 PetalburgCity_PokemonCenter_1F_Text_ThatsAHeartScaleWantMeToTeachMove:
 	.string "Let me guess, you want me to teach\n"
@@ -233,13 +235,13 @@ PetalburgCity_PokemonCenter_1F_Text_DontHaveMoveToTeachPokemon:
 	.string "I can teach that POKéMON.$"
 
 PetalburgCity_PokemonCenter_1F_Text_HandedOverHeartScale:
-	.string "{PLAYER} handed over one HEART SCALE\n"
-	.string "in exchange.$"
+	.string "{PLAYER} firmly shook his hand in exchange.$"
 
 PetalburgCity_PokemonCenter_1F_Text_ComeBackWithHeartScale:
 	.string "If your POKéMON need to learn a move,\n"
-	.string "come back with a HEART SCALE.$"
+	.string "come back and see me.$"
 
 PetalburgCity_PokemonCenter_1F_Text_CantTeachEgg:
-	.string "Hunh? There isn't a single move that\n"
+	.string "What are you? An EGG HEAD!?\p"
+	.string "There isn't a single move that\n"
 	.string "I can teach an EGG.$"
