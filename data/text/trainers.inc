@@ -348,14 +348,14 @@ Route104_Text_HaleyPostRematch:
 
 Route104_Text_WinstonIntro:
 	.string "Oh, sure, I'll accept your challenge.\n"
-	.string "I have a lot of money.$"
+	.string "I'm to rich to lose.$"
 
 Route104_Text_WinstonDefeat:
 	.string "Why couldn't I win?$"
 
 Route104_Text_WinstonPostBattle:
 	.string "There are some things money can't buy.\n"
-	.string "That's POKéMON…$"
+	.string "Like victory…$"
 
 Route104_Text_WinstonRegister1:
 	.string "Hm?\n"
