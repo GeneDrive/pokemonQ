@@ -1165,3 +1165,13 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route_105_Real_Cave1_F1/scripts.inc"
 
 	.include "data/maps/IzalaCity_Garden/scripts.inc"
+
+	.include "data/maps/PetalburgCity_pyramid/scripts.inc"
+
+	.include "data/maps/PetalburgCity_pyramid_halway/scripts.inc"
+
+	.include "data/maps/PetalburgCity_pyramid_room1/scripts.inc"
+
+	.include "data/maps/PetalburgCity_pyramid_halway_open/scripts.inc"
+
+	.include "data/maps/PetalburgCity_House3/scripts.inc"

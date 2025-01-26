@@ -5,7 +5,7 @@
       "id": "LAYOUT_PETALBURG_CITY",
       "name": "PetalburgCity_Layout",
       "width": 50,
-      "height": 40,
+      "height": 42,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/PetalburgCity/border.bin",
@@ -784,10 +784,10 @@
     {
       "id": "LAYOUT_PETALBURG_CITY_GYM",
       "name": "PetalburgCity_Gym_Layout",
-      "width": 9,
-      "height": 112,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PetalburgGym",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/PetalburgCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgCity_Gym/map.bin"
     },
@@ -4900,6 +4900,56 @@
       "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/IzalaCity_Garden/border.bin",
       "blockdata_filepath": "data/layouts/IzalaCity_Garden/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_CITY_PYRAMID",
+      "name": "PetalburgCity_pyramid_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattlePyramid",
+      "border_filepath": "data/layouts/PetalburgCity_pyramid/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgCity_pyramid/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_CITY_PYRAMID_HALWAY",
+      "name": "PetalburgCity_pyramid_halway_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattlePyramid",
+      "border_filepath": "data/layouts/PetalburgCity_pyramid_halway/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgCity_pyramid_halway/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_CITY_PYRAMID_ROOM1",
+      "name": "PetalburgCity_pyramid_room1_Layout",
+      "width": 20,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattlePyramid",
+      "border_filepath": "data/layouts/PetalburgCity_pyramid_room1/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgCity_pyramid_room1/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_CITY_PYRAMID_HALWAY_OPEN",
+      "name": "PetalburgCity_pyramid_halway_open_Layout",
+      "width": 15,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattlePyramid",
+      "border_filepath": "data/layouts/PetalburgCity_pyramid_halway_open/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgCity_pyramid_halway_open/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_CITY_HOUSE3",
+      "name": "PetalburgCity_House3_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/PetalburgCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgCity_House3/map.bin"
     }
   ]
 }

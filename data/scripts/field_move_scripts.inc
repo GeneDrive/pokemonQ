@@ -262,6 +262,174 @@ EventScript_EndSurface::
 	releaseall
 	end
 
+EventScript_StartTrash::
+	msgbox Text_TrashWhat, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 20, 0, MULTI_UNUSED_ASH_VENDOR, FALSE
+	switch VAR_RESULT
+	case 0, EventScript_TrashPotion
+	case 1, EventScript_TrashSuperPotion
+	case 2, EventScript_TrashPokeball
+	case 3, EventScript_TrashPokedoll
+	case 4, EventScript_TrashReaperCloth
+	case 5, EventScript_TrashNugget
+	case 6, EventScript_TrashPearl
+	case 7, EventScript_Trash4
+	end
+
+EventScript_TrashPotion::
+	checkitem ITEM_POTION
+	goto_if_eq VAR_RESULT, FALSE, EventScript_TrashNoItem
+	removeitem ITEM_POTION
+	goto EventScript_Trash1
+	end
+
+EventScript_TrashSuperPotion::
+	checkitem ITEM_SUPER_POTION
+	goto_if_eq VAR_RESULT, FALSE, EventScript_TrashNoItem
+	removeitem ITEM_SUPER_POTION
+	goto EventScript_Trash1
+	end
+
+
+EventScript_TrashPokeball::
+	checkitem ITEM_POKE_BALL
+	goto_if_eq VAR_RESULT, FALSE, EventScript_TrashNoItem
+	removeitem ITEM_POKE_BALL
+	goto EventScript_Trash1
+	end
+
+EventScript_TrashPokedoll::
+	checkitem ITEM_POKE_DOLL
+	goto_if_eq VAR_RESULT, FALSE, EventScript_TrashNoItem
+	removeitem ITEM_POKE_DOLL
+	goto EventScript_Trash2
+	end
+
+EventScript_TrashReaperCloth::
+	checkitem ITEM_REAPER_CLOTH
+	goto_if_eq VAR_RESULT, FALSE, EventScript_TrashNoItem
+	removeitem ITEM_REAPER_CLOTH
+	goto EventScript_Trash2
+	end
+
+EventScript_TrashNugget::
+	checkitem ITEM_NUGGET
+	goto_if_eq VAR_RESULT, FALSE, EventScript_TrashNoItem
+	removeitem ITEM_NUGGET
+	goto EventScript_Trash3
+	end
+
+EventScript_TrashPearl::
+	checkitem ITEM_PEARL
+	goto_if_eq VAR_RESULT, FALSE, EventScript_TrashNoItem
+	removeitem ITEM_PEARL
+	goto EventScript_Trash3
+	end
+
+EventScript_Trash1::
+	closemessage
+	special TrashWildEncounterCommon
+	switch VAR_RESULT
+	case 0, EventScript_Trash_Nothing
+	case 1, EventScript_Trash_Trubbish
+	case 2, EventScript_Trash_Grimer
+	case 3, EventScript_Trash_Shuppet
+	case 4, EventScript_Trash_Gimmighoul
+	waitstate
+	releaseall
+	end
+
+EventScript_Trash2::
+	closemessage
+	special TrashWildEncounterCommon
+	switch VAR_RESULT
+	case 0, EventScript_Trash_Nothing
+	case 1, EventScript_Trash_Shuppet
+	case 2, EventScript_Trash_Grimer
+	case 3, EventScript_Trash_Trubbish
+	case 4, EventScript_Trash_Gimmighoul
+	waitstate
+	releaseall
+	end
+
+EventScript_Trash3::
+	closemessage
+	special TrashWildEncounterCommon
+	switch VAR_RESULT
+	case 0, EventScript_Trash_Nothing
+	case 1, EventScript_Trash_Trubbish
+	case 2, EventScript_Trash_Gimmighoul
+	case 3, EventScript_Trash_Shuppet
+	case 4, EventScript_Trash_Grimer
+	waitstate
+	releaseall
+	end
+
+EventScript_Trash4::
+	releaseall
+	end
+
+EventScript_Trash_Nothing::
+	msgbox Text_TrashNothing, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end
+
+EventScript_TrashNoItem::
+	msgbox Text_TrashFailed, MSGBOX_DEFAULT
+	closemessage
+	goto EventScript_StartTrash
+	end
+
+EventScript_Trash_Trubbish::
+	waitse
+	msgbox Text_TrashSomething, MSGBOX_DEFAULT
+	closemessage
+	playmoncry SPECIES_TRUBBISH, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_TRUBBISH, 5
+	dowildbattle
+	goto EventScript_Trash_Nothing
+	end
+
+EventScript_Trash_Grimer::
+	waitse
+	msgbox Text_TrashSomething, MSGBOX_DEFAULT
+	closemessage
+	playmoncry SPECIES_GRIMER, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_GRIMER, 5
+	dowildbattle
+	goto EventScript_Trash_Nothing
+	end
+
+EventScript_Trash_Shuppet::
+	waitse
+	msgbox Text_TrashSomething, MSGBOX_DEFAULT
+	closemessage
+	playmoncry SPECIES_SHUPPET, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_SHUPPET, 5
+	dowildbattle
+	goto EventScript_Trash_Nothing
+	end
+
+EventScript_Trash_Gimmighoul::
+	waitse
+	msgbox Text_TrashSomething, MSGBOX_DEFAULT
+	closemessage
+	playmoncry SPECIES_GIMMIGHOUL, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_GIMMIGHOUL, 5
+	dowildbattle
+	goto EventScript_Trash_Nothing
+	end
+
 Text_CantDive:
 	.string "The sea is deep here. A POKéMON\n"
 	.string "may be able to go underwater.$"
@@ -287,3 +455,16 @@ EventScript_FailSweetScent::
 
 Text_FailSweetScent:
 	.string "Looks like there's nothing here…$"
+
+Text_TrashNothing:
+	.string "Thank you for depositing!$"
+
+Text_TrashSomething:
+	.string "Something jumped out!$"
+
+Text_TrashFailed:
+	.string "You do not have this item!$"
+
+Text_TrashWhat:
+	.string "What do you want\n"
+	.string "to throw out?$"

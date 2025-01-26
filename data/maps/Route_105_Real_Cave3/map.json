@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE_105_REAL_CAVE3",
   "name": "Route_105_Real_Cave3",
   "layout": "LAYOUT_ROUTE_105_REAL_CAVE3",
-  "music": "MUS_RG_ROUTE24",
+  "music": "MUS_RG_SS_ANNE",
   "region_map_section": "MAPSEC_ROUTE_105",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

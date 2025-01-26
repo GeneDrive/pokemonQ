@@ -116,7 +116,7 @@
       "x": 23,
       "y": 18,
       "elevation": 3,
-      "item": "ITEM_ANTIDOTE",
+      "item": "ITEM_HEAL_BALL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_ANTIDOTE"
     }
   ]

@@ -95,6 +95,22 @@ FrigidFalls_6F_R2_StartEvent::
 	msgbox FrigidFalls_6F_R2_Text_Boom, MSGBOX_DEFAULT
 	closemessage
 	delay 5
+	playse SE_TRUCK_MOVE
+	special DoSealedChamberShakingEffect_Long
+	waitstate
+	delay 40
+	special DoSealedChamberShakingEffect_Short
+	waitstate
+	playse SE_DOOR
+	delay 40
+	special DoSealedChamberShakingEffect_Short
+	waitstate
+	playse SE_DOOR
+	delay 40
+	special DoSealedChamberShakingEffect_Short
+	waitstate
+	playse SE_DOOR
+	delay 40
 	applymovement LOCALID_JADE, FrigidFalls_6F_R2_Movement_FaceDown
 	waitmovement 0
 	msgbox FrigidFalls_6F_R2_Text_Jade_10, MSGBOX_DEFAULT

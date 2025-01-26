@@ -87,7 +87,7 @@ Route104_EventScript_ItemPPUp::
 	end
 
 Route104_EventScript_ItemPokeBall::
-	finditem ITEM_SUN_STONE
+	finditem ITEM_TM51
 	end
 
 Route104_EventScript_ItemXAccuracy::
@@ -395,7 +395,7 @@ MauvilleCity_EventScript_ItemXSpeed::
 	end
 
 RustboroCity_EventScript_ItemXDefend::
-	finditem ITEM_X_DEFENSE
+	finditem ITEM_TM_BULLET_SEED
 	end
 
 LilycoveCity_EventScript_ItemMaxRepel::
@@ -411,7 +411,7 @@ PetalburgWoods_EventScript_ItemXAttack::
 	end
 
 PetalburgWoods_EventScript_ItemGreatBall::
-	finditem ITEM_GREAT_BALL
+	finditem ITEM_ULTRA_BALL
 	end
 
 PetalburgWoods_EventScript_ItemEther::
@@ -419,7 +419,7 @@ PetalburgWoods_EventScript_ItemEther::
 	end
 
 PetalburgWoods_EventScript_ItemParalyzeHeal::
-	finditem ITEM_PARALYZE_HEAL
+	finditem ITEM_POKE_DOLL
 	end
 
 RusturfTunnel_EventScript_ItemPokeBall::
@@ -439,7 +439,7 @@ GraniteCave_B1F_EventScript_ItemPokeBall::
 	end
 
 GraniteCave_B2F_EventScript_ItemRepel::
-	finditem ITEM_REPEL
+	finditem ITEM_ZOOM_LENS
 	end
 
 GraniteCave_B2F_EventScript_ItemRareCandy::

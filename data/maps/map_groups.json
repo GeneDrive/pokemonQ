@@ -167,7 +167,12 @@
     "PetalburgCity_PokemonCenter_1F",
     "PetalburgCity_PokemonCenter_2F",
     "PetalburgCity_Mart",
-    "PetalburgCity_Gym_Real"
+    "PetalburgCity_Gym_Real",
+    "PetalburgCity_pyramid",
+    "PetalburgCity_pyramid_halway",
+    "PetalburgCity_pyramid_room1",
+    "PetalburgCity_pyramid_halway_open",
+    "PetalburgCity_House3"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",

@@ -429,6 +429,7 @@ Route101_EventScript_Old_Man1::
 	msgbox Route101_Text_Old_Man_Stop, MSGBOX_AUTOCLOSE
 	waitmessage
 	delay 5
+	goto_if_set FLAG_ROUTE101_HIDE_OLD_MAN_2, Route101_EventScript_Old_Man4
 	goto_if_unset FLAG_BADGE01_GET, Route101_EventScript_Old_Man2
 	goto_if_set FLAG_BADGE01_GET, Route101_EventScript_Old_Man3
 	end

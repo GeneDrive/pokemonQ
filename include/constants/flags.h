@@ -515,8 +515,8 @@
 #define FLAG_HIDE_UXIE                       0x1DE
 #define FLAG_HIDE_AZELF                      0x1DF
 #define FLAG_HIDE_MESPRIT                    0x1E0
-#define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
-#define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
+#define FLAG_DESSERT_PUZZLE_DONE             0x1E1
+#define FLAG_DESSERT_PUZZLE_POKEMON_GET      0x1E2
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
 
 // Mystery Gift Flags (Unknown)
@@ -673,8 +673,8 @@
 #define FLAG_ITEM_BINDING_CAVERN_CHARCOAL                  0x275
 #define FLAG_ITEM_BINDING_CAVERN_HEART_SCALE               0x276
 #define FLAG_ROUTE101_CAVE_HIDE_RIVAL2                     0x277
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
+#define FLAG_BAG_DISABLED_IN_BATTLE                        0x278
+#define FLAG_CATCHING_DISABLED_IN_BATTLE    	           0x279
 #define FLAG_UNUSED_0x27A  0x27A // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
 #define FLAG_UNUSED_0x27C  0x27C // Unused Flag

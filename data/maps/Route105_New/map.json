@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE105_NEW",
   "name": "Route105_New",
   "layout": "LAYOUT_ROUTE105_NEW",
-  "music": "MUS_RG_ROUTE24",
+  "music": "MUS_RG_SS_ANNE",
   "region_map_section": "MAPSEC_ROUTE_105",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -255,7 +255,7 @@
       "x": 121,
       "y": 29,
       "elevation": 3,
-      "item": "ITEM_BIG_PEARL",
+      "item": "ITEM_NUGGET",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL"
     },
     {
@@ -263,7 +263,7 @@
       "x": 93,
       "y": 10,
       "elevation": 3,
-      "item": "ITEM_MODEST_MINT",
+      "item": "ITEM_POKE_DOLL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_105_HEART_SCALE"
     }
   ]

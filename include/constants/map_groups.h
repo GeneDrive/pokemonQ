@@ -130,14 +130,19 @@
 #define MAP_PACIFIDLOG_TOWN_HOUSE5            (6 | (7 << 8))
 
 // gMapGroup_IndoorPetalburg
-#define MAP_PETALBURG_CITY_WALLYS_HOUSE      (0 | (8 << 8))
-#define MAP_PETALBURG_CITY_GYM               (1 | (8 << 8))
-#define MAP_PETALBURG_CITY_HOUSE1            (2 | (8 << 8))
-#define MAP_PETALBURG_CITY_HOUSE2            (3 | (8 << 8))
-#define MAP_PETALBURG_CITY_POKEMON_CENTER_1F (4 | (8 << 8))
-#define MAP_PETALBURG_CITY_POKEMON_CENTER_2F (5 | (8 << 8))
-#define MAP_PETALBURG_CITY_MART              (6 | (8 << 8))
-#define MAP_PETALBURG_CITY_GYM_REAL          (7 | (8 << 8))
+#define MAP_PETALBURG_CITY_WALLYS_HOUSE        (0 | (8 << 8))
+#define MAP_PETALBURG_CITY_GYM                 (1 | (8 << 8))
+#define MAP_PETALBURG_CITY_HOUSE1              (2 | (8 << 8))
+#define MAP_PETALBURG_CITY_HOUSE2              (3 | (8 << 8))
+#define MAP_PETALBURG_CITY_POKEMON_CENTER_1F   (4 | (8 << 8))
+#define MAP_PETALBURG_CITY_POKEMON_CENTER_2F   (5 | (8 << 8))
+#define MAP_PETALBURG_CITY_MART                (6 | (8 << 8))
+#define MAP_PETALBURG_CITY_GYM_REAL            (7 | (8 << 8))
+#define MAP_PETALBURG_CITY_PYRAMID             (8 | (8 << 8))
+#define MAP_PETALBURG_CITY_PYRAMID_HALWAY      (9 | (8 << 8))
+#define MAP_PETALBURG_CITY_PYRAMID_ROOM1       (10 | (8 << 8))
+#define MAP_PETALBURG_CITY_PYRAMID_HALWAY_OPEN (11 | (8 << 8))
+#define MAP_PETALBURG_CITY_HOUSE3              (12 | (8 << 8))
 
 // gMapGroup_IndoorSlateport
 #define MAP_SLATEPORT_CITY_STERNS_SHIPYARD_1F      (0 | (9 << 8))

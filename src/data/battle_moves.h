@@ -6283,12 +6283,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_SHOCK_WAVE] =
     {
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_PARALYZE_HIT,
         .power = 60,
         .type = TYPE_ELECTRIC,
         .accuracy = 0,
         .pp = 20,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_SPECIAL,
@@ -11771,11 +11771,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_SPLISHY_SPLASH] =
     {
         .effect = EFFECT_PARALYZE_HIT,
-        .power = 90,
+        .power = 75,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 25,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .split = SPLIT_SPECIAL,
@@ -11866,17 +11866,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_SIZZLY_SLIDE] =
     {
-        #if B_UPDATED_MOVE_DATA >= GEN_8
-            .power = 60,
-            .pp = 20,
-        #else
-            .power = 90,
-            .pp = 15,
-        #endif
-        .effect = EFFECT_BURN_HIT,
+        .power = 65,
+        .pp = 20,
+        .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
         .type = TYPE_FIRE,
         .accuracy = 100,
-        .secondaryEffectChance = 100,
+        .secondaryEffectChance = 50,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_PHYSICAL,
@@ -11884,7 +11879,6 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .makesContact = TRUE,
         .mirrorMoveBanned = B_UPDATED_MOVE_FLAGS < GEN_8,
         .thawsUser = TRUE,
-        .metronomeBanned = TRUE,
     },
 
     [MOVE_GLITZY_GLOW] =
@@ -15041,7 +15035,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_FLAMES_OF_ORIGIN] =
     {
         .effect = EFFECT_DEFENSE_DOWN_HIT,
-        .power = 80,
+        .power = 70,
         .type = TYPE_TIME,
         .accuracy = 100,
         .pp = 15,

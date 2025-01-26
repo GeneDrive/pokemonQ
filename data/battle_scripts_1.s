@@ -1323,9 +1323,8 @@ BattleScript_EffectPlasmaFists:
 BattleScript_EffectSparklySwirl:
 	call BattleScript_EffectHit_Ret
 	tryfaintmon BS_TARGET
-	healpartystatus
-	waitstate
-	updatestatusicon BS_ATTACKER_WITH_PARTNER
+	cureifburnedparalysedorpoisoned BattleScript_ButItFailed
+	printstring STRINGID_PKMNSTATUSNORMAL
 	waitstate
 	goto BattleScript_MoveEnd
 

@@ -103,6 +103,31 @@ bool8 CheckRelicanthWailord(void)
     return FALSE;
 }
 
+bool8 CheckDesertPuzzle(void)
+{
+    // first get party count
+    CalculatePlayerPartyCount();
+
+    // then check if you only have 3 pokemon in your party
+    if (gPlayerPartyCount == 3)
+    {
+        // then check if the first pokemon is a prizpod
+        if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_SPIDOPS)
+        {
+            // then check if the second pokemon is a riolu
+            if (GetMonData(&gPlayerParty[1], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_RIOLU)
+            {
+                // then check if the third pokemon is a Baltoy
+                if (GetMonData(&gPlayerParty[2], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_BALTOY)
+                {
+                    return TRUE;
+                }
+            }
+        }
+    }
+    return FALSE;
+}
+
 // THEORY: this was caused by block commenting out all of the older R/S braille functions but leaving the call to it itself, which creates the nullsub.
 void ShouldDoBrailleRegirockEffectOld(void)
 {
