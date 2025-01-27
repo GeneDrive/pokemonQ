@@ -874,6 +874,8 @@ const u8 gMoveNames[MOVES_COUNT_DYNAMAX][MOVE_NAME_LENGTH + 1] =
     [MOVE_INCARNATE_ENERGY] = _("Incarnate Energy"),
     [MOVE_FLAMES_OF_ORIGIN] = _("Flames Of Origin"),
     [MOVE_REWRAP] = _("Rewrap"),
+    [MOVE_CRUCIBURN] = _("Cruciburn"),
+    [MOVE_STEEL_REVERB] = _("Steel Reverb"),
     // Max Moves
     [MOVE_MAX_GUARD] = _("Max Guard"),
     [MOVE_MAX_STRIKE] = _("Max Strike"),
@@ -1805,6 +1807,8 @@ const u8 gMoveNames[MOVES_COUNT_DYNAMAX][MOVE_NAME_LENGTH + 1] =
     [MOVE_INCARNATE_ENERGY] = _("IncrntEnergy"),
     [MOVE_FLAMES_OF_ORIGIN] = _("Origin Flame"),
     [MOVE_REWRAP] = _("Rewrap"),
+    [MOVE_CRUCIBURN] = _("Cruciburn"),
+    [MOVE_STEEL_REVERB] = _("Steel Reverb"),
     // Max Moves
     [MOVE_MAX_GUARD] = _("M-Guard"),
     [MOVE_MAX_STRIKE] = _("M-Strike"),

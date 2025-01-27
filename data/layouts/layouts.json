@@ -4950,6 +4950,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/PetalburgCity_House3/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgCity_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_CITY_PYRAMID_OTHER_HALWAY",
+      "name": "PetalburgCity_pyramid_otherHalway_Layout",
+      "width": 31,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattlePyramid",
+      "border_filepath": "data/layouts/PetalburgCity_pyramid_otherHalway/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgCity_pyramid_otherHalway/map.bin"
     }
   ]
 }

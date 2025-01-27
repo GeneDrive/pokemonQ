@@ -1175,3 +1175,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/PetalburgCity_pyramid_halway_open/scripts.inc"
 
 	.include "data/maps/PetalburgCity_House3/scripts.inc"
+
+	.include "data/maps/PetalburgCity_pyramid_otherHalway/scripts.inc"

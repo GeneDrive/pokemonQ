@@ -1190,12 +1190,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
 #if P_FAMILY_ROCKRUFF
 #define ROCKRUFF_MISC_INFO                                      \
-        .baseHP        = 45,                                    \
-        .baseAttack    = 65,                                    \
-        .baseDefense   = 40,                                    \
-        .baseSpeed     = 60,                                    \
-        .baseSpAttack  = 30,                                    \
-        .baseSpDefense = 40,                                    \
+        .baseHP        = 48,                                    \
+        .baseAttack    = 76,                                    \
+        .baseDefense   = 44,                                    \
+        .baseSpeed     = 74,                                    \
+        .baseSpAttack  = 34,                                    \
+        .baseSpDefense = 44,                                    \
         .types = { TYPE_ROCK, TYPE_ROCK },                      \
         .catchRate = 190,                                       \
         .expYield = 56,                                         \
@@ -1230,7 +1230,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_ROCKRUFF] =
     {
         ROCKRUFF_MISC_INFO,
-        .abilities = { ABILITY_KEEN_EYE, ABILITY_SAND_RUSH, ABILITY_STEADFAST },
+        .abilities = { ABILITY_JUSTIFIED, ABILITY_SAND_RUSH, ABILITY_STEADFAST },
         FRONT_PIC(Rockruff, 37, 39),
         BACK_PIC(Rockruff, 64, 56),
         .backAnimId = BACK_ANIM_V_STRETCH,
@@ -1308,7 +1308,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 82,
         .baseSpAttack  = 55,
         .baseSpDefense = 75,
-        .abilities = { ABILITY_KEEN_EYE, ABILITY_VITAL_SPIRIT, ABILITY_NO_GUARD },
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_ANGER_SHELL, ABILITY_NO_GUARD },
         .bodyColor = BODY_COLOR_RED,
         .cryId = CRY_LYCANROC_MIDNIGHT,
         .height = 11,

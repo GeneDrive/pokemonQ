@@ -3428,6 +3428,14 @@ static const u8 sRewrapDescription[] = _(
     "Use the fire from the firsts.\n"
     "Chance to lower targets defence.");
     
+static const u8 sCruciburnDescription[] = _(
+    "Throw melted steel at foe.\n"
+    "has mid chance of burn.");
+    
+static const u8 sSteelReverbDescription[] = _(
+    "Smashes metal making a loud klang-\n"
+    "ing sound, may cause foe's flinch.");
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4310,4 +4318,6 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_INCARNATE_ENERGY - 1] = sIncarnateEnergyDescription,
     [MOVE_FLAMES_OF_ORIGIN - 1] = sFlamesOfOriginDescription,
     [MOVE_REWRAP - 1] = sRewrapDescription,
+    [MOVE_CRUCIBURN - 1] = sCruciburnDescription,
+    [MOVE_STEEL_REVERB - 1] = sSteelReverbDescription,
 };

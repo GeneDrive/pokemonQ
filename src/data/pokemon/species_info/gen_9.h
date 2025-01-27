@@ -1511,10 +1511,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_CHARCADET] =
     {
         .baseHP        = 40,
-        .baseAttack    = 50,
+        .baseAttack    = 70,
         .baseDefense   = 40,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 50,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 70,
         .baseSpDefense = 40,
         .types = { TYPE_FIRE, TYPE_FIRE },
         .catchRate = 90,

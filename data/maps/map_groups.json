@@ -172,7 +172,8 @@
     "PetalburgCity_pyramid_halway",
     "PetalburgCity_pyramid_room1",
     "PetalburgCity_pyramid_halway_open",
-    "PetalburgCity_House3"
+    "PetalburgCity_House3",
+    "PetalburgCity_pyramid_otherHalway"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",
