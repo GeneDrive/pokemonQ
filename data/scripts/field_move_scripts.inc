@@ -333,9 +333,10 @@ EventScript_Trash1::
 	switch VAR_RESULT
 	case 0, EventScript_Trash_Nothing
 	case 1, EventScript_Trash_Trubbish
-	case 2, EventScript_Trash_Grimer
+	case 2, EventScript_Trash_Chingling
 	case 3, EventScript_Trash_Shuppet
-	case 4, EventScript_Trash_Gimmighoul
+	case 4, EventScript_Trash_Meltan
+	case 5, EventScript_Trash_Gimmighoul
 	waitstate
 	releaseall
 	end
@@ -346,9 +347,10 @@ EventScript_Trash2::
 	switch VAR_RESULT
 	case 0, EventScript_Trash_Nothing
 	case 1, EventScript_Trash_Shuppet
-	case 2, EventScript_Trash_Grimer
+	case 2, EventScript_Trash_Chingling
 	case 3, EventScript_Trash_Trubbish
 	case 4, EventScript_Trash_Gimmighoul
+	case 5, EventScript_Trash_Meltan
 	waitstate
 	releaseall
 	end
@@ -358,10 +360,11 @@ EventScript_Trash3::
 	special TrashWildEncounterCommon
 	switch VAR_RESULT
 	case 0, EventScript_Trash_Nothing
-	case 1, EventScript_Trash_Trubbish
+	case 1, EventScript_Trash_Chingling
 	case 2, EventScript_Trash_Gimmighoul
-	case 3, EventScript_Trash_Shuppet
-	case 4, EventScript_Trash_Grimer
+	case 3, EventScript_Trash_Meltan
+	case 4, EventScript_Trash_Trubbish
+	case 5, EventScript_Trash_Shuppet
 	waitstate
 	releaseall
 	end
@@ -394,14 +397,14 @@ EventScript_Trash_Trubbish::
 	goto EventScript_Trash_Nothing
 	end
 
-EventScript_Trash_Grimer::
+EventScript_Trash_Chingling::
 	waitse
 	msgbox Text_TrashSomething, MSGBOX_DEFAULT
 	closemessage
-	playmoncry SPECIES_GRIMER, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_CHINGLING, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_GRIMER, 5
+	setwildbattle SPECIES_CHINGLING, 5
 	dowildbattle
 	goto EventScript_Trash_Nothing
 	end
@@ -414,6 +417,18 @@ EventScript_Trash_Shuppet::
 	delay 40
 	waitmoncry
 	setwildbattle SPECIES_SHUPPET, 5
+	dowildbattle
+	goto EventScript_Trash_Nothing
+	end
+
+EventScript_Trash_Meltan::
+	waitse
+	msgbox Text_TrashSomething, MSGBOX_DEFAULT
+	closemessage
+	playmoncry SPECIES_MELTAN, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_MELTAN, 5
 	dowildbattle
 	goto EventScript_Trash_Nothing
 	end

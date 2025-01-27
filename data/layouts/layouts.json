@@ -4954,7 +4954,7 @@
     {
       "id": "LAYOUT_PETALBURG_CITY_PYRAMID_OTHER_HALWAY",
       "name": "PetalburgCity_pyramid_otherHalway_Layout",
-      "width": 31,
+      "width": 33,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_BattlePyramid",

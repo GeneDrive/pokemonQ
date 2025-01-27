@@ -7759,11 +7759,11 @@ const struct Item gItems[] =
         .name = _("TM52"),
         .price = 3000,
         .description = sTM52Desc,
-        .importance = I_REUSABLE_TMS,
+        .importance = 0,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_DETECT,
     },
 
     [ITEM_TM53] =

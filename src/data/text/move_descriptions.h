@@ -3436,6 +3436,10 @@ static const u8 sSteelReverbDescription[] = _(
     "Smashes metal making a loud klang-\n"
     "ing sound, may cause foe's flinch.");
 
+static const u8 sDejaTuneDescription[] = _(
+    "Sings a song from the foe's past.\n"
+    "Can confuse foe how they know this.");
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4320,4 +4324,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_REWRAP - 1] = sRewrapDescription,
     [MOVE_CRUCIBURN - 1] = sCruciburnDescription,
     [MOVE_STEEL_REVERB - 1] = sSteelReverbDescription,
+    [MOVE_DEJA_TUNE - 1] = sDejaTuneDescription,
 };

@@ -21,21 +21,21 @@
       "x": 6,
       "y": 4,
       "elevation": 0,
-      "dest_map": "MAP_PETALBURG_CITY_PYRAMID_ROOM1",
+      "dest_map": "MAP_PETALBURG_CITY_PYRAMID_OTHER_HALWAY",
       "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 4,
       "elevation": 0,
-      "dest_map": "MAP_PETALBURG_CITY_PYRAMID_ROOM1",
+      "dest_map": "MAP_PETALBURG_CITY_PYRAMID_OTHER_HALWAY",
       "dest_warp_id": "1"
     },
     {
       "x": 8,
       "y": 4,
       "elevation": 0,
-      "dest_map": "MAP_PETALBURG_CITY_PYRAMID_ROOM1",
+      "dest_map": "MAP_PETALBURG_CITY_PYRAMID_OTHER_HALWAY",
       "dest_warp_id": "2"
     }
   ],

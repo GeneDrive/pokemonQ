@@ -797,25 +797,29 @@ void RockSmashWildEncounter(void)
 void TrashWildEncounterCommon(void)
 {
     u16 random = Random() % 100;
-    if (random <= 20)
+    if (random <= 15)
     {
         gSpecialVar_Result = 0;
     }
-    else if (random > 20 && random <= 60)
+    else if (random > 15 && random <= 55)
     {
         gSpecialVar_Result = 1;
     }
-    else if (random > 60 && random <= 85)
+    else if (random > 55 && random <= 80)
     {
         gSpecialVar_Result = 2;
     }
-    else if (random > 85 && random <= 97)
+    else if (random > 80 && random <= 90)
     {
         gSpecialVar_Result = 3;
     }
-    else if (random > 97 && random <= 100)
+    else if (random > 90 && random <= 96)
     {
         gSpecialVar_Result = 4;
+    }
+    else if (random > 96)
+    {
+        gSpecialVar_Result = 5;
     }
 }
 void TrashWildEncounter2(void)

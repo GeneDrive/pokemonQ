@@ -99,7 +99,7 @@ Route104_EventScript_ItemPotion::
 	end
 
 Route105_EventScript_ItemIron::
-	finditem ITEM_MYSTIC_WATER
+	finditem ITEM_TM52
 	end
 
 Route105_EventScript_Item1::

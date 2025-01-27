@@ -15088,6 +15088,21 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .soundMove = TRUE,
         .ignoresSubstitute = B_UPDATED_MOVE_FLAGS >= GEN_6,
     },
+    [MOVE_DEJA_TUNE] =
+    {
+        .effect = EFFECT_CONFUSE_HIT,
+        .power = 60,
+        .type = TYPE_TIME,
+        .accuracy = 100,
+        .pp = 15,
+        .secondaryEffectChance = 25,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_SPECIAL,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .soundMove = TRUE,
+        .ignoresSubstitute = B_UPDATED_MOVE_FLAGS >= GEN_6,
+    },
 
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =

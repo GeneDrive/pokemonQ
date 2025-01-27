@@ -3286,8 +3286,10 @@ static const u8 sTM51Desc[] = _(
     "with high chance to\n"
     "lower Sp. Def.");
 
-static const u8 sTM52Desc[] = _( // Todo
-    "?????");
+static const u8 sTM52Desc[] = _(
+    "Negates all damage,\n"
+    "but may fail if used\n"
+    "in succession.");
 
 static const u8 sTM53Desc[] = _( // Todo
     "?????");

@@ -901,6 +901,7 @@ gBattleAnims_Moves::
 	.4byte Move_REWRAP
 	.4byte Move_CRUCIBURN
 	.4byte Move_STEEL_REVERB
+	.4byte Move_DEJA_TUNE
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -19255,6 +19256,35 @@ Move_STEEL_REVERB:
 	call HyperVoiceEffect
 	waitforvisualfinish
 	end
+
+Move_DEJA_TUNE:
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
+	createvisualtask AnimTask_MusicNotesRainbowBlend, 2
+	waitforvisualfinish
+	monbg ANIM_TARGET
+	createvisualtask SoundTask_PlayCryHighPitch, 2, ANIM_ATTACKER, 255
+	createvisualtask AnimTask_UproarDistortion, 2, 0
+	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 7, 0, 12
+	delay 5
+	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 6, 1, 12
+	delay 5
+	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 1, 2, 12
+	delay 5
+	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 2, 3, 12
+	delay 20
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 1, 0, 13, 1
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	createvisualtask AnimTask_MusicNotesClearRainbowBlend, 2
+	waitforvisualfinish
+	delay 8
+	createsprite gQuestionMarkSpriteTemplate, ANIM_TARGET, 0, 12
+	playsewithpan SE_M_METRONOME, SOUND_PAN_TARGET
+	delay 54
+	loopsewithpan SE_M_METRONOME, SOUND_PAN_TARGET, 0, 12
+	waitforvisualfinish
+	end
+
 
 Move_CRUCIBURN:
 	loadspritegfx ANIM_TAG_IMPACT

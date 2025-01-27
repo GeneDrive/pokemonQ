@@ -5794,7 +5794,7 @@ static const struct TrainerMon sParty_Paula[] = {
     .ability = ABILITY_GRASSY_SURGE,
     .species = SPECIES_THWACKEY,
     .heldItem = ITEM_ROCKY_HELMET,
-    .moves = {MOVE_FAKE_OUT, MOVE_GRASSY_GLIDE, MOVE_U_TURN, MOVE_NONE}
+    .moves = {MOVE_FAKE_OUT, MOVE_GRASSY_GLIDE, MOVE_U_TURN, MOVE_PURSUIT}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
