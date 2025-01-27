@@ -23245,8 +23245,6 @@ static const struct LevelUpMove sBaxcaliburLevelUpLearnset[] = {
 #endif //P_FAMILY_FRIGIBAX
 
 #if P_FAMILY_GIMMIGHOUL
-#if P_FAMILY_GIMMIGHOUL
-
 static const struct LevelUpMove sGimmighoulLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
