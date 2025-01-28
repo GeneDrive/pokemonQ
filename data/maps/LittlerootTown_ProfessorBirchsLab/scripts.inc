@@ -755,7 +755,7 @@ LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
 	.string "and records its data in the POKéDEX,\l"
 	.string "why, JADE looks for me while I'm out\l"
 	.string "doing fieldwork, and shows me.\p"
-	.string "I hear the petalburg city GYM LEADER\n"
+	.string "I hear the auropeak city GYM LEADER\n"
 	.string "is helping up and coming trainers,\l"
 	.string "which may be good experience for you.\p"
 	.string "You should be able to reach the city \n"

@@ -3608,7 +3608,6 @@ static const struct TrainerMon sParty_Winona1[] = {
     .moves = {MOVE_PLUCK, MOVE_WATER_PULSE, MOVE_HIDDEN_POWER, MOVE_AERIAL_ACE}
     },
     {
-    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 30),
     .lvl = 18,
     .species = SPECIES_SWIRLIX,
     .ability = ABILITY_DECOMP_ODER,

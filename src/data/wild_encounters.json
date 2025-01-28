@@ -9045,12 +9045,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BALTOY"
+                "species": "SPECIES_ZIGZAGOON_GALARIAN"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SNOM"
+                "species": "SPECIES_DEERLING_WINTER"
               },
               {
                 "min_level": 5,
@@ -9060,7 +9060,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_GOSSIFLEUR"
+                "species": "SPECIES_SKITTY"
               },
               {
                 "min_level": 5,
@@ -9075,17 +9075,17 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ZIGZAGOON_GALARIAN"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
                 "species": "SPECIES_GOSSIFLEUR"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DEERLING_WINTER"
+                "species": "SPECIES_SKITTY"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 5,
@@ -11674,7 +11674,7 @@
               {
                 "min_level": 18,
                 "max_level": 21,
-                "species": "SPECIES_SNOM"
+                "species": "SPECIES_GIBLE"
               },
               {
                 "min_level": 18,
@@ -11748,7 +11748,7 @@
               {
                 "min_level": 18,
                 "max_level": 21,
-                "species": "SPECIES_SNOM"
+                "species": "SPECIES_GIBLE"
               },
               {
                 "min_level": 18,
@@ -11925,7 +11925,7 @@
               {
                 "min_level": 18,
                 "max_level": 21,
-                "species": "SPECIES_RIOLU"
+                "species": "SPECIES_GIBLE"
               },
               {
                 "min_level": 18,
@@ -14058,63 +14058,63 @@
             "encounter_rate": 30,
             "mons": [
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_YAMASK"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_BALTOY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_YAMASK"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_BALTOY"
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_SKITTY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_SILICOBRA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_SILICOBRA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_SILICOBRA"
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_SKITTY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_DARUMAKA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_DARUMAKA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_SILICOBRA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_MEOWTH"
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_SKITTY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_DARUMAKA"
               }
             ]
@@ -14127,63 +14127,63 @@
             "encounter_rate": 30,
             "mons": [
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_YAMASK"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_BALTOY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_YAMASK"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_BALTOY"
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_SKITTY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_SILICOBRA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_SILICOBRA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_SILICOBRA"
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_SKITTY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_DARUMAKA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_DARUMAKA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_BALTOY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_MEOWTH"
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_SKITTY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_DARUMAKA"
               }
             ]
@@ -14196,63 +14196,63 @@
             "encounter_rate": 30,
             "mons": [
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_YAMASK"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_BALTOY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_YAMASK"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_BALTOY"
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_SKITTY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_SILICOBRA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_SILICOBRA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_SILICOBRA"
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_SKITTY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_DARUMAKA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_SILICOBRA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_DARUMAKA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_MEOWTH"
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_SKITTY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_DARUMAKA"
               }
             ]
@@ -14265,63 +14265,63 @@
             "encounter_rate": 30,
             "mons": [
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_YAMASK"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_BALTOY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_YAMASK"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_BALTOY"
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_SKITTY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_SILICOBRA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_SILICOBRA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_SILICOBRA"
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_SKITTY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_DARUMAKA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_DARUMAKA"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_BALTOY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
-                "species": "SPECIES_MEOWTH"
+                "min_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_SKITTY"
               },
               {
-                "min_level": 16,
-                "max_level": 18,
+                "min_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_DARUMAKA"
               }
             ]

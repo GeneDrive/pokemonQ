@@ -40,7 +40,7 @@ OldaleTown_House2_Text_Totodile:
 	.string "would you like one?$"
 
 OldaleTown_House2_Text_ReceivedPokemon1:
-	.string "{PLAYER} received a Finneon!$"
+	.string "{PLAYER} received a Chewtle!$"
 
 OldaleTown_House2_Text_ReceivedPokemon2:
 	.string "{PLAYER} received a Petilil!$"

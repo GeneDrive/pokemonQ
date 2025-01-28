@@ -696,8 +696,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseHP        = 78,                                                    \
         .baseAttack    = 70,                                                    \
         .baseDefense   = 61,                                                    \
-        .baseSpeed     = 100,                                                   \
-        .baseSpAttack  = 50,                                                    \
+        .baseSpeed     = 105,                                                   \
+        .baseSpAttack  = 55,                                                    \
         .baseSpDefense = 61,                                                    \
         .catchRate = 90,                                                        \
         .expYield = 147,                                                        \
@@ -2753,13 +2753,13 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_SKITTY
     [SPECIES_SKITTY] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 45,
-        .baseDefense   = 45,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 35,
-        .types = { TYPE_NORMAL, TYPE_NORMAL },
+        .baseHP        = 70,
+        .baseAttack    = 50,
+        .baseDefense   = 40,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 30,
+        .types = { TYPE_NORMAL, TYPE_PSYCHIC },
         .catchRate = 255,
         .expYield = 52,
         .evYield_Speed = 1,
@@ -2768,7 +2768,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FAIRY },
-        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NORMALIZE, ABILITY_WONDER_SKIN },
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_WONDER_SKIN, ABILITY_NORMALIZE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Skitty"),
         .cryId = CRY_SKITTY,
@@ -2796,18 +2796,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Skitty, 0),
         .footprint = gMonFootprint_Skitty,
         LEARNSETS(Skitty),
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_DELCATTY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_DELCATTY}),
     },
 
     [SPECIES_DELCATTY] =
     {
-        .baseHP        = 70,
+        .baseHP        = 90,
         .baseAttack    = 65,
         .baseDefense   = 65,
-        .baseSpeed     = P_UPDATED_STATS >= GEN_7 ? 90 : 70,
-        .baseSpAttack  = 55,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 70,
         .baseSpDefense = 55,
-        .types = { TYPE_NORMAL, TYPE_NORMAL },
+        .types = { TYPE_NORMAL, TYPE_PSYCHIC },
         .catchRate = 60,
         .expYield = 140,
         .evYield_HP = 1,
@@ -2817,7 +2817,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FAIRY },
-        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NORMALIZE, ABILITY_WONDER_SKIN },
+        .abilities = { ABILITY_HOSPITALITY, ABILITY_WONDER_SKIN, ABILITY_NORMALIZE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Delcatty"),
         .cryId = CRY_DELCATTY,
