@@ -3440,6 +3440,10 @@ static const u8 sDejaTuneDescription[] = _(
     "Sings a song from the foe's past.\n"
     "Can confuse foe how they know this.");
 
+static const u8 sChompDescription[] = _(
+    "Take a bite out of you opponent.\n"
+    "healing yourself a bit.");
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4325,4 +4329,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_CRUCIBURN - 1] = sCruciburnDescription,
     [MOVE_STEEL_REVERB - 1] = sSteelReverbDescription,
     [MOVE_DEJA_TUNE - 1] = sDejaTuneDescription,
+    [MOVE_CHOMP - 1] = sChompDescription,
 };

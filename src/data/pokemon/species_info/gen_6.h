@@ -2207,7 +2207,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .speciesName = _("Carrisease"),
         .cryId = CRY_SWIRLIX,
         .natDexNum = NATIONAL_DEX_SWIRLIX,
-        .categoryName = _("Diseased"),
+        .categoryName = _("Disceased"),
         .height = 4,
         .weight = 35,
         .description = COMPOUND_STRING(
@@ -2220,7 +2220,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .trainerScale = 256,
         .trainerOffset = 0,
         FRONT_PIC(Swirlix, 40, 40),
-        .frontPicYOffset = 20,
+        .frontPicYOffset = 5,
         .frontAnimFrames = sAnims_Swirlix,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         BACK_PIC(Swirlix, 56, 40),

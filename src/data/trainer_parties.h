@@ -6983,7 +6983,7 @@ static const struct TrainerMon sParty_BrendanRoute103Mudkip[] = {
     .ability = ABILITY_INTIMIDATE,
     .species = SPECIES_STARAVIA,
     .heldItem = ITEM_ASSAULT_VEST,
-    .moves = {MOVE_QUICK_ATTACK, MOVE_WING_ATTACK, MOVE_U_TURN, MOVE_NONE}
+    .moves = {MOVE_QUICK_ATTACK, MOVE_WING_ATTACK, MOVE_U_TURN, MOVE_THIEF}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
@@ -7163,7 +7163,7 @@ static const struct TrainerMon sParty_BrendanRoute103Torchic[] = {
     .ability = ABILITY_THICK_FAT,
     .species = SPECIES_MUNCHLAX,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_REST, MOVE_SLEEP_TALK, MOVE_FACADE, MOVE_NONE}
+    .moves = {MOVE_REST, MOVE_SLEEP_TALK, MOVE_FACADE, MOVE_BITE}
     }
 };
 

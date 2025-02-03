@@ -20,6 +20,7 @@ NewMap1_EventScript_Grunt2_Battle::
 NewMap1_EventScript_Grunt3_Battle::
 	applymovement LOCALID_Grunt3, NewMap1_Face_Down
 	waitmovement 0
+	playse SE_PIN
 	applymovement LOCALID_Grunt3, Common_Movement_ExclamationMark
 	playbgm MUS_ENCOUNTER_AQUA, TRUE
 	msgbox NewMap1_Text_Grunt3_Intro, MSGBOX_AUTOCLOSE
@@ -70,6 +71,7 @@ NewMap1_EventScript_Archie_Start::
 	delay 5
 	applymovement LOCALID_Jade, NewMap1_Face_Right
 	waitmovement 0
+	playse SE_PIN
 	applymovement LOCALID_Jade, Common_Movement_ExclamationMark
 	waitmovement 0
 	msgbox NewMap1_Text_Jade4, MSGBOX_AUTOCLOSE
@@ -78,6 +80,7 @@ NewMap1_EventScript_Archie_Start::
 	applymovement LOCALID_Archie, NewMap1_Walk_Out
 	waitmovement 0
 	applymovement LOCALID_Jade, NewMap1_Face_Left
+	playse SE_PIN
 	applymovement LOCALID_Jade, Common_Movement_ExclamationMark
 	waitmovement 0
 	msgbox NewMap1_Text_Jade5, MSGBOX_AUTOCLOSE
@@ -88,7 +91,7 @@ NewMap1_EventScript_Archie_Start::
 	msgbox NewMap1_Text_Jade6, MSGBOX_AUTOCLOSE
 	waitmessage
 	delay 5
-	applymovement LOCALID_Jade, NewMap1_Walk_Out
+	applymovement LOCALID_Jade, NewMap1_Walk_Out2
 	waitmovement 0
 	removeobject LOCALID_Jade
 	removeobject LOCALID_Archie
@@ -110,6 +113,17 @@ NewMap1_Walk_Out::
 	walk_left
 	walk_left
 	walk_left
+	step_end
+
+NewMap1_Walk_Out2::
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
 	step_end
 
 NewMap1_Face_Left::

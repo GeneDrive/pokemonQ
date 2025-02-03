@@ -2,7 +2,7 @@
   "id": "MAP_NEW_MAP1",
   "name": "NewMap1",
   "layout": "LAYOUT_NEW_MAP1",
-  "music": "MUS_RG_POKE_MANSION",
+  "music": "MUS_RG_ROCKET_HIDEOUT",
   "region_map_section": "MAPSEC_ROUTE_101",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

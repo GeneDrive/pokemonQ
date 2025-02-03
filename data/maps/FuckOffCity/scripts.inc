@@ -19,6 +19,7 @@ FuckOffCity_EventScript_BrawlyWalkUpLeft::
 	closemessage
 	applymovement LOCALID_BRAWLY, Common_Movement_FacePlayer
 	waitmovement 0
+	playse SE_PIN
 	applymovement LOCALID_BRAWLY, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement LOCALID_BRAWLY, FuckOffCity_Movement_WalkUpLeft
@@ -32,6 +33,7 @@ FuckOffCity_EventScript_BrawlyWalkUpMiddle::
 	closemessage
 	applymovement LOCALID_BRAWLY, Common_Movement_FacePlayer
 	waitmovement 0
+	playse SE_PIN
 	applymovement LOCALID_BRAWLY, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement LOCALID_BRAWLY, FuckOffCity_Movement_WalkUpMiddle
@@ -45,6 +47,7 @@ FuckOffCity_EventScript_BrawlyWalkUpRight::
 	closemessage
 	applymovement LOCALID_BRAWLY, Common_Movement_FacePlayer
 	waitmovement 0
+	playse SE_PIN
 	applymovement LOCALID_BRAWLY, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement LOCALID_BRAWLY, FuckOffCity_Movement_WalkUpRight

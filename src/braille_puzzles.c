@@ -118,7 +118,7 @@ bool8 CheckDesertPuzzle(void)
             if (GetMonData(&gPlayerParty[1], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_RIOLU)
             {
                 // then check if the third pokemon is a Baltoy
-                if (GetMonData(&gPlayerParty[2], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_BALTOY)
+                if (GetMonData(&gPlayerParty[2], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_ROGGENROLA)
                 {
                     return TRUE;
                 }

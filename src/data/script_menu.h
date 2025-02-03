@@ -247,7 +247,6 @@ static const struct MenuAction MultichoiceList_SternDeepSea[] =
 
 static const struct MenuAction MultichoiceList_UnusedAshVendor[] =
 {
-    {gText_BlueFlute2}, 
     {gText_YellowFlute2},
     {gText_RedFlute2},
     {gText_WhiteFlute2},

@@ -7,7 +7,7 @@ Route101_EventScript_ItemRevive::
 	end
 
 Route101_EventScript_ItemLuxuryBalls::
-	finditem ITEM_LUXURY_BALL, 5
+	finditem ITEM_GREAT_BALL, 5
 	end
 
 Route101_EventScript_ItemAbomasite::

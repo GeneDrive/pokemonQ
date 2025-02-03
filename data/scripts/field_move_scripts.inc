@@ -267,21 +267,13 @@ EventScript_StartTrash::
 	waitmessage
 	multichoice 20, 0, MULTI_UNUSED_ASH_VENDOR, FALSE
 	switch VAR_RESULT
-	case 0, EventScript_TrashPotion
-	case 1, EventScript_TrashSuperPotion
-	case 2, EventScript_TrashPokeball
-	case 3, EventScript_TrashPokedoll
-	case 4, EventScript_TrashReaperCloth
-	case 5, EventScript_TrashNugget
-	case 6, EventScript_TrashPearl
-	case 7, EventScript_Trash4
-	end
-
-EventScript_TrashPotion::
-	checkitem ITEM_POTION
-	goto_if_eq VAR_RESULT, FALSE, EventScript_TrashNoItem
-	removeitem ITEM_POTION
-	goto EventScript_Trash1
+	case 0, EventScript_TrashSuperPotion
+	case 1, EventScript_TrashPokeball
+	case 2, EventScript_TrashPokedoll
+	case 3, EventScript_TrashReaperCloth
+	case 4, EventScript_TrashNugget
+	case 5, EventScript_TrashPearl
+	case 6, EventScript_Trash4
 	end
 
 EventScript_TrashSuperPotion::
@@ -293,9 +285,9 @@ EventScript_TrashSuperPotion::
 
 
 EventScript_TrashPokeball::
-	checkitem ITEM_POKE_BALL
+	checkitem ITEM_GREAT_BALL
 	goto_if_eq VAR_RESULT, FALSE, EventScript_TrashNoItem
-	removeitem ITEM_POKE_BALL
+	removeitem ITEM_GREAT_BALL
 	goto EventScript_Trash1
 	end
 

@@ -75,8 +75,8 @@ PetalburgCity_pyramid_halway_Text_Puzzle::
 	.string "First, the unbreakable one that bends\n"
 	.string "the light to his will.\p"
 	.string "Then the child companion of aura.\p"
-	.string "Finally, a childrens toy \n"
-	.string "given life through eternities.\p"
+	.string "Finally, the first blue rock \n"
+	.string "with a hollow face.\p"
 	.string "When these are offered, a descendants\n"
 	.string "reward will reveal itself.$"
 

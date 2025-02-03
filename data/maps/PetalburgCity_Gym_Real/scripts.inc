@@ -225,7 +225,7 @@ PetalburgCity_Gym_Real_Professor_Walk_Out::
 	step_end
 
 PetalburgCity_Gym_Real_EventScript_Alexia::
-	trainerbattle_double TRAINER_ALEXIA, PetalburgCity_Gym_Real_Text_AlexiaIntro, PetalburgCity_Gym_Real_Text_AlexiaDefeat, PetalburgCity_Gym_Real_Text_Hello_Winona6
+	trainerbattle_double TRAINER_ALEXIA, PetalburgCity_Gym_Real_Text_AlexiaIntro, PetalburgCity_Gym_Real_Text_AlexiaDefeat, PetalburgCity_Gym_Real_Text_WinonaNotEnough
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_Real_EventScript_AlexiaPostBadge
 	msgbox PetalburgCity_Gym_Real_Text_AlexiaPostBattle, MSGBOX_AUTOCLOSE
 	end
@@ -235,7 +235,7 @@ PetalburgCity_Gym_Real_EventScript_AlexiaPostBadge::
 	end
 
 PetalburgCity_Gym_Real_EventScript_George::
-	trainerbattle_double TRAINER_GEORGE, PetalburgCity_Gym_Real_Text_GeorgeIntro, PetalburgCity_Gym_Real_Text_GeorgeDefeat, PetalburgCity_Gym_Real_Text_Hello_Winona6
+	trainerbattle_double TRAINER_GEORGE, PetalburgCity_Gym_Real_Text_GeorgeIntro, PetalburgCity_Gym_Real_Text_GeorgeDefeat, PetalburgCity_Gym_Real_Text_WinonaNotEnough
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_Real_EventScript_GeorgePostBadge
 	msgbox PetalburgCity_Gym_Real_Text_GeorgePostBattle, MSGBOX_AUTOCLOSE
 	end
@@ -245,7 +245,7 @@ PetalburgCity_Gym_Real_EventScript_GeorgePostBadge::
 	end
 
 PetalburgCity_Gym_Real_EventScript_Parker::
-	trainerbattle_double TRAINER_PARKER, PetalburgCity_Gym_Real_Text_ParkerIntro, PetalburgCity_Gym_Real_Text_ParkerDefeat, PetalburgCity_Gym_Real_Text_Hello_Winona6
+	trainerbattle_double TRAINER_PARKER, PetalburgCity_Gym_Real_Text_ParkerIntro, PetalburgCity_Gym_Real_Text_ParkerDefeat, PetalburgCity_Gym_Real_Text_WinonaNotEnough
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_Real_EventScript_ParkerPostBadge
 	msgbox PetalburgCity_Gym_Real_Text_ParkerPostBattle, MSGBOX_AUTOCLOSE
 	end
@@ -255,8 +255,8 @@ PetalburgCity_Gym_Real_EventScript_ParkerPostBadge::
 	end
 
 PetalburgCity_Gym_Real_EventScript_Winona::
-	goto_if_set FLAG_RECEIVED_TM_AERIAL_ACE, PetalburgCity_Gym_Real_EventScript_WinonaDefeatedAfter
-	trainerbattle_double TRAINER_WINONA_1, PetalburgCity_Gym_Real_Text_WinonaIntro, PetalburgCity_Gym_Real_Text_WinonaDefeat, PetalburgCity_Gym_Real_Text_Hello_Winona6, PetalburgCity_Gym_Real_EventScript_WinonaDefeated, NO_MUSIC
+	goto_if_set FLAG_BADGE01_GET, PetalburgCity_Gym_Real_EventScript_WinonaDefeatedAfter
+	trainerbattle_double TRAINER_WINONA_1, PetalburgCity_Gym_Real_Text_WinonaIntro, PetalburgCity_Gym_Real_Text_WinonaDefeat, PetalburgCity_Gym_Real_Text_WinonaNotEnough, PetalburgCity_Gym_Real_EventScript_WinonaDefeated, NO_MUSIC
 	release
 	end
 
@@ -528,10 +528,14 @@ PetalburgCity_Gym_Real_Text_GymGuideAdvice1:
 	.string "Here's something to keep you refreshed.$"
 
 PetalburgCity_Gym_Real_Text_GymGuideAdvice2:
-		.string "Well, go for it and good luck!$"
+	.string "Well, go for it and good luck!$"
 
 PetalburgCity_Gym_Real_Text_LevelCapIncrease1:
 	.string "Level cap increased to Level 16!$"
 
 PetalburgCity_Gym_Real_Text_LevelCapIncrease2:
 	.string "Level cap increased to Level 24!$"
+
+PetalburgCity_Gym_Real_Text_WinonaNotEnough:
+	.string "Please make sure you have\n"
+	.string "enough pokemon.$"

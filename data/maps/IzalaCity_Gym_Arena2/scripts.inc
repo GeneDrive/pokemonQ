@@ -22,6 +22,7 @@ IzalaCity_Gym_Arena2_EventScript_Battle_Event::
 	msgbox IzalaCity_Gym_Arena2_Text_2, MSGBOX_AUTOCLOSE
 	waitmessage
 	delay 5
+	playse SE_PIN
 	applymovement LOCALID_BRAWLY, Common_Movement_ExclamationMark
 	applymovement LOCALID_BRAWLY, IzalaCity_Gym_Arena2_Movement_Face_Right
 	applymovement LOCALID_ALICA, IzalaCity_Gym_Arena2_Movement_AlicaWalkUp
@@ -78,6 +79,9 @@ IzalaCity_Gym_Arena2_EventScript_Battle_Event::
 	waitmessage
 	delay 5
 	trainerbattle_no_intro TRAINER_ROXANNE_2, IzalaCity_Gym_Arena2_Text_BrawlyDefeat
+	pokenavcall IzalaCity_Gym_Arena2_Text_Uxie_Spawn
+	waitmessage
+	clearflag FLAG_HIDE_UXIE
 	end
 
 IzalaCity_Gym_Arena2_Movement_PlayerWalkUp:
@@ -241,3 +245,6 @@ IzalaCity_Gym_Arena2_Text_BrawlyPostBattle:
 	.string "I can see your talent becoming a giant\n"
 	.string "wave to cause a storm of astonishment\l"
 	.string "among TRAINERS one day!$"
+
+IzalaCity_Gym_Arena2_Text_Uxie_Spawn:
+	.string "A Pokemon appeared on ROUTE 105!$"

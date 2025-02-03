@@ -14802,12 +14802,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     },
     [MOVE_COIN_TOSS] =
     {
-        .effect = EFFECT_MAGNITUDE,
-        .power = 1,
+        .effect = EFFECT_FLINCH_HIT,
+        .power = 40,
         .type = TYPE_STEEL,
         .accuracy = 100,
         .pp = 30,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 22,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_SPECIAL,
@@ -15102,6 +15102,23 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .zMoveEffect = Z_EFFECT_NONE,
         .soundMove = TRUE,
         .ignoresSubstitute = B_UPDATED_MOVE_FLAGS >= GEN_6,
+    },
+    [MOVE_CHOMP] =
+    {
+        .effect = EFFECT_ABSORB,
+        .power = 55,
+        .type = TYPE_NORMAL,
+        .accuracy = 100,
+        .pp = 15,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .argument = 50,
+        .split = SPLIT_PHYSICAL,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .makesContact = TRUE,
+        .sheerForceBoost = TRUE,
+        .bitingMove = TRUE,
     },
 
     // Z-Moves

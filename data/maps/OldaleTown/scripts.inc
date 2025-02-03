@@ -471,6 +471,7 @@ OldaleTown_EventScript_Man::
 	end
 
 OldaleTown_EventScript_Man_Move1::
+	playse SE_PIN
 	applymovement LOCALID_PokeGuy, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement LOCALID_PokeGuy, OldaleTown_Movement_Guy1
@@ -479,6 +480,7 @@ OldaleTown_EventScript_Man_Move1::
 	end
 
 OldaleTown_EventScript_Man_Move2::
+	playse SE_PIN
 	applymovement LOCALID_PokeGuy, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement LOCALID_PokeGuy, OldaleTown_Movement_Guy2
@@ -487,6 +489,7 @@ OldaleTown_EventScript_Man_Move2::
 	end
 
 OldaleTown_EventScript_Man_Move3::
+	playse SE_PIN
 	applymovement LOCALID_PokeGuy, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement LOCALID_PokeGuy, OldaleTown_Movement_Guy3
@@ -495,6 +498,7 @@ OldaleTown_EventScript_Man_Move3::
 	end
 
 OldaleTown_EventScript_Man_Move4::
+	playse SE_PIN
 	applymovement LOCALID_PokeGuy, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement LOCALID_PokeGuy, OldaleTown_Movement_Guy4

@@ -322,6 +322,7 @@ Route101_EventScript_See_May_First::
 	goto_if_set FLAG_DEFEATED_RIVAL_ROUTE103, Route101_EventScript_City_Go
 	applymovement LOCALID_BIRCH_CAVE, Common_Movement_FacePlayer
 	waitmovement 0
+	playse SE_PIN
 	applymovement LOCALID_BIRCH_CAVE, Common_Movement_ExclamationMark
 	waitmovement 0
 	msgbox Route101_Text_GoSeeMayFirst MSGBOX_NPC
@@ -334,6 +335,7 @@ Route101_EventScript_See_May_First::
 Route101_EventScript_City_Go::
 	applymovement LOCALID_BIRCH_CAVE, Common_Movement_FacePlayer
 	waitmovement 0
+	playse SE_PIN
 	applymovement LOCALID_BIRCH_CAVE, Common_Movement_ExclamationMark
 	waitmovement 0
 	msgbox Route101_Text_GoCity MSGBOX_NPC

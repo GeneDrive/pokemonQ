@@ -902,6 +902,7 @@ gBattleAnims_Moves::
 	.4byte Move_CRUCIBURN
 	.4byte Move_STEEL_REVERB
 	.4byte Move_DEJA_TUNE
+	.4byte Move_CHOMP
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -19348,6 +19349,25 @@ Move_CRUCIBURN:
 	createsprite gOctazookaSmokeSpriteTemplate, 130, 4, 8, -8, 1, 0
 	delay 2
 	createsprite gOctazookaSmokeSpriteTemplate, 130, 4, -8, 8, 1, 0
+	waitforvisualfinish
+	end
+
+Move_CHOMP:
+	loadspritegfx ANIM_TAG_SHARP_TEETH
+	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	playsewithpan SE_M_BITE, SOUND_PAN_TARGET
+	createsprite gSharpTeethSpriteTemplate, ANIM_ATTACKER, 2, 0, -32, 0, 0, 819, 10
+	createsprite gSharpTeethSpriteTemplate, ANIM_ATTACKER, 2, 0, 32, 4, 0, -819, 10
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	blendoff
+	delay 10
+	call HealingEffect
 	waitforvisualfinish
 	end
 

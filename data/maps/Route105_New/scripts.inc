@@ -33,8 +33,12 @@ Route105_New_EventScript_Trigger2::
 Route105_New_EventScript_WallyEvent::
 	msgbox Route105_New_Text_Alica1, MSGBOX_DEFAULT
 	closemessage
+	playse SE_PIN
+	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
 	applymovement LOCALID_WALLY, Route105_New_Block_Player_Face_Left
 	waitmovement 0
+	playse SE_PIN
+	applymovement LOCALID_ALICA, Common_Movement_ExclamationMark
 	applymovement LOCALID_ALICA, Route105_New_Block_Player_Face_Left
 	waitmovement 0
 	delay 5
