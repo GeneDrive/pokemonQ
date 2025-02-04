@@ -225,7 +225,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .twoTurnMove = TRUE,
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
-        .windMove = B_EXTRAPOLATED_MOVE_FLAGS,
+        .windMove = TRUE,
     },
 
     [MOVE_SWORDS_DANCE] =
@@ -5705,7 +5705,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
-        .windMove = B_EXTRAPOLATED_MOVE_FLAGS,
+        .windMove = TRUE,
     },
 
     [MOVE_METAL_SOUND] =
@@ -7738,6 +7738,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
+        .windMove = TRUE,
     },
 
     [MOVE_POWER_WHIP] =
@@ -8173,6 +8174,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
+        .windMove = TRUE,
     },
 
     [MOVE_DARK_VOID] =
@@ -8223,7 +8225,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
-        .windMove = B_EXTRAPOLATED_MOVE_FLAGS,
+        .windMove = TRUE,
     },
 
     [MOVE_SHADOW_FORCE] =
