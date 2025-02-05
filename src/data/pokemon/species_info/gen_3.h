@@ -1569,7 +1569,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         ICON(Wingull, 0),
         .footprint = gMonFootprint_Wingull,
         LEARNSETS(Wingull),
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_PELIPPER}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_PELIPPER}),
     },
 
     [SPECIES_PELIPPER] =

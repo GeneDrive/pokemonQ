@@ -4317,9 +4317,9 @@ static const struct TrainerMon sParty_Shelby5[] = {
 static const struct TrainerMon sParty_Calvin1[] = {
     {
     .lvl = 10,
-    .species = SPECIES_LUVDISC,
+    .species = SPECIES_ZIGZAGOON_GALARIAN,
     .ability = ABILITY_HYDRATION,
-    .moves = {MOVE_WATER_GUN, MOVE_ICY_WIND},
+    .moves = {MOVE_BIDE, MOVE_LICK, MOVE_SAND_ATTACK, MOVE_BABY_DOLL_EYES},
     .heldItem = ITEM_ORAN_BERRY
     },
     {
@@ -8501,9 +8501,9 @@ static const struct TrainerMon sParty_Rick[] = {
     },
     {
     .lvl = 11,
-    .species = SPECIES_JOLTIK,
-    .ability = ABILITY_COMPOUND_EYES,
-    .moves = {MOVE_INFESTATION},
+    .species = SPECIES_TAROUNTULA,
+    .ability = ABILITY_EARTH_EATER,
+    .moves = {MOVE_INFESTATION, MOVE_MEGA_DRAIN},
     .heldItem = ITEM_BINDING_BAND
     },
 };
@@ -8608,7 +8608,7 @@ static const struct TrainerMon sParty_James1[] = {
     .ability = ABILITY_GLUTTONY,
     .species = SPECIES_LINOONE_GALARIAN,
     .heldItem = ITEM_FIGY_BERRY,
-    .moves = {MOVE_NIGHT_SLASH, MOVE_HONE_CLAWS, MOVE_BODY_SLAM, MOVE_SAND_ATTACK}
+    .moves = {MOVE_NIGHT_SLASH, MOVE_HONE_CLAWS, MOVE_BIDE, MOVE_SAND_ATTACK}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
