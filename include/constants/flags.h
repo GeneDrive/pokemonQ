@@ -517,7 +517,7 @@
 #define FLAG_HIDE_MESPRIT                    0x1E0
 #define FLAG_DESSERT_PUZZLE_DONE             0x1E1
 #define FLAG_DESSERT_PUZZLE_POKEMON_GET      0x1E2
-#define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
+#define FLAG_HIDDEN_ITEM_ROUTE_106_PEARL     0x1E3
 
 // Mystery Gift Flags (Unknown)
 #define FLAG_MYSTERY_GIFT_DONE               0x1E4

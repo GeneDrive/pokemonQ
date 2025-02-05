@@ -5,6 +5,10 @@ Route106_EventScript_TrainerTipsSign::
 	msgbox Route106_Text_TrainerTips, MSGBOX_SIGN
 	end
 
+Route106_EventScript_Dev_Not_Done::
+	msgbox Route106_Text_Dev_Not_Done, MSGBOX_NPC
+	end
+
 Route106_EventScript_Douglas::
 	trainerbattle_single TRAINER_DOUGLAS, Route106_Text_DouglasIntro, Route106_Text_DouglasDefeated
 	msgbox Route106_Text_DouglasPostBattle, MSGBOX_AUTOCLOSE
@@ -46,3 +50,9 @@ Route106_Text_TrainerTips:
 	.string "Advice on catching POKéMON with a ROD:\n"
 	.string "Press the A Button if you get a bite.$"
 
+Route106_Text_Dev_Not_Done:
+	.string "The following area is still under\n"
+	.string "development.\p"
+	.string "Please return here in the second demo.\n"
+	.string "Finish the gym and explore some more!\p"
+	.string "Thank you for understanding!$"

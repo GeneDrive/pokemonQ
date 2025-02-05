@@ -379,7 +379,7 @@ Route134_EventScript_ItemCarbos::
 	end
 
 Route134_EventScript_ItemStarPiece::
-	finditem ITEM_STAR_PIECE
+	finditem ITEM_BRIGHT_POWDER
 	end
 
 PetalburgCity_EventScript_ItemSkyPlate::

@@ -14100,6 +14100,7 @@ static const u16 sSwellowTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_BULLET_SEED,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TAILLOW
@@ -14136,6 +14137,7 @@ static const u16 sWingullTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_BULLET_SEED,
     MOVE_UNAVAILABLE,
 };
 
