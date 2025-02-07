@@ -26,27 +26,27 @@ OldaleTown_House2_Text_Wow:
 
 OldaleTown_House2_Text_Chespin:
 	.string "Cool you picked CHESPIN!\n"
-	.string "then you could use a finneon,\l"
+	.string "then you could use a CHEWTLE,\l"
 	.string "would you like one?$"
 
 OldaleTown_House2_Text_Chimchar:
 	.string "Cool you picked CHIMCHAR!\n"
-	.string "then you could use a Petilil,\l"
+	.string "then you could use a PETILIL,\l"
 	.string "would you like one?$"
 
 OldaleTown_House2_Text_Totodile:
 	.string "Cool you picked TOTODILE!\n"
-	.string "then you could use a Salandit,\l"
+	.string "then you could use a SALANDIT,\l"
 	.string "would you like one?$"
 
 OldaleTown_House2_Text_ReceivedPokemon1:
-	.string "{PLAYER} received a Chewtle!$"
+	.string "{PLAYER} received a CHEWTLE!$"
 
 OldaleTown_House2_Text_ReceivedPokemon2:
-	.string "{PLAYER} received a Petilil!$"
+	.string "{PLAYER} received a PETILIL!$"
 
 OldaleTown_House2_Text_ReceivedPokemon3:
-	.string "{PLAYER} received a Salandit!$"
+	.string "{PLAYER} received a SALANDIT!$"
 
 OldaleTown_House2_Text_GoodLuck:
 	.string "Good luck!$"

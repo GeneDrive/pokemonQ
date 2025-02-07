@@ -4,6 +4,7 @@
 .set LOCALID_JADE, 12
 .set LOCALID_OLD_MAN, 13
 .set LOCALID_OLD_MAN2, 14
+.set LOCALID_WINONA, 18
 
 Route101_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route101_OnResume

@@ -154,7 +154,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_104",
-      "name": "ROUTE 144",
+      "name": "ROUTE 104",
       "x": 0,
       "y": 7,
       "width": 1,
@@ -506,7 +506,7 @@
     },
     {
       "map_section": "MAPSEC_METEOR_FALLS",
-      "name": "METEOR FALLS",
+      "name": "BINDING CAVERN E",
       "x": 0,
       "y": 3,
       "width": 1,
@@ -514,7 +514,7 @@
     },
     {
       "map_section": "MAPSEC_METEOR_FALLS2",
-      "name": "METEOR FALLS",
+      "name": "BINDING CAVERN S",
       "x": 1,
       "y": 2,
       "width": 1,
@@ -522,7 +522,7 @@
     },
     {
       "map_section": "MAPSEC_MT_PYRE",
-      "name": "MT. PYRE",
+      "name": "BINDING CAVERN N",
       "x": 16,
       "y": 4,
       "width": 1,
@@ -539,7 +539,7 @@
     },
     {
       "map_section": "MAPSEC_SHOAL_CAVE",
-      "name": "SHOAL CAVE",
+      "name": "MOLTEN CAVE",
       "x": 24,
       "y": 4,
       "width": 1,
@@ -547,7 +547,7 @@
     },
     {
       "map_section": "MAPSEC_SEAFLOOR_CAVERN",
-      "name": "SEAFLOOR CAVERN",
+      "name": "WARPED HOLLOW",
       "x": 24,
       "y": 9,
       "width": 1,
@@ -779,7 +779,7 @@
     },
     {
       "map_section": "MAPSEC_INDIGO_PLATEAU",
-      "name": "INDIGO PLATEAU",
+      "name": "ARID PYRAMID",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -885,7 +885,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_10",
-      "name": "ROUTE 10",
+      "name": "ROUTE 143",
       "x": 0,
       "y": 0,
       "width": 1,

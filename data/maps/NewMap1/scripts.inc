@@ -3,7 +3,16 @@
 .set LOCALID_Jade, 5
 
 NewMap1_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, NewMap1_OnTransition
 	.byte 0
+
+NewMap1_OnTransition::
+	call_if_unset FLAG_ITEM_ROUTE_101_CAVE_DONE, NewMap1_EventScript_Archie_Start
+	end
+
+NewMap1_EventScript_Play_Aqua_Music::
+	playbgm MUS_AQUA_MAGMA_HIDEOUT, TRUE
+	end
 
 NewMap1_EventScript_Grunt1_Battle::
 	trainerbattle_double TRAINER_GRUNT_1_101_CAVE, NewMap1_Text_Grunt1_Intro, NewMap1_Text_Grunt1_Outro, NewMap1_Text_Grunt1_NotEnoughMons

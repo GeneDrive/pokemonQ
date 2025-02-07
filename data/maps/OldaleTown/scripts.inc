@@ -10,7 +10,6 @@ OldaleTown_MapScripts::
 OldaleTown_OnTransition:
 	call Common_EventScript_SetupRivalGfxId
 	setflag FLAG_VISITED_OLDALE_TOWN
-	call_if_unset FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_BlockWestEntrance
 	call_if_unset FLAG_RECEIVED_POTION_OLDALE, OldaleTown_EventScript_MoveMartEmployee
 	call_if_set FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_SetOldaleState
 	end
@@ -18,11 +17,6 @@ OldaleTown_OnTransition:
 @ This script seems pointless because nothing uses VAR_OLDALE_TOWN_STATE
 OldaleTown_EventScript_SetOldaleState::
 	setvar VAR_OLDALE_TOWN_STATE, 1
-	return
-
-OldaleTown_EventScript_BlockWestEntrance::
-	setobjectxyperm LOCALID_FOOTPRINTS_MAN, 0, 11
-	setobjectmovementtype LOCALID_FOOTPRINTS_MAN, MOVEMENT_TYPE_FACE_LEFT
 	return
 
 OldaleTown_EventScript_MoveMartEmployee::
@@ -506,6 +500,26 @@ OldaleTown_EventScript_Man_Move4::
 	goto OldaleTown_StartGivePokemon
 	end
 
+OldaleTown_EventScript_Blocking_Trainers::
+	lock
+	msgbox OldaleTown_Text_Trainer1, MSGBOX_DEFAULT
+	closemessage
+	delay 4
+	msgbox OldaleTown_Text_Trainer2, MSGBOX_DEFAULT
+	closemessage
+	delay 4
+	msgbox OldaleTown_Text_Trainer3, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+OldaleTown_EventScript_Blocking_Zigzagoon::
+	lock
+	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_ENCOUNTER
+	msgbox OldaleTown_Text_Zigzagoon, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
 
 OldaleTown_Text_Wow:
 	.string "Oh wow you got a starter pokemon from the professor!\n"
@@ -515,31 +529,31 @@ OldaleTown_Text_Chespin:
 	.string "Cool you picked CHESPIN!\n"
 	.string "That means you'll have trouble with\l"
 	.string "fire type pokemon!\p"
-	.string "Then you could use my Chewtle,\n"
+	.string "Then you could use my CHEWTLE,\n"
 	.string "would you like to have it?$"
 
 OldaleTown_Text_Chimchar:
 	.string "Cool you picked CHIMCHAR!\n"
 	.string "That means you'll have trouble with\l"
 	.string "fire type pokemon!\p"
-	.string "Then you could use my Petilil,\n"
+	.string "Then you could use my PETILIL,\n"
 	.string "would you like to have it?$"
 
 OldaleTown_Text_Totodile:
 	.string "Cool you picked TOTODILE!\n"
 	.string "That means you'll have trouble with\l"
 	.string "fire type pokemon!\p"
-	.string "Then you could use my Salandit,\n"
+	.string "Then you could use my SALANDIT,\n"
 	.string "would you like to have it?$"
 
 OldaleTown_Text_ReceivedPokemon1:
-	.string "{PLAYER} received a Finneon!$"
+	.string "{PLAYER} received a CHEWTLE!$"
 
 OldaleTown_Text_ReceivedPokemon2:
-	.string "{PLAYER} received a Petilil!$"
+	.string "{PLAYER} received a PETILIL!$"
 
 OldaleTown_Text_ReceivedPokemon3:
-	.string "{PLAYER} received a Salandit!$"
+	.string "{PLAYER} received a SALANDIT!$"
 
 OldaleTown_Text_GoodLuck:
 	.string "Good luck with your adventure!\n"
@@ -550,6 +564,20 @@ OldaleTown_Text_ComeOn:
 	.string "Come on just take it!\n"
 	.string "I want it to see the world!$"
 
+OldaleTown_Text_Zigzagoon:
+	.string "ZIGGGGZAGGGG!$"
+
+OldaleTown_Text_Trainer1:
+	.string "My Zigzagoon are stronger than yours!$"
+
+OldaleTown_Text_Trainer2:
+	.string "No mine are much better!$"
+
+OldaleTown_Text_Trainer3:
+	.string "...\n"
+	.string "...\p"
+	.string "They seem to focussed to listen...\n"
+	.string "I better leave them alone...$"
 
 OldaleTown_StartGivePokemon:
 	applymovement LOCALID_PokeGuy, Common_Movement_FacePlayer
