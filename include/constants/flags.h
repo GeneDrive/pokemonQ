@@ -675,7 +675,7 @@
 #define FLAG_ROUTE101_CAVE_HIDE_RIVAL2                     0x277
 #define FLAG_BAG_DISABLED_IN_BATTLE                        0x278
 #define FLAG_CATCHING_DISABLED_IN_BATTLE    	           0x279
-#define FLAG_UNUSED_0x27A  0x27A // Unused Flag
+#define FLAG_ROUTE101_HIDE_WINONA                          0x27A
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
 #define FLAG_UNUSED_0x27C  0x27C // Unused Flag
 #define FLAG_UNUSED_0x27D  0x27D // Unused Flag

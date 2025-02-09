@@ -256,6 +256,7 @@ PetalburgCity_Gym_Real_EventScript_ParkerPostBadge::
 
 PetalburgCity_Gym_Real_EventScript_Winona::
 	goto_if_set FLAG_BADGE01_GET, PetalburgCity_Gym_Real_EventScript_WinonaDefeatedAfter
+	setflag FLAG_ROUTE101_HIDE_WINONA
 	trainerbattle_double TRAINER_WINONA_1, PetalburgCity_Gym_Real_Text_WinonaIntro, PetalburgCity_Gym_Real_Text_WinonaDefeat, PetalburgCity_Gym_Real_Text_WinonaNotEnough, PetalburgCity_Gym_Real_EventScript_WinonaDefeated, NO_MUSIC
 	release
 	end
@@ -288,6 +289,8 @@ PetalburgCity_Gym_Real_EventScript_WinonaDefeatedAfter::
 	pokenavcall PetalburgCity_Gym_Real_Text_LevelCapIncrease2
 	waitmessage
 	delay 5
+	clearflag FLAG_ROUTE101_HIDE_WINONA
+	setvar VAR_ROUTE101_STATE, 8
 	releaseall
 	end
 

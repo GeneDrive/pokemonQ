@@ -463,6 +463,116 @@ Route101_EventScript_Old_Man4::
 	releaseall
 	end
 
+Route101_EventScript_Winona_11::
+	applymovement LOCALID_WINONA, Route101_Movement_Face_Left
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_Face_Right
+	waitmovement 0
+	playse SE_PIN
+	applymovement LOCALID_WINONA, Common_Movement_ExclamationMark
+	waitmovement 0
+	msgbox Route101_Text_Winona1, MSGBOX_AUTOCLOSE
+	waitmessage
+	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_Winona_player1
+	applymovement LOCALID_WINONA, Route101_Movement_Winona
+	waitmovement 0
+	goto Route101_EventScript_Winona_give_cut_HM
+	end
+
+Route101_EventScript_Winona_12::
+	applymovement LOCALID_WINONA, Route101_Movement_Face_Left
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_Face_Right
+	waitmovement 0
+	playse SE_PIN
+	applymovement LOCALID_WINONA, Common_Movement_ExclamationMark
+	waitmovement 0
+	msgbox Route101_Text_Winona1, MSGBOX_AUTOCLOSE
+	waitmessage
+	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_Winona_player2
+	applymovement LOCALID_WINONA, Route101_Movement_Winona
+	waitmovement 0
+	goto Route101_EventScript_Winona_give_cut_HM
+	end
+
+Route101_EventScript_Winona_give_cut_HM::
+	applymovement LOCALID_WINONA, Route101_Movement_Face_Left
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Route101_Movement_Face_Right
+	waitmovement 0
+	msgbox Route101_Text_Winona2, MSGBOX_AUTOCLOSE
+	waitmessage
+	giveitem ITEM_HM_CUT
+	msgbox Route101_Text_Winona3, MSGBOX_AUTOCLOSE
+	waitmessage
+	msgbox Route101_Text_Winona4, MSGBOX_AUTOCLOSE
+	waitmessage
+	fadescreen FADE_TO_BLACK
+	delay 10
+	playse SE_EXIT
+	setflag FLAG_ROUTE101_HIDE_WINONA
+	setflag FLAG_RECEIVED_HM_CUT
+	setvar VAR_ROUTE101_STATE, 9
+	removeobject LOCALID_WINONA
+	fadescreen FADE_FROM_BLACK
+	releaseall
+	end
+
+Route101_Movement_Face_Left:
+	face_left
+	step_end
+
+Route101_Movement_Face_Right:
+	face_right
+	step_end
+
+Route101_Movement_Winona:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+Route101_Movement_Winona_player1:
+	walk_right
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+Route101_Movement_Winona_player2:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
 Route101_Text_HelpMe:
 	.string "H-help me!$"
 
@@ -609,3 +719,35 @@ Route101_Text_Old_Man_Sleep:
 
 Route101_Text_LevelCapIncrease:
 	.string "Level cap increased to Level 18!$"
+
+Route101_Text_Winona1:
+	.string "Winona: Oh great! There you are!\n"
+	.string "I thought I missed you!\p"
+	.string "Come over here for a second!$"
+
+Route101_Text_Winona2:
+	.string "Winona: I told Wally to give you\n"
+	.string "this if he ran into you, but it\l"
+	.string "seems he just missed you.\p"
+	.string "So I've got something for you!\p"
+	.string "After getting my badge, you'll\n"
+	.string "be able to use CUT outside of battle.\p"
+	.string "And with these trees in the way,\n"
+	.string "you'll need it to continue\l"
+	.string "your journey.\p"
+	.string "So here you go!$"
+
+Route101_Text_Winona3:
+	.string "Winona: You can teach this to a POKéMON\n"
+	.string "to cut down trees blocking your path.\p"
+	.string "But don't worry, you can use it\n"
+	.string "without teaching it to a POKéMON.\p"
+	.string "So you can use it right away!$"
+
+Route101_Text_Winona4:
+	.string "Winona: I hope you enjoy your journey!\p"
+	.string "I can't wait to see how\n"
+	.string "far you'll go!\p"
+	.string "I hope to run into you sometime,\n"
+	.string "I love flying around on my days off!\p"
+	.string "So I'll see you around!$"
