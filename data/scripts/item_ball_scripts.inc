@@ -47,11 +47,11 @@ Route103_EventScript_Punching_Glove::
 	end
 
 Route103_EventScript_ItemGuardSpec::
-	finditem ITEM_GUARD_SPEC
+	finditem ITEM_FLOAT_STONE
 	end
 
 Route103_EventScript_ItemPPUp::
-	finditem ITEM_PP_UP
+	finditem ITEM_QUICK_BALL, 3
 	end
 
 BindingCavern_EventScript_ItemGrassySeed::
