@@ -94,7 +94,7 @@
     {
       "id": "LAYOUT_LITTLEROOT_TOWN",
       "name": "LittlerootTown_Layout",
-      "width": 40,
+      "width": 42,
       "height": 50,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
@@ -195,9 +195,9 @@
       "id": "LAYOUT_ROUTE104",
       "name": "Route104_Layout",
       "width": 40,
-      "height": 80,
+      "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/Route104/border.bin",
       "blockdata_filepath": "data/layouts/Route104/map.bin"
     },

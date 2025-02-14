@@ -7069,15 +7069,15 @@ static const struct TrainerMon sParty_BrendanRoute103Treecko[] = {
     .ability = ABILITY_LEVITATE,
     .species = SPECIES_ROTOM,
     .heldItem = ITEM_MAGNET,
-    .moves = {MOVE_WILL_O_WISP, MOVE_CHARGE_BEAM, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_WILL_O_WISP, MOVE_CHARGE_BEAM, MOVE_HEX, MOVE_NONE}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 24,
-    .ability = ABILITY_HOSPITALITY,
-    .species = SPECIES_POLTCHAGEIST,
-    .heldItem = ITEM_EVIOLITE,
-    .moves = {MOVE_GIGA_DRAIN, MOVE_FOUL_PLAY, MOVE_HEX, MOVE_SILVER_WIND}
+    .ability = ABILITY_WIND_RIDER,
+    .species = SPECIES_GOLBAT,
+    .heldItem = ITEM_BLACK_SLUDGE,
+    .moves = {MOVE_GIGA_DRAIN, MOVE_AIR_CUTTER, MOVE_POISON_FANG, MOVE_CONFUSE_RAY}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),     
