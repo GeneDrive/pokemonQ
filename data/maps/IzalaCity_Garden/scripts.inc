@@ -6,10 +6,10 @@ IzalaCity_Garden_MapScripts::
 IzalaCity_Garden_EventScript_Pokemon::
 	lockall
 	waitse
-	playmoncry SPECIES_HAKAMO_O, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_YUNGOOS, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_HAKAMO_O, 28
+	setwildbattle SPECIES_YUNGOOS, 26
 	special BattleSetup_StartLegendaryBattle
 	waitstate
 	specialvar VAR_RESULT, GetBattleOutcome
