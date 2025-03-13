@@ -17,6 +17,7 @@ IzalaCity_Gym_Arena1_EventScript_Battle_Event_Start::
 	end
 
 IzalaCity_Gym_Arena1_EventScript_Battle_Event::
+	setflag FLAG_FRIGGIDFALLS_ARCHIE_EVENT_DONE
 	msgbox IzalaCity_Gym_Arena1_Text_Trainer1, MSGBOX_AUTOCLOSE
 	waitmessage
 	delay 5
@@ -72,7 +73,7 @@ IzalaCity_Gym_Arena1_Text_Trainer1After:
 IzalaCity_Gym_Arena1_Text_Trainer2:
 	.string "HOW DARE YOU DO THAT TO MY HUBBY!\n"
 	.string "RIDING HIS BIKE WAS HIS PASSION!\l"
-	.string "I'LL MAKE YOU PAY FOR THIS!\p"
+	.string "I'LL MAKE YOU PAY FOR THIS!$"
 
 IzalaCity_Gym_Arena1_Text_Trainer2After:
 	.string "No way!?\n"

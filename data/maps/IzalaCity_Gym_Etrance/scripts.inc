@@ -14,8 +14,12 @@ IzalaCity_Gym_Etrance_EventScript_TalkToNurse::
 	end
 
 IzalaCity_Gym_Etrance_EventScript_Heal::
+	fadescreen FADE_TO_BLACK
+	delay 20
 	dofieldeffect FLDEFF_POKECENTER_HEAL
 	waitfieldeffect FLDEFF_POKECENTER_HEAL
+	fadescreen FADE_FROM_BLACK
+	delay 20
 	special HealPlayerParty
 	return
 

@@ -1207,7 +1207,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backPicYOffset = 11,
         PALETTES(BurmyPlantCloak),
         ICON(BurmyPlantCloak, 1),
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_WORMADAM_PLANT_CLOAK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_WORMADAM_PLANT_CLOAK}),
     },
 
     [SPECIES_BURMY_SANDY_CLOAK] =
@@ -1225,7 +1225,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backPicYOffset = 11,
         PALETTES(BurmySandyCloak),
         ICON(BurmySandyCloak, 4),
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_WORMADAM_SANDY_CLOAK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_WORMADAM_SANDY_CLOAK}),
     },
 
     [SPECIES_BURMY_TRASH_CLOAK] =
@@ -1243,7 +1243,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backPicYOffset = 11,
         PALETTES(BurmyTrashCloak),
         ICON(BurmyTrashCloak, 4),
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_WORMADAM_TRASH_CLOAK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_WORMADAM_TRASH_CLOAK}),
     },
 
 #define WORMADAM_MISC_INFO                                                      \

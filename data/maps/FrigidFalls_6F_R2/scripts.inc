@@ -140,6 +140,7 @@ FrigidFalls_6F_R2_StartEvent::
 	delay 5
 	setvar VAR_FRIGID_FALLS_STATE, 3
 	setvar VAR_TEMP_0, 1
+	setflag FLAG_FRIGGIDFALLS_ARCHIE_EVENT_DONE
 	delay 5
 	warp MAP_FRIGID_FALLS_6F, 12, 10
 	end

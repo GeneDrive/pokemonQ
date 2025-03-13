@@ -532,9 +532,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     {
         .baseHP        = 35,
         .baseAttack    = 30,
-        .baseDefense   = 60,
-        .baseSpeed     = 87,
-        .baseSpAttack  = 77,
+        .baseDefense   = 55,
+        .baseSpeed     = 92,
+        .baseSpAttack  = 87,
         .baseSpDefense = 77,
         .types = { TYPE_GHOST, TYPE_TIME },
         .catchRate = 255,
@@ -573,7 +573,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Patrat, 2),
         .footprint = gMonFootprint_Patrat,
         LEARNSETS(Patrat),
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_WATCHOG}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_WATCHOG}),
     },
 
     [SPECIES_WATCHOG] =

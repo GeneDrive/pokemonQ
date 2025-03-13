@@ -2608,6 +2608,7 @@ if (ability == ABILITY_MAGIC_GUARD) \
 u8 DoBattlerEndTurnEffects(void)
 {
     u32 battler, ability, i, effect = 0;
+    // u32 partner;
 
     gHitMarker |= (HITMARKER_GRUDGE | HITMARKER_IGNORE_BIDE);
     while (gBattleStruct->turnEffectsBattlerId < gBattlersCount && gBattleStruct->turnEffectsTracker <= ENDTURN_BATTLER_COUNT)
@@ -2640,6 +2641,11 @@ u8 DoBattlerEndTurnEffects(void)
              && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK)
              && gBattleMons[battler].hp != 0)
             {
+                // partner = BATTLE_PARTNER(battler);
+                // if (IsDoubleBattle() && gBattleMons[partner].hp < partnerMaxHP && !(gStatuses3[partner] & STATUS3_HEAL_BLOCK) && IsBattlerAlive(partner) && !(gStatuses3[partner] & STATUS3_AQUA_RING))
+                // {
+                //     partner.status3 |= STATUS3_AQUA_RING;
+                // }
                 gBattleMoveDamage = GetDrainedBigRootHp(battler, GetNonDynamaxMaxHP(battler) / 14);
                 BattleScriptExecute(BattleScript_AquaRingHeal);
                 effect++;
@@ -4225,6 +4231,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
     u32 moveType, move;
     u32 side;
     u32 i, j;
+    u32 partner, partnerMaxHP;
     struct Pokemon *mon;
 
     if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
@@ -4429,6 +4436,19 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_CURIOUS_MEDICINE;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
                 BattleScriptPushCursorAndCallback(BattleScript_SwitchInAbilityMsg);
+                effect++;
+            }
+            break;
+        case ABILITY_HOSPITALITY:
+            partner = BATTLE_PARTNER(battler);
+            partnerMaxHP = GetNonDynamaxMaxHP(partner);
+
+            if (!gSpecialStatuses[battler].switchInAbilityDone && IsDoubleBattle() && gBattleMons[partner].hp < partnerMaxHP && !(gStatuses3[partner] & STATUS3_HEAL_BLOCK) && IsBattlerAlive(partner))
+            {
+                gBattlerTarget = partner;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                gBattleMoveDamage = (partnerMaxHP / 4) * -1;
+                BattleScriptPushCursorAndCallback(BattleScript_HospitalityActivates);
                 effect++;
             }
             break;
@@ -9004,7 +9024,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
     if (gSpecialStatuses[battlerAtk].gemBoost)
         modifier = uq4_12_multiply(modifier, UQ_4_12(1.0) + sPercentToModifier[gSpecialStatuses[battlerAtk].gemParam]);
     if (gStatuses3[battlerAtk] & STATUS3_CHARGED_UP && moveType == TYPE_ELECTRIC)
-        modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
+        modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
     if (gStatuses3[battlerAtk] & STATUS3_ME_FIRST)
         modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
     if (IsBattlerTerrainAffected(battlerAtk, STATUS_FIELD_GRASSY_TERRAIN) && moveType == TYPE_GRASS)

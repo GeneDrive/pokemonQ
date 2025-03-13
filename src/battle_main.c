@@ -5703,6 +5703,7 @@ void SetTypeBeforeUsingMove(u32 move, u32 battlerAtk)
 
     GET_MOVE_TYPE(move, moveType);
     if ((gFieldStatuses & STATUS_FIELD_ION_DELUGE && moveType == TYPE_NORMAL)
+        || (gStatuses3[battlerAtk] & STATUS3_CHARGED_UP && moveType == TYPE_NORMAL)
         || gStatuses4[battlerAtk] & STATUS4_ELECTRIFIED)
         gBattleStruct->dynamicMoveType = TYPE_ELECTRIC | F_DYNAMIC_TYPE_SET;
 

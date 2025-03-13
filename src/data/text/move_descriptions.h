@@ -3444,6 +3444,18 @@ static const u8 sChompDescription[] = _(
     "Take a bite out of you opponent.\n"
     "healing yourself a bit.");
 
+static const u8 sAuraBreakDescription[] = _(
+    "Break your medition to send out\n"
+    "a large wave of energy.");
+
+static const u8 sAeonCollapseDescription[] = _(
+    "Destroy the timeline hitting\n"
+    "everyone after you escape.");
+
+static const u8 sSpecialMiasmaDescription[] = _(
+    "An attack with effects\n"
+    "that vary by location.");
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4330,4 +4342,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_STEEL_REVERB - 1] = sSteelReverbDescription,
     [MOVE_DEJA_TUNE - 1] = sDejaTuneDescription,
     [MOVE_CHOMP - 1] = sChompDescription,
+    [MOVE_AURA_BREAK - 1] = sAuraBreakDescription,
+    [MOVE_AEON_COLLAPSE - 1] = sAeonCollapseDescription,
+    [MOVE_SPECIAL_MIASMA - 1] = sSpecialMiasmaDescription,
 };

@@ -192,6 +192,7 @@ static const s8 sAiAbilityRatings[ABILITIES_COUNT] =
     [ABILITY_RIVALRY] = 1,
     [ABILITY_RKS_SYSTEM] = 8,
     [ABILITY_ROCK_HEAD] = 5,
+    [ABILITY_COMPOSURE] = 5,
     [ABILITY_ROUGH_SKIN] = 6,
     [ABILITY_RUN_AWAY] = 0,
     [ABILITY_SAND_FORCE] = 4,
@@ -840,7 +841,7 @@ s32 AI_CalcDamage(u32 move, u32 battlerAtk, u32 battlerDef, u8 *typeEffectivenes
 bool32 AI_IsDamagedByRecoil(u32 battler)
 {
     u32 ability = AI_DATA->abilities[battler];
-    if (ability == ABILITY_MAGIC_GUARD || ability == ABILITY_ROCK_HEAD)
+    if (ability == ABILITY_MAGIC_GUARD || ability == ABILITY_ROCK_HEAD || ability == ABILITY_COMPOSURE)
         return FALSE;
     return TRUE;
 }
