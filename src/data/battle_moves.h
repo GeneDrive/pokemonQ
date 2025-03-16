@@ -14909,11 +14909,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_FLASHBACK] =
     {
         #if B_USE_FROSTBITE == TRUE
-            .effect = EFFECT_FROSTBITE_HIT,
+            .effect = EFFECT_DO_NOTHING,
         #else
             .effect = EFFECT_FREEZE_HIT,
         #endif
-        .power = 15,
+        .power = 0,
         .type = TYPE_TIME,
         #if B_UPDATED_MOVE_DATA >= GEN_6
             .accuracy = 85,
@@ -14924,17 +14924,17 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .split = SPLIT_SPECIAL,
+        .split = SPLIT_STATUS,
         .zMoveEffect = Z_EFFECT_NONE,
     },
     [MOVE_SPACE_TIME_SPIN] =
     {
-        .effect = EFFECT_HIT,
-        .power = 80,
+        .effect = EFFECT_SPEED_UP_HIT,
+        .power = 65,
         .type = TYPE_TIME,
         .accuracy = 100,
         .pp = 20,
-        .secondaryEffectChance = 100,
+        .secondaryEffectChance = 50,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_PHYSICAL,
@@ -15161,6 +15161,39 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
+    },
+    [MOVE_JAMAID_VU] =
+    {
+        .accuracy = 100,
+        .effect = EFFECT_DISABLE,
+        .power = 0,
+        .type = TYPE_TIME,
+        .pp = 20,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_FOES_AND_ALLY,
+        .priority = -1,
+        .split = SPLIT_STATUS,
+        .zMoveEffect = Z_EFFECT_RESET_STATS,
+        .ignoresSubstitute = TRUE,
+        .magicCoatAffected = B_UPDATED_MOVE_FLAGS >= GEN_5,
+    },
+    [MOVE_RUSH_HOUR] =
+    {
+        #if B_UPDATED_MOVE_DATA >= GEN_7
+            .accuracy = 85,
+        #else
+            .accuracy = 90,
+        #endif
+        .effect = EFFECT_DO_NOTHING,
+        .power = 0,
+        .type = TYPE_TIME,
+        .pp = 15,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_STATUS,
+        .zMoveEffect = Z_EFFECT_RESET_STATS,
+        .magicCoatAffected = TRUE,
     },
 
     // Z-Moves

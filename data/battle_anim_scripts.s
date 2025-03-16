@@ -906,6 +906,8 @@ gBattleAnims_Moves::
 	.4byte Move_AURA_BREAK
 	.4byte Move_AEON_COLLAPSE
 	.4byte Move_SPECIAL_MIASMA
+	.4byte Move_JAMAID_VU
+	.4byte Move_RUSH_HOUR
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -19499,6 +19501,54 @@ Move_SPECIAL_MIASMA:
 	createsprite gBanefulBunkerPoisonBubbleTemplate, ANIM_ATTACKER, 2, 0xc, 0x0, 0x19, 0x0
 	goto Move_SECRET_POWER
 	end
+
+Move_JAMAID_VU:
+	loadspritegfx ANIM_TAG_AMNESIA
+	loadspritegfx ANIM_TAG_SPARKLE_4
+	playsewithpan SE_M_DETECT, SOUND_PAN_ATTACKER
+	createsprite gSpinningSparkleSpriteTemplate, ANIM_ATTACKER, 13, 24, -16
+	waitforvisualfinish
+	call SetPsychicBackground
+	delay 8
+	createsprite gQuestionMarkSpriteTemplate, ANIM_TARGET, 20
+	createsprite gQuestionMarkSpriteTemplate, ANIM_DEF_PARTNER, 20
+	createsprite gQuestionMarkSpriteTemplate, ANIM_ATK_PARTNER, 20
+	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
+	delay 54
+	loopsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER, 16, 3
+	waitforvisualfinish
+	call UnsetPsychicBg
+	end
+
+Move_RUSH_HOUR:
+	loadspritegfx ANIM_TAG_SPARKLE_4
+	playsewithpan SE_M_DETECT, SOUND_PAN_ATTACKER
+	createsprite gSpinningSparkleSpriteTemplate, ANIM_ATTACKER, 13, 24, -16
+	waitforvisualfinish
+	delay 8
+	createsprite gVerticalDipSpriteTemplate, ANIM_TARGET, 2, 16, 1, ANIM_TARGET
+	createvisualtask SoundTask_PlaySE2WithPanning, 5, SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER
+	delay 28
+	createsprite gVerticalDipSpriteTemplate, ANIM_TARGET, 2, 12, 1, ANIM_TARGET
+	createvisualtask SoundTask_PlaySE2WithPanning, 5, SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER
+	delay 28
+	createsprite gVerticalDipSpriteTemplate, ANIM_TARGET, 2, 8, 1, ANIM_TARGET
+	createvisualtask SoundTask_PlaySE2WithPanning, 5, SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER
+	delay 24
+	createsprite gVerticalDipSpriteTemplate, ANIM_TARGET, 2, 12, 1, ANIM_TARGET
+	createvisualtask SoundTask_PlaySE2WithPanning, 5, SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER
+	delay 24
+	createsprite gVerticalDipSpriteTemplate, ANIM_TARGET, 2, 8, 1, ANIM_TARGET
+	createvisualtask SoundTask_PlaySE2WithPanning, 5, SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER
+	delay 20
+	createsprite gVerticalDipSpriteTemplate, ANIM_TARGET, 2, 12, 1, ANIM_TARGET
+	createvisualtask SoundTask_PlaySE2WithPanning, 5, SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER
+	delay 20
+	createsprite gVerticalDipSpriteTemplate, ANIM_TARGET, 2, 8, 1, ANIM_TARGET
+	createvisualtask SoundTask_PlaySE2WithPanning, 5, SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER
+	delay 18
+	end
+
 
 Move_OUTRAGE:
 	loadspritegfx ANIM_TAG_SMALL_EMBER

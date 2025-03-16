@@ -3456,6 +3456,14 @@ static const u8 sSpecialMiasmaDescription[] = _(
     "An attack with effects\n"
     "that vary by location.");
 
+static const u8 sJamaidVuDescription[] = _(
+    "Psychically disables one of\n"
+    "the foe's moves.");
+
+static const u8 sRushHourDescription[] = _(
+    "Confuses the foe, but also\n"
+    "raises Speed.");
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4345,4 +4353,6 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_AURA_BREAK - 1] = sAuraBreakDescription,
     [MOVE_AEON_COLLAPSE - 1] = sAeonCollapseDescription,
     [MOVE_SPECIAL_MIASMA - 1] = sSpecialMiasmaDescription,
+    [MOVE_JAMAID_VU - 1] = sJamaidVuDescription,
+    [MOVE_RUSH_HOUR - 1] = sRushHourDescription,
 };

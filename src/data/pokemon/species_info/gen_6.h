@@ -3676,7 +3676,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         PALETTES(PumpkabooLarge),
         .frontPicYOffset = 4,
         BACK_PIC(PumpkabooLarge, 56, 48),
-        .backPicYOffset = 13,
+        .backPicYOffset = 18,
         ICON(PumpkabooLarge, 2), 
     },
 

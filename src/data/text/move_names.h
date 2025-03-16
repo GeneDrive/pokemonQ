@@ -881,6 +881,8 @@ const u8 gMoveNames[MOVES_COUNT_DYNAMAX][MOVE_NAME_LENGTH + 1] =
     [MOVE_AURA_BREAK] = _("Aura Break"),
     [MOVE_AEON_COLLAPSE] = _("Aeon Collapse"),
     [MOVE_SPECIAL_MIASMA] = _("Special Miasma"),
+    [MOVE_JAMAID_VU] = _("Jamaid Vu"),
+    [MOVE_RUSH_HOUR] = _("Rush Hour"),
     // Max Moves
     [MOVE_MAX_GUARD] = _("Max Guard"),
     [MOVE_MAX_STRIKE] = _("Max Strike"),
@@ -1819,6 +1821,8 @@ const u8 gMoveNames[MOVES_COUNT_DYNAMAX][MOVE_NAME_LENGTH + 1] =
     [MOVE_AURA_BREAK] = _("Aura Break"),
     [MOVE_AEON_COLLAPSE] = _("AeonCollapse"),
     [MOVE_SPECIAL_MIASMA] = _("SpecialMiasm"),
+    [MOVE_JAMAID_VU] = _("Jamaid Vu"),
+    [MOVE_RUSH_HOUR] = _("Rush Hour"),
     // Max Moves
     [MOVE_MAX_GUARD] = _("M-Guard"),
     [MOVE_MAX_STRIKE] = _("M-Strike"),

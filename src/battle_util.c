@@ -2576,6 +2576,7 @@ enum
     ENDTURN_POWDER,
     ENDTURN_THROAT_CHOP,
     ENDTURN_SLOW_START,
+    ENDTURN_LOOPER,
     ENDTURN_CUD_CHEW,
     ENDTURN_TORMENT, // supposedly this goes after Taunt, before Encore, but Encore is first right now?
     ENDTURN_SALT_CURE,
@@ -3115,6 +3116,21 @@ u8 DoBattlerEndTurnEffects(void)
                 && ability == ABILITY_SLOW_START)
             {
                 BattleScriptExecute(BattleScript_SlowStartEnds);
+                effect++;
+            }
+            gBattleStruct->turnEffectsTracker++;
+            break;
+        case ENDTURN_LOOPER:
+            if (gDisableStructs[battler].slowStartTimer
+                && --gDisableStructs[battler].slowStartTimer == 0
+                && ability == ABILITY_LOOPER
+                && !BATTLER_MAX_HP(battler)
+                && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK)
+                && gBattleMons[battler].hp != 0)
+            {
+                gBattleMoveDamage = GetDrainedBigRootHp(battler, GetNonDynamaxMaxHP(battler) - gBattleMons[battler].hp);
+                BattleScriptExecute(BattleScript_SlowStartEnds);
+                BattleScriptExecute(BattleScript_IngrainTurnHeal);
                 effect++;
             }
             gBattleStruct->turnEffectsTracker++;
@@ -4402,7 +4418,17 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         case ABILITY_SLOW_START:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
-                gDisableStructs[battler].slowStartTimer = 5;
+                gDisableStructs[battler].slowStartTimer = 5 * 2;
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_SLOWSTART;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                BattleScriptPushCursorAndCallback(BattleScript_SwitchInAbilityMsg);
+                effect++;
+            }
+            break;
+        case ABILITY_LOOPER:
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
+            {
+                gDisableStructs[battler].slowStartTimer = 4 * 2;
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_SLOWSTART;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
                 BattleScriptPushCursorAndCallback(BattleScript_SwitchInAbilityMsg);

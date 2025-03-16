@@ -30875,7 +30875,6 @@ static const u16 sYungoosTeachableLearnset[] = {
     MOVE_FRUSTRATION,
     MOVE_HIDDEN_POWER,
     MOVE_IRON_TAIL,
-    MOVE_PROTECT,
     MOVE_REST,
     MOVE_RETURN,
     MOVE_ROCK_TOMB,
