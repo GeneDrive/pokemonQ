@@ -156,6 +156,10 @@ FuckOffCity_Movement_WalkUpOut:
 	walk_up
 	step_end
 
+FuckOffCity_EventScript_SchoolClosed::
+	msgbox FuckOffCity_Text_SchoolClosed, MSGBOX_SIGN
+	end
+
 FuckOffCity_Text_Attendent:
 	.string "I'm sorry, but the gym is closed\n"
 	.string "right now. Both Gymleaders are out\l"
@@ -216,3 +220,8 @@ FuckOffCity_Text_Brawly6:
 	.string "I'll follow behind you after I'm done\n"
 	.string "Looking, So I'll see you in a bit!\l"
 	.string "LETS GO, time to get a good sweat going!$"
+
+FuckOffCity_Text_SchoolClosed:
+	.string "The school is closed right now\n"
+	.string "for summer break. We'll see you\l"
+	.string "when school starts again.$"

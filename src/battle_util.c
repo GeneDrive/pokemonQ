@@ -9218,6 +9218,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         if (gBattleMoves[move].slicingMove && (gBattleMons[battlerDef].type1 == TYPE_FLYING || gBattleMons[battlerDef].type2 == TYPE_FLYING))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.75));
         break;
+    case ABILITY_MAGES_MIGHT:
+        if (gBattleMoves[move].type == TYPE_ICE && (gBattleMons[battlerDef].type1 == TYPE_STEEL || gBattleMons[battlerDef].type2 == TYPE_STEEL))
+           modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
+        break;
     case ABILITY_SUPREME_OVERLORD:
         modifier = uq4_12_multiply(modifier, gBattleStruct->supremeOverlordModifier[battlerAtk]);
         break;
@@ -9508,6 +9512,14 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.5));
             if (updateFlags)
                 RecordAbilityBattle(battlerDef, ABILITY_WING_CLIPPER);
+        }
+        break;
+    case ABILITY_MAGES_MIGHT:
+        if (moveType == TYPE_STEEL)
+        {
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.5));
+            if (updateFlags)
+                RecordAbilityBattle(battlerDef, ABILITY_MAGES_MIGHT);
         }
         break;
     }

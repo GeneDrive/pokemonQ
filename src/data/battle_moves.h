@@ -1098,7 +1098,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_AURORA_BEAM] =
     {
         .effect = EFFECT_ATTACK_DOWN_HIT,
-        .power = 65,
+        .power = 55,
         .type = TYPE_ICE,
         .accuracy = 100,
         .pp = 20,
@@ -8980,8 +8980,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_QUASH] =
     {
-        .effect = EFFECT_QUASH,
-        .power = 40,
+        .effect = EFFECT_DO_NOTHING,
+        .power = 0,
         .type = TYPE_DARK,
         .accuracy = 100,
         .pp = 15,
@@ -15004,7 +15004,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_COMPRESSION_BULLETS] =
     {
         .effect = EFFECT_MULTI_HIT,
-        .power = 18,
+        .power = 15,
         .type = TYPE_FLYING,
         .accuracy = 95,
         .pp = 15,

@@ -4588,6 +4588,7 @@ BattleScript_EffectDoNothing::
 	jumpifmove MOVE_HOLD_HANDS, BattleScript_EffectHoldHands
 	jumpifmove MOVE_RUSH_HOUR, BattleScript_EffectRushHour
 	jumpifmove MOVE_FLASHBACK, BattleScript_EffectFlashback
+	jumpifmove MOVE_QUASH, BattleScript_EffectRealQuash
 	attackanimation
 	waitanimation
 	jumpifmove MOVE_CELEBRATE, BattleScript_EffectCelebrate
@@ -4669,6 +4670,16 @@ BattleScript_EffectFlashback:
 	waitanimation
 	setmoveeffect MOVE_EFFECT_FROSTBITE
 	seteffectprimary
+	goto BattleScript_MoveEnd
+BattleScript_EffectRealQuash:
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	tryquash BattleScript_ButItFailed
+	attackanimation
+	waitanimation
+	printstring STRINGID_QUASHSUCCESS
+	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 BattleScript_EffectCelebrate:
 	printstring STRINGID_CELEBRATEMESSAGE

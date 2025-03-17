@@ -4316,18 +4316,20 @@ static const struct TrainerMon sParty_Shelby5[] = {
 
 static const struct TrainerMon sParty_Calvin1[] = {
     {
-    .lvl = 10,
-    .species = SPECIES_ZIGZAGOON_GALARIAN,
-    .ability = ABILITY_HYDRATION,
-    .moves = {MOVE_BIDE, MOVE_LICK, MOVE_SAND_ATTACK, MOVE_BABY_DOLL_EYES},
-    .heldItem = ITEM_ORAN_BERRY
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 27,
+    .ability = ABILITY_FLAME_BODY,
+    .species = SPECIES_LARVESTA,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_SCREECH, MOVE_STRING_SHOT, MOVE_SIZZLY_SLIDE, MOVE_LEECH_LIFE}
     },
     {
-    .lvl = 10,
-    .species = SPECIES_CETODDLE,
-    .ability = ABILITY_THICK_FAT,
-    .moves = {MOVE_TACKLE, MOVE_ICE_SHARD, MOVE_GROWL},
-    .heldItem = ITEM_ASSAULT_VEST
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 26,
+    .ability = ABILITY_LEAF_GUARD,
+    .species = SPECIES_LURANTIS,
+    .heldItem = ITEM_POWER_HERB,
+    .moves = {MOVE_INGRAIN, MOVE_NIGHT_SLASH, MOVE_X_SCISSOR, MOVE_SOLAR_BLADE}
     },
 };
 
@@ -6481,20 +6483,18 @@ static const struct TrainerMon sParty_AmyAndLiv2[] = {
 
 static const struct TrainerMon sParty_GinaAndMia1[] = {
     {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 27,
-    .ability = ABILITY_FLAME_BODY,
-    .species = SPECIES_LARVESTA,
-    .heldItem = ITEM_EVIOLITE,
-    .moves = {MOVE_SCREECH, MOVE_STRING_SHOT, MOVE_FLAME_WHEEL, MOVE_LEECH_LIFE}
+    .lvl = 10,
+    .species = SPECIES_ZIGZAGOON_GALARIAN,
+    .ability = ABILITY_HYDRATION,
+    .moves = {MOVE_BIDE, MOVE_LICK, MOVE_SAND_ATTACK, MOVE_BABY_DOLL_EYES},
+    .heldItem = ITEM_ORAN_BERRY
     },
     {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 26,
-    .ability = ABILITY_LEAF_GUARD,
-    .species = SPECIES_LURANTIS,
-    .heldItem = ITEM_POWER_HERB,
-    .moves = {MOVE_INGRAIN, MOVE_NIGHT_SLASH, MOVE_X_SCISSOR, MOVE_SOLAR_BLADE}
+    .lvl = 10,
+    .species = SPECIES_CETODDLE,
+    .ability = ABILITY_THICK_FAT,
+    .moves = {MOVE_TACKLE, MOVE_ICE_SHARD, MOVE_GROWL},
+    .heldItem = ITEM_ASSAULT_VEST
     },
 };
 
