@@ -4708,7 +4708,7 @@ BattleScript_EffectSecondWindTrySpDef:
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_EffectSecondWindTrySpeed:
-	setstatchanger STAT_SPEED, 2, FALSE
+	setstatchanger STAT_SPEED, 1, FALSE
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_PresentHealTarget
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_PresentHealTarget
 	printfromtable gStatUpStringIds
