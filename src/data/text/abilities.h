@@ -307,6 +307,7 @@ static const u8 sStellarCoatDescription[] = _("Change second type to move.");
 static const u8 sComposureDescription[] = _("No charge or recoil on moves.");
 static const u8 sLooperDescription[] = _("Reset hp after 4 turns.");
 static const u8 sMagesMightDescription[] = _("Resist and strong against steel.");
+static const u8 sMomentumDescription[] = _("Boosts Speed2X confuse when max.");
 
 #if B_EXPANDED_ABILITY_NAMES == TRUE
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -628,6 +629,7 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_COMPOSURE] = _("HighComposure"),
     [ABILITY_LOOPER] = _("Looper"),
     [ABILITY_MAGES_MIGHT] = _("Mage's Might"),
+    [ABILITY_MOMENTUM] = _("Momentum"),
 };
 #else   // 12 characters
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -949,6 +951,7 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_COMPOSURE] = _("perfect composure"),
     [ABILITY_LOOPER] = _("Looper"),
     [ABILITY_MAGES_MIGHT] = _("Mage's Might"),
+    [ABILITY_MOMENTUM] = _("Momentum"),
 };
 };
 #endif
@@ -1272,4 +1275,5 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_COMPOSURE] = sComposureDescription,
     [ABILITY_LOOPER] = sLooperDescription,
     [ABILITY_MAGES_MIGHT] = sMagesMightDescription,
+    [ABILITY_MOMENTUM] = sMomentumDescription,
 };

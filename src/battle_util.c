@@ -4970,6 +4970,22 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     effect++;
                 }
                 break;
+            case ABILITY_MOMENTUM:
+                if (CompareStat(battler, STAT_SPEED, MAX_STAT_STAGE, CMP_LESS_THAN) && gDisableStructs[battler].isFirstTurn != 2)
+                {
+                    SET_STATCHANGER(STAT_SPEED, 2, FALSE);
+                    BattleScriptPushCursorAndCallback(BattleScript_SpeedBoostActivates);
+                    gBattleScripting.battler = battler;
+                    effect++;
+                }
+                if (!CompareStat(battler, STAT_SPEED, MAX_STAT_STAGE, CMP_LESS_THAN))
+                {
+                    SET_STATCHANGER(STAT_SPEED, 6, TRUE);
+                    BattleScriptPushCursorAndCallback(BattleScript_SpeedBoostActivates);
+                    gBattleScripting.battler = battler;
+                    effect++;
+                }
+                break;
             case ABILITY_MOODY:
                 if (gDisableStructs[battler].isFirstTurn != 2)
                 {
@@ -10163,6 +10179,8 @@ static inline void MulByTypeEffectiveness(uq4_12_t *modifier, u32 move, u32 move
     if (gBattleMoves[move].effect == EFFECT_FREEZE_DRY && defType == TYPE_WATER && moveType == TYPE_ICE)
         mod = UQ_4_12(2.0);
     if (gBattleMoves[move].effect == EFFECT_FREEZE_DRY && defType == TYPE_GHOST && moveType == TYPE_TIME)
+        mod = UQ_4_12(2.0);
+    if (gBattleMoves[move].effect == EFFECT_FREEZE_DRY && defType == TYPE_ELECTRIC && moveType == TYPE_ELECTRIC)
         mod = UQ_4_12(2.0);
     if (moveType == TYPE_GROUND && defType == TYPE_FLYING && IsBattlerGrounded(battlerDef) && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);

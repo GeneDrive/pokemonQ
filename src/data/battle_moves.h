@@ -15138,7 +15138,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     [MOVE_AEON_COLLAPSE] =
     {
         .effect = EFFECT_HIT_ESCAPE,
-        .power = 75,
+        .power = 70,
         .type = TYPE_TIME,
         .accuracy = 100,
         .pp = 15,
@@ -15194,6 +15194,56 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .split = SPLIT_STATUS,
         .zMoveEffect = Z_EFFECT_RESET_STATS,
         .magicCoatAffected = TRUE,
+    },
+    [MOVE_DRAGON_ROAR] =
+    {
+        .effect = EFFECT_ATTACK_UP_HIT,
+        .power = 45,
+        .type = TYPE_DRAGON,
+        .accuracy = 100,
+        .pp = 15,
+        .secondaryEffectChance = 30,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_SPECIAL,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .ignoresSubstitute = B_UPDATED_MOVE_FLAGS >= GEN_6,
+        .soundMove = TRUE,
+    },
+    [MOVE_OVERCHARGE] =
+    {
+        .effect = EFFECT_FREEZE_DRY,
+        .power = 60,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 99,
+        .pp = 10,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_SPECIAL,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .sheerForceBoost = TRUE,
+    },
+    [MOVE_SECOND_WIND] =
+    {
+        #if B_UPDATED_MOVE_DATA >= GEN_6
+            .pp = 10,
+        #else
+            .pp = 30,
+        #endif
+        .effect = EFFECT_DO_NOTHING,
+        .power = 0,
+        .type = TYPE_TIME,
+        .accuracy = 0,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_USER,
+        .priority = 0,
+        .split = SPLIT_STATUS,
+        .zMoveEffect = Z_EFFECT_BOOST_CRITS,
+        .snatchAffected = TRUE,
+        .windMove = TRUE,
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
     },
 
     // Z-Moves

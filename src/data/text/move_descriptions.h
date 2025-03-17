@@ -3463,6 +3463,18 @@ static const u8 sJamaidVuDescription[] = _(
 static const u8 sRushHourDescription[] = _(
     "Confuses the foe, but also\n"
     "raises Speed.");
+    
+static const u8 sDragonRoarDescription[] = _(
+    "Roaring loudly at foe,\n"
+    "chance to raise Attack.");
+
+static const u8 sOverchargeDescription[] = _(
+    "Overload foe with static power,\n"
+    "supereffective on electric.");
+
+static const u8 sSecondWindDescription[] = _(
+    "Heals, raises speed, but\n"
+    "lowers defensive stats.");
 
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
@@ -4355,4 +4367,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_SPECIAL_MIASMA - 1] = sSpecialMiasmaDescription,
     [MOVE_JAMAID_VU - 1] = sJamaidVuDescription,
     [MOVE_RUSH_HOUR - 1] = sRushHourDescription,
+    [MOVE_DRAGON_ROAR - 1] = sDragonRoarDescription,
+    [MOVE_OVERCHARGE - 1] = sOverchargeDescription,
+    [MOVE_SECOND_WIND - 1] = sSecondWindDescription,
 };

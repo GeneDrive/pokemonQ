@@ -883,6 +883,9 @@ const u8 gMoveNames[MOVES_COUNT_DYNAMAX][MOVE_NAME_LENGTH + 1] =
     [MOVE_SPECIAL_MIASMA] = _("Special Miasma"),
     [MOVE_JAMAID_VU] = _("Jamaid Vu"),
     [MOVE_RUSH_HOUR] = _("Rush Hour"),
+    [MOVE_DRAGON_ROAR] = _("Dragon Roar"),
+    [MOVE_OVERCHARGE] = _("Overcharge"),
+    [MOVE_SECOND_WIND] = _("Second Wind"),
     // Max Moves
     [MOVE_MAX_GUARD] = _("Max Guard"),
     [MOVE_MAX_STRIKE] = _("Max Strike"),
@@ -1823,6 +1826,9 @@ const u8 gMoveNames[MOVES_COUNT_DYNAMAX][MOVE_NAME_LENGTH + 1] =
     [MOVE_SPECIAL_MIASMA] = _("SpecialMiasm"),
     [MOVE_JAMAID_VU] = _("Jamaid Vu"),
     [MOVE_RUSH_HOUR] = _("Rush Hour"),
+    [MOVE_DRAGON_ROAR] = _("Dragon Roar"),
+    [MOVE_OVERCHARGE] = _("Overcharge"),
+    [MOVE_SECOND_WIND] = _("Second Wind"),
     // Max Moves
     [MOVE_MAX_GUARD] = _("M-Guard"),
     [MOVE_MAX_STRIKE] = _("M-Strike"),
