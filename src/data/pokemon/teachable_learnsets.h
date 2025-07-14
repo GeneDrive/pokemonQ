@@ -30889,6 +30889,7 @@ static const u16 sYungoosTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
+    MOVE_SIZZLY_SLIDE,
     MOVE_UNAVAILABLE,
 };
 

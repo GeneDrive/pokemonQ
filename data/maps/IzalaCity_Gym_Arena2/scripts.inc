@@ -79,10 +79,35 @@ IzalaCity_Gym_Arena2_EventScript_Battle_Event::
 	waitmessage
 	delay 5
 	trainerbattle_no_intro TRAINER_ROXANNE_2, IzalaCity_Gym_Arena2_Text_BrawlyDefeat
+	call IzalaCity_Gym_Arena2_EventScript_BrawlyDefeated
+	end
+
+IzalaCity_Gym_Arena2_EventScript_BrawlyDefeated::
+	message IzalaCity_Gym_Arena2_Text_ReceivedKnuckleBadge
+	waitmessage
+	call Common_EventScript_PlayGymBadgeFanfare
+	msgbox IzalaCity_Gym_Arena2_Text_KnuckleBadgeInfoTakeThis, MSGBOX_DEFAULT
+	setflag FLAG_DEFEATED_DEWFORD_GYM
+	setflag FLAG_BADGE02_GET
+	call IzalaCity_Gym_Arena2_EventScript_GiveBulkUp
+	closemessage
+	delay 30
+	msgbox IzalaCity_Gym_Arena2_Text_RegisteredBrawly, MSGBOX_DEFAULT
+	closemessage
+	delay 30
 	pokenavcall IzalaCity_Gym_Arena2_Text_Uxie_Spawn
 	waitmessage
 	clearflag FLAG_HIDE_UXIE
-	end
+	setvar VAR_GYM_2_STATE, 2
+	warp MAP_IZALA_CITY_GYM_ETRANCE, 7, 3
+	return
+
+IzalaCity_Gym_Arena2_EventScript_GiveBulkUp::
+	giveitem ITEM_TM_BRICK_BREAK
+	goto_if_eq VAR_RESULT, 0, Common_EventScript_BagIsFull
+	msgbox IzalaCity_Gym_Arena2_Text_ExplainBulkUp, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_TM_BULK_UP
+	return
 
 IzalaCity_Gym_Arena2_Movement_PlayerWalkUp:
 	walk_right

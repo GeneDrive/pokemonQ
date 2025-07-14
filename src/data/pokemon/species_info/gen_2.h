@@ -772,7 +772,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         FRONT_PIC(Ledian, 48, 56),
         FRONT_PIC_FEMALE(Ledian, 48, 56),
-        .frontPicYOffset = 7,
+        .frontPicYOffset = 11      ,
         .frontAnimFrames = sAnims_Ledian,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
         .enemyMonElevation = 10,

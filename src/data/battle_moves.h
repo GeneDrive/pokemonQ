@@ -3264,7 +3264,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .power = 0,
         .type = TYPE_NORMAL,
         .accuracy = 0,
-        .pp = 10,
+        .pp = 5,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_USER,
         .split = SPLIT_STATUS,
@@ -14700,7 +14700,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_CAFFEINE_BOMB] =
     {
-        .effect = EFFECT_MAX_MOVE,
+        .effect = EFFECT_MAX_MOVE, // Yawn effect
         .power = 1,
         .type = TYPE_DARK,
         .accuracy = 100,
@@ -14758,7 +14758,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     },
     [MOVE_SOLAR_FLARE] =
     {
-        .effect = EFFECT_MAX_MOVE,
+        .effect = EFFECT_MAX_MOVE,  // sets sun effect
         .power = 1,
         .type = TYPE_FIRE,
         .accuracy = 100,
@@ -14830,7 +14830,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     },
     [MOVE_TORNADO_CRASH] =
     {
-        .effect = EFFECT_SPIN_OUT,
+        .effect = EFFECT_SPIN_OUT, // reduce speed by 6 stages
         .power = 155,
         .type = TYPE_STEEL,
         .accuracy = 99,
@@ -14858,7 +14858,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     },
     [MOVE_PARADOX_WAVE] =
     {
-        .effect = EFFECT_FREEZE_DRY,
+        .effect = EFFECT_FREEZE_DRY, // but effective on ghost types
         .power = 90,
         .type = TYPE_TIME,
         .accuracy = 90,
@@ -15202,7 +15202,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         .type = TYPE_DRAGON,
         .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 77,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .split = SPLIT_SPECIAL,

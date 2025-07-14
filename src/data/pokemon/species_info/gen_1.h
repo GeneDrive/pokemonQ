@@ -3544,7 +3544,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerScale = 256,
         .trainerOffset = 0,
         FRONT_PIC(Paras, 48, 40),
-        .frontPicYOffset = 15,
+        .frontPicYOffset = 21,
         .frontAnimFrames = sAnims_Paras,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
         .frontAnimDelay = 10,

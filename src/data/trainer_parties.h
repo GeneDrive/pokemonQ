@@ -3452,7 +3452,7 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     .lvl = 28,
     .species = SPECIES_PARAS,
     .ability = ABILITY_WONDER_SKIN,
-    .moves = {MOVE_SCORCHING_SANDS, MOVE_DISARMING_VOICE, MOVE_SLUDGE, MOVE_BANEFUL_BUNKER},
+    .moves = {MOVE_SCORCHING_SANDS, MOVE_SPECIAL_MIASMA, MOVE_SLUDGE, MOVE_BANEFUL_BUNKER},
     .heldItem = ITEM_LEFTOVERS,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     },

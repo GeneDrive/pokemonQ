@@ -1022,10 +1022,10 @@ RustboroCity_EventScript_Boy1::
 	end
 
 RustboroCity_Text_WeShortenItToDevon:
-	.string "The DEVON CORPORATION…\n"
-	.string "We all just shorten it to DEVON.\p"
-	.string "That company makes all sorts of\n"
-	.string "convenient products.$"
+	.string "I love the peace here...\p"
+	.string "The smell of the sea...\n"
+	.string "The fresh air...\p"
+	.string "Nothing beats this place!$"
 
 RustboroCity_Text_SneakyLookingManWentAroundCorner:
 	.string "Hm? A sneaky-looking man?\p"
@@ -1040,9 +1040,10 @@ RustboroCity_Text_HaveYouChallengedGym:
 	.string "realize what is required of them.$"
 
 RustboroCity_Text_HeyThatsRustborosGymBadge:
-	.string "Hey, that's RUSTBORO's GYM BADGE!\p"
+	.string "Hey, that's AUROPEAK's GYM BADGE!\p"
 	.string "Out of all the POKéMON GYM BADGES,\n"
-	.string "RUSTBORO's is the coolest, I'd say.$"
+	.string "AUROPEAK's is the coolest, I'd say.\p"
+	.string "hehe… cool… get it?$"
 
 RustboroCity_Text_YoureNewAroundHere:
 	.string "Oh? Who might you be?\n"
@@ -1051,11 +1052,11 @@ RustboroCity_Text_YoureNewAroundHere:
 	.string "POKéMON TRAINER'S SCHOOL?$"
 
 RustboroCity_Text_GymLeaderIsntEasyWithFire:
-	.string "I challenged the GYM LEADER, but…\p"
-	.string "It's not going to be easy winning with\n"
-	.string "my FIRE-type POKéMON…\p"
+	.string "I challenged the GYM trainers, but…\p"
+	.string "It's not gonna be easy winning with\n"
+	.string "just FIRE-type POKéMON…\p"
 	.string "FIRE-type POKéMON don't match up\n"
-	.string "well against ROCK-type POKéMON…$"
+	.string "well their variety of POKéMON…$"
 
 RustboroCity_Text_MrBrineyWalksInTheTunnel:
 	.string "The old sailor MR. BRINEY lives in\n"
@@ -1077,24 +1078,26 @@ RustboroCity_Text_WowYouHavePokemon:
 	.string "places with POKéMON, too.$"
 
 RustboroCity_Text_CatchRarePokemonIfIGoToSchool:
-	.string "POKéMON TRAINER'S SCHOOL!\p"
-	.string "If I go to this school, will I be able\n"
-	.string "to catch rare POKéMON easily?$"
+	.string "POKéMON TRAINER'S DOJO!\p"
+	.string "If I study here, will I be able\n"
+	.string "to catch special POKéMON to?$"
 
 RustboroCity_Text_PokemonCanChangeLookFromExp:
-	.string "If a POKéMON gains experience in\n"
-	.string "battles, it can sometimes change in\l"
-	.string "the way it looks.$"
+	.string "My Dartish evolved into a katana!\p"
+	.string "It looks so cool and sharp! No other\n"
+	.string "will be faster than my blade!.$"
 
 RustboroCity_Text_PokemonChangeShape:
-	.string "A POKéMON changes shape?\n"
-	.string "If one did that, I would be shocked!$"
+	.string "My Dartish?\n"
+	.string "I sharpened it with a thunder stone!\p"
+	.string "It became jagged and shoots lightning!\n"
+	.string "Speed won't be an issue with this energy.$"
 
 RustboroCity_Text_TradePokemonGrowFast:
 	.string "A POKéMON you get in a trade from\n"
 	.string "someone grows fast.\p"
 	.string "But if you don't have certain GYM\n"
-	.string "BADGES, it may not obey you…$"
+	.string "BADGES, it may think less of you…$"
 
 RustboroCity_Text_OutOfTheWay:
 	.string "Get out!\n"
