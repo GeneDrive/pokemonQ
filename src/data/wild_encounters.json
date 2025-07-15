@@ -2863,7 +2863,7 @@
               {
                 "min_level": 16,
                 "max_level": 19,
-                "species": "SPECIES_DEERLING_SPRING"
+                "species": "SPECIES_MINCCINO"
               },
               {
                 "min_level": 16,
@@ -13017,7 +13017,7 @@
               {
                 "min_level": 15,
                 "max_level": 17,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_MINCCINO"
               },
               {
                 "min_level": 15,
@@ -13032,7 +13032,7 @@
               {
                 "min_level": 15,
                 "max_level": 17,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_MINCCINO"
               },
               {
                 "min_level": 15,
@@ -13106,7 +13106,7 @@
               {
                 "min_level": 16,
                 "max_level": 19,
-                "species": "SPECIES_WATTREL"
+                "species": "SPECIES_MINCCINO"
               }
             ]
           },
@@ -13790,7 +13790,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_FEAROW"
+                "species": "SPECIES_SPEAROW"
               },
               {
                 "min_level": 5,
@@ -13810,7 +13810,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_MINCCINO"
               },
               {
                 "min_level": 5,
@@ -14017,7 +14017,7 @@
               {
                 "min_level": 16,
                 "max_level": 19,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_MINCCINO"
               },
               {
                 "min_level": 16,
@@ -14027,7 +14027,7 @@
               {
                 "min_level": 16,
                 "max_level": 19,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_MINCCINO"
               },
               {
                 "min_level": 16,
