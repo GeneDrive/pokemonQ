@@ -50,8 +50,11 @@ def create_summary_document(parser, output_file="pokemon_summary.docx"):
     for pokemon in sorted_pokemon:
         row = table.add_row()
         
+        # Get the appropriate display name with form information
+        form_display_name = parser.get_form_display_name(pokemon['name'], pokemon['display_name'])
+        
         # Pokemon name
-        row.cells[0].text = pokemon['display_name']
+        row.cells[0].text = form_display_name
         
         # Types
         types_str = " / ".join(pokemon['types']) if pokemon['types'] else "?"
@@ -142,9 +145,12 @@ def create_csv_export(parser, output_file="pokemon_data.csv"):
                     types = pokemon['types'] + [''] * (2 - len(pokemon['types']))  # Pad to 2 types
                     abilities = pokemon['abilities'] + [''] * (3 - len(pokemon['abilities']))  # Pad to 3 abilities
                     
+                    # Get the appropriate display name with form information
+                    form_display_name = parser.get_form_display_name(pokemon['name'], pokemon['display_name'])
+                    
                     row = {
                         'Name': pokemon['name'],
-                        'Display_Name': pokemon['display_name'],
+                        'Display_Name': form_display_name,
                         'Type_1': types[0] if len(types) > 0 else '',
                         'Type_2': types[1] if len(types) > 1 else '',
                         'BST': sum(stats.values()) if stats else 0,

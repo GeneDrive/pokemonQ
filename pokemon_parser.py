@@ -185,11 +185,44 @@ class PokemonParser:
             
         if abilities_match:
             abilities = []
+            ability_names = []
+            
+            # Get all three ability slots
             for i in range(1, 4):
                 ability_raw = abilities_match.group(i)
                 if ability_raw and ability_raw != "NONE":
                     ability_name = self.format_ability_name(ability_raw)
-                    abilities.append(ability_name)
+                    ability_names.append(ability_name)
+                else:
+                    ability_names.append(None)
+            
+            # Determine ability types based on Pokemon ability system:
+            # Slot 1: Regular ability
+            # Slot 2: Second regular ability (if different from slot 1)
+            # Slot 3: Hidden Ability
+            
+            # First, check if all abilities are the same
+            unique_abilities = set(filter(None, ability_names))
+            
+            if len(unique_abilities) == 1:
+                # All abilities are the same - just show "Ability"
+                abilities.append(f"{list(unique_abilities)[0]} (Ability)")
+            else:
+                # Multiple different abilities
+                if ability_names[0]:  # First ability slot
+                    if ability_names[1] and ability_names[1] != ability_names[0]:
+                        # Pokemon has two different regular abilities
+                        abilities.append(f"{ability_names[0]} (Ability 1)")
+                        abilities.append(f"{ability_names[1]} (Ability 2)")
+                    else:
+                        # Pokemon has only one regular ability
+                        abilities.append(f"{ability_names[0]} (Ability)")
+                
+                if ability_names[2]:  # Hidden ability slot
+                    # Only add hidden ability if it's different from the regular abilities
+                    if ability_names[2] != ability_names[0] and ability_names[2] != ability_names[1]:
+                        abilities.append(f"{ability_names[2]} (Hidden Ability)")
+            
             pokemon['abilities'] = abilities
         
         # For other fields, use expanded data since they don't conflict
@@ -222,13 +255,24 @@ class PokemonParser:
         return pokemon
         
     def expand_macros(self, data_block):
-        """Expand macro references in data block"""
+        """Recursively expand macro references in data block"""
         expanded = data_block
+        max_iterations = 10  # Prevent infinite loops
+        iteration = 0
         
-        # Find macro references and expand them
-        for macro_name, macro_content in self.macro_definitions.items():
-            if macro_name in expanded:
-                expanded = expanded.replace(macro_name, macro_content)
+        while iteration < max_iterations:
+            old_expanded = expanded
+            
+            # Find macro references and expand them
+            for macro_name, macro_content in self.macro_definitions.items():
+                if macro_name in expanded:
+                    expanded = expanded.replace(macro_name, macro_content)
+            
+            # If no changes were made, we're done
+            if expanded == old_expanded:
+                break
+                
+            iteration += 1
                 
         return expanded
         
@@ -273,6 +317,114 @@ class PokemonParser:
         """Format ability name from constant to readable form"""
         return ability_raw.replace('_', ' ').title()
         
+    def get_form_display_name(self, species_name, display_name):
+        """Get the display name with form information for alternate forms"""
+        if not self.is_alternate_form(species_name):
+            return display_name
+            
+        # Extract form information from the species constant name
+        form_suffix = ""
+        
+        # Check for specific form types and create readable names
+        if "_MEGA_X" in species_name:
+            form_suffix = " (Mega X)"
+        elif "_MEGA_Y" in species_name:
+            form_suffix = " (Mega Y)"
+        elif "_MEGA" in species_name:
+            form_suffix = " (Mega)"
+        elif "_PRIMAL" in species_name:
+            form_suffix = " (Primal)"
+        elif "_GIGANTAMAX" in species_name or "_GMAX" in species_name:
+            form_suffix = " (Gigantamax)"
+        elif "_ALOLAN" in species_name:
+            form_suffix = " (Alolan)"
+        elif "_GALARIAN" in species_name:
+            form_suffix = " (Galarian)"
+        elif "_HISUIAN" in species_name:
+            form_suffix = " (Hisuian)"
+        elif "_PALDEAN" in species_name:
+            form_suffix = " (Paldean)"
+        elif "_ORIGIN" in species_name:
+            form_suffix = " (Origin Forme)"
+        elif "_SUNSHINE" in species_name:
+            form_suffix = " (Sunshine Form)"
+        elif "_ALTERED" in species_name:
+            form_suffix = " (Altered Forme)"
+        elif "_HEAT_ROTOM" in species_name or "_HEAT" in species_name:
+            form_suffix = " (Heat Rotom)"
+        elif "_WASH_ROTOM" in species_name or "_WASH" in species_name:
+            form_suffix = " (Wash Rotom)"
+        elif "_FROST_ROTOM" in species_name or "_FROST" in species_name:
+            form_suffix = " (Frost Rotom)"
+        elif "_FAN_ROTOM" in species_name or "_FAN" in species_name:
+            form_suffix = " (Fan Rotom)"
+        elif "_MOW_ROTOM" in species_name or "_MOW" in species_name:
+            form_suffix = " (Mow Rotom)"
+        elif "_ZEN_MODE" in species_name:
+            form_suffix = " (Zen Mode)"
+        elif "_STANDARD_MODE" in species_name:
+            form_suffix = " (Standard Mode)"
+        elif "_ATTACK" in species_name:
+            form_suffix = " (Attack Forme)"
+        elif "_DEFENSE" in species_name:
+            form_suffix = " (Defense Forme)"
+        elif "_SPEED" in species_name:
+            form_suffix = " (Speed Forme)"
+        elif "_INCARNATE" in species_name:
+            form_suffix = " (Incarnate Forme)"
+        elif "_THERIAN" in species_name:
+            form_suffix = " (Therian Forme)"
+        elif "_WHITE" in species_name:
+            form_suffix = " (White)"
+        elif "_BLACK" in species_name:
+            form_suffix = " (Black)"
+        elif "_BLUE" in species_name:
+            form_suffix = " (Blue)"
+        elif "_RED" in species_name:
+            form_suffix = " (Red)"
+        elif "_SCHOOL" in species_name:
+            form_suffix = " (School)"
+        elif "_SOLO" in species_name:
+            form_suffix = " (Solo)"
+        elif "_BUSTED" in species_name:
+            form_suffix = " (Busted)"
+        elif "_DISGUISED" in species_name:
+            form_suffix = " (Disguised)"
+        elif "_CORE" in species_name:
+            form_suffix = " (Core)"
+        elif "_COMPLETE" in species_name:
+            form_suffix = " (Complete)"
+        elif "_ULTRA" in species_name:
+            form_suffix = " (Ultra)"
+        elif "_DAWN_WINGS" in species_name:
+            form_suffix = " (Dawn Wings)"
+        elif "_DUSK_MANE" in species_name:
+            form_suffix = " (Dusk Mane)"
+        elif "_LOW_KEY" in species_name:
+            form_suffix = " (Low Key)"
+        elif "_AMPED" in species_name:
+            form_suffix = " (Amped)"
+        elif "_FULL_BELLY" in species_name:
+            form_suffix = " (Full Belly)"
+        elif "_HANGRY" in species_name:
+            form_suffix = " (Hangry)"
+        elif "_NOICE" in species_name:
+            form_suffix = " (Noice Face)"
+        elif "_ICE" in species_name and "DARMANITAN" in species_name:
+            form_suffix = " (Zen Mode)"
+        elif "_CROWNED" in species_name:
+            form_suffix = " (Crowned)"
+        elif "_ETERNAMAX" in species_name:
+            form_suffix = " (Eternamax)"
+        elif "_SINGLE_STRIKE" in species_name:
+            form_suffix = " (Single Strike)"
+        elif "_RAPID_STRIKE" in species_name:
+            form_suffix = " (Rapid Strike)"
+        elif "_RIDER" in species_name:
+            form_suffix = " (Ice Rider)" if "ICE" in species_name else " (Shadow Rider)"
+        
+        return display_name + form_suffix
+        
     def format_species_name(self, species_raw):
         """Format species name from constant to readable form"""
         return species_raw.replace('_', ' ').title()
@@ -294,8 +446,11 @@ class PokemonParser:
         sorted_pokemon = sorted(self.species_data.values(), key=lambda x: x['display_name'])
         
         for pokemon in sorted_pokemon:
-            # Pokemon name header - just use display name since each is treated as separate
-            doc.add_heading(f"{pokemon['display_name']}", level=1)
+            # Get the appropriate display name with form information
+            form_display_name = self.get_form_display_name(pokemon['name'], pokemon['display_name'])
+            
+            # Pokemon name header with form information for alternate forms
+            doc.add_heading(f"{form_display_name}", level=1)
             
             # Create table for pokemon data
             table = doc.add_table(rows=1, cols=2)
