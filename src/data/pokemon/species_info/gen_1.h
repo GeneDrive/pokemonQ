@@ -546,13 +546,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_WARTORTLE] =
     {
-        .baseHP        = 59,
+        .baseHP        = 62,
         .baseAttack    = 63,
         .baseDefense   = 80,
         .baseSpeed     = 58,
         .baseSpAttack  = 65,
         .baseSpDefense = 80,
-        .types = { TYPE_WATER, TYPE_WATER },
+        .types = { TYPE_WATER, TYPE_ROCK },
         .catchRate = 45,
         .expYield = 142,
         .evYield_Defense = 1,
@@ -562,7 +562,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_WATER_1 },
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_RAIN_DISH },
+        .abilities = { ABILITY_RAIN_DISH, ABILITY_NONE, ABILITY_SOLID_ROCK },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Wartortle"),
         .cryId = CRY_WARTORTLE,
@@ -594,7 +594,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #define BLASTOISE_MISC_INFO                                             \
-        .types = { TYPE_WATER, TYPE_WATER },                            \
+        .types = { TYPE_WATER, TYPE_ROCK},                            \
         .catchRate = 45,                                                \
         .evYield_SpDefense = 3,                                         \
         .genderRatio = PERCENT_FEMALE(12.5),                            \
@@ -615,13 +615,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         BLASTOISE_MISC_INFO,
         .baseHP        = 79,
-        .baseAttack    = 83,
+        .baseAttack    = 88,
         .baseDefense   = 100,
         .baseSpeed     = 78,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 105,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 115,
         .expYield = 239,
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_RAIN_DISH },
+        .abilities = { ABILITY_RAIN_DISH, ABILITY_NONE, ABILITY_SOLID_ROCK },
         .cryId = CRY_BLASTOISE,
         .height = 16,
         .weight = 855,
