@@ -134,10 +134,10 @@
     {
       "id": "LAYOUT_FALLARBOR_TOWN",
       "name": "FallarborTown_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 37,
+      "height": 24,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fallarbor",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/FallarborTown/border.bin",
       "blockdata_filepath": "data/layouts/FallarborTown/map.bin"
     },

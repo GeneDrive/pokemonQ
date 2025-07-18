@@ -770,6 +770,7 @@ static const u16 sSpearowTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SIZZLY_SLIDE,
+    MOVE_METRONOME,
     MOVE_UNAVAILABLE,
 };
 
@@ -801,6 +802,7 @@ static const u16 sFearowTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SIZZLY_SLIDE,
+    MOVE_METRONOME,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SPEAROW
@@ -10974,6 +10976,7 @@ static const u16 sPinecoTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_METRONOME,
     MOVE_UNAVAILABLE,
 };
 
@@ -11013,6 +11016,7 @@ static const u16 sForretressTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
+    MOVE_METRONOME,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PINECO
@@ -23883,6 +23887,7 @@ static const u16 sTympoleTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
+    MOVE_METRONOME,
     MOVE_UNAVAILABLE,
 };
 
@@ -23909,6 +23914,7 @@ static const u16 sPalpitoadTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
+    MOVE_METRONOME,
     MOVE_UNAVAILABLE,
 };
 
@@ -23943,6 +23949,7 @@ static const u16 sSeismitoadTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
+    MOVE_METRONOME,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TYMPOLE
@@ -25258,6 +25265,7 @@ static const u16 sMinccinoTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
+    MOVE_METRONOME,
     MOVE_UNAVAILABLE,
 };
 
@@ -25290,6 +25298,7 @@ static const u16 sCinccinoTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
     MOVE_THUNDER_WAVE,
+    MOVE_METRONOME,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MINCCINO
