@@ -6313,23 +6313,21 @@ static const struct TrainerMon sParty_Nancy[] = {
 static const struct TrainerMon sParty_Martha[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 17,
-    .ability = ABILITY_OBLIVIOUS,
+    .lvl = 24,
     .species = SPECIES_DARUMAKA,
     .heldItem = ITEM_EXPERT_BELT,
-    .moves = {MOVE_LICK, MOVE_FLAME_WHEEL, MOVE_ROCK_SMASH, MOVE_NONE}
+    .moves = {MOVE_LICK, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 17,
-    .ability = ABILITY_STORM_DRAIN,
+    .lvl = 24,
     .species = SPECIES_TATSUGIRI_CURLY,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_WATER_GUN, MOVE_ICY_WIND, MOVE_PROTECT, MOVE_TAUNT}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 17,
+    .lvl = 25,
     .ability = ABILITY_EARLY_BIRD,
     .species = SPECIES_NICKIT,
     .heldItem = ITEM_LUM_BERRY,
@@ -6337,14 +6335,21 @@ static const struct TrainerMon sParty_Martha[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 18,
+    .lvl = 25,
     .species = SPECIES_FLORAGATO,
     .heldItem = ITEM_RED_CARD,
     .moves = {MOVE_SEED_BOMB, MOVE_QUICK_ATTACK, MOVE_FURY_CUTTER, MOVE_HONE_CLAWS}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 15,
+    .lvl = 25,
+    .ability = ABILITY_INTIMIDATE,
+    .species = SPECIES_LUXRAY,
+    .moves = {MOVE_SPARK, MOVE_BITE, MOVE_SAND_ATTACK, MOVE_NONE}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 26,
     .ability = ABILITY_INTIMIDATE,
     .species = SPECIES_LUXRAY,
     .moves = {MOVE_SPARK, MOVE_BITE, MOVE_SAND_ATTACK, MOVE_NONE}
