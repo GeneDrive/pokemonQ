@@ -6313,7 +6313,7 @@ static const struct TrainerMon sParty_Nancy[] = {
 static const struct TrainerMon sParty_Martha[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 25,
+    .lvl = 26,
     .ability = ABILITY_LIGHTNING_ROD,
     .species = SPECIES_PIKACHU_KALOS_CAP,
     .heldItem = ITEM_EVIOLITE,
@@ -6323,6 +6323,7 @@ static const struct TrainerMon sParty_Martha[] = {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 24,
     .species = SPECIES_LAPRAS,
+    .ability = ABILITY_WATER_ABSORB,
     .moves = {MOVE_BRINE, MOVE_LIFE_DEW, MOVE_CONFUSE_RAY, MOVE_MIST}
     },
     {
@@ -6330,13 +6331,15 @@ static const struct TrainerMon sParty_Martha[] = {
     .lvl = 24,
     .species = SPECIES_CHARMELEON,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_DRAGON_BREATH, MOVE_FIRE_FANG, MOVE_PROTECT, MOVE_SMOKESCREEN}
+    .ability = ABILITY_FLAME_BODY,
+    .moves = {MOVE_DRAGON_BREATH, MOVE_FIRE_FANG, MOVE_BITE, MOVE_SMOKESCREEN}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 24,
     .species = SPECIES_WARTORTLE,
-    .heldItem = ITEM_NONE,
+    .ability = ABILITY_SOLID_ROCK,
+    .heldItem = ITEM_CUSTAP_BERRY,
     .moves = {MOVE_WATER_PULSE, MOVE_CRYSTALIZE, MOVE_YAWN, MOVE_PROTECT}
     },
     {
@@ -6344,15 +6347,16 @@ static const struct TrainerMon sParty_Martha[] = {
     .lvl = 24,
     .species = SPECIES_IVYSAUR,
     .heldItem = ITEM_RED_CARD,
-    .moves = {MOVE_POISON_POWDER, MOVE_SEED_BOMB, MOVE_ACID, MOVE_NONE}
+    .moves = {MOVE_POISON_POWDER, MOVE_SEED_BOMB, MOVE_ACID, MOVE_SOLAR_BEAM}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 24,
     .ability = ABILITY_GLUTTONY,
+    .nature = NATURE_ADAMANT,
     .species = SPECIES_MUNCHLAX,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_REST, MOVE_SLEEP_TALK, MOVE_BITE, MOVE_RECYCLE}
+    .heldItem = ITEM_FIGY_BERRY,
+    .moves = {MOVE_REST, MOVE_SLEEP_TALK, MOVE_CHOMP, MOVE_RECYCLE}
     }
 };
 
