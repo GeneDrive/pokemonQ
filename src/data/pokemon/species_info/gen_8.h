@@ -1017,10 +1017,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 6,
         .weight = 89,
         .description = COMPOUND_STRING(
-            "Aided by the soft pads on its feet, it\n"
-            "silently raids the food stores of other\n"
-            "Pokémon. It survives off its\n"
-            "ill-gotten gains."),
+            "This Yamask clutches a pillow instead\n"
+            "of a mask. Villages report waking up\n"
+            "to find every pillow missing from all\n"
+            "their beds overnight."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -1212,10 +1212,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 6,
         .weight = 60,
         .description = COMPOUND_STRING(
-            "Its curly fleece is such an effective\n"
-            "cushion that this Pokémon could fall off\n"
-            "a cliff and stand right back up at the\n"
-            "bottom, unharmed."),
+            "Said to live for countless ages, it\n"
+            "performs extravagant spells that\n"
+            "dazzle onlookers but have little\n"
+            "actual power behind them."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,

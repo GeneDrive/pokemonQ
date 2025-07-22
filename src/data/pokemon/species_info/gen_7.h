@@ -652,10 +652,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 4,
         .weight = 60,
         .description = COMPOUND_STRING(
-            "With its sharp fangs, it will bite anything.\n"
-            "It wanders around in a never-ending\n"
-            "search for food. At dusk, it collapses\n"
-            "and falls asleep on the spot."),
+            "Few of these young serpents exist. It\n"
+            "grows longer by guarding a special\n"
+            "crystal, said to hold the power of \n"
+            "travelingn through time."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,

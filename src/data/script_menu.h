@@ -392,10 +392,9 @@ static const struct MenuAction MultichoiceList_ShardsYG[] =
 
 static const struct MenuAction MultichoiceList_ShardsRYG[] =
 {
-    {gText_RedShard},
-    {gText_YellowShard},
-    {gText_GreenShard},
-    {gText_Exit},
+    {gText_Toxic},
+    {gText_Ok3},
+    {gText_Quit},
 };
 
 static const struct MenuAction MultichoiceList_ShardsBG[] =

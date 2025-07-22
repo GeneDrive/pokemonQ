@@ -712,10 +712,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 10,
         .weight = 108,
         .description = COMPOUND_STRING(
-            "Ledyba communicate using a fluid that\n"
-            "they secrete from where the legs join the\n"
-            "body. They are said to convey feelings to\n"
-            "others by altering the fluid's scent."),
+            "It bullies Dartish by ramming them with\n"
+            "its hard shell, dulling their sharp fins\n"
+            "over time. It enjoys chasing them around\n"
+            "in shallow coastal waters."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -762,10 +762,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 14,
         .weight = 356,
         .description = COMPOUND_STRING(
-            "It is said that in lands with clean air,\n"
-            "where the stars fill the sky, there live\n"
-            "many Ledian. For good reason, they use\n"
-            "the light of the stars as energy."),
+            "Lurking beneath the waves, it launches\n"
+            "explosive strikes to knock Wingull from\n"
+            "the sky. Its claws can shatter shells\n"
+            "and cut wings with ease."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 256,

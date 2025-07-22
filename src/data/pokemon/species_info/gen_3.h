@@ -5391,10 +5391,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 5,
         .weight = 215,
         .description = COMPOUND_STRING(
-            "A Baltoy moves by spinning on its single\n"
-            "foot. It has been depicted in murals \n"
-            "adorning the walls of a once-bustling city\n"
-            "in an ancient age."),
+            "Its dark, hardened shell allows it to\n"
+            "endure extreme cold. Some researchers\n"
+            "believe this form reflects how Baltoy\n"
+            "once appeared in ancient times."),
         .pokemonScale = 457,
         .pokemonOffset = 21,
         .trainerScale = 256,

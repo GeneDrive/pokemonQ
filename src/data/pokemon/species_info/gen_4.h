@@ -1197,10 +1197,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         BURMY_MISC_INFO,
         .bodyColor = BODY_COLOR_GREEN,
         .description = COMPOUND_STRING(
-            "If its cloak is even slightly damaged, it\n"
-            "will immediately repair it with whatever is\n"
-            "near at hand. The Pokémon within the cloak\n"
-            "is scrawny and vulnerable to the cold."),
+            "Its thick fur makes larger Pokémon turn\n"
+            "away, avoiding a meal that could cause\n"
+            "them to choke. The fur harbors bacteria,\n"
+            "sending people to hospitals after hugs."),
         FRONT_PIC(BurmyPlantCloak, 32, 56),
         .frontPicYOffset = 21,
         BACK_PIC(BurmyPlantCloak, 40, 56),
@@ -1215,10 +1215,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         BURMY_MISC_INFO,
         .bodyColor = BODY_COLOR_BROWN,
         .description = COMPOUND_STRING(
-            "It weaves a cloak together with sand, mud,\n"
-            "and silk it spits out. This earthen cloak\n"
-            "is ruined by wind and rain, so the Pokémon\n"
-            "hides away in caves and other such places."),
+            "Its thick fur makes larger Pokémon turn\n"
+            "away, avoiding a meal that could cause\n"
+            "them to choke. The fur harbors bacteria,\n"
+            "sending people to hospitals after hugs."),
         FRONT_PIC(BurmySandyCloak, 32, 56),
         .frontPicYOffset = 21,
         BACK_PIC(BurmySandyCloak, 32, 56),
@@ -1233,10 +1233,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         BURMY_MISC_INFO,
         .bodyColor = BODY_COLOR_RED,
         .description = COMPOUND_STRING(
-            "When confronted by a lack of other\n"
-            "materials, Burmy will create its cloak\n"
-            "using dust and refuse. The cloak seems to\n"
-            "be more comfortable than one would think."),
+            "Its thick fur makes larger Pokémon turn\n"
+            "away, avoiding a meal that could cause\n"
+            "them to choke. The fur harbors bacteria,\n"
+            "sending people to hospitals after hugs."),
         FRONT_PIC(BurmyTrashCloak, 32, 56),
         .frontPicYOffset = 21,
         BACK_PIC(BurmyTrashCloak, 40, 64),

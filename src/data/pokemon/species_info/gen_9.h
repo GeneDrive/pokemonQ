@@ -597,10 +597,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 3,
         .weight = 99,
         .description = COMPOUND_STRING(
-            "The thread it secretes from its\n"
-            "rear is as strong as wire. The secret\n"
-            "behind the thread's strength is the\n"
-            "topic of ongoing research."),
+            "It devours half its weight in minerals\n"
+            "every day. Depending on its diet, the\n"
+            "gems along its sides are said to change\n"
+            "color, shimmering like rare crystals."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -645,10 +645,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 10,
         .weight = 7777,
         .description = COMPOUND_STRING(
-            "It clings to branches and ceilings\n"
-            "using its threads and moves without\n"
-            "a sound. It takes out its prey\n"
-            "before the prey even notices it."),
+            "Its shell is a prized souvenir, though\n"
+            "finding an empty one is rare. Swallowing\n"
+            "light and energy, it was once believed\n"
+            "to bring the end of all things."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1149,10 +1149,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 3,
         .weight = 65,
         .description = COMPOUND_STRING(
-            "This Pokémon converts nutrients\n"
-            "into oil, which it stores in the fruit\n"
-            "on its head. It can easily go a whole\n"
-            "week without eating or drinking."),
+            "Said to be born from frozen mountain\n"
+            "winds, its body reaching absolute zero.\n"
+            "Legends tell it can freeze anyone\n"
+            "who dares mock its small stature."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,

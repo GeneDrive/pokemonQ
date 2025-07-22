@@ -23,7 +23,7 @@ FrigidFalls_5F_EventScript_ItemAbilityPatch::
 	end
 
 FrigidFalls_1F_EventScript_ItemPotion::
-	finditem ITEM_SUPER_POTION, 3
+	finditem ITEM_CLEANSE_TAG
 	end
 
 Route102_EventScript_ItemPotion::

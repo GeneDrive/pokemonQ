@@ -2211,10 +2211,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 4,
         .weight = 35,
         .description = COMPOUND_STRING(
-            "Because it eats nothing but sweets, its\n"
-            "fur is as sticky sweet as cotton candy.\n"
-            "To entangle its opponents in battle, it\n"
-            "extrudes sticky white threads."),
+            "In the past, these birds were seen as\n"
+            "harbingers of disaster, their presence\n"
+            "linked to entire cities falling ill.\n"
+            "A murder of them snickers near the dying."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -3563,10 +3563,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 4,
         .weight = 50,
         .description = COMPOUND_STRING(
-            "The light that streams out from\n"
-            "the holes in the pumpkin can\n"
-            "hypnotize and control the people and\n"
-            "Pokémon that see it."),
+            "It sharpens the scale on its head by\n"
+            "swimming past rocks. When a school of\n"
+            "this Pokémon appears, beaches are often\n"
+            "closed to keep people safe."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -3664,9 +3664,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 5,
         .weight = 75,
         .description = COMPOUND_STRING(
-            "When taking spirits to the\n"
-            "afterlife, large Pumpkaboo prefer the\n"
-            "spirits of adults to those of children."),
+            "It evolved by swimming past scorching\n"
+            "rocks, its body reshaped by the heat.\n"
+            "The curved and rugged blade on its head\n"
+            "offers superior resistance in battle."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,

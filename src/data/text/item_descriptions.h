@@ -2449,9 +2449,9 @@ static const u8 sAmuletCoinDesc[] = _(
     "holder takes part.");
 
 static const u8 sCleanseTagDesc[] = _(
-    "A hold item that\n"
-    "helps repel wild\n"
-    "Pokémon.");
+    "An item that raises\n"
+    "mumagi atk/spd, \n"
+    "but is flammable.");
 
 static const u8 sSmokeBallDesc[] = _(
     "A hold item that\n"

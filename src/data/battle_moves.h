@@ -1902,7 +1902,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_SMOKESCREEN] =
     {
-        .effect = EFFECT_ACCURACY_DOWN,
+        .effect = EFFECT_EVASION_DOWN,
         .power = 0,
         .type = TYPE_NORMAL,
         .accuracy = 100,

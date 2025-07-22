@@ -263,7 +263,7 @@ EventScript_EndSurface::
 EventScript_StartTrash::
 	msgbox Text_TrashWhat, MSGBOX_DEFAULT
 	waitmessage
-	multichoice 20, 0, MULTI_UNUSED_ASH_VENDOR, FALSE
+	multichoice 20, 0, MULTI_UNUSED_ASH_VENDOR, TRUE
 	switch VAR_RESULT
 	case 0, EventScript_TrashSuperPotion
 	case 1, EventScript_TrashPokeball

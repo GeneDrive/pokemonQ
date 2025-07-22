@@ -1500,10 +1500,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 3,
         .weight = 20,
         .description = COMPOUND_STRING(
-            "Its loud cry can be heard over half a mile\n"
-            "away. If its high, keening cry is heard\n"
-            "echoing all around, it is a sign that they\n"
-            "are warning each other of danger."),
+            "It is known to deflate the tires of\n"
+            "inattentive drivers. It enjoys rolling\n"
+            "down hills, causing all sorts of trouble\n"
+            "for hikers and forest goers."),
         .pokemonScale = 571,
         .pokemonOffset = 22,
         .trainerScale = 256,
@@ -1549,10 +1549,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 12,
         .weight = 380,
         .description = COMPOUND_STRING(
-            "Its long neck and elongated beak are\n"
-            "ideal for catching prey in soil or water.\n"
-            "It deftly moves this extended and skinny\n"
-            "beak to pluck prey."),
+            "It spins with blinding speed, turning\n"
+            "itself into a living drill. Though it\n"
+            "easily grows dizzy, its spines harden\n"
+            "to steel when it stays in motion."),
         .pokemonScale = 278,
         .pokemonOffset = 1,
         .trainerScale = 256,
@@ -3535,10 +3535,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 3,
         .weight = 54,
         .description = COMPOUND_STRING(
-            "A Paras has parasitic tochukaso\n"
-            "mushrooms growing on its back. They grow\n"
-            "by drawing nutrients from the host. They\n"
-            "are valued as a medicine for long life."),
+            "Its body naturally produces strange\n"
+            "chemicals that mix into unstable\n"
+            "compounds. When released, they create\n"
+            "mystical, unpredictable effects."),
         .pokemonScale = 593,
         .pokemonOffset = 22,
         .trainerScale = 256,

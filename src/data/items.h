@@ -5711,9 +5711,9 @@ const struct Item gItems[] =
 
     [ITEM_CLEANSE_TAG] =
     {
-        .name = _("Cleanse Tag"),
+        .name = _("Old Wrappings"),
         .price = 5000,
-        .holdEffect = HOLD_EFFECT_REPEL,
+        .holdEffect = HOLD_EFFECT_OLD_WRAPPINGS,
         .description = sCleanseTagDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

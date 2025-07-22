@@ -531,11 +531,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_PATRAT] =
     {
         .baseHP        = 35,
-        .baseAttack    = 30,
+        .baseAttack    = 45,
         .baseDefense   = 55,
         .baseSpeed     = 92,
         .baseSpAttack  = 87,
-        .baseSpDefense = 77,
+        .baseSpDefense = 76,
         .types = { TYPE_GHOST, TYPE_TIME },
         .catchRate = 255,
         .expYield = 51,
@@ -554,10 +554,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 5,
         .weight = 116,
         .description = COMPOUND_STRING(
-            "Extremely cautious, they take shifts to\n"
-            "maintain a constant watch of their nest.\n"
-            "Using food stored in cheek pouches,\n"
-            "they can keep watch for days."),
+            "A timid Pokémon that hides behind the\n"
+            "wrappings it collects. When its body\n"
+            "is fully covered, it feels a deep sense\n"
+            "of confidence and safety."),
         .pokemonScale = 432,
         .pokemonOffset = 14,
         .trainerScale = 256,
@@ -1285,10 +1285,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 3,
         .weight = 21,
         .description = COMPOUND_STRING(
-            "This very forgetful Pokémon will wait for\n"
-            "a new order from its Trainer even though\n"
-            "it already has one. Flocks often gather\n"
-            "in parks and plazas."),
+            "It disguises itself as candy to lure\n"
+            "the unwary. Those who eat it suffer\n"
+            "stomach aches, and two days later a\n"
+            "bowl of more candy appears."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -1333,10 +1333,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .height = 6,
         .weight = 150,
         .description = COMPOUND_STRING(
-            "No matter where in the world it goes,\n"
-            "it knows where its nest is, so it can\n"
-            "always return to its Trainer's location\n"
-            "regardless of the distance."),
+            "It entertains children with playful\n"
+            "performances and loves the sound of\n"
+            "laughter. After handing out candy,\n"
+            "many report sudden stomach aches."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,

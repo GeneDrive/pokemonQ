@@ -6313,47 +6313,47 @@ static const struct TrainerMon sParty_Nancy[] = {
 static const struct TrainerMon sParty_Martha[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 24,
-    .species = SPECIES_DARUMAKA,
-    .heldItem = ITEM_EXPERT_BELT,
-    .moves = {MOVE_LICK, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    .lvl = 25,
+    .ability = ABILITY_LIGHTNING_ROD,
+    .species = SPECIES_PIKACHU_KALOS_CAP,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_NUZZLE, MOVE_SPARK, MOVE_TAIL_WHIP, MOVE_GRASS_KNOT}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 24,
-    .species = SPECIES_TATSUGIRI_CURLY,
+    .species = SPECIES_LAPRAS,
+    .moves = {MOVE_BRINE, MOVE_LIFE_DEW, MOVE_CONFUSE_RAY, MOVE_MIST}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .lvl = 24,
+    .species = SPECIES_CHARMELEON,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_WATER_GUN, MOVE_ICY_WIND, MOVE_PROTECT, MOVE_TAUNT}
+    .moves = {MOVE_DRAGON_BREATH, MOVE_FIRE_FANG, MOVE_PROTECT, MOVE_SMOKESCREEN}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 25,
-    .ability = ABILITY_EARLY_BIRD,
-    .species = SPECIES_NICKIT,
-    .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_OMINOUS_WIND, MOVE_KAIROS_SPIRAL, MOVE_SLEEP_TALK, MOVE_REST}
+    .lvl = 24,
+    .species = SPECIES_WARTORTLE,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_WATER_PULSE, MOVE_CRYSTALIZE, MOVE_YAWN, MOVE_PROTECT}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 25,
-    .species = SPECIES_FLORAGATO,
+    .lvl = 24,
+    .species = SPECIES_IVYSAUR,
     .heldItem = ITEM_RED_CARD,
-    .moves = {MOVE_SEED_BOMB, MOVE_QUICK_ATTACK, MOVE_FURY_CUTTER, MOVE_HONE_CLAWS}
+    .moves = {MOVE_POISON_POWDER, MOVE_SEED_BOMB, MOVE_ACID, MOVE_NONE}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 25,
-    .ability = ABILITY_INTIMIDATE,
-    .species = SPECIES_LUXRAY,
-    .moves = {MOVE_SPARK, MOVE_BITE, MOVE_SAND_ATTACK, MOVE_NONE}
-    },
-    {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 26,
-    .ability = ABILITY_INTIMIDATE,
-    .species = SPECIES_LUXRAY,
-    .moves = {MOVE_SPARK, MOVE_BITE, MOVE_SAND_ATTACK, MOVE_NONE}
-    },
+    .lvl = 24,
+    .ability = ABILITY_GLUTTONY,
+    .species = SPECIES_MUNCHLAX,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_REST, MOVE_SLEEP_TALK, MOVE_BITE, MOVE_RECYCLE}
+    }
 };
 
 static const struct TrainerMon sParty_Diana1[] = {

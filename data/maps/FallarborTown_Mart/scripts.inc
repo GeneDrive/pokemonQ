@@ -59,17 +59,51 @@ FallarborTown_Mart_EventScript_StartBattle::
 	trainerbattle_no_intro TRAINER_MARTHA, FallarborTown_Mart_Text_BattleIntro
 	msgbox FallarborTown_Mart_Text_BattleEnd, MSGBOX_DEFAULT
 	closemessage
-	bufferspeciesname STR_VAR_1, SPECIES_NICKIT
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_NICKIT
-	givemon SPECIES_NICKIT, 10
+	multichoice 0, 0, MULTI_SHARDS_RYG, TRUE
+	switch VAR_RESULT
+	case 0, FallarborTown_Mart_EventScript_GiveCharmander
+	case 1, FallarborTown_Mart_EventScript_GiveBulbasaur
+	case 2, FallarborTown_Mart_EventScript_GiveSquirtle
+	end
+
+FallarborTown_Mart_EventScript_GiveCharmander::
+	bufferspeciesname STR_VAR_1, SPECIES_CHARMANDER
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CHARMANDER
+	givemon SPECIES_CHARMANDER, 10
 	playfanfare MUS_OBTAIN_ITEM
-	message FallarborTown_Mart_Text_Received
+	message FallarborTown_Mart_Text_Received1
 	waitfanfare
 	call Common_EventScript_TransferredToPC
+	goto FallarborTown_Mart_EventScript_endBattle
+	end
+
+FallarborTown_Mart_EventScript_GiveBulbasaur::
+	bufferspeciesname STR_VAR_1, SPECIES_BULBASAUR
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_BULBASAUR
+	givemon SPECIES_BULBASAUR, 10
+	playfanfare MUS_OBTAIN_ITEM
+	message FallarborTown_Mart_Text_Received2
+	waitfanfare
+	call Common_EventScript_TransferredToPC
+	goto FallarborTown_Mart_EventScript_endBattle
+	end
+
+FallarborTown_Mart_EventScript_GiveSquirtle::
+	bufferspeciesname STR_VAR_1, SPECIES_SQUIRTLE
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_SQUIRTLE
+	givemon SPECIES_SQUIRTLE, 10
+	playfanfare MUS_OBTAIN_ITEM
+	message FallarborTown_Mart_Text_Received3
+	waitfanfare
+	call Common_EventScript_TransferredToPC
+	goto FallarborTown_Mart_EventScript_endBattle
+	end
+
+FallarborTown_Mart_EventScript_endBattle::
 	msgbox FallarborTown_Mart_Text_BattleEnd2, MSGBOX_DEFAULT
 	closemessage
-	setflag FLAG_PETALBURG_SECRET_DONE
-	warp MAP_PETALBURG_CITY, 14, 3
+	setflag FLAG_FALLARBOR_TOWN_MART_SECRET_DONE
+	warp MAP_FALLARBOR_TOWN_MART, 8, 5
 	releaseall
 	end
 
@@ -84,8 +118,14 @@ FallarborTown_Mart_Text_BattleEnd2:
 	.string "...\p"
 	.string "...$"
 
-FallarborTown_Mart_Text_Received:
-	.string "{PLAYER} received a Yamask!$"
+FallarborTown_Mart_Text_Received1:
+	.string "{PLAYER} received a Charmander!$"
+
+FallarborTown_Mart_Text_Received2:
+	.string "{PLAYER} received a Bulbasaur!$"
+
+FallarborTown_Mart_Text_Received3:
+	.string "{PLAYER} received a Squirtle!$"
 
 FallarborTown_Mart_Text_DecidingSkittyEvolve:
 	.string "I'm having a hard time deciding if I\n"
